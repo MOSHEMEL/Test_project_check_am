@@ -1,0 +1,26 @@
+var group___s_p_i =
+[
+    [ "BLOCK_ERASE_32K", "dd/d3c/group___s_p_i.html#gade4766dd35c9abb0f9bb06a4078d8b9a", null ],
+    [ "BLOCK_ERASE_4K", "dd/d3c/group___s_p_i.html#ga1da9200b47088a77d686e214d9cde1ed", null ],
+    [ "BLOCK_ERASE_64K", "dd/d3c/group___s_p_i.html#ga3526aaadd7713257dac1534c6de47565", null ],
+    [ "BYTE_PROGRAM", "dd/d3c/group___s_p_i.html#ga337d70f06f0dfe0f7fc86c8e84470a50", null ],
+    [ "ERASE_CHIP1", "dd/d3c/group___s_p_i.html#ga1a5bb1f0982483479590a59fa69080b7", null ],
+    [ "ERASE_CHIP2", "dd/d3c/group___s_p_i.html#gaf2a2c5103e31479ed381dda3dce257b5", null ],
+    [ "HIGH", "dd/d3c/group___s_p_i.html#ga5bb885982ff66a2e0a0a45a8ee9c35e2", null ],
+    [ "LOW", "dd/d3c/group___s_p_i.html#gab811d8c6ff3a505312d3276590444289", null ],
+    [ "MEM_APPLICATOR", "dd/d3c/group___s_p_i.html#gacfcfa36fcedcfe3c6e30a31a33ecd9e1", null ],
+    [ "MEM_APT", "dd/d3c/group___s_p_i.html#ga95ae491e5d807c022f8099c87a04446c", null ],
+    [ "MEM_MCU", "dd/d3c/group___s_p_i.html#ga8c3b5d22bd4c23878314ac4e0307aed5", null ],
+    [ "READ_ARRAY1", "dd/d3c/group___s_p_i.html#ga015a3e88f02f24b7d4d2a503150b41e6", null ],
+    [ "READ_ARRAY2", "dd/d3c/group___s_p_i.html#ga8d9e96b5822ecb19bc5a94337aeb8f66", null ],
+    [ "READ_DEVICE_ID", "dd/d3c/group___s_p_i.html#gac72bb2d2367aa6649c342c53aab4f5c8", null ],
+    [ "READ_DUAL", "dd/d3c/group___s_p_i.html#gae69868ec36a64ba7c0440d9d53eadcb6", null ],
+    [ "READ_MANUFACTURE_ID", "dd/d3c/group___s_p_i.html#ga220e0c1367f5815bf48fe00cf81af0bb", null ],
+    [ "READ_QUAD", "dd/d3c/group___s_p_i.html#ga005066ec2c60e3d8aefc02246a275d58", null ],
+    [ "READ_STATUS_REGISTER1", "dd/d3c/group___s_p_i.html#ga12adeb51511306b1b0c3ad0e124a551d", null ],
+    [ "READ_STATUS_REGISTER2", "dd/d3c/group___s_p_i.html#gaaf11b99b3e767817de2e2da4ab9f6905", null ],
+    [ "WRITE_DISABLE", "dd/d3c/group___s_p_i.html#ga0a4d3a87fae6e2ee384ce3cc0d2b32f7", null ],
+    [ "WRITE_ENABLE", "dd/d3c/group___s_p_i.html#ga0b732dd9c6d99fbd9631f30e5a6572d8", null ],
+    [ "WRITE_ENABLE_STATUS_REGISTER_VOLATILE", "dd/d3c/group___s_p_i.html#gab72b0aa880967f75dbfb935601c2295c", null ],
+    [ "WRITE_STATUS_REGISTER", "dd/d3c/group___s_p_i.html#gaf43b6f7351fe56276b14fac089ba5f37", null ]
+];

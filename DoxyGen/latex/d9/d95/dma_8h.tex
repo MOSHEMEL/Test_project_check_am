@@ -1,0 +1,73 @@
+\hypertarget{dma_8h}{}\doxysection{C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/dma.h File Reference}
+\label{dma_8h}\index{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/dma.h@{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/dma.h}}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+Include dependency graph for dma.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{df/d36/dma_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/db7/dma_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{dma_8h_a323249dac769f9855c10b4ec9446b707}{M\+X\+\_\+\+D\+M\+A\+\_\+\+Init}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dma_8h_a323249dac769f9855c10b4ec9446b707}\label{dma_8h_a323249dac769f9855c10b4ec9446b707}} 
+\index{dma.h@{dma.h}!MX\_DMA\_Init@{MX\_DMA\_Init}}
+\index{MX\_DMA\_Init@{MX\_DMA\_Init}!dma.h@{dma.h}}
+\doxysubsubsection{\texorpdfstring{MX\_DMA\_Init()}{MX\_DMA\_Init()}}
+{\footnotesize\ttfamily void M\+X\+\_\+\+D\+M\+A\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+File Name \+: \mbox{\hyperlink{dma_8h}{dma.\+h}} Description \+: This file contains all the function prototypes for the dma.\+c file
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause
+
+File Name \+: dma.\+c Description \+: This file provides code for the configuration of all the requested memory to memory D\+MA transfers.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause Enable D\+MA controller clock 
+
+Definition at line 38 of file dma.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39 \{}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41   \textcolor{comment}{/* DMA controller clock enable */}}
+\DoxyCodeLine{42   \_\_HAL\_RCC\_DMA1\_CLK\_ENABLE();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44   \textcolor{comment}{/* DMA interrupt init */}}
+\DoxyCodeLine{45   \textcolor{comment}{/* DMA1\_Channel1\_IRQn interrupt configuration */}}
+\DoxyCodeLine{46   HAL\_NVIC\_SetPriority(DMA1\_Channel1\_IRQn, 0, 0);}
+\DoxyCodeLine{47   HAL\_NVIC\_EnableIRQ(DMA1\_Channel1\_IRQn);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{d9/d95/dma_8h_a323249dac769f9855c10b4ec9446b707_icgraph}
+\end{center}
+\end{figure}

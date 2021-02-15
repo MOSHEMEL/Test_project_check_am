@@ -1,0 +1,242 @@
+\hypertarget{group___s_t_m32_l0xx___i_a_p___main}{}\doxysection{S\+T\+M32\+L0xx\+\_\+\+I\+A\+P\+\_\+\+Main}
+\label{group___s_t_m32_l0xx___i_a_p___main}\index{STM32L0xx\_IAP\_Main@{STM32L0xx\_IAP\_Main}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_ga5c35f370199ce80141e8ca5ef887f074}{Int2\+Str}} (uint8\+\_\+t $\ast$p\+\_\+str, uint32\+\_\+t intnum)
+\begin{DoxyCompactList}\small\item\em Convert an Integer to a string. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaab8b3a69d10dbf68bb55867ff18aae74}{Str2\+Int}} (uint8\+\_\+t $\ast$p\+\_\+inputstr, uint32\+\_\+t $\ast$p\+\_\+intnum)
+\begin{DoxyCompactList}\small\item\em Convert a string to an integer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\+\_\+\+Put\+String}} (const char $\ast$p\+\_\+string)
+\begin{DoxyCompactList}\small\item\em Print a string on the Hyper\+Terminal. \end{DoxyCompactList}\item 
+H\+A\+L\+\_\+\+Status\+Type\+Def \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gab476c3cee432ba1028f646a93ce0f252}{Serial\+\_\+\+Put\+Byte}} (uint8\+\_\+t param)
+\begin{DoxyCompactList}\small\item\em Transmit a byte to the Hyper\+Terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p___main_ga5c35f370199ce80141e8ca5ef887f074}\label{group___s_t_m32_l0xx___i_a_p___main_ga5c35f370199ce80141e8ca5ef887f074}} 
+\index{STM32L0xx\_IAP\_Main@{STM32L0xx\_IAP\_Main}!Int2Str@{Int2Str}}
+\index{Int2Str@{Int2Str}!STM32L0xx\_IAP\_Main@{STM32L0xx\_IAP\_Main}}
+\doxysubsubsection{\texorpdfstring{Int2Str()}{Int2Str()}}
+{\footnotesize\ttfamily void Int2\+Str (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+str,  }\item[{uint32\+\_\+t}]{intnum }\end{DoxyParamCaption})}
+
+
+
+Convert an Integer to a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+str} & The string output pointer \\
+\hline
+{\em intnum} & The integer to be converted \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 61 of file common.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62 \{}
+\DoxyCodeLine{63   uint32\_t i, divider = 1000000000, pos = 0, status = 0;}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65   \textcolor{keywordflow}{for} (i = 0; i < 10; i++)}
+\DoxyCodeLine{66   \{}
+\DoxyCodeLine{67     p\_str[pos++] = (intnum / divider) + 48;}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     intnum = intnum \% divider;}
+\DoxyCodeLine{70     divider /= 10;}
+\DoxyCodeLine{71     \textcolor{keywordflow}{if} ((p\_str[pos-\/1] == \textcolor{charliteral}{'0'}) \& (status == 0))}
+\DoxyCodeLine{72     \{}
+\DoxyCodeLine{73       pos = 0;}
+\DoxyCodeLine{74     \}}
+\DoxyCodeLine{75     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{76     \{}
+\DoxyCodeLine{77       status++;}
+\DoxyCodeLine{78     \}}
+\DoxyCodeLine{79   \}}
+\DoxyCodeLine{80 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p___main_gab476c3cee432ba1028f646a93ce0f252}\label{group___s_t_m32_l0xx___i_a_p___main_gab476c3cee432ba1028f646a93ce0f252}} 
+\index{STM32L0xx\_IAP\_Main@{STM32L0xx\_IAP\_Main}!Serial\_PutByte@{Serial\_PutByte}}
+\index{Serial\_PutByte@{Serial\_PutByte}!STM32L0xx\_IAP\_Main@{STM32L0xx\_IAP\_Main}}
+\doxysubsubsection{\texorpdfstring{Serial\_PutByte()}{Serial\_PutByte()}}
+{\footnotesize\ttfamily H\+A\+L\+\_\+\+Status\+Type\+Def Serial\+\_\+\+Put\+Byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{param }\end{DoxyParamCaption})}
+
+
+
+Transmit a byte to the Hyper\+Terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & The byte to be sent \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em H\+A\+L\+\_\+\+Status\+Type\+Def} & H\+A\+L\+\_\+\+OK if OK \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 180 of file common.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{181 \{}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183     \textcolor{keywordflow}{return} HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, \&param, 1, \mbox{\hyperlink{common_8h_ad380e380939eae9a5d6c8f228f0fe7c8}{TX\_TIMEOUT}});}
+\DoxyCodeLine{184 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}\label{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}} 
+\index{STM32L0xx\_IAP\_Main@{STM32L0xx\_IAP\_Main}!Serial\_PutString@{Serial\_PutString}}
+\index{Serial\_PutString@{Serial\_PutString}!STM32L0xx\_IAP\_Main@{STM32L0xx\_IAP\_Main}}
+\doxysubsubsection{\texorpdfstring{Serial\_PutString()}{Serial\_PutString()}}
+{\footnotesize\ttfamily void Serial\+\_\+\+Put\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{p\+\_\+string }\end{DoxyParamCaption})}
+
+
+
+Print a string on the Hyper\+Terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+string} & The string to be printed \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 164 of file common.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{165 \{}
+\DoxyCodeLine{166     uint16\_t length = 0;}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168     \textcolor{keywordflow}{while} (p\_string[length] != \textcolor{charliteral}{'\(\backslash\)0'})}
+\DoxyCodeLine{169     \{}
+\DoxyCodeLine{170         length++;}
+\DoxyCodeLine{171     \}}
+\DoxyCodeLine{172     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)p\_string, length, \mbox{\hyperlink{common_8h_ad380e380939eae9a5d6c8f228f0fe7c8}{TX\_TIMEOUT}});}
+\DoxyCodeLine{173 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/da9/group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p___main_gaab8b3a69d10dbf68bb55867ff18aae74}\label{group___s_t_m32_l0xx___i_a_p___main_gaab8b3a69d10dbf68bb55867ff18aae74}} 
+\index{STM32L0xx\_IAP\_Main@{STM32L0xx\_IAP\_Main}!Str2Int@{Str2Int}}
+\index{Str2Int@{Str2Int}!STM32L0xx\_IAP\_Main@{STM32L0xx\_IAP\_Main}}
+\doxysubsubsection{\texorpdfstring{Str2Int()}{Str2Int()}}
+{\footnotesize\ttfamily uint32\+\_\+t Str2\+Int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+inputstr,  }\item[{uint32\+\_\+t $\ast$}]{p\+\_\+intnum }\end{DoxyParamCaption})}
+
+
+
+Convert a string to an integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+inputstr} & The string to be converted \\
+\hline
+{\em p\+\_\+intnum} & The integer value \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 1} & Correct 0\+: Error \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 89 of file common.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{90 \{}
+\DoxyCodeLine{91   uint32\_t i = 0, res = 0;}
+\DoxyCodeLine{92   uint32\_t val = 0;}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94   \textcolor{keywordflow}{if} ((p\_inputstr[0] == \textcolor{charliteral}{'0'}) \&\& ((p\_inputstr[1] == \textcolor{charliteral}{'x'}) || (p\_inputstr[1] == \textcolor{charliteral}{'X'})))}
+\DoxyCodeLine{95   \{}
+\DoxyCodeLine{96     i = 2;}
+\DoxyCodeLine{97     \textcolor{keywordflow}{while} ( ( i < 11 ) \&\& ( p\_inputstr[i] != \textcolor{charliteral}{'\(\backslash\)0'} ) )}
+\DoxyCodeLine{98     \{}
+\DoxyCodeLine{99       \textcolor{keywordflow}{if} (\mbox{\hyperlink{common_8h_a4363025e88c9fedc707806eeda2a8018}{ISVALIDHEX}}(p\_inputstr[i]))}
+\DoxyCodeLine{100       \{}
+\DoxyCodeLine{101         val = (val << 4) + \mbox{\hyperlink{common_8h_aa70dc0eb955bace4a7693e10286eda0b}{CONVERTHEX}}(p\_inputstr[i]);}
+\DoxyCodeLine{102       \}}
+\DoxyCodeLine{103       \textcolor{keywordflow}{else}}
+\DoxyCodeLine{104       \{}
+\DoxyCodeLine{105         \textcolor{comment}{/* Return 0, Invalid input */}}
+\DoxyCodeLine{106         res = 0;}
+\DoxyCodeLine{107         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{108       \}}
+\DoxyCodeLine{109       i++;}
+\DoxyCodeLine{110     \}}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112     \textcolor{comment}{/* valid result */}}
+\DoxyCodeLine{113     \textcolor{keywordflow}{if} (p\_inputstr[i] == \textcolor{charliteral}{'\(\backslash\)0'})}
+\DoxyCodeLine{114     \{}
+\DoxyCodeLine{115       *p\_intnum = val;}
+\DoxyCodeLine{116       res = 1;}
+\DoxyCodeLine{117     \}}
+\DoxyCodeLine{118   \}}
+\DoxyCodeLine{119   \textcolor{keywordflow}{else} \textcolor{comment}{/* max 10-\/digit decimal input */}}
+\DoxyCodeLine{120   \{}
+\DoxyCodeLine{121     \textcolor{keywordflow}{while} ( ( i < 11 ) \&\& ( res != 1 ) )}
+\DoxyCodeLine{122     \{}
+\DoxyCodeLine{123       \textcolor{keywordflow}{if} (p\_inputstr[i] == \textcolor{charliteral}{'\(\backslash\)0'})}
+\DoxyCodeLine{124       \{}
+\DoxyCodeLine{125         *p\_intnum = val;}
+\DoxyCodeLine{126         \textcolor{comment}{/* return 1 */}}
+\DoxyCodeLine{127         res = 1;}
+\DoxyCodeLine{128       \}}
+\DoxyCodeLine{129       \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (((p\_inputstr[i] == \textcolor{charliteral}{'k'}) || (p\_inputstr[i] == \textcolor{charliteral}{'K'})) \&\& (i > 0))}
+\DoxyCodeLine{130       \{}
+\DoxyCodeLine{131         val = val << 10;}
+\DoxyCodeLine{132         *p\_intnum = val;}
+\DoxyCodeLine{133         res = 1;}
+\DoxyCodeLine{134       \}}
+\DoxyCodeLine{135       \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (((p\_inputstr[i] == \textcolor{charliteral}{'m'}) || (p\_inputstr[i] == \textcolor{charliteral}{'M'})) \&\& (i > 0))}
+\DoxyCodeLine{136       \{}
+\DoxyCodeLine{137         val = val << 20;}
+\DoxyCodeLine{138         *p\_intnum = val;}
+\DoxyCodeLine{139         res = 1;}
+\DoxyCodeLine{140       \}}
+\DoxyCodeLine{141       \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{common_8h_abd5882ed1f9c954af66cae8e3a2b33d3}{ISVALIDDEC}}(p\_inputstr[i]))}
+\DoxyCodeLine{142       \{}
+\DoxyCodeLine{143         val = val * 10 + \mbox{\hyperlink{common_8h_a6af16c8f6382d9fd2bb142cd7044d494}{CONVERTDEC}}(p\_inputstr[i]);}
+\DoxyCodeLine{144       \}}
+\DoxyCodeLine{145       \textcolor{keywordflow}{else}}
+\DoxyCodeLine{146       \{}
+\DoxyCodeLine{147         \textcolor{comment}{/* return 0, Invalid input */}}
+\DoxyCodeLine{148         res = 0;}
+\DoxyCodeLine{149         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{150       \}}
+\DoxyCodeLine{151       i++;}
+\DoxyCodeLine{152     \}}
+\DoxyCodeLine{153   \}}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155   \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{156 \}}
+
+\end{DoxyCode}

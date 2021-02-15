@@ -1,0 +1,52 @@
+<map id="monitor::serial_consume" name="monitor::serial_consume">
+<area shape="rect" id="node1" title=" " alt="" coords="5,762,169,789"/>
+<area shape="rect" id="node2" href="$d0/d62/classmain__controller.html#aec5ef5e31323c05d41c011ad1aa87280" title=" " alt="" coords="454,71,590,112"/>
+<area shape="rect" id="node3" href="$d0/d62/classmain__controller.html#afcff358419258d740b0a56b848c697b8" title=" " alt="" coords="233,392,361,433"/>
+<area shape="rect" id="node4" href="$db/da0/classmonitor.html#ac1e299d711d8797dd0eb18f3bc741bcf" title=" " alt="" coords="240,458,353,485"/>
+<area shape="rect" id="node5" href="$db/da0/classmonitor.html#a251d86b7e557f7034e827bc0ce3556a0" title=" " alt="" coords="239,509,354,535"/>
+<area shape="rect" id="node6" href="$db/da0/classmonitor.html#a44d3a944702bb3d06fb11ba06c18a469" title=" " alt="" coords="237,559,356,586"/>
+<area shape="rect" id="node9" href="$db/da0/classmonitor.html#aea2c6caef5260a07720d497666def7d3" title=" " alt="" coords="233,290,360,317"/>
+<area shape="rect" id="node11" href="$db/da0/classmonitor.html#adcac746523f8195709c15efdc38a3c70" title=" " alt="" coords="235,711,358,738"/>
+<area shape="rect" id="node15" href="$db/da0/classmonitor.html#a7df931b8b46e23b69a43afa630a255c5" title=" " alt="" coords="241,1515,353,1542"/>
+<area shape="rect" id="node16" href="$db/da0/classmonitor.html#a8bf188c8e0b81087bd20deddfe5cee0d" title=" " alt="" coords="219,762,375,789"/>
+<area shape="rect" id="node19" href="$db/da0/classmonitor.html#a9bfc3d6e385507f1a4755b9effd6b8ac" title=" " alt="" coords="217,841,376,867"/>
+<area shape="rect" id="node21" href="$db/da0/classmonitor.html#abb361a7df2cf34741c44007309f48974" title=" " alt="" coords="224,175,369,202"/>
+<area shape="rect" id="node23" href="$d7/d77/class_peripherial_devices.html#addba7220ab2d6ea26b238445224f6e65" title=" " alt="" coords="458,5,586,47"/>
+<area shape="rect" id="node26" href="$db/da0/classmonitor.html#a669bc55c7fe57bfc77dce54366db1033" title=" " alt="" coords="239,1566,354,1593"/>
+<area shape="rect" id="node27" href="$db/da0/classmonitor.html#a823acc5758111b76747863285989c059" title=" " alt="" coords="237,661,356,687"/>
+<area shape="rect" id="node28" href="$db/da0/classmonitor.html#ac9094370ddd943c4f98aa9fc8c35697f" title=" " alt="" coords="237,1617,356,1643"/>
+<area shape="rect" id="node31" href="$db/da0/classmonitor.html#ab9fba5b964e5ff30293cfa164d62ad6d" title=" " alt="" coords="464,1558,580,1585"/>
+<area shape="rect" id="node33" href="$db/da0/classmonitor.html#a1086fea0737d9a8949b5d1ae54d981b2" title=" " alt="" coords="237,950,356,977"/>
+<area shape="rect" id="node35" href="$db/da0/classmonitor.html#a14e841dd51ac7cfd663d950fb2c6cd70" title=" " alt="" coords="451,1305,593,1331"/>
+<area shape="rect" id="node37" href="$db/da0/classmonitor.html#a41dcd50d5e1f3c0daa606c30a66dfd1a" title=" " alt="" coords="450,1355,594,1382"/>
+<area shape="rect" id="node38" href="$db/da0/classmonitor.html#ab8df9034e8027d14226d69f85fd4aeef" title=" " alt="" coords="449,1254,595,1281"/>
+<area shape="rect" id="node39" href="$db/da0/classmonitor.html#aecacad23e5c1893ef08946e5708ff5c3" title=" " alt="" coords="218,74,375,101"/>
+<area shape="rect" id="node40" href="$db/da0/classmonitor.html#a218ef163eebcd78a055a485f5136bf3d" title=" " alt="" coords="217,1051,376,1078"/>
+<area shape="rect" id="node42" href="$db/da0/classmonitor.html#aa7d0bb926e8346e5bc6d1ab353518bd1" title=" " alt="" coords="233,1145,360,1187"/>
+<area shape="rect" id="node44" href="$db/da0/classmonitor.html#ae601ba86cd76b8c2aa89d0557628efbf" title=" " alt="" coords="219,239,375,266"/>
+<area shape="rect" id="node45" href="$d7/d77/class_peripherial_devices.html#a3a0173c0b6a9417f77048ec5809d73c9" title=" " alt="" coords="458,267,586,308"/>
+<area shape="rect" id="node46" href="$db/da0/classmonitor.html#a942c6bf405628a6460f387dde2e3f919" title=" " alt="" coords="449,449,595,475"/>
+<area shape="rect" id="node47" href="$db/da0/classmonitor.html#a51b91d7b51f64f6f0f7fa79e11762dc0" title=" " alt="" coords="232,1363,361,1390"/>
+<area shape="rect" id="node49" href="$db/da0/classmonitor.html#a46de8c205e7609968fa2ff468bae4537" title=" " alt="" coords="237,1414,356,1441"/>
+<area shape="rect" id="node50" href="$d0/d62/classmain__controller.html#a7cf91a33919e40649dc926a9ef675ae8" title=" " alt="" coords="229,1668,365,1709"/>
+<area shape="rect" id="node7" href="$d0/d62/classmain__controller.html#ac343a1a72ab95d2dabfe4d782d25ebb0" title=" " alt="" coords="454,332,590,373"/>
+<area shape="rect" id="node8" href="$d2/dcf/class_debug_helper.html#ab825d1cd6f99c3f4449671d853cb5276" title=" " alt="" coords="451,398,593,425"/>
+<area shape="rect" id="node10" href="$d0/d62/classmain__controller.html#a8ad52343eb5bbdeae6c9881d4d44da3c" title=" " alt="" coords="454,201,590,243"/>
+<area shape="rect" id="node12" href="$df/d62/class_mem__ctrl.html#a91fcdb427c1e74dbd83e219251d14c35" title=" " alt="" coords="464,550,580,577"/>
+<area shape="rect" id="node14" href="$d0/d62/classmain__controller.html#a2264c08a7d1c0b6f766ee76ff3975e9c" title=" " alt="" coords="668,1102,840,1129"/>
+<area shape="rect" id="node13" href="$d2/d01/class_memory.html#a617c560509848b0d2dbd40086573a819" title=" " alt="" coords="699,550,809,577"/>
+<area shape="rect" id="node17" href="$df/d62/class_mem__ctrl.html#ae85dff1f0412d3995db4dc27f12d9e83" title=" " alt="" coords="449,768,595,809"/>
+<area shape="rect" id="node18" href="$d0/d62/classmain__controller.html#a9d78abf1a6f3d2b201eed3ebcfe272d8" title=" " alt="" coords="454,703,590,744"/>
+<area shape="rect" id="node20" href="$df/d62/class_mem__ctrl.html#a2e66c31e000c571a2c7ef5b5f2f78ab2" title=" " alt="" coords="424,833,620,875"/>
+<area shape="rect" id="node22" href="$d0/d62/classmain__controller.html#ac7cfadb0e33ef85903b3832dd29bb92d" title=" " alt="" coords="437,136,607,177"/>
+<area shape="rect" id="node24" href="$d7/d77/class_peripherial_devices.html#a28f503545bf784ce79e0ce4815b71842" title=" " alt="" coords="690,5,818,47"/>
+<area shape="rect" id="node25" href="$d6/d2e/class_c_s__reg.html#a9d840bf50a001ee76443fc88f07e8d1b" title=" " alt="" coords="685,173,823,199"/>
+<area shape="rect" id="node29" href="$d0/d62/classmain__controller.html#abea910effb099d96cea78a16eef68c8a" title=" " alt="" coords="454,1609,590,1651"/>
+<area shape="rect" id="node30" href="$d6/d0f/class_screen__ctrl.html#ac101f90b243ffbb985ed7f530778fd5e" title=" " alt="" coords="439,1675,605,1702"/>
+<area shape="rect" id="node32" href="$df/d62/class_mem__ctrl.html#aa9ca21741259055eec2a9174f23a0e19" title=" " alt="" coords="888,1355,997,1382"/>
+<area shape="rect" id="node34" href="$df/d62/class_mem__ctrl.html#ae27c6130e170e6c6a3f98631b5be5cdc" title=" " alt="" coords="457,950,587,977"/>
+<area shape="rect" id="node36" href="$df/d62/class_mem__ctrl.html#a8d48ee9a4626922b251d843a08bbd3ae" title=" " alt="" coords="699,1355,809,1382"/>
+<area shape="rect" id="node41" href="$df/d62/class_mem__ctrl.html#a2e4081d6a11f1da091c1892d09df8c92" title=" " alt="" coords="443,1051,601,1078"/>
+<area shape="rect" id="node43" href="$df/d62/class_mem__ctrl.html#a926c13416fbb1004c26a6eca4fbe42a1" title=" " alt="" coords="441,1153,603,1179"/>
+<area shape="rect" id="node48" href="$d3/de2/group___s_t_m32_l0xx___i_a_p.html#gae6fffe39f7afd74d76a311217db8cff1" title="Display the Main Menu on HyperTerminal." alt="" coords="477,1406,567,1433"/>
+</map>

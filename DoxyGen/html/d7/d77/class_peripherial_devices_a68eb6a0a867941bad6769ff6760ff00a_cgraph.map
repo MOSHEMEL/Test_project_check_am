@@ -1,0 +1,6 @@
+<map id="PeripherialDevices::read_fire_button_press" name="PeripherialDevices::read_fire_button_press">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,167,65"/>
+<area shape="rect" id="node2" href="$d7/d77/class_peripherial_devices.html#af9686ab99359c3b861a8d63dd84bd913" title=" " alt="" coords="215,23,343,65"/>
+<area shape="rect" id="node3" href="$d6/d2e/class_c_s__reg.html#a0fb7487892cc0c3a65fc78aa90c613c4" title=" " alt="" coords="405,5,535,32"/>
+<area shape="rect" id="node4" href="$df/d19/class_s_t_a_t_u_s__reg.html#af171d497240ab066b156dee2c102234c" title=" " alt="" coords="391,56,549,83"/>
+</map>

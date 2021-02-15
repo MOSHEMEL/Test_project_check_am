@@ -1,0 +1,366 @@
+\hypertarget{class_peripherial_devices}{}\doxysection{Peripherial\+Devices Class Reference}
+\label{class_peripherial_devices}\index{PeripherialDevices@{PeripherialDevices}}
+
+
+{\ttfamily \#include $<$peripherial\+\_\+controller.\+h$>$}
+
+
+
+Collaboration diagram for Peripherial\+Devices\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d18/class_peripherial_devices__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_peripherial_devices_ac58434528600dcfc38aff4e61067d0d5}{Peripherial\+Devices}} (\mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}} $\ast$cs, \mbox{\hyperlink{class_s_t_a_t_u_s__reg}{S\+T\+A\+T\+U\+S\+\_\+reg}} $\ast$status)
+\item 
+\mbox{\hyperlink{class_peripherial_devices_a8d22c89e1d45b3839b7f283f90b80d27}{$\sim$\+Peripherial\+Devices}} ()
+\item 
+void \mbox{\hyperlink{class_peripherial_devices_af9686ab99359c3b861a8d63dd84bd913}{read}} (void)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_peripherial_devices_a001bf2c8bbceb96fe2bdc61f321927ad}{read\+\_\+counter}} (void)
+\item 
+void \mbox{\hyperlink{class_peripherial_devices_a28f503545bf784ce79e0ce4815b71842}{clear\+\_\+counter}} (void)
+\item 
+void \mbox{\hyperlink{class_peripherial_devices_addba7220ab2d6ea26b238445224f6e65}{start\+\_\+motor}} (void)
+\item 
+void \mbox{\hyperlink{class_peripherial_devices_a3a0173c0b6a9417f77048ec5809d73c9}{stop\+\_\+motor}} (void)
+\item 
+bool \mbox{\hyperlink{class_peripherial_devices_a68eb6a0a867941bad6769ff6760ff00a}{read\+\_\+fire\+\_\+button\+\_\+press}} (void)
+\item 
+bool \mbox{\hyperlink{class_peripherial_devices_a10e61d2e94a9f0be7bd40ce8642694d4}{toggle\+\_\+motor}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}} $\ast$ \mbox{\hyperlink{class_peripherial_devices_a6d34b71f2d7caace3f81a1604522bd6e}{Cs\+Register}}
+\item 
+\mbox{\hyperlink{class_s_t_a_t_u_s__reg}{S\+T\+A\+T\+U\+S\+\_\+reg}} $\ast$ \mbox{\hyperlink{class_peripherial_devices_afd9fca5358dceb981c6241d22e00cb50}{Status\+Reg}}
+\item 
+bool \mbox{\hyperlink{class_peripherial_devices_a54ef5d03a162af65b92b1c63da89f893}{motor\+\_\+running}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 4 of file peripherial\+\_\+controller.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_peripherial_devices_ac58434528600dcfc38aff4e61067d0d5}\label{class_peripherial_devices_ac58434528600dcfc38aff4e61067d0d5}} 
+\index{PeripherialDevices@{PeripherialDevices}!PeripherialDevices@{PeripherialDevices}}
+\index{PeripherialDevices@{PeripherialDevices}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{PeripherialDevices()}{PeripherialDevices()}}
+{\footnotesize\ttfamily Peripherial\+Devices\+::\+Peripherial\+Devices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}} $\ast$}]{cs,  }\item[{\mbox{\hyperlink{class_s_t_a_t_u_s__reg}{S\+T\+A\+T\+U\+S\+\_\+reg}} $\ast$}]{status }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file peripherial\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     this-\/>\mbox{\hyperlink{class_peripherial_devices_a6d34b71f2d7caace3f81a1604522bd6e}{CsRegister}} = cs;}
+\DoxyCodeLine{8     this-\/>\mbox{\hyperlink{class_peripherial_devices_afd9fca5358dceb981c6241d22e00cb50}{StatusReg}} = status;}
+\DoxyCodeLine{9     this-\/>\mbox{\hyperlink{class_peripherial_devices_a54ef5d03a162af65b92b1c63da89f893}{motor\_running}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherial_devices_a8d22c89e1d45b3839b7f283f90b80d27}\label{class_peripherial_devices_a8d22c89e1d45b3839b7f283f90b80d27}} 
+\index{PeripherialDevices@{PeripherialDevices}!````~PeripherialDevices@{$\sim$PeripherialDevices}}
+\index{````~PeripherialDevices@{$\sim$PeripherialDevices}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{$\sim$PeripherialDevices()}{~PeripherialDevices()}}
+{\footnotesize\ttfamily Peripherial\+Devices\+::$\sim$\+Peripherial\+Devices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file peripherial\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_peripherial_devices_a28f503545bf784ce79e0ce4815b71842}\label{class_peripherial_devices_a28f503545bf784ce79e0ce4815b71842}} 
+\index{PeripherialDevices@{PeripherialDevices}!clear\_counter@{clear\_counter}}
+\index{clear\_counter@{clear\_counter}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{clear\_counter()}{clear\_counter()}}
+{\footnotesize\ttfamily void Peripherial\+Devices\+::clear\+\_\+counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file peripherial\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     this-\/>\mbox{\hyperlink{class_peripherial_devices_a6d34b71f2d7caace3f81a1604522bd6e}{CsRegister}}-\/>\mbox{\hyperlink{class_c_s__reg_a93421b06c619434894958b45e2355b2b}{cs\_clear\_opto\_counter}}(\mbox{\hyperlink{group___s_p_i_gab811d8c6ff3a505312d3276590444289}{LOW}});}
+\DoxyCodeLine{26     HAL\_Delay(1);}
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{d7/d77/class_peripherial_devices_a28f503545bf784ce79e0ce4815b71842_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d77/class_peripherial_devices_a28f503545bf784ce79e0ce4815b71842_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_peripherial_devices_af9686ab99359c3b861a8d63dd84bd913}\label{class_peripherial_devices_af9686ab99359c3b861a8d63dd84bd913}} 
+\index{PeripherialDevices@{PeripherialDevices}!read@{read}}
+\index{read@{read}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void Peripherial\+Devices\+::read (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 16 of file peripherial\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18     this-\/>\mbox{\hyperlink{class_peripherial_devices_a6d34b71f2d7caace3f81a1604522bd6e}{CsRegister}}-\/>\mbox{\hyperlink{class_c_s__reg_a0fb7487892cc0c3a65fc78aa90c613c4}{cs\_status}}(\mbox{\hyperlink{group___s_p_i_gab811d8c6ff3a505312d3276590444289}{LOW}});}
+\DoxyCodeLine{19     this-\/>\mbox{\hyperlink{class_peripherial_devices_afd9fca5358dceb981c6241d22e00cb50}{StatusReg}}-\/>\mbox{\hyperlink{class_s_t_a_t_u_s__reg_af171d497240ab066b156dee2c102234c}{get\_value}}();}
+\DoxyCodeLine{20     this-\/>\mbox{\hyperlink{class_peripherial_devices_a6d34b71f2d7caace3f81a1604522bd6e}{CsRegister}}-\/>\mbox{\hyperlink{class_c_s__reg_a0fb7487892cc0c3a65fc78aa90c613c4}{cs\_status}}(\mbox{\hyperlink{group___s_p_i_ga5bb885982ff66a2e0a0a45a8ee9c35e2}{HIGH}});}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{d7/d77/class_peripherial_devices_af9686ab99359c3b861a8d63dd84bd913_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d77/class_peripherial_devices_af9686ab99359c3b861a8d63dd84bd913_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_peripherial_devices_a001bf2c8bbceb96fe2bdc61f321927ad}\label{class_peripherial_devices_a001bf2c8bbceb96fe2bdc61f321927ad}} 
+\index{PeripherialDevices@{PeripherialDevices}!read\_counter@{read\_counter}}
+\index{read\_counter@{read\_counter}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{read\_counter()}{read\_counter()}}
+{\footnotesize\ttfamily uint32\+\_\+t Peripherial\+Devices\+::read\+\_\+counter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file peripherial\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29 \{}
+\DoxyCodeLine{30     this-\/>\mbox{\hyperlink{class_peripherial_devices_af9686ab99359c3b861a8d63dd84bd913}{read}}();}
+\DoxyCodeLine{31     HAL\_Delay(1);}
+\DoxyCodeLine{32     this-\/>\mbox{\hyperlink{class_peripherial_devices_a28f503545bf784ce79e0ce4815b71842}{clear\_counter}}();}
+\DoxyCodeLine{33     \textcolor{keywordflow}{return} (uint32\_t)this-\/>\mbox{\hyperlink{class_peripherial_devices_afd9fca5358dceb981c6241d22e00cb50}{StatusReg}}-\/>\mbox{\hyperlink{class_s_t_a_t_u_s__reg_a80014314707514597f2347efcaa1a521}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a1d91ac69a4fbb9458609645bf69fe885}{nibbles}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a60ce89fb57bf61ec412bb102e9511d10}{nibble\_OPTO}};}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d77/class_peripherial_devices_a001bf2c8bbceb96fe2bdc61f321927ad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d77/class_peripherial_devices_a001bf2c8bbceb96fe2bdc61f321927ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_peripherial_devices_a68eb6a0a867941bad6769ff6760ff00a}\label{class_peripherial_devices_a68eb6a0a867941bad6769ff6760ff00a}} 
+\index{PeripherialDevices@{PeripherialDevices}!read\_fire\_button\_press@{read\_fire\_button\_press}}
+\index{read\_fire\_button\_press@{read\_fire\_button\_press}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{read\_fire\_button\_press()}{read\_fire\_button\_press()}}
+{\footnotesize\ttfamily bool Peripherial\+Devices\+::read\+\_\+fire\+\_\+button\+\_\+press (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 61 of file peripherial\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62 \{}
+\DoxyCodeLine{63     this-\/>\mbox{\hyperlink{class_peripherial_devices_af9686ab99359c3b861a8d63dd84bd913}{read}}();}
+\DoxyCodeLine{64     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_peripherial_devices_afd9fca5358dceb981c6241d22e00cb50}{StatusReg}}-\/>\mbox{\hyperlink{class_s_t_a_t_u_s__reg_a80014314707514597f2347efcaa1a521}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__status_afe3075aa590deed1ec8a4548babd0f5f}{bits}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a732cd0ace74615df4dd0ff6c2bba33f7}{FIRE\_STATUS}};}
+\DoxyCodeLine{65 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d77/class_peripherial_devices_a68eb6a0a867941bad6769ff6760ff00a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_peripherial_devices_addba7220ab2d6ea26b238445224f6e65}\label{class_peripherial_devices_addba7220ab2d6ea26b238445224f6e65}} 
+\index{PeripherialDevices@{PeripherialDevices}!start\_motor@{start\_motor}}
+\index{start\_motor@{start\_motor}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{start\_motor()}{start\_motor()}}
+{\footnotesize\ttfamily void Peripherial\+Devices\+::start\+\_\+motor (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file peripherial\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37 \{}
+\DoxyCodeLine{38     this-\/>\mbox{\hyperlink{class_peripherial_devices_a28f503545bf784ce79e0ce4815b71842}{clear\_counter}}();}
+\DoxyCodeLine{39     this-\/>\mbox{\hyperlink{class_peripherial_devices_a6d34b71f2d7caace3f81a1604522bd6e}{CsRegister}}-\/>\mbox{\hyperlink{class_c_s__reg_a9d840bf50a001ee76443fc88f07e8d1b}{motor\_cmd}}(\mbox{\hyperlink{group___auxilary_ga4de68a8865591371f968a847882c6d7d}{MOTOR\_RUN}});}
+\DoxyCodeLine{40     this-\/>\mbox{\hyperlink{class_peripherial_devices_a54ef5d03a162af65b92b1c63da89f893}{motor\_running}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d77/class_peripherial_devices_addba7220ab2d6ea26b238445224f6e65_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d77/class_peripherial_devices_addba7220ab2d6ea26b238445224f6e65_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_peripherial_devices_a3a0173c0b6a9417f77048ec5809d73c9}\label{class_peripherial_devices_a3a0173c0b6a9417f77048ec5809d73c9}} 
+\index{PeripherialDevices@{PeripherialDevices}!stop\_motor@{stop\_motor}}
+\index{stop\_motor@{stop\_motor}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{stop\_motor()}{stop\_motor()}}
+{\footnotesize\ttfamily void Peripherial\+Devices\+::stop\+\_\+motor (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file peripherial\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{}
+\DoxyCodeLine{45     this-\/>\mbox{\hyperlink{class_peripherial_devices_a6d34b71f2d7caace3f81a1604522bd6e}{CsRegister}}-\/>\mbox{\hyperlink{class_c_s__reg_a9d840bf50a001ee76443fc88f07e8d1b}{motor\_cmd}}(\mbox{\hyperlink{group___auxilary_gaa61a6c32d7187d20f8ea4171b8bf8dd7}{MOTOR\_STOP}});}
+\DoxyCodeLine{46     this-\/>\mbox{\hyperlink{class_peripherial_devices_a54ef5d03a162af65b92b1c63da89f893}{motor\_running}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{47 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{d7/d77/class_peripherial_devices_a3a0173c0b6a9417f77048ec5809d73c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d77/class_peripherial_devices_a3a0173c0b6a9417f77048ec5809d73c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_peripherial_devices_a10e61d2e94a9f0be7bd40ce8642694d4}\label{class_peripherial_devices_a10e61d2e94a9f0be7bd40ce8642694d4}} 
+\index{PeripherialDevices@{PeripherialDevices}!toggle\_motor@{toggle\_motor}}
+\index{toggle\_motor@{toggle\_motor}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{toggle\_motor()}{toggle\_motor()}}
+{\footnotesize\ttfamily bool Peripherial\+Devices\+::toggle\+\_\+motor (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 49 of file peripherial\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{}
+\DoxyCodeLine{51     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_peripherial_devices_a54ef5d03a162af65b92b1c63da89f893}{motor\_running}})}
+\DoxyCodeLine{52     \{}
+\DoxyCodeLine{53         this-\/>\mbox{\hyperlink{class_peripherial_devices_a3a0173c0b6a9417f77048ec5809d73c9}{stop\_motor}}();}
+\DoxyCodeLine{54     \}}
+\DoxyCodeLine{55     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{56     \{}
+\DoxyCodeLine{57         this-\/>\mbox{\hyperlink{class_peripherial_devices_addba7220ab2d6ea26b238445224f6e65}{start\_motor}}();}
+\DoxyCodeLine{58     \}}
+\DoxyCodeLine{59     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_peripherial_devices_a54ef5d03a162af65b92b1c63da89f893}{motor\_running}};}
+\DoxyCodeLine{60 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d77/class_peripherial_devices_a10e61d2e94a9f0be7bd40ce8642694d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d77/class_peripherial_devices_a10e61d2e94a9f0be7bd40ce8642694d4_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_peripherial_devices_a6d34b71f2d7caace3f81a1604522bd6e}\label{class_peripherial_devices_a6d34b71f2d7caace3f81a1604522bd6e}} 
+\index{PeripherialDevices@{PeripherialDevices}!CsRegister@{CsRegister}}
+\index{CsRegister@{CsRegister}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{CsRegister}{CsRegister}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}}$\ast$ Peripherial\+Devices\+::\+Cs\+Register}
+
+
+
+Definition at line 7 of file peripherial\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_peripherial_devices_a54ef5d03a162af65b92b1c63da89f893}\label{class_peripherial_devices_a54ef5d03a162af65b92b1c63da89f893}} 
+\index{PeripherialDevices@{PeripherialDevices}!motor\_running@{motor\_running}}
+\index{motor\_running@{motor\_running}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{motor\_running}{motor\_running}}
+{\footnotesize\ttfamily bool Peripherial\+Devices\+::motor\+\_\+running}
+
+
+
+Definition at line 9 of file peripherial\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_peripherial_devices_afd9fca5358dceb981c6241d22e00cb50}\label{class_peripherial_devices_afd9fca5358dceb981c6241d22e00cb50}} 
+\index{PeripherialDevices@{PeripherialDevices}!StatusReg@{StatusReg}}
+\index{StatusReg@{StatusReg}!PeripherialDevices@{PeripherialDevices}}
+\doxysubsubsection{\texorpdfstring{StatusReg}{StatusReg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_s_t_a_t_u_s__reg}{S\+T\+A\+T\+U\+S\+\_\+reg}}$\ast$ Peripherial\+Devices\+::\+Status\+Reg}
+
+
+
+Definition at line 8 of file peripherial\+\_\+controller.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{peripherial__controller_8h}{peripherial\+\_\+controller.\+h}}\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/\mbox{\hyperlink{peripherial__controller_8cpp}{peripherial\+\_\+controller.\+cpp}}\end{DoxyCompactItemize}

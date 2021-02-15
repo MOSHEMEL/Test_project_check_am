@@ -1,0 +1,27 @@
+var class_memory =
+[
+    [ "Memory", "d2/d01/class_memory.html#a9e7e90e0db5a7b1dd15c19cf496d2fa6", null ],
+    [ "~Memory", "d2/d01/class_memory.html#a0ffa9759ebbf103f11132a505b93bdc0", null ],
+    [ "check_id", "d2/d01/class_memory.html#aec48667c082f7b36c77211f7c707edc5", null ],
+    [ "erase", "d2/d01/class_memory.html#a617c560509848b0d2dbd40086573a819", null ],
+    [ "erase", "d2/d01/class_memory.html#a3fd9bbcb3d888b9f9ab465306b2bc1ac", null ],
+    [ "print_status", "d2/d01/class_memory.html#a36ba4739105d5bc76d2382ab07410cdb", null ],
+    [ "read", "d2/d01/class_memory.html#a31027c2b6257e0f059e499955dd25237", null ],
+    [ "read256", "d2/d01/class_memory.html#a14196b4392b152adb8041edbd9e79dd5", null ],
+    [ "read_status_register1", "d2/d01/class_memory.html#a9910263cfa6b21725406d8173c07b3fc", null ],
+    [ "read_status_register2", "d2/d01/class_memory.html#aa89a36c5cbc7934db9b53c1988dbb802", null ],
+    [ "write", "d2/d01/class_memory.html#ab2c1caf7f5aa2d449aacaddf20f00652", null ],
+    [ "write_disable", "d2/d01/class_memory.html#a1fa2d43a2098b9be605ba5574a4f4ecb", null ],
+    [ "write_enable", "d2/d01/class_memory.html#aed28e5150da795f051b91a78ab3abd0c", null ],
+    [ "write_status_register", "d2/d01/class_memory.html#a1b7fb352eb90b5c6e44278dcaa929853", null ],
+    [ "CS", "d2/d01/class_memory.html#acf94d0376bba460fa88a97dfd1b27cc6", null ],
+    [ "cursor", "d2/d01/class_memory.html#ac43d9bf14477c68f2e831302a53fbd83", null ],
+    [ "date", "d2/d01/class_memory.html#ad81207aee3196cd0106f5e4e2530fcb1", null ],
+    [ "id", "d2/d01/class_memory.html#a7cc6400cee02d0bcbd26dfc09cb4c4a6", null ],
+    [ "id_valid", "d2/d01/class_memory.html#a32e14a921e36c510d3deaa976a77ddd6", null ],
+    [ "max_count", "d2/d01/class_memory.html#aa486017257c4ac2f30bfe69e4fa47aa5", null ],
+    [ "name", "d2/d01/class_memory.html#a0f2570b60ebd1f8689e0e30a28c3f88b", null ],
+    [ "pulses", "d2/d01/class_memory.html#a952b630a9fad17f5ff01860af1400545", null ],
+    [ "serial_number", "d2/d01/class_memory.html#a67a06ce841989636f775f7e82c0a7584", null ],
+    [ "status16_t", "d2/d01/class_memory.html#acf09ce347bef9f59dba7a4e97c788617", null ]
+];

@@ -1,0 +1,20 @@
+<map id="Memory::write_enable" name="Memory::write_enable">
+<area shape="rect" id="node1" title=" " alt="" coords="912,259,1061,285"/>
+<area shape="rect" id="node2" href="$df/d62/class_mem__ctrl.html#a91fcdb427c1e74dbd83e219251d14c35" title=" " alt="" coords="523,56,639,83"/>
+<area shape="rect" id="node8" href="$df/d62/class_mem__ctrl.html#a8d48ee9a4626922b251d843a08bbd3ae" title=" " alt="" coords="728,259,839,285"/>
+<area shape="rect" id="node17" href="$df/d62/class_mem__ctrl.html#a926c13416fbb1004c26a6eca4fbe42a1" title=" " alt="" coords="703,389,864,416"/>
+<area shape="rect" id="node3" href="$d3/de2/group___s_t_m32_l0xx___i_a_p.html#ga6f15d7faa1bc40df5c4b00d8541824f5" title="This function does an erase of all user flash area." alt="" coords="329,5,447,32"/>
+<area shape="rect" id="node4" href="$db/da0/classmonitor.html#adcac746523f8195709c15efdc38a3c70" title=" " alt="" coords="327,157,449,184"/>
+<area shape="rect" id="node7" href="$db/da0/classmonitor.html#a823acc5758111b76747863285989c059" title=" " alt="" coords="329,56,447,83"/>
+<area shape="rect" id="node5" href="$db/da0/classmonitor.html#a516685f198b69b69a2bc8529c2e8a4b0" title=" " alt="" coords="104,259,268,285"/>
+<area shape="rect" id="node6" href="$df/d0a/main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,207,56,233"/>
+<area shape="rect" id="node9" href="$d0/d62/classmain__controller.html#a165f3e950025bd4a5f5690d43d607c44" title=" " alt="" coords="111,146,261,187"/>
+<area shape="rect" id="node10" href="$d3/de2/group___s_t_m32_l0xx___i_a_p.html#gaea33603cb203008ae319c39685c49aca" title="This function writes a data buffer in flash (data are 32&#45;bit aligned)." alt="" coords="524,309,639,336"/>
+<area shape="rect" id="node11" href="$d3/de2/group___s_t_m32_l0xx___i_a_p.html#gae6fffe39f7afd74d76a311217db8cff1" title="Display the Main Menu on HyperTerminal." alt="" coords="537,208,626,235"/>
+<area shape="rect" id="node13" href="$db/da0/classmonitor.html#a14e841dd51ac7cfd663d950fb2c6cd70" title=" " alt="" coords="317,309,459,336"/>
+<area shape="rect" id="node14" href="$db/da0/classmonitor.html#a41dcd50d5e1f3c0daa606c30a66dfd1a" title=" " alt="" coords="316,360,460,387"/>
+<area shape="rect" id="node15" href="$db/da0/classmonitor.html#ab8df9034e8027d14226d69f85fd4aeef" title=" " alt="" coords="508,411,655,437"/>
+<area shape="rect" id="node16" href="$db/da0/classmonitor.html#a46de8c205e7609968fa2ff468bae4537" title=" " alt="" coords="522,157,641,184"/>
+<area shape="rect" id="node12" href="$db/da0/classmonitor.html#a51b91d7b51f64f6f0f7fa79e11762dc0" title=" " alt="" coords="323,259,453,285"/>
+<area shape="rect" id="node18" href="$db/da0/classmonitor.html#aa7d0bb926e8346e5bc6d1ab353518bd1" title=" " alt="" coords="518,462,645,503"/>
+</map>

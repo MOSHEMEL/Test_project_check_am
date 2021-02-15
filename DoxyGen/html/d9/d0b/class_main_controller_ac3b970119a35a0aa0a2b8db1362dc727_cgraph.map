@@ -1,0 +1,10 @@
+<map id="MainController::init_state" name="MainController::init_state">
+<area shape="rect" id="node1" title=" " alt="" coords="5,165,136,207"/>
+<area shape="rect" id="node2" href="$df/d62/class_mem__ctrl.html#ae85dff1f0412d3995db4dc27f12d9e83" title=" " alt="" coords="209,5,355,47"/>
+<area shape="rect" id="node3" href="$df/d62/class_mem__ctrl.html#aed37efb821eb5801e5e88a6d577fb697" title=" " alt="" coords="428,42,563,69"/>
+<area shape="rect" id="node4" href="$df/d62/class_mem__ctrl.html#a68a25e091d4f139ea8e4f767e8dd93e6" title=" " alt="" coords="184,122,380,149"/>
+<area shape="rect" id="node5" href="$df/d62/class_mem__ctrl.html#ad8b715c9dff173ff208a36a210afe664" title=" " alt="" coords="215,173,349,199"/>
+<area shape="rect" id="node6" href="$df/d62/class_mem__ctrl.html#aea2d5b6c381972783928763bf78c3263" title=" " alt="" coords="212,223,352,250"/>
+<area shape="rect" id="node7" href="$d6/d0f/class_screen__ctrl.html#a44a54035276c9e6cff8faa5a727d394b" title="send error" alt="" coords="211,275,353,316"/>
+<area shape="rect" id="node8" href="$d6/d0f/class_screen__ctrl.html#adf2c77e3f1cef8be94932d36ea540de5" title="show warning of remaining less than 1000" alt="" coords="215,340,349,381"/>
+</map>

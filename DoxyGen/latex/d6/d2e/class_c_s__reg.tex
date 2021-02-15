@@ -1,0 +1,322 @@
+\hypertarget{class_c_s__reg}{}\doxysection{C\+S\+\_\+reg Class Reference}
+\label{class_c_s__reg}\index{CS\_reg@{CS\_reg}}
+
+
+{\ttfamily \#include $<$cs\+\_\+register.\+h$>$}
+
+
+
+Collaboration diagram for C\+S\+\_\+reg\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{df/d43/class_c_s__reg__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_s__reg_a5f482afc2f3255af4bd97109149d79b4}{C\+S\+\_\+reg}} ()
+\item 
+\mbox{\hyperlink{class_c_s__reg_a3c24315b2142799ffc9f823ec16d855d}{$\sim$\+C\+S\+\_\+reg}} ()
+\item 
+void \mbox{\hyperlink{class_c_s__reg_a962e46d31b757ce8c0f999799d292118}{print\+\_\+current}} (void)
+\item 
+void \mbox{\hyperlink{class_c_s__reg_a00a15a2b6fb78c9d49c5ca7df336aa9e}{cs1}} (G\+P\+I\+O\+\_\+\+Pin\+State)
+\item 
+void \mbox{\hyperlink{class_c_s__reg_ad39faa428851fd5a75c1fde5b7f6344c}{cs2}} (G\+P\+I\+O\+\_\+\+Pin\+State)
+\item 
+void \mbox{\hyperlink{class_c_s__reg_a85c775e51b5ecda43fdf81ea2c2354d4}{cs3}} (G\+P\+I\+O\+\_\+\+Pin\+State)
+\item 
+void \mbox{\hyperlink{class_c_s__reg_a0fb7487892cc0c3a65fc78aa90c613c4}{cs\+\_\+status}} (G\+P\+I\+O\+\_\+\+Pin\+State)
+\item 
+void \mbox{\hyperlink{class_c_s__reg_aa945fb7731bea42a747b802f715b8d4c}{cs\+\_\+a2d}} (G\+P\+I\+O\+\_\+\+Pin\+State)
+\item 
+void \mbox{\hyperlink{class_c_s__reg_a93421b06c619434894958b45e2355b2b}{cs\+\_\+clear\+\_\+opto\+\_\+counter}} (G\+P\+I\+O\+\_\+\+Pin\+State status)
+\item 
+void \mbox{\hyperlink{class_c_s__reg_a9d840bf50a001ee76443fc88f07e8d1b}{motor\+\_\+cmd}} (bool \mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{unionbyte8__t__reg__cs}{byte8\+\_\+t\+\_\+reg\+\_\+cs}} \mbox{\hyperlink{class_c_s__reg_aba1d5772deac325a3e1fb3dfe4a0720c}{current}}
+\item 
+\mbox{\hyperlink{unionbyte8__t__reg__readback}{byte8\+\_\+t\+\_\+reg\+\_\+readback}} \mbox{\hyperlink{class_c_s__reg_a34f151003259f583a0972b0ec1f187f4}{readback\+\_\+register}}
+\item 
+bool \mbox{\hyperlink{class_c_s__reg_aa08353e592c00b71461b8e2ef41be8ee}{cs1\+\_\+value}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 57 of file cs\+\_\+register.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_s__reg_a5f482afc2f3255af4bd97109149d79b4}\label{class_c_s__reg_a5f482afc2f3255af4bd97109149d79b4}} 
+\index{CS\_reg@{CS\_reg}!CS\_reg@{CS\_reg}}
+\index{CS\_reg@{CS\_reg}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{CS\_reg()}{CS\_reg()}}
+{\footnotesize\ttfamily C\+S\+\_\+reg\+::\+C\+S\+\_\+reg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file cs\+\_\+register.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     this-\/>\mbox{\hyperlink{class_c_s__reg_a34f151003259f583a0972b0ec1f187f4}{readback\_register}}.\mbox{\hyperlink{unionbyte8__t__reg__readback_a6c1e82f1f14ad1aeb40ba8ddfd7a9049}{value}} = 0;}
+\DoxyCodeLine{11     this-\/>\mbox{\hyperlink{class_c_s__reg_aa08353e592c00b71461b8e2ef41be8ee}{cs1\_value}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{12     this-\/>\mbox{\hyperlink{class_c_s__reg_aba1d5772deac325a3e1fb3dfe4a0720c}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_a8aca2f4afab73cebc989914d841f2b2a}{value}} = 0;}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_s__reg_a3c24315b2142799ffc9f823ec16d855d}\label{class_c_s__reg_a3c24315b2142799ffc9f823ec16d855d}} 
+\index{CS\_reg@{CS\_reg}!````~CS\_reg@{$\sim$CS\_reg}}
+\index{````~CS\_reg@{$\sim$CS\_reg}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{$\sim$CS\_reg()}{~CS\_reg()}}
+{\footnotesize\ttfamily C\+S\+\_\+reg\+::$\sim$\+C\+S\+\_\+reg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file cs\+\_\+register.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_s__reg_a00a15a2b6fb78c9d49c5ca7df336aa9e}\label{class_c_s__reg_a00a15a2b6fb78c9d49c5ca7df336aa9e}} 
+\index{CS\_reg@{CS\_reg}!cs1@{cs1}}
+\index{cs1@{cs1}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{cs1()}{cs1()}}
+{\footnotesize\ttfamily void C\+S\+\_\+reg\+::cs1 (\begin{DoxyParamCaption}\item[{G\+P\+I\+O\+\_\+\+Pin\+State}]{status }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file cs\+\_\+register.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32     cs\_generic(\mbox{\hyperlink{group___s_p_i_ga5bb885982ff66a2e0a0a45a8ee9c35e2}{HIGH}}, \mbox{\hyperlink{cs__register_8h_a1ebe15c0ea10b6a1aa30b8acd81eab3aa0088197a07fdc8ce5e8999442e44a7bf}{Y0}}); \textcolor{comment}{// Y0 doesn't matter}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_a6c88374ad2a9fcc8efa17ace56fddf15}{CHIP\_SELECT\_MCU\_MEM\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_aa535a2712b9020ef6055addae93753af}{CHIP\_SELECT\_MCU\_MEM\_Pin}}, status);}
+\DoxyCodeLine{35     this-\/>\mbox{\hyperlink{class_c_s__reg_aa08353e592c00b71461b8e2ef41be8ee}{cs1\_value}} = (bool)status;}
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_s__reg_ad39faa428851fd5a75c1fde5b7f6344c}\label{class_c_s__reg_ad39faa428851fd5a75c1fde5b7f6344c}} 
+\index{CS\_reg@{CS\_reg}!cs2@{cs2}}
+\index{cs2@{cs2}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{cs2()}{cs2()}}
+{\footnotesize\ttfamily void C\+S\+\_\+reg\+::cs2 (\begin{DoxyParamCaption}\item[{G\+P\+I\+O\+\_\+\+Pin\+State}]{status }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file cs\+\_\+register.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61 \{}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     \textcolor{keyword}{enum} \mbox{\hyperlink{cs__register_8h_a1ebe15c0ea10b6a1aa30b8acd81eab3a}{cs\_decoder}} picked\_cs = \mbox{\hyperlink{cs__register_8h_a1ebe15c0ea10b6a1aa30b8acd81eab3aa7dcd7ed0775a5f37116d6062e041aa54}{CS\_MEM2}};}
+\DoxyCodeLine{64     cs\_generic(status, picked\_cs);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_s__reg_a85c775e51b5ecda43fdf81ea2c2354d4}\label{class_c_s__reg_a85c775e51b5ecda43fdf81ea2c2354d4}} 
+\index{CS\_reg@{CS\_reg}!cs3@{cs3}}
+\index{cs3@{cs3}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{cs3()}{cs3()}}
+{\footnotesize\ttfamily void C\+S\+\_\+reg\+::cs3 (\begin{DoxyParamCaption}\item[{G\+P\+I\+O\+\_\+\+Pin\+State}]{status }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file cs\+\_\+register.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68 \{}
+\DoxyCodeLine{69     \textcolor{keyword}{enum} \mbox{\hyperlink{cs__register_8h_a1ebe15c0ea10b6a1aa30b8acd81eab3a}{cs\_decoder}} picked\_cs = \mbox{\hyperlink{cs__register_8h_a1ebe15c0ea10b6a1aa30b8acd81eab3aa2b7531ef24851662ae45f2d3dab68db6}{CS\_MEM3}};}
+\DoxyCodeLine{70     cs\_generic(status, picked\_cs);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_s__reg_aa945fb7731bea42a747b802f715b8d4c}\label{class_c_s__reg_aa945fb7731bea42a747b802f715b8d4c}} 
+\index{CS\_reg@{CS\_reg}!cs\_a2d@{cs\_a2d}}
+\index{cs\_a2d@{cs\_a2d}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{cs\_a2d()}{cs\_a2d()}}
+{\footnotesize\ttfamily void C\+S\+\_\+reg\+::cs\+\_\+a2d (\begin{DoxyParamCaption}\item[{G\+P\+I\+O\+\_\+\+Pin\+State}]{status }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file cs\+\_\+register.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80 \{}
+\DoxyCodeLine{81     \textcolor{keyword}{enum} \mbox{\hyperlink{cs__register_8h_a1ebe15c0ea10b6a1aa30b8acd81eab3a}{cs\_decoder}} picked\_cs = \mbox{\hyperlink{cs__register_8h_a1ebe15c0ea10b6a1aa30b8acd81eab3aa720240654b6b596bf5c1970619a45c68}{CS\_A2D}};}
+\DoxyCodeLine{82     cs\_generic(status, picked\_cs);}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d2e/class_c_s__reg_aa945fb7731bea42a747b802f715b8d4c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_s__reg_a93421b06c619434894958b45e2355b2b}\label{class_c_s__reg_a93421b06c619434894958b45e2355b2b}} 
+\index{CS\_reg@{CS\_reg}!cs\_clear\_opto\_counter@{cs\_clear\_opto\_counter}}
+\index{cs\_clear\_opto\_counter@{cs\_clear\_opto\_counter}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{cs\_clear\_opto\_counter()}{cs\_clear\_opto\_counter()}}
+{\footnotesize\ttfamily void C\+S\+\_\+reg\+::cs\+\_\+clear\+\_\+opto\+\_\+counter (\begin{DoxyParamCaption}\item[{G\+P\+I\+O\+\_\+\+Pin\+State}]{status }\end{DoxyParamCaption})}
+
+
+
+Definition at line 84 of file cs\+\_\+register.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{86 \{}
+\DoxyCodeLine{87     \textcolor{keyword}{enum} \mbox{\hyperlink{cs__register_8h_a1ebe15c0ea10b6a1aa30b8acd81eab3a}{cs\_decoder}} picked\_cs = \mbox{\hyperlink{cs__register_8h_a1ebe15c0ea10b6a1aa30b8acd81eab3aa2563a7d382ef0c8cbf5db234719e2a15}{OPTO\_CNT\_CLRN}};}
+\DoxyCodeLine{88     cs\_generic(status, picked\_cs);}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d2e/class_c_s__reg_a93421b06c619434894958b45e2355b2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_s__reg_a0fb7487892cc0c3a65fc78aa90c613c4}\label{class_c_s__reg_a0fb7487892cc0c3a65fc78aa90c613c4}} 
+\index{CS\_reg@{CS\_reg}!cs\_status@{cs\_status}}
+\index{cs\_status@{cs\_status}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{cs\_status()}{cs\_status()}}
+{\footnotesize\ttfamily void C\+S\+\_\+reg\+::cs\+\_\+status (\begin{DoxyParamCaption}\item[{G\+P\+I\+O\+\_\+\+Pin\+State}]{status }\end{DoxyParamCaption})}
+
+
+
+Definition at line 72 of file cs\+\_\+register.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74 \{}
+\DoxyCodeLine{75     \textcolor{keyword}{enum} \mbox{\hyperlink{cs__register_8h_a1ebe15c0ea10b6a1aa30b8acd81eab3a}{cs\_decoder}} picked\_cs = \mbox{\hyperlink{cs__register_8h_a1ebe15c0ea10b6a1aa30b8acd81eab3aa9278dbf93a152bb4c05dda71aa4022af}{CS\_STATUS}};}
+\DoxyCodeLine{76     cs\_generic(status, picked\_cs);}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d2e/class_c_s__reg_a0fb7487892cc0c3a65fc78aa90c613c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_s__reg_a9d840bf50a001ee76443fc88f07e8d1b}\label{class_c_s__reg_a9d840bf50a001ee76443fc88f07e8d1b}} 
+\index{CS\_reg@{CS\_reg}!motor\_cmd@{motor\_cmd}}
+\index{motor\_cmd@{motor\_cmd}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{motor\_cmd()}{motor\_cmd()}}
+{\footnotesize\ttfamily void C\+S\+\_\+reg\+::motor\+\_\+cmd (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+
+
+Definition at line 147 of file cs\+\_\+register.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149 \{}
+\DoxyCodeLine{150     \textcolor{keywordflow}{if} (\mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}})}
+\DoxyCodeLine{151     \{}
+\DoxyCodeLine{152         this-\/>\mbox{\hyperlink{class_c_s__reg_aba1d5772deac325a3e1fb3dfe4a0720c}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_aa57fdbee223e16f5c0c4b487827f4f15}{bits}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_a3c72b673fc5c3b74415beb4e32b6b92e}{INA\_MOTOR}} = 1;}
+\DoxyCodeLine{153         this-\/>\mbox{\hyperlink{class_c_s__reg_aba1d5772deac325a3e1fb3dfe4a0720c}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_aa57fdbee223e16f5c0c4b487827f4f15}{bits}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_a3900fab8e09e49c40407452c55c0728a}{INB\_MOTOR}} = 0;}
+\DoxyCodeLine{154     \}}
+\DoxyCodeLine{155     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{156     \{}
+\DoxyCodeLine{157         this-\/>\mbox{\hyperlink{class_c_s__reg_aba1d5772deac325a3e1fb3dfe4a0720c}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_aa57fdbee223e16f5c0c4b487827f4f15}{bits}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_a3c72b673fc5c3b74415beb4e32b6b92e}{INA\_MOTOR}} = 0;}
+\DoxyCodeLine{158         this-\/>\mbox{\hyperlink{class_c_s__reg_aba1d5772deac325a3e1fb3dfe4a0720c}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_aa57fdbee223e16f5c0c4b487827f4f15}{bits}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_a3900fab8e09e49c40407452c55c0728a}{INB\_MOTOR}} = 0;}
+\DoxyCodeLine{159     \}}
+\DoxyCodeLine{160     uint8\_t value = \mbox{\hyperlink{class_c_s__reg_aba1d5772deac325a3e1fb3dfe4a0720c}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_a8aca2f4afab73cebc989914d841f2b2a}{value}};}
+\DoxyCodeLine{161     this-\/>set\_value(value);}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d2e/class_c_s__reg_a9d840bf50a001ee76443fc88f07e8d1b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_s__reg_a962e46d31b757ce8c0f999799d292118}\label{class_c_s__reg_a962e46d31b757ce8c0f999799d292118}} 
+\index{CS\_reg@{CS\_reg}!print\_current@{print\_current}}
+\index{print\_current@{print\_current}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{print\_current()}{print\_current()}}
+{\footnotesize\ttfamily void C\+S\+\_\+reg\+::print\+\_\+current (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file cs\+\_\+register.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92 \{}
+\DoxyCodeLine{93     uint8\_t status[128];}
+\DoxyCodeLine{94     sprintf((\textcolor{keywordtype}{char}*)status,\textcolor{stringliteral}{"[\%d] INB\_MOTOR\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{95         \textcolor{stringliteral}{"[\%d] INA\_MOTOR\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{96         \textcolor{stringliteral}{"[\%08x] DECODER\(\backslash\)r\(\backslash\)n"},}
+\DoxyCodeLine{97         this-\/>\mbox{\hyperlink{class_c_s__reg_aba1d5772deac325a3e1fb3dfe4a0720c}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_aa57fdbee223e16f5c0c4b487827f4f15}{bits}}.\mbox{\hyperlink{unionbyte8__t__reg__cs_a3900fab8e09e49c40407452c55c0728a}{INB\_MOTOR}},}
+\DoxyCodeLine{98         this-\/>current.bits.INA\_MOTOR,}
+\DoxyCodeLine{99         this-\/>current.bits.DECODER);}
+\DoxyCodeLine{100     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, status, strlen((\textcolor{keywordtype}{char}*)status), 100);}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_s__reg_aa08353e592c00b71461b8e2ef41be8ee}\label{class_c_s__reg_aa08353e592c00b71461b8e2ef41be8ee}} 
+\index{CS\_reg@{CS\_reg}!cs1\_value@{cs1\_value}}
+\index{cs1\_value@{cs1\_value}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{cs1\_value}{cs1\_value}}
+{\footnotesize\ttfamily bool C\+S\+\_\+reg\+::cs1\+\_\+value}
+
+
+
+Definition at line 63 of file cs\+\_\+register.\+h.
+
+\mbox{\Hypertarget{class_c_s__reg_aba1d5772deac325a3e1fb3dfe4a0720c}\label{class_c_s__reg_aba1d5772deac325a3e1fb3dfe4a0720c}} 
+\index{CS\_reg@{CS\_reg}!current@{current}}
+\index{current@{current}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionbyte8__t__reg__cs}{byte8\+\_\+t\+\_\+reg\+\_\+cs}} C\+S\+\_\+reg\+::current}
+
+
+
+Definition at line 61 of file cs\+\_\+register.\+h.
+
+\mbox{\Hypertarget{class_c_s__reg_a34f151003259f583a0972b0ec1f187f4}\label{class_c_s__reg_a34f151003259f583a0972b0ec1f187f4}} 
+\index{CS\_reg@{CS\_reg}!readback\_register@{readback\_register}}
+\index{readback\_register@{readback\_register}!CS\_reg@{CS\_reg}}
+\doxysubsubsection{\texorpdfstring{readback\_register}{readback\_register}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionbyte8__t__reg__readback}{byte8\+\_\+t\+\_\+reg\+\_\+readback}} C\+S\+\_\+reg\+::readback\+\_\+register}
+
+
+
+Definition at line 62 of file cs\+\_\+register.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{cs__register_8h}{cs\+\_\+register.\+h}}\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/\mbox{\hyperlink{cs__register_8cpp}{cs\+\_\+register.\+cpp}}\end{DoxyCompactItemize}

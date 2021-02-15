@@ -1,0 +1,185 @@
+\hypertarget{rtc_8c}{}\doxysection{C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/rtc.c File Reference}
+\label{rtc_8c}\index{C:/Users/nicko/source/repos/APTX1\_1/Core/Src/rtc.c@{C:/Users/nicko/source/repos/APTX1\_1/Core/Src/rtc.c}}
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+Include dependency graph for rtc.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{d9/d37/rtc_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{rtc_8c_abf4accd1ce479030808e546f3d4642c9}{M\+X\+\_\+\+R\+T\+C\+\_\+\+Init}} (void)
+\item 
+void \mbox{\hyperlink{rtc_8c_a453bd7b485bdb49c54872947f546655c}{H\+A\+L\+\_\+\+R\+T\+C\+\_\+\+Msp\+Init}} (R\+T\+C\+\_\+\+Handle\+Type\+Def $\ast$rtc\+Handle)
+\item 
+void \mbox{\hyperlink{rtc_8c_a17b728569834d5a73fb8713b6a41806f}{H\+A\+L\+\_\+\+R\+T\+C\+\_\+\+Msp\+De\+Init}} (R\+T\+C\+\_\+\+Handle\+Type\+Def $\ast$rtc\+Handle)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+R\+T\+C\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8c_a17b728569834d5a73fb8713b6a41806f}\label{rtc_8c_a17b728569834d5a73fb8713b6a41806f}} 
+\index{rtc.c@{rtc.c}!HAL\_RTC\_MspDeInit@{HAL\_RTC\_MspDeInit}}
+\index{HAL\_RTC\_MspDeInit@{HAL\_RTC\_MspDeInit}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_RTC\_MspDeInit()}{HAL\_RTC\_MspDeInit()}}
+{\footnotesize\ttfamily void H\+A\+L\+\_\+\+R\+T\+C\+\_\+\+Msp\+De\+Init (\begin{DoxyParamCaption}\item[{R\+T\+C\+\_\+\+Handle\+Type\+Def $\ast$}]{rtc\+Handle }\end{DoxyParamCaption})}
+
+
+
+Definition at line 98 of file rtc.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99 \{}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101   \textcolor{keywordflow}{if}(rtcHandle-\/>Instance==RTC)}
+\DoxyCodeLine{102   \{}
+\DoxyCodeLine{103   \textcolor{comment}{/* USER CODE BEGIN RTC\_MspDeInit 0 */}}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105   \textcolor{comment}{/* USER CODE END RTC\_MspDeInit 0 */}}
+\DoxyCodeLine{106     \textcolor{comment}{/* Peripheral clock disable */}}
+\DoxyCodeLine{107     \_\_HAL\_RCC\_RTC\_DISABLE();}
+\DoxyCodeLine{108   \textcolor{comment}{/* USER CODE BEGIN RTC\_MspDeInit 1 */}}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110   \textcolor{comment}{/* USER CODE END RTC\_MspDeInit 1 */}}
+\DoxyCodeLine{111   \}}
+\DoxyCodeLine{112 \} }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{rtc_8c_a453bd7b485bdb49c54872947f546655c}\label{rtc_8c_a453bd7b485bdb49c54872947f546655c}} 
+\index{rtc.c@{rtc.c}!HAL\_RTC\_MspInit@{HAL\_RTC\_MspInit}}
+\index{HAL\_RTC\_MspInit@{HAL\_RTC\_MspInit}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_RTC\_MspInit()}{HAL\_RTC\_MspInit()}}
+{\footnotesize\ttfamily void H\+A\+L\+\_\+\+R\+T\+C\+\_\+\+Msp\+Init (\begin{DoxyParamCaption}\item[{R\+T\+C\+\_\+\+Handle\+Type\+Def $\ast$}]{rtc\+Handle }\end{DoxyParamCaption})}
+
+
+
+Definition at line 82 of file rtc.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83 \{}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85   \textcolor{keywordflow}{if}(rtcHandle-\/>Instance==RTC)}
+\DoxyCodeLine{86   \{}
+\DoxyCodeLine{87   \textcolor{comment}{/* USER CODE BEGIN RTC\_MspInit 0 */}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89   \textcolor{comment}{/* USER CODE END RTC\_MspInit 0 */}}
+\DoxyCodeLine{90     \textcolor{comment}{/* RTC clock enable */}}
+\DoxyCodeLine{91     \_\_HAL\_RCC\_RTC\_ENABLE();}
+\DoxyCodeLine{92   \textcolor{comment}{/* USER CODE BEGIN RTC\_MspInit 1 */}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94   \textcolor{comment}{/* USER CODE END RTC\_MspInit 1 */}}
+\DoxyCodeLine{95   \}}
+\DoxyCodeLine{96 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{rtc_8c_abf4accd1ce479030808e546f3d4642c9}\label{rtc_8c_abf4accd1ce479030808e546f3d4642c9}} 
+\index{rtc.c@{rtc.c}!MX\_RTC\_Init@{MX\_RTC\_Init}}
+\index{MX\_RTC\_Init@{MX\_RTC\_Init}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{MX\_RTC\_Init()}{MX\_RTC\_Init()}}
+{\footnotesize\ttfamily void M\+X\+\_\+\+R\+T\+C\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Initialize R\+TC Only
+
+Initialize R\+TC and set the Time and Date
+
+Enable the Time\+Stamp
+
+Definition at line 30 of file rtc.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32   RTC\_TimeTypeDef sTime = \{0\};}
+\DoxyCodeLine{33   RTC\_DateTypeDef sDate = \{0\};}
+\DoxyCodeLine{34 \textcolor{comment}{}}
+\DoxyCodeLine{35 \textcolor{comment}{  /** Initialize RTC Only }}
+\DoxyCodeLine{36 \textcolor{comment}{  */}}
+\DoxyCodeLine{37   \mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}.Instance = RTC;}
+\DoxyCodeLine{38   \mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}.Init.HourFormat = RTC\_HOURFORMAT\_24;}
+\DoxyCodeLine{39   \mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}.Init.AsynchPrediv = 127;}
+\DoxyCodeLine{40   \mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}.Init.SynchPrediv = 255;}
+\DoxyCodeLine{41   \mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}.Init.OutPut = RTC\_OUTPUT\_DISABLE;}
+\DoxyCodeLine{42   \mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}.Init.OutPutPolarity = RTC\_OUTPUT\_POLARITY\_HIGH;}
+\DoxyCodeLine{43   \mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}.Init.OutPutType = RTC\_OUTPUT\_TYPE\_OPENDRAIN;}
+\DoxyCodeLine{44   \textcolor{keywordflow}{if} (HAL\_RTC\_Init(\&\mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}) != HAL\_OK)}
+\DoxyCodeLine{45   \{}
+\DoxyCodeLine{46     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{47   \}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49   \textcolor{comment}{/* USER CODE BEGIN Check\_RTC\_BKUP */}}
+\DoxyCodeLine{50     }
+\DoxyCodeLine{51   \textcolor{comment}{/* USER CODE END Check\_RTC\_BKUP */}}
+\DoxyCodeLine{52 \textcolor{comment}{}}
+\DoxyCodeLine{53 \textcolor{comment}{  /** Initialize RTC and set the Time and Date }}
+\DoxyCodeLine{54 \textcolor{comment}{  */}}
+\DoxyCodeLine{55   sTime.Hours = 0x0;}
+\DoxyCodeLine{56   sTime.Minutes = 0x0;}
+\DoxyCodeLine{57   sTime.Seconds = 0x0;}
+\DoxyCodeLine{58   sTime.DayLightSaving = RTC\_DAYLIGHTSAVING\_NONE;}
+\DoxyCodeLine{59   sTime.StoreOperation = RTC\_STOREOPERATION\_RESET;}
+\DoxyCodeLine{60   \textcolor{keywordflow}{if} (HAL\_RTC\_SetTime(\&\mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}, \&sTime, RTC\_FORMAT\_BCD) != HAL\_OK)}
+\DoxyCodeLine{61   \{}
+\DoxyCodeLine{62     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{63   \}}
+\DoxyCodeLine{64   sDate.WeekDay = RTC\_WEEKDAY\_MONDAY;}
+\DoxyCodeLine{65   sDate.Month = RTC\_MONTH\_JANUARY;}
+\DoxyCodeLine{66   sDate.Date = 0x1;}
+\DoxyCodeLine{67   sDate.Year = 0x0;}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69   \textcolor{keywordflow}{if} (HAL\_RTC\_SetDate(\&\mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}, \&sDate, RTC\_FORMAT\_BCD) != HAL\_OK)}
+\DoxyCodeLine{70   \{}
+\DoxyCodeLine{71     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{72   \}\textcolor{comment}{}}
+\DoxyCodeLine{73 \textcolor{comment}{  /** Enable the TimeStamp }}
+\DoxyCodeLine{74 \textcolor{comment}{  */}}
+\DoxyCodeLine{75   \textcolor{keywordflow}{if} (HAL\_RTCEx\_SetTimeStamp(\&\mbox{\hyperlink{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}, RTC\_TIMESTAMPEDGE\_RISING, RTC\_TIMESTAMPPIN\_DEFAULT) != HAL\_OK)}
+\DoxyCodeLine{76   \{}
+\DoxyCodeLine{77     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{78   \}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{d4/dcc/rtc_8c_abf4accd1ce479030808e546f3d4642c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{d4/dcc/rtc_8c_abf4accd1ce479030808e546f3d4642c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}\label{rtc_8c_aa0c7fca836406ade332e1e3f1039d8ab}} 
+\index{rtc.c@{rtc.c}!hrtc@{hrtc}}
+\index{hrtc@{hrtc}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{hrtc}{hrtc}}
+{\footnotesize\ttfamily R\+T\+C\+\_\+\+Handle\+Type\+Def hrtc}
+
+File Name \+: R\+T\+C.\+c Description \+: This file provides code for the configuration of the R\+TC instances.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause 
+
+Definition at line 27 of file rtc.\+c.
+

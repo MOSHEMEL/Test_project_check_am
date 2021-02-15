@@ -1,0 +1,18 @@
+<map id="MainController::idle_state" name="MainController::idle_state">
+<area shape="rect" id="node1" title=" " alt="" coords="5,253,139,295"/>
+<area shape="rect" id="node2" href="$d4/d2b/class_adc_controller.html#a0b68f65fa2ff32d520453116211d618c" title=" " alt="" coords="188,5,337,47"/>
+<area shape="rect" id="node3" href="$d9/d0b/class_main_controller.html#ae00b05c00889aadfd355ccc0745a298a" title=" " alt="" coords="192,71,333,112"/>
+<area shape="rect" id="node4" href="$d7/d77/class_peripherial_devices.html#af9686ab99359c3b861a8d63dd84bd913" title=" " alt="" coords="199,136,327,177"/>
+<area shape="rect" id="node7" href="$d4/d2b/class_adc_controller.html#ab90340b9e1e08cd530b4a68701ddafe8" title=" " alt="" coords="196,202,329,229"/>
+<area shape="rect" id="node9" href="$d7/d77/class_peripherial_devices.html#addba7220ab2d6ea26b238445224f6e65" title=" " alt="" coords="199,253,327,295"/>
+<area shape="rect" id="node13" href="$d6/d0f/class_screen__ctrl.html#a5d4780f9929fd65439d081b1990dca36" title="update the battery" alt="" coords="195,319,330,360"/>
+<area shape="rect" id="node14" href="$d6/d0f/class_screen__ctrl.html#a001f12c46c4c676920b324cd17e1d7da" title="update pulse symbol on screen" alt="" coords="195,384,330,425"/>
+<area shape="rect" id="node15" href="$d6/d0f/class_screen__ctrl.html#a25d3f4f7131af154987713f1fd3e3d49" title="update the pressure" alt="" coords="195,449,330,491"/>
+<area shape="rect" id="node16" href="$d6/d0f/class_screen__ctrl.html#a632112f7efc861929e8d4b0e29d0e45d" title="show percentage of AM usage on screen" alt="" coords="187,515,339,556"/>
+<area shape="rect" id="node5" href="$d6/d2e/class_c_s__reg.html#a0fb7487892cc0c3a65fc78aa90c613c4" title=" " alt="" coords="401,97,531,123"/>
+<area shape="rect" id="node6" href="$df/d19/class_s_t_a_t_u_s__reg.html#af171d497240ab066b156dee2c102234c" title=" " alt="" coords="387,147,545,174"/>
+<area shape="rect" id="node8" href="$d6/d2e/class_c_s__reg.html#aa945fb7731bea42a747b802f715b8d4c" title=" " alt="" coords="409,202,523,229"/>
+<area shape="rect" id="node10" href="$d7/d77/class_peripherial_devices.html#a28f503545bf784ce79e0ce4815b71842" title=" " alt="" coords="402,253,530,295"/>
+<area shape="rect" id="node12" href="$d6/d2e/class_c_s__reg.html#a9d840bf50a001ee76443fc88f07e8d1b" title=" " alt="" coords="397,319,535,346"/>
+<area shape="rect" id="node11" href="$d6/d2e/class_c_s__reg.html#a93421b06c619434894958b45e2355b2b" title=" " alt="" coords="593,253,748,295"/>
+</map>

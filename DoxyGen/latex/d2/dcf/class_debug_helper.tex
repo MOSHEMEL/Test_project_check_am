@@ -1,0 +1,284 @@
+\hypertarget{class_debug_helper}{}\doxysection{Debug\+Helper Class Reference}
+\label{class_debug_helper}\index{DebugHelper@{DebugHelper}}
+
+
+{\ttfamily \#include $<$debug\+\_\+facilities.\+h$>$}
+
+
+
+Collaboration diagram for Debug\+Helper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{d1/d4d/class_debug_helper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_debug_helper_a36b6e298996a2b968e0bed367b76deb3}{Debug\+Helper}} ()
+\item 
+\mbox{\hyperlink{class_debug_helper_af2c7f9e8e26b56b02ff6d4d8deeab578}{$\sim$\+Debug\+Helper}} ()
+\item 
+void \mbox{\hyperlink{class_debug_helper_ab825d1cd6f99c3f4449671d853cb5276}{update}} (void)
+\item 
+void \mbox{\hyperlink{class_debug_helper_aaab6c37ca3a5c40febbe276dec4fabe9}{update}} (uint32\+\_\+t value)
+\item 
+void \mbox{\hyperlink{class_debug_helper_aed3ae6a336f908faf35e0e5b08375336}{update}} (bool motor, bool pressure, bool mcu, bool apt, bool am)
+\item 
+void \mbox{\hyperlink{class_debug_helper_a8a5656980c710674053ca3fe800534ae}{show}} (uint32\+\_\+t value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_debug_helper_a9474c9f653c54670e8b529290e12c16a}{pressure\+\_\+ok}}
+\item 
+bool \mbox{\hyperlink{class_debug_helper_ae3c55e58aed1c461b7b8afc48f44cb45}{mcu\+\_\+ok}}
+\item 
+bool \mbox{\hyperlink{class_debug_helper_a0f438c6bd13fac78c14881206b0ef3ab}{apt\+\_\+ok}}
+\item 
+bool \mbox{\hyperlink{class_debug_helper_af44f56a4c9926bbd28c6f9e8b2253315}{am\+\_\+ok}}
+\item 
+bool \mbox{\hyperlink{class_debug_helper_aa631ce17ff943a29730626a673916a65}{motor\+\_\+run}}
+\item 
+\mbox{\hyperlink{unionbyte8__t__debug}{byte8\+\_\+t\+\_\+debug}} \mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\+\_\+fields}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 34 of file debug\+\_\+facilities.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_debug_helper_a36b6e298996a2b968e0bed367b76deb3}\label{class_debug_helper_a36b6e298996a2b968e0bed367b76deb3}} 
+\index{DebugHelper@{DebugHelper}!DebugHelper@{DebugHelper}}
+\index{DebugHelper@{DebugHelper}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{DebugHelper()}{DebugHelper()}}
+{\footnotesize\ttfamily Debug\+Helper\+::\+Debug\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file debug\+\_\+facilities.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6     this-\/>\mbox{\hyperlink{class_debug_helper_af44f56a4c9926bbd28c6f9e8b2253315}{am\_ok}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{7     this-\/>\mbox{\hyperlink{class_debug_helper_a0f438c6bd13fac78c14881206b0ef3ab}{apt\_ok}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{8     this-\/>\mbox{\hyperlink{class_debug_helper_ae3c55e58aed1c461b7b8afc48f44cb45}{mcu\_ok}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{9     this-\/>\mbox{\hyperlink{class_debug_helper_a9474c9f653c54670e8b529290e12c16a}{pressure\_ok}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{10     this-\/>\mbox{\hyperlink{class_debug_helper_aa631ce17ff943a29730626a673916a65}{motor\_run}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{11 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_debug_helper_af2c7f9e8e26b56b02ff6d4d8deeab578}\label{class_debug_helper_af2c7f9e8e26b56b02ff6d4d8deeab578}} 
+\index{DebugHelper@{DebugHelper}!````~DebugHelper@{$\sim$DebugHelper}}
+\index{````~DebugHelper@{$\sim$DebugHelper}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{$\sim$DebugHelper()}{~DebugHelper()}}
+{\footnotesize\ttfamily Debug\+Helper\+::$\sim$\+Debug\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 13 of file debug\+\_\+facilities.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_debug_helper_a8a5656980c710674053ca3fe800534ae}\label{class_debug_helper_a8a5656980c710674053ca3fe800534ae}} 
+\index{DebugHelper@{DebugHelper}!show@{show}}
+\index{show@{show}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Debug\+Helper\+::show (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 48 of file debug\+\_\+facilities.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49     \{}
+\DoxyCodeLine{50         value = ~value;}
+\DoxyCodeLine{51         HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_aa94a201d51e9a6f09d4f33faef26b1a0}{DEBUG\_AM\_OK\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_a9788880920b0b563ca0d8a1dff38fbc2}{DEBUG\_AM\_OK\_Pin}}, (GPIO\_PinState)(value \& (0x1 << 0)));}
+\DoxyCodeLine{52         HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_ab7e3eb7c5e52c22bed8a7b7a96be7668}{DEBUG\_APT\_OK\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_a30c13143b2bde3077fcef9ecb88b2b5e}{DEBUG\_APT\_OK\_Pin}}, (GPIO\_PinState)(value \& (0x1 << 1)));}
+\DoxyCodeLine{53         HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_a329b94b495729e739c1a7a9139925684}{DEBUG\_MCU\_OK\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_af6b633827d84da1e5a22be2c7515b9db}{DEBUG\_MCU\_OK\_Pin}}, (GPIO\_PinState)(value \& (0x1 << 2)));}
+\DoxyCodeLine{54         HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_a78c9869d86b7d499582a4baf1a600a4b}{DEBUG\_PRESSURE\_OK\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_a9385937e58e1312ea3b6a1c4b44b23cf}{DEBUG\_PRESSURE\_OK\_Pin}}, (GPIO\_PinState)(value \& (0x1 << 3)));}
+\DoxyCodeLine{55         HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_aeefe61d5158cb728d925f9d56f6f2463}{DEBUG\_MOTOR\_RUNNING\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_aa001567c1a7e58cb02d945c9b2a11f14}{DEBUG\_MOTOR\_RUNNING\_Pin}}, (GPIO\_PinState)(value \& (0x1 << 4)));}
+\DoxyCodeLine{56         HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_a7a82d65a33b95145d0ae14b6e6fbbaff}{DEBUG\_STATE\_1\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_ab1310b3551651d3142ed807b6f06cc77}{DEBUG\_STATE\_1\_Pin}}, (GPIO\_PinState)(value \& (0x1 << 5)));}
+\DoxyCodeLine{57         HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_a7a82d65a33b95145d0ae14b6e6fbbaff}{DEBUG\_STATE\_1\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_aeafaf498c5abc9e4ff48db81c907205e}{DEBUG\_STATE\_2\_Pin}}, (GPIO\_PinState)(value \& (0x1 << 6)));}
+\DoxyCodeLine{58         HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_a7a82d65a33b95145d0ae14b6e6fbbaff}{DEBUG\_STATE\_1\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_a711c127c342dc3eb5a2598f093b56a14}{DEBUG\_STATE\_3\_Pin}}, (GPIO\_PinState)(value \& (0x1 << 7)));}
+\DoxyCodeLine{59     \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d2/dcf/class_debug_helper_a8a5656980c710674053ca3fe800534ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_debug_helper_aed3ae6a336f908faf35e0e5b08375336}\label{class_debug_helper_aed3ae6a336f908faf35e0e5b08375336}} 
+\index{DebugHelper@{DebugHelper}!update@{update}}
+\index{update@{update}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Debug\+Helper\+::update (\begin{DoxyParamCaption}\item[{bool}]{motor,  }\item[{bool}]{pressure,  }\item[{bool}]{mcu,  }\item[{bool}]{apt,  }\item[{bool}]{am }\end{DoxyParamCaption})}
+
+
+
+Definition at line 17 of file debug\+\_\+facilities.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_a50d0073a63d4313df9938a5b1e98d40b}{bits}}.\mbox{\hyperlink{unionbyte8__t__debug_a198bf2cb1110ae1735e226548d419484}{DEBUG\_AM\_OK}} = am;}
+\DoxyCodeLine{20     this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_a50d0073a63d4313df9938a5b1e98d40b}{bits}}.\mbox{\hyperlink{unionbyte8__t__debug_ab766a88b295fac56ff40dbe09f4a14f6}{DEBUG\_APT\_OK}} = apt;}
+\DoxyCodeLine{21     this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_a50d0073a63d4313df9938a5b1e98d40b}{bits}}.\mbox{\hyperlink{unionbyte8__t__debug_ab1129f408817d49ef24f8c2ff98e0682}{DEBUG\_MCU\_OK}} = mcu;}
+\DoxyCodeLine{22     this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_a50d0073a63d4313df9938a5b1e98d40b}{bits}}.\mbox{\hyperlink{unionbyte8__t__debug_a083909297c282abc6794033cee01f9e0}{DEBUG\_PRESSURE\_OK}} = pressure;}
+\DoxyCodeLine{23     this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_a50d0073a63d4313df9938a5b1e98d40b}{bits}}.\mbox{\hyperlink{unionbyte8__t__debug_ac026cd66700c50dce18a544180b18535}{DEBUG\_MOTOR\_RUNNING}} = motor;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     this-\/>\mbox{\hyperlink{class_debug_helper_a8a5656980c710674053ca3fe800534ae}{show}}((uint32\_t)this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_aed29346d163073724f06ea053b21ef15}{value}});}
+\DoxyCodeLine{26 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d2/dcf/class_debug_helper_aed3ae6a336f908faf35e0e5b08375336_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_debug_helper_aaab6c37ca3a5c40febbe276dec4fabe9}\label{class_debug_helper_aaab6c37ca3a5c40febbe276dec4fabe9}} 
+\index{DebugHelper@{DebugHelper}!update@{update}}
+\index{update@{update}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Debug\+Helper\+::update (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file debug\+\_\+facilities.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37 \{}
+\DoxyCodeLine{38     this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_aed29346d163073724f06ea053b21ef15}{value}} = (uint8\_t)(value \& 0xff);}
+\DoxyCodeLine{39     this-\/>\mbox{\hyperlink{class_debug_helper_a8a5656980c710674053ca3fe800534ae}{show}}(value);}
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d2/dcf/class_debug_helper_aaab6c37ca3a5c40febbe276dec4fabe9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_debug_helper_ab825d1cd6f99c3f4449671d853cb5276}\label{class_debug_helper_ab825d1cd6f99c3f4449671d853cb5276}} 
+\index{DebugHelper@{DebugHelper}!update@{update}}
+\index{update@{update}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Debug\+Helper\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file debug\+\_\+facilities.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28 \{}
+\DoxyCodeLine{29     HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_aa94a201d51e9a6f09d4f33faef26b1a0}{DEBUG\_AM\_OK\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_a9788880920b0b563ca0d8a1dff38fbc2}{DEBUG\_AM\_OK\_Pin}}, (GPIO\_PinState)~this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_a50d0073a63d4313df9938a5b1e98d40b}{bits}}.\mbox{\hyperlink{unionbyte8__t__debug_a198bf2cb1110ae1735e226548d419484}{DEBUG\_AM\_OK}});}
+\DoxyCodeLine{30     HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_ab7e3eb7c5e52c22bed8a7b7a96be7668}{DEBUG\_APT\_OK\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_a30c13143b2bde3077fcef9ecb88b2b5e}{DEBUG\_APT\_OK\_Pin}}, (GPIO\_PinState)~this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_a50d0073a63d4313df9938a5b1e98d40b}{bits}}.\mbox{\hyperlink{unionbyte8__t__debug_ab766a88b295fac56ff40dbe09f4a14f6}{DEBUG\_APT\_OK}});}
+\DoxyCodeLine{31     HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_a329b94b495729e739c1a7a9139925684}{DEBUG\_MCU\_OK\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_af6b633827d84da1e5a22be2c7515b9db}{DEBUG\_MCU\_OK\_Pin}}, (GPIO\_PinState)~this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_a50d0073a63d4313df9938a5b1e98d40b}{bits}}.\mbox{\hyperlink{unionbyte8__t__debug_ab1129f408817d49ef24f8c2ff98e0682}{DEBUG\_MCU\_OK}});}
+\DoxyCodeLine{32     HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_a78c9869d86b7d499582a4baf1a600a4b}{DEBUG\_PRESSURE\_OK\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_a9385937e58e1312ea3b6a1c4b44b23cf}{DEBUG\_PRESSURE\_OK\_Pin}}, (GPIO\_PinState)~this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_a50d0073a63d4313df9938a5b1e98d40b}{bits}}.\mbox{\hyperlink{unionbyte8__t__debug_a083909297c282abc6794033cee01f9e0}{DEBUG\_PRESSURE\_OK}});}
+\DoxyCodeLine{33     HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_aeefe61d5158cb728d925f9d56f6f2463}{DEBUG\_MOTOR\_RUNNING\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_aa001567c1a7e58cb02d945c9b2a11f14}{DEBUG\_MOTOR\_RUNNING\_Pin}}, (GPIO\_PinState)~this-\/>\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_a50d0073a63d4313df9938a5b1e98d40b}{bits}}.\mbox{\hyperlink{unionbyte8__t__debug_ac026cd66700c50dce18a544180b18535}{DEBUG\_MOTOR\_RUNNING}});}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dcf/class_debug_helper_ab825d1cd6f99c3f4449671d853cb5276_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_debug_helper_af44f56a4c9926bbd28c6f9e8b2253315}\label{class_debug_helper_af44f56a4c9926bbd28c6f9e8b2253315}} 
+\index{DebugHelper@{DebugHelper}!am\_ok@{am\_ok}}
+\index{am\_ok@{am\_ok}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{am\_ok}{am\_ok}}
+{\footnotesize\ttfamily bool Debug\+Helper\+::am\+\_\+ok}
+
+
+
+Definition at line 40 of file debug\+\_\+facilities.\+h.
+
+\mbox{\Hypertarget{class_debug_helper_a0f438c6bd13fac78c14881206b0ef3ab}\label{class_debug_helper_a0f438c6bd13fac78c14881206b0ef3ab}} 
+\index{DebugHelper@{DebugHelper}!apt\_ok@{apt\_ok}}
+\index{apt\_ok@{apt\_ok}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{apt\_ok}{apt\_ok}}
+{\footnotesize\ttfamily bool Debug\+Helper\+::apt\+\_\+ok}
+
+
+
+Definition at line 39 of file debug\+\_\+facilities.\+h.
+
+\mbox{\Hypertarget{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}\label{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}} 
+\index{DebugHelper@{DebugHelper}!Debug\_fields@{Debug\_fields}}
+\index{Debug\_fields@{Debug\_fields}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{Debug\_fields}{Debug\_fields}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionbyte8__t__debug}{byte8\+\_\+t\+\_\+debug}} Debug\+Helper\+::\+Debug\+\_\+fields}
+
+
+
+Definition at line 42 of file debug\+\_\+facilities.\+h.
+
+\mbox{\Hypertarget{class_debug_helper_ae3c55e58aed1c461b7b8afc48f44cb45}\label{class_debug_helper_ae3c55e58aed1c461b7b8afc48f44cb45}} 
+\index{DebugHelper@{DebugHelper}!mcu\_ok@{mcu\_ok}}
+\index{mcu\_ok@{mcu\_ok}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{mcu\_ok}{mcu\_ok}}
+{\footnotesize\ttfamily bool Debug\+Helper\+::mcu\+\_\+ok}
+
+
+
+Definition at line 38 of file debug\+\_\+facilities.\+h.
+
+\mbox{\Hypertarget{class_debug_helper_aa631ce17ff943a29730626a673916a65}\label{class_debug_helper_aa631ce17ff943a29730626a673916a65}} 
+\index{DebugHelper@{DebugHelper}!motor\_run@{motor\_run}}
+\index{motor\_run@{motor\_run}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{motor\_run}{motor\_run}}
+{\footnotesize\ttfamily bool Debug\+Helper\+::motor\+\_\+run}
+
+
+
+Definition at line 41 of file debug\+\_\+facilities.\+h.
+
+\mbox{\Hypertarget{class_debug_helper_a9474c9f653c54670e8b529290e12c16a}\label{class_debug_helper_a9474c9f653c54670e8b529290e12c16a}} 
+\index{DebugHelper@{DebugHelper}!pressure\_ok@{pressure\_ok}}
+\index{pressure\_ok@{pressure\_ok}!DebugHelper@{DebugHelper}}
+\doxysubsubsection{\texorpdfstring{pressure\_ok}{pressure\_ok}}
+{\footnotesize\ttfamily bool Debug\+Helper\+::pressure\+\_\+ok}
+
+
+
+Definition at line 37 of file debug\+\_\+facilities.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{debug__facilities_8h}{debug\+\_\+facilities.\+h}}\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/\mbox{\hyperlink{debug__facilities_8cpp}{debug\+\_\+facilities.\+cpp}}\end{DoxyCompactItemize}

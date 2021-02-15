@@ -1,0 +1,7 @@
+<map id="xmodem_receive" name="xmodem_receive">
+<area shape="rect" id="node1" title="This function is the base of the Xmodem protocol. When we receive a header from UART,..." alt="" coords="631,5,749,32"/>
+<area shape="rect" id="node2" href="$d3/de2/group___s_t_m32_l0xx___i_a_p.html#gae6fffe39f7afd74d76a311217db8cff1" title="Display the Main Menu on HyperTerminal." alt="" coords="493,5,583,32"/>
+<area shape="rect" id="node3" href="$db/da0/classmonitor.html#a51b91d7b51f64f6f0f7fa79e11762dc0" title=" " alt="" coords="316,5,445,32"/>
+<area shape="rect" id="node4" href="$db/da0/classmonitor.html#a516685f198b69b69a2bc8529c2e8a4b0" title=" " alt="" coords="104,5,268,32"/>
+<area shape="rect" id="node5" href="$df/d0a/main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,56,32"/>
+</map>

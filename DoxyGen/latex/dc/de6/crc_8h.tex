@@ -1,0 +1,101 @@
+\hypertarget{crc_8h}{}\doxysection{C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/crc.h File Reference}
+\label{crc_8h}\index{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/crc.h@{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/crc.h}}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+Include dependency graph for crc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{dc/de8/crc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d5d/crc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{crc_8h_a9f720fe95d685258cfe2ba29dc395c48}{M\+X\+\_\+\+C\+R\+C\+\_\+\+Init}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+C\+R\+C\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{crc_8h_ae3358c54a01c6487322df1275618d6b1}{hcrc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{crc_8h_a9f720fe95d685258cfe2ba29dc395c48}\label{crc_8h_a9f720fe95d685258cfe2ba29dc395c48}} 
+\index{crc.h@{crc.h}!MX\_CRC\_Init@{MX\_CRC\_Init}}
+\index{MX\_CRC\_Init@{MX\_CRC\_Init}!crc.h@{crc.h}}
+\doxysubsubsection{\texorpdfstring{MX\_CRC\_Init()}{MX\_CRC\_Init()}}
+{\footnotesize\ttfamily void M\+X\+\_\+\+C\+R\+C\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file crc.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.Instance = CRC;}
+\DoxyCodeLine{34   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.Init.DefaultPolynomialUse = DEFAULT\_POLYNOMIAL\_ENABLE;}
+\DoxyCodeLine{35   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.Init.DefaultInitValueUse = DEFAULT\_INIT\_VALUE\_ENABLE;}
+\DoxyCodeLine{36   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.Init.InputDataInversionMode = CRC\_INPUTDATA\_INVERSION\_NONE;}
+\DoxyCodeLine{37   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.Init.OutputDataInversionMode = CRC\_OUTPUTDATA\_INVERSION\_DISABLE;}
+\DoxyCodeLine{38   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.InputDataFormat = CRC\_INPUTDATA\_FORMAT\_BYTES;}
+\DoxyCodeLine{39   \textcolor{keywordflow}{if} (HAL\_CRC\_Init(\&\mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}) != HAL\_OK)}
+\DoxyCodeLine{40   \{}
+\DoxyCodeLine{41     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{42   \}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{dc/de6/crc_8h_a9f720fe95d685258cfe2ba29dc395c48_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{dc/de6/crc_8h_a9f720fe95d685258cfe2ba29dc395c48_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{crc_8h_ae3358c54a01c6487322df1275618d6b1}\label{crc_8h_ae3358c54a01c6487322df1275618d6b1}} 
+\index{crc.h@{crc.h}!hcrc@{hcrc}}
+\index{hcrc@{hcrc}!crc.h@{crc.h}}
+\doxysubsubsection{\texorpdfstring{hcrc}{hcrc}}
+{\footnotesize\ttfamily C\+R\+C\+\_\+\+Handle\+Type\+Def hcrc}
+
+File Name \+: \mbox{\hyperlink{crc_8h}{C\+R\+C.\+h}} Description \+: This file provides code for the configuration of the C\+RC instances.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause
+
+File Name \+: C\+R\+C.\+c Description \+: This file provides code for the configuration of the C\+RC instances.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause 
+
+Definition at line 27 of file crc.\+c.
+

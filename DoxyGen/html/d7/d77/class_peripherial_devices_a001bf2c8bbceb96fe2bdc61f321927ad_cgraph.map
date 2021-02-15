@@ -1,0 +1,8 @@
+<map id="PeripherialDevices::read_counter" name="PeripherialDevices::read_counter">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,133,80"/>
+<area shape="rect" id="node2" href="$d7/d77/class_peripherial_devices.html#a28f503545bf784ce79e0ce4815b71842" title=" " alt="" coords="181,5,309,47"/>
+<area shape="rect" id="node4" href="$d7/d77/class_peripherial_devices.html#af9686ab99359c3b861a8d63dd84bd913" title=" " alt="" coords="181,71,309,112"/>
+<area shape="rect" id="node3" href="$d6/d2e/class_c_s__reg.html#a93421b06c619434894958b45e2355b2b" title=" " alt="" coords="359,5,514,47"/>
+<area shape="rect" id="node5" href="$d6/d2e/class_c_s__reg.html#a0fb7487892cc0c3a65fc78aa90c613c4" title=" " alt="" coords="371,74,502,101"/>
+<area shape="rect" id="node6" href="$df/d19/class_s_t_a_t_u_s__reg.html#af171d497240ab066b156dee2c102234c" title=" " alt="" coords="357,125,516,151"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="main_controller::init_before_while" name="main_controller::init_before_while">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,140,90"/>
+<area shape="rect" id="node2" href="$d0/d8b/class_state.html#a9f9fdadeb2ff6c9238c8f4dac3b96bb7" title=" " alt="" coords="195,5,333,32"/>
+<area shape="rect" id="node3" href="$d6/d0f/class_screen__ctrl.html#a37722bf0516a17314dcb60e520bc77b6" title="print logo of armenta" alt="" coords="188,56,340,83"/>
+<area shape="rect" id="node4" href="$d6/d0f/class_screen__ctrl.html#af8d1a239740da7dfd15c48ace1067cfe" title="show version on screen" alt="" coords="203,107,325,149"/>
+</map>

@@ -1,0 +1,340 @@
+\hypertarget{stm32f0xx__it_8h}{}\doxysection{C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/stm32f0xx\+\_\+it.h File Reference}
+\label{stm32f0xx__it_8h}\index{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/stm32f0xx\_it.h@{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/stm32f0xx\_it.h}}
+
+
+This file contains the headers of the interrupt handlers.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{de/d88/stm32f0xx__it_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{stm32f0xx__it_8h_a6ad7a5e3ee69cb6db6a6b9111ba898bc}{N\+M\+I\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Non maskable interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f0xx__it_8h_a2bffc10d5bd4106753b7c30e86903bea}{Hard\+Fault\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Hard fault interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f0xx__it_8h_a3e5ddb3df0d62f2dc357e64a3f04a6ce}{S\+V\+C\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles System service call via S\+WI instruction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f0xx__it_8h_a6303e1f258cbdc1f970ce579cc015623}{Pend\+S\+V\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Pendable request for system service. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f0xx__it_8h_ab5e09814056d617c521549e542639b7e}{Sys\+Tick\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles System tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f0xx__it_8h_ae00a10bd0f2f4c129c84120e78ad4382}{E\+X\+T\+I2\+\_\+3\+\_\+\+I\+R\+Q\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles E\+X\+TI line 2 and 3 interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f0xx__it_8h_a7b6fac3d670a4860ebec8a961d5c4a73}{D\+M\+A1\+\_\+\+Channel1\+\_\+\+I\+R\+Q\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles D\+M\+A1 channel 1 global interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f0xx__it_8h_a0bf60da545bf36717bd2c9ce3d13bf81}{T\+I\+M1\+\_\+\+B\+R\+K\+\_\+\+U\+P\+\_\+\+T\+R\+G\+\_\+\+C\+O\+M\+\_\+\+I\+R\+Q\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles T\+I\+M1 break, update, trigger and commutation interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f0xx__it_8h_ae194ef2e9384ca2fd29c2615e6dc4093}{T\+I\+M16\+\_\+\+I\+R\+Q\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles T\+I\+M16 global interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f0xx__it_8h_a7139cd4baabbbcbab0c1fe6d7d4ae1cc}{U\+S\+A\+R\+T1\+\_\+\+I\+R\+Q\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles U\+S\+A\+R\+T1 global interrupt / U\+S\+A\+R\+T1 wake-\/up interrupt through E\+X\+TI line 25. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the headers of the interrupt handlers. 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stm32f0xx__it_8h_a7b6fac3d670a4860ebec8a961d5c4a73}\label{stm32f0xx__it_8h_a7b6fac3d670a4860ebec8a961d5c4a73}} 
+\index{stm32f0xx\_it.h@{stm32f0xx\_it.h}!DMA1\_Channel1\_IRQHandler@{DMA1\_Channel1\_IRQHandler}}
+\index{DMA1\_Channel1\_IRQHandler@{DMA1\_Channel1\_IRQHandler}!stm32f0xx\_it.h@{stm32f0xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{DMA1\_Channel1\_IRQHandler()}{DMA1\_Channel1\_IRQHandler()}}
+{\footnotesize\ttfamily void D\+M\+A1\+\_\+\+Channel1\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function handles D\+M\+A1 channel 1 global interrupt. 
+
+
+
+Definition at line 189 of file stm32f0xx\+\_\+it.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{190 \{}
+\DoxyCodeLine{191   \textcolor{comment}{/* USER CODE BEGIN DMA1\_Channel1\_IRQn 0 */}}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193   \textcolor{comment}{/* USER CODE END DMA1\_Channel1\_IRQn 0 */}}
+\DoxyCodeLine{194   HAL\_DMA\_IRQHandler(\&\mbox{\hyperlink{stm32f0xx__it_8c_a556a7c43d0d5bbeccebc55d3f97e0fd5}{hdma\_adc}});}
+\DoxyCodeLine{195   \textcolor{comment}{/* USER CODE BEGIN DMA1\_Channel1\_IRQn 1 */}}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197   \textcolor{comment}{/* USER CODE END DMA1\_Channel1\_IRQn 1 */}}
+\DoxyCodeLine{198 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{stm32f0xx__it_8h_ae00a10bd0f2f4c129c84120e78ad4382}\label{stm32f0xx__it_8h_ae00a10bd0f2f4c129c84120e78ad4382}} 
+\index{stm32f0xx\_it.h@{stm32f0xx\_it.h}!EXTI2\_3\_IRQHandler@{EXTI2\_3\_IRQHandler}}
+\index{EXTI2\_3\_IRQHandler@{EXTI2\_3\_IRQHandler}!stm32f0xx\_it.h@{stm32f0xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{EXTI2\_3\_IRQHandler()}{EXTI2\_3\_IRQHandler()}}
+{\footnotesize\ttfamily void E\+X\+T\+I2\+\_\+3\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function handles E\+X\+TI line 2 and 3 interrupts. 
+
+
+
+Definition at line 169 of file stm32f0xx\+\_\+it.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{170 \{}
+\DoxyCodeLine{171   \textcolor{comment}{/* USER CODE BEGIN EXTI2\_3\_IRQn 0 */}}
+\DoxyCodeLine{172     HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_a8e4109b2f7acfb3618b1da0f0b2d98d1}{ENABLE\_POWER\_12V\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_abc97a87faf3895dbbd657c2e984d309b}{ENABLE\_POWER\_12V\_Pin}}, GPIO\_PIN\_RESET);}
+\DoxyCodeLine{173     uint8\_t dead\_power[] = \textcolor{stringliteral}{"PF\_ALERT!\(\backslash\)r\(\backslash\)n"};}
+\DoxyCodeLine{174     \textcolor{keywordflow}{while} (1)}
+\DoxyCodeLine{175     \{}
+\DoxyCodeLine{176         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, dead\_power, strlen((\textcolor{keywordtype}{char}*)dead\_power), 10);}
+\DoxyCodeLine{177     \}}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179   \textcolor{comment}{/* USER CODE END EXTI2\_3\_IRQn 0 */}}
+\DoxyCodeLine{180   HAL\_GPIO\_EXTI\_IRQHandler(GPIO\_PIN\_2);}
+\DoxyCodeLine{181   \textcolor{comment}{/* USER CODE BEGIN EXTI2\_3\_IRQn 1 */}}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183   \textcolor{comment}{/* USER CODE END EXTI2\_3\_IRQn 1 */}}
+\DoxyCodeLine{184 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{stm32f0xx__it_8h_a2bffc10d5bd4106753b7c30e86903bea}\label{stm32f0xx__it_8h_a2bffc10d5bd4106753b7c30e86903bea}} 
+\index{stm32f0xx\_it.h@{stm32f0xx\_it.h}!HardFault\_Handler@{HardFault\_Handler}}
+\index{HardFault\_Handler@{HardFault\_Handler}!stm32f0xx\_it.h@{stm32f0xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{HardFault\_Handler()}{HardFault\_Handler()}}
+{\footnotesize\ttfamily void Hard\+Fault\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function handles Hard fault interrupt. 
+
+
+
+Definition at line 107 of file stm32f0xx\+\_\+it.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108 \{}
+\DoxyCodeLine{109   \textcolor{comment}{/* USER CODE BEGIN HardFault\_IRQn 0 */}}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111   \textcolor{comment}{/* USER CODE END HardFault\_IRQn 0 */}}
+\DoxyCodeLine{112   \textcolor{keywordflow}{while} (1)}
+\DoxyCodeLine{113   \{}
+\DoxyCodeLine{114     \textcolor{comment}{/* USER CODE BEGIN W1\_HardFault\_IRQn 0 */}}
+\DoxyCodeLine{115     \textcolor{comment}{/* USER CODE END W1\_HardFault\_IRQn 0 */}}
+\DoxyCodeLine{116   \}}
+\DoxyCodeLine{117 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{stm32f0xx__it_8h_a6ad7a5e3ee69cb6db6a6b9111ba898bc}\label{stm32f0xx__it_8h_a6ad7a5e3ee69cb6db6a6b9111ba898bc}} 
+\index{stm32f0xx\_it.h@{stm32f0xx\_it.h}!NMI\_Handler@{NMI\_Handler}}
+\index{NMI\_Handler@{NMI\_Handler}!stm32f0xx\_it.h@{stm32f0xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{NMI\_Handler()}{NMI\_Handler()}}
+{\footnotesize\ttfamily void N\+M\+I\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function handles Non maskable interrupt. 
+
+
+
+Definition at line 94 of file stm32f0xx\+\_\+it.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95 \{}
+\DoxyCodeLine{96   \textcolor{comment}{/* USER CODE BEGIN NonMaskableInt\_IRQn 0 */}}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98   \textcolor{comment}{/* USER CODE END NonMaskableInt\_IRQn 0 */}}
+\DoxyCodeLine{99   \textcolor{comment}{/* USER CODE BEGIN NonMaskableInt\_IRQn 1 */}}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101   \textcolor{comment}{/* USER CODE END NonMaskableInt\_IRQn 1 */}}
+\DoxyCodeLine{102 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{stm32f0xx__it_8h_a6303e1f258cbdc1f970ce579cc015623}\label{stm32f0xx__it_8h_a6303e1f258cbdc1f970ce579cc015623}} 
+\index{stm32f0xx\_it.h@{stm32f0xx\_it.h}!PendSV\_Handler@{PendSV\_Handler}}
+\index{PendSV\_Handler@{PendSV\_Handler}!stm32f0xx\_it.h@{stm32f0xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{PendSV\_Handler()}{PendSV\_Handler()}}
+{\footnotesize\ttfamily void Pend\+S\+V\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function handles Pendable request for system service. 
+
+
+
+Definition at line 135 of file stm32f0xx\+\_\+it.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136 \{}
+\DoxyCodeLine{137   \textcolor{comment}{/* USER CODE BEGIN PendSV\_IRQn 0 */}}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139   \textcolor{comment}{/* USER CODE END PendSV\_IRQn 0 */}}
+\DoxyCodeLine{140   \textcolor{comment}{/* USER CODE BEGIN PendSV\_IRQn 1 */}}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142   \textcolor{comment}{/* USER CODE END PendSV\_IRQn 1 */}}
+\DoxyCodeLine{143 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{stm32f0xx__it_8h_a3e5ddb3df0d62f2dc357e64a3f04a6ce}\label{stm32f0xx__it_8h_a3e5ddb3df0d62f2dc357e64a3f04a6ce}} 
+\index{stm32f0xx\_it.h@{stm32f0xx\_it.h}!SVC\_Handler@{SVC\_Handler}}
+\index{SVC\_Handler@{SVC\_Handler}!stm32f0xx\_it.h@{stm32f0xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{SVC\_Handler()}{SVC\_Handler()}}
+{\footnotesize\ttfamily void S\+V\+C\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function handles System service call via S\+WI instruction. 
+
+
+
+Definition at line 122 of file stm32f0xx\+\_\+it.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123 \{}
+\DoxyCodeLine{124   \textcolor{comment}{/* USER CODE BEGIN SVC\_IRQn 0 */}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126   \textcolor{comment}{/* USER CODE END SVC\_IRQn 0 */}}
+\DoxyCodeLine{127   \textcolor{comment}{/* USER CODE BEGIN SVC\_IRQn 1 */}}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129   \textcolor{comment}{/* USER CODE END SVC\_IRQn 1 */}}
+\DoxyCodeLine{130 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{stm32f0xx__it_8h_ab5e09814056d617c521549e542639b7e}\label{stm32f0xx__it_8h_ab5e09814056d617c521549e542639b7e}} 
+\index{stm32f0xx\_it.h@{stm32f0xx\_it.h}!SysTick\_Handler@{SysTick\_Handler}}
+\index{SysTick\_Handler@{SysTick\_Handler}!stm32f0xx\_it.h@{stm32f0xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{SysTick\_Handler()}{SysTick\_Handler()}}
+{\footnotesize\ttfamily void Sys\+Tick\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function handles System tick timer. 
+
+
+
+Definition at line 148 of file stm32f0xx\+\_\+it.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149 \{}
+\DoxyCodeLine{150   \textcolor{comment}{/* USER CODE BEGIN SysTick\_IRQn 0 */}}
+\DoxyCodeLine{151 }
+\DoxyCodeLine{152   \textcolor{comment}{/* USER CODE END SysTick\_IRQn 0 */}}
+\DoxyCodeLine{153   }
+\DoxyCodeLine{154   \textcolor{comment}{/* USER CODE BEGIN SysTick\_IRQn 1 */}}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156   \textcolor{comment}{/* USER CODE END SysTick\_IRQn 1 */}}
+\DoxyCodeLine{157 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{stm32f0xx__it_8h_ae194ef2e9384ca2fd29c2615e6dc4093}\label{stm32f0xx__it_8h_ae194ef2e9384ca2fd29c2615e6dc4093}} 
+\index{stm32f0xx\_it.h@{stm32f0xx\_it.h}!TIM16\_IRQHandler@{TIM16\_IRQHandler}}
+\index{TIM16\_IRQHandler@{TIM16\_IRQHandler}!stm32f0xx\_it.h@{stm32f0xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{TIM16\_IRQHandler()}{TIM16\_IRQHandler()}}
+{\footnotesize\ttfamily void T\+I\+M16\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function handles T\+I\+M16 global interrupt. 
+
+
+
+Definition at line 217 of file stm32f0xx\+\_\+it.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{218 \{}
+\DoxyCodeLine{219   \textcolor{comment}{/* USER CODE BEGIN TIM16\_IRQn 0 */}}
+\DoxyCodeLine{220 }
+\DoxyCodeLine{221 }
+\DoxyCodeLine{222     \mbox{\hyperlink{stm32f0xx__it_8c_a549deb0e19719099b413522f1b15b440}{reset\_pressed}} =  \mbox{\hyperlink{stm32f0xx__it_8c_a503deec6ed4a495c61bc35e2221807ff}{test\_for\_reset\_press}}();}
+\DoxyCodeLine{223     \mbox{\hyperlink{stm32f0xx__it_8c_a4e1e0e72dd773439e333c84dd762a9c3}{c}}++;}
+\DoxyCodeLine{224     \textcolor{keywordflow}{if} (\mbox{\hyperlink{stm32f0xx__it_8c_a4e1e0e72dd773439e333c84dd762a9c3}{c}} \% 100)}
+\DoxyCodeLine{225     \{}
+\DoxyCodeLine{226         \textcolor{comment}{//uint8\_t button\_stat[] = "Button\(\backslash\)r\(\backslash\)n";}}
+\DoxyCodeLine{227         \textcolor{comment}{//HAL\_UART\_Transmit(SERIAL\_PC, button\_stat, strlen((char*)button\_stat), 10);}}
+\DoxyCodeLine{228         \mbox{\hyperlink{stm32f0xx__it_8c_a4e1e0e72dd773439e333c84dd762a9c3}{c}} = 1;}
+\DoxyCodeLine{229     \}}
+\DoxyCodeLine{230   \textcolor{comment}{/* USER CODE END TIM16\_IRQn 0 */}}
+\DoxyCodeLine{231   HAL\_TIM\_IRQHandler(\&\mbox{\hyperlink{stm32f0xx__it_8c_af0bea8d8759a0d7e0e296edc9f5d6936}{htim16}});}
+\DoxyCodeLine{232   \textcolor{comment}{/* USER CODE BEGIN TIM16\_IRQn 1 */}}
+\DoxyCodeLine{233 }
+\DoxyCodeLine{234   \textcolor{comment}{/* USER CODE END TIM16\_IRQn 1 */}}
+\DoxyCodeLine{235 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/da4/stm32f0xx__it_8h_ae194ef2e9384ca2fd29c2615e6dc4093_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{stm32f0xx__it_8h_a0bf60da545bf36717bd2c9ce3d13bf81}\label{stm32f0xx__it_8h_a0bf60da545bf36717bd2c9ce3d13bf81}} 
+\index{stm32f0xx\_it.h@{stm32f0xx\_it.h}!TIM1\_BRK\_UP\_TRG\_COM\_IRQHandler@{TIM1\_BRK\_UP\_TRG\_COM\_IRQHandler}}
+\index{TIM1\_BRK\_UP\_TRG\_COM\_IRQHandler@{TIM1\_BRK\_UP\_TRG\_COM\_IRQHandler}!stm32f0xx\_it.h@{stm32f0xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{TIM1\_BRK\_UP\_TRG\_COM\_IRQHandler()}{TIM1\_BRK\_UP\_TRG\_COM\_IRQHandler()}}
+{\footnotesize\ttfamily void T\+I\+M1\+\_\+\+B\+R\+K\+\_\+\+U\+P\+\_\+\+T\+R\+G\+\_\+\+C\+O\+M\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function handles T\+I\+M1 break, update, trigger and commutation interrupts. 
+
+
+
+Definition at line 203 of file stm32f0xx\+\_\+it.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{204 \{}
+\DoxyCodeLine{205   \textcolor{comment}{/* USER CODE BEGIN TIM1\_BRK\_UP\_TRG\_COM\_IRQn 0 */}}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207   \textcolor{comment}{/* USER CODE END TIM1\_BRK\_UP\_TRG\_COM\_IRQn 0 */}}
+\DoxyCodeLine{208   HAL\_TIM\_IRQHandler(\&\mbox{\hyperlink{stm32f0xx__it_8c_a25fc663547539bc49fecc0011bd76ab5}{htim1}});}
+\DoxyCodeLine{209   \textcolor{comment}{/* USER CODE BEGIN TIM1\_BRK\_UP\_TRG\_COM\_IRQn 1 */}}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{211   \textcolor{comment}{/* USER CODE END TIM1\_BRK\_UP\_TRG\_COM\_IRQn 1 */}}
+\DoxyCodeLine{212 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{stm32f0xx__it_8h_a7139cd4baabbbcbab0c1fe6d7d4ae1cc}\label{stm32f0xx__it_8h_a7139cd4baabbbcbab0c1fe6d7d4ae1cc}} 
+\index{stm32f0xx\_it.h@{stm32f0xx\_it.h}!USART1\_IRQHandler@{USART1\_IRQHandler}}
+\index{USART1\_IRQHandler@{USART1\_IRQHandler}!stm32f0xx\_it.h@{stm32f0xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{USART1\_IRQHandler()}{USART1\_IRQHandler()}}
+{\footnotesize\ttfamily void U\+S\+A\+R\+T1\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function handles U\+S\+A\+R\+T1 global interrupt / U\+S\+A\+R\+T1 wake-\/up interrupt through E\+X\+TI line 25. 
+
+
+
+Definition at line 240 of file stm32f0xx\+\_\+it.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{241 \{}
+\DoxyCodeLine{242   \textcolor{comment}{/* USER CODE BEGIN USART1\_IRQn 0 */}}
+\DoxyCodeLine{243 }
+\DoxyCodeLine{244   \textcolor{comment}{/* USER CODE END USART1\_IRQn 0 */}}
+\DoxyCodeLine{245   HAL\_UART\_IRQHandler(\&\mbox{\hyperlink{stm32f0xx__it_8c_a2cf715bef37f7e8ef385a30974a5f0d5}{huart1}});}
+\DoxyCodeLine{246   \textcolor{comment}{/* USER CODE BEGIN USART1\_IRQn 1 */}}
+\DoxyCodeLine{247 }
+\DoxyCodeLine{248   \textcolor{comment}{/* USER CODE END USART1\_IRQn 1 */}}
+\DoxyCodeLine{249 \}}
+
+\end{DoxyCode}

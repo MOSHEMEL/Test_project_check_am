@@ -1,0 +1,31 @@
+<map id="main_controller::active_state" name="main_controller::active_state">
+<area shape="rect" id="node1" title=" " alt="" coords="5,371,156,412"/>
+<area shape="rect" id="node2" href="$d0/d62/classmain__controller.html#af5aec3c58890df0bf71a3db084e2d81a" title=" " alt="" coords="209,5,345,47"/>
+<area shape="rect" id="node3" href="$d0/d62/classmain__controller.html#a9d78abf1a6f3d2b201eed3ebcfe272d8" title=" " alt="" coords="413,57,549,99"/>
+<area shape="rect" id="node4" href="$d0/d62/classmain__controller.html#afcff358419258d740b0a56b848c697b8" title=" " alt="" coords="213,123,341,164"/>
+<area shape="rect" id="node5" href="$d0/d62/classmain__controller.html#a608793c4bdbf53b2d708358bab87dbb8" title=" " alt="" coords="204,188,351,229"/>
+<area shape="rect" id="node9" href="$d7/d77/class_peripherial_devices.html#af9686ab99359c3b861a8d63dd84bd913" title=" " alt="" coords="417,319,545,360"/>
+<area shape="rect" id="node12" href="$d7/d77/class_peripherial_devices.html#a001bf2c8bbceb96fe2bdc61f321927ad" title=" " alt="" coords="213,305,341,347"/>
+<area shape="rect" id="node15" href="$d0/d62/classmain__controller.html#a7cf91a33919e40649dc926a9ef675ae8" title=" " alt="" coords="209,371,345,412"/>
+<area shape="rect" id="node16" href="$d0/d62/classmain__controller.html#a07139d7499b9df57dc8191ca9053408d" title=" " alt="" coords="209,436,345,477"/>
+<area shape="rect" id="node17" href="$d0/d62/classmain__controller.html#ac4fadb4ea00a28038e8021b07d7d4221" title=" " alt="" coords="209,501,345,543"/>
+<area shape="rect" id="node18" href="$d7/d77/class_peripherial_devices.html#addba7220ab2d6ea26b238445224f6e65" title=" " alt="" coords="213,567,341,608"/>
+<area shape="rect" id="node20" href="$d7/d77/class_peripherial_devices.html#a3a0173c0b6a9417f77048ec5809d73c9" title=" " alt="" coords="213,632,341,673"/>
+<area shape="rect" id="node21" href="$d6/d0f/class_screen__ctrl.html#accc1bbcc4bf1ec3fa03e0299e3276d5d" title="update the pulses" alt="" coords="210,697,345,739"/>
+<area shape="rect" id="node22" href="$df/d62/class_mem__ctrl.html#a8d48ee9a4626922b251d843a08bbd3ae" title=" " alt="" coords="222,763,333,790"/>
+<area shape="rect" id="node6" href="$d0/d62/classmain__controller.html#ad3d821994df89eabb08925106e4fe265" title=" " alt="" coords="413,123,549,164"/>
+<area shape="rect" id="node7" href="$d0/d62/classmain__controller.html#aa33323eb559313abcab3cc9f8c3612ca" title=" " alt="" coords="417,188,545,229"/>
+<area shape="rect" id="node8" href="$d0/d62/classmain__controller.html#a1ff9732583458b4325085db5a4adb3e0" title=" " alt="" coords="417,253,545,295"/>
+<area shape="rect" id="node10" href="$d6/d2e/class_c_s__reg.html#a0fb7487892cc0c3a65fc78aa90c613c4" title=" " alt="" coords="625,301,755,327"/>
+<area shape="rect" id="node11" href="$df/d19/class_s_t_a_t_u_s__reg.html#af171d497240ab066b156dee2c102234c" title=" " alt="" coords="611,351,769,378"/>
+<area shape="rect" id="node13" href="$d7/d77/class_peripherial_devices.html#a28f503545bf784ce79e0ce4815b71842" title=" " alt="" coords="417,473,545,515"/>
+<area shape="rect" id="node14" href="$d6/d2e/class_c_s__reg.html#a93421b06c619434894958b45e2355b2b" title=" " alt="" coords="613,473,767,515"/>
+<area shape="rect" id="node19" href="$d6/d2e/class_c_s__reg.html#a9d840bf50a001ee76443fc88f07e8d1b" title=" " alt="" coords="411,591,550,618"/>
+<area shape="rect" id="node23" href="$df/d62/class_mem__ctrl.html#a59ef59d9e5d6b25e268cc30ba3bbeed4" title=" " alt="" coords="399,661,563,687"/>
+<area shape="rect" id="node25" href="$df/d62/class_mem__ctrl.html#aa9ca21741259055eec2a9174f23a0e19" title=" " alt="" coords="426,713,535,739"/>
+<area shape="rect" id="node27" href="$d2/d01/class_memory.html#ab2c1caf7f5aa2d449aacaddf20f00652" title=" " alt="" coords="429,763,533,790"/>
+<area shape="rect" id="node28" href="$d2/d01/class_memory.html#a1fa2d43a2098b9be605ba5574a4f4ecb" title=" " alt="" coords="405,814,557,841"/>
+<area shape="rect" id="node29" href="$d2/d01/class_memory.html#aed28e5150da795f051b91a78ab3abd0c" title=" " alt="" coords="406,865,555,891"/>
+<area shape="rect" id="node24" href="$d2/d01/class_memory.html#a9910263cfa6b21725406d8173c07b3fc" title=" " alt="" coords="617,651,763,692"/>
+<area shape="rect" id="node26" href="$d2/d01/class_memory.html#a31027c2b6257e0f059e499955dd25237" title=" " alt="" coords="639,717,741,743"/>
+</map>

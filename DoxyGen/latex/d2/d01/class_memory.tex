@@ -1,0 +1,718 @@
+\hypertarget{class_memory}{}\doxysection{Memory Class Reference}
+\label{class_memory}\index{Memory@{Memory}}
+
+
+{\ttfamily \#include $<$mem.\+h$>$}
+
+
+
+Collaboration diagram for Memory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dd/dcf/class_memory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_memory_a9e7e90e0db5a7b1dd15c19cf496d2fa6}{Memory}} (uint8\+\_\+t)
+\item 
+\mbox{\hyperlink{class_memory_a0ffa9759ebbf103f11132a505b93bdc0}{$\sim$\+Memory}} ()
+\item 
+void \mbox{\hyperlink{class_memory_a36ba4739105d5bc76d2382ab07410cdb}{print\+\_\+status}} (void)
+\item 
+H\+A\+L\+\_\+\+Status\+Type\+Def \mbox{\hyperlink{class_memory_a617c560509848b0d2dbd40086573a819}{erase}} (uint32\+\_\+t erase\+\_\+address)
+\item 
+H\+A\+L\+\_\+\+Status\+Type\+Def \mbox{\hyperlink{class_memory_a3fd9bbcb3d888b9f9ab465306b2bc1ac}{erase}} (void)
+\item 
+H\+A\+L\+\_\+\+Status\+Type\+Def \mbox{\hyperlink{class_memory_a1fa2d43a2098b9be605ba5574a4f4ecb}{write\+\_\+disable}} (void)
+\item 
+H\+A\+L\+\_\+\+Status\+Type\+Def \mbox{\hyperlink{class_memory_aed28e5150da795f051b91a78ab3abd0c}{write\+\_\+enable}} (void)
+\item 
+void \mbox{\hyperlink{class_memory_a9910263cfa6b21725406d8173c07b3fc}{read\+\_\+status\+\_\+register1}} (void)
+\item 
+void \mbox{\hyperlink{class_memory_aa89a36c5cbc7934db9b53c1988dbb802}{read\+\_\+status\+\_\+register2}} (void)
+\item 
+void \mbox{\hyperlink{class_memory_a1b7fb352eb90b5c6e44278dcaa929853}{write\+\_\+status\+\_\+register}} (uint16\+\_\+t write\+\_\+now)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_memory_a31027c2b6257e0f059e499955dd25237}{read}} (uint32\+\_\+t read\+\_\+address)
+\item 
+void \mbox{\hyperlink{class_memory_a14196b4392b152adb8041edbd9e79dd5}{read256}} (uint32\+\_\+t read\+\_\+address)
+\item 
+void \mbox{\hyperlink{class_memory_aec48667c082f7b36c77211f7c707edc5}{check\+\_\+id}} (void)
+\item 
+H\+A\+L\+\_\+\+Status\+Type\+Def \mbox{\hyperlink{class_memory_ab2c1caf7f5aa2d449aacaddf20f00652}{write}} (uint32\+\_\+t write\+\_\+address, uint32\+\_\+t write\+\_\+value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_memory_acf94d0376bba460fa88a97dfd1b27cc6}{CS}}
+\item 
+char \mbox{\hyperlink{class_memory_a0f2570b60ebd1f8689e0e30a28c3f88b}{name}} \mbox{[}5\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_memory_a7cc6400cee02d0bcbd26dfc09cb4c4a6}{id}} \mbox{[}3\mbox{]}
+\item 
+bool \mbox{\hyperlink{class_memory_a32e14a921e36c510d3deaa976a77ddd6}{id\+\_\+valid}}
+\item 
+\mbox{\hyperlink{unionbyte8__t__mem__status}{byte8\+\_\+t\+\_\+mem\+\_\+status}} \mbox{\hyperlink{class_memory_acf09ce347bef9f59dba7a4e97c788617}{status16\+\_\+t}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_memory_ac43d9bf14477c68f2e831302a53fbd83}{cursor}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_memory_a952b630a9fad17f5ff01860af1400545}{pulses}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_memory_a67a06ce841989636f775f7e82c0a7584}{serial\+\_\+number}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_memory_aa486017257c4ac2f30bfe69e4fa47aa5}{max\+\_\+count}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_memory_ad81207aee3196cd0106f5e4e2530fcb1}{date}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 41 of file mem.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_memory_a9e7e90e0db5a7b1dd15c19cf496d2fa6}\label{class_memory_a9e7e90e0db5a7b1dd15c19cf496d2fa6}} 
+\index{Memory@{Memory}!Memory@{Memory}}
+\index{Memory@{Memory}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{Memory()}{Memory()}}
+{\footnotesize\ttfamily Memory\+::\+Memory (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cs\+\_\+num }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     this-\/>\mbox{\hyperlink{class_memory_acf94d0376bba460fa88a97dfd1b27cc6}{CS}} = cs\_num;   \textcolor{comment}{// 1, 2, 3}}
+\DoxyCodeLine{11     \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_memory_acf94d0376bba460fa88a97dfd1b27cc6}{CS}} == 1)}
+\DoxyCodeLine{12     \{}
+\DoxyCodeLine{13         sprintf((\textcolor{keywordtype}{char}*)this-\/>\mbox{\hyperlink{class_memory_a0f2570b60ebd1f8689e0e30a28c3f88b}{name}}, \textcolor{stringliteral}{"MCU"});}
+\DoxyCodeLine{14     \}}
+\DoxyCodeLine{15     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_memory_acf94d0376bba460fa88a97dfd1b27cc6}{CS}} == 2)}
+\DoxyCodeLine{16     \{}
+\DoxyCodeLine{17         sprintf((\textcolor{keywordtype}{char}*)this-\/>\mbox{\hyperlink{class_memory_a0f2570b60ebd1f8689e0e30a28c3f88b}{name}}, \textcolor{stringliteral}{"APT"});}
+\DoxyCodeLine{18     \}}
+\DoxyCodeLine{19     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{class_memory_acf94d0376bba460fa88a97dfd1b27cc6}{CS}} == 3)}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{21         sprintf((\textcolor{keywordtype}{char}*)this-\/>\mbox{\hyperlink{class_memory_a0f2570b60ebd1f8689e0e30a28c3f88b}{name}}, \textcolor{stringliteral}{"AM"});}
+\DoxyCodeLine{22     \}}
+\DoxyCodeLine{23     this-\/>\textcolor{keywordtype}{id}[0] = 0;   \textcolor{comment}{// valid id would be 0x1f-\/85-\/01 or something}}
+\DoxyCodeLine{24     this-\/>\textcolor{keywordtype}{id}[1] = 0;    \textcolor{comment}{// valid id would be 0x1f-\/85-\/01 or something}}
+\DoxyCodeLine{25     this-\/>\textcolor{keywordtype}{id}[2] = 0;    \textcolor{comment}{// valid id would be 0x1f-\/85-\/01 or something}}
+\DoxyCodeLine{26     this-\/>\mbox{\hyperlink{class_memory_a32e14a921e36c510d3deaa976a77ddd6}{id\_valid}} = \textcolor{keyword}{false};  \textcolor{comment}{// true if okay}}
+\DoxyCodeLine{27     this-\/>\mbox{\hyperlink{class_memory_acf09ce347bef9f59dba7a4e97c788617}{status16\_t}}.\mbox{\hyperlink{unionbyte8__t__mem__status_acd432159843109bb6aa89fd965f2c566}{value}} = 0;}
+\DoxyCodeLine{28     this-\/>\mbox{\hyperlink{class_memory_ac43d9bf14477c68f2e831302a53fbd83}{cursor}} = 0;    \textcolor{comment}{// pointer to read memory}}
+\DoxyCodeLine{29     this-\/>\mbox{\hyperlink{class_memory_a952b630a9fad17f5ff01860af1400545}{pulses}} = 0;}
+\DoxyCodeLine{30     this-\/>\mbox{\hyperlink{class_memory_a67a06ce841989636f775f7e82c0a7584}{serial\_number}} = 0;}
+\DoxyCodeLine{31     this-\/>\mbox{\hyperlink{class_memory_aa486017257c4ac2f30bfe69e4fa47aa5}{max\_count}} = 0;}
+\DoxyCodeLine{32     this-\/>\mbox{\hyperlink{class_memory_ad81207aee3196cd0106f5e4e2530fcb1}{date}} = 0;}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_memory_a0ffa9759ebbf103f11132a505b93bdc0}\label{class_memory_a0ffa9759ebbf103f11132a505b93bdc0}} 
+\index{Memory@{Memory}!````~Memory@{$\sim$Memory}}
+\index{````~Memory@{$\sim$Memory}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{$\sim$Memory()}{~Memory()}}
+{\footnotesize\ttfamily Memory\+::$\sim$\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36 \{}
+\DoxyCodeLine{37     }
+\DoxyCodeLine{38 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_memory_aec48667c082f7b36c77211f7c707edc5}\label{class_memory_aec48667c082f7b36c77211f7c707edc5}} 
+\index{Memory@{Memory}!check\_id@{check\_id}}
+\index{check\_id@{check\_id}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{check\_id()}{check\_id()}}
+{\footnotesize\ttfamily void Memory\+::check\+\_\+id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 132 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{133 \{}
+\DoxyCodeLine{134     this-\/>get\_id();}
+\DoxyCodeLine{135     \textcolor{keywordflow}{if} ((this-\/>\textcolor{keywordtype}{id}[0] == 0x1f)\&\&(this-\/>\textcolor{keywordtype}{id}[1] == 0x85)\&\&(this-\/>\textcolor{keywordtype}{id}[2] == 0x01))}
+\DoxyCodeLine{136     \{}
+\DoxyCodeLine{137         this-\/>\mbox{\hyperlink{class_memory_a32e14a921e36c510d3deaa976a77ddd6}{id\_valid}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{138     \}}
+\DoxyCodeLine{139     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{140     \{}
+\DoxyCodeLine{141         this-\/>\mbox{\hyperlink{class_memory_a32e14a921e36c510d3deaa976a77ddd6}{id\_valid}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{142     \}}
+\DoxyCodeLine{143 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d01/class_memory_aec48667c082f7b36c77211f7c707edc5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_memory_a617c560509848b0d2dbd40086573a819}\label{class_memory_a617c560509848b0d2dbd40086573a819}} 
+\index{Memory@{Memory}!erase@{erase}}
+\index{erase@{erase}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily H\+A\+L\+\_\+\+Status\+Type\+Def Memory\+::erase (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{erase\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+Definition at line 109 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{110 \{}
+\DoxyCodeLine{111     HAL\_StatusTypeDef status = HAL\_OK;}
+\DoxyCodeLine{112     uint8\_t erase\_command[1];}
+\DoxyCodeLine{113     erase\_command[0] = \mbox{\hyperlink{group___s_p_i_ga1da9200b47088a77d686e214d9cde1ed}{BLOCK\_ERASE\_4K}};     \textcolor{comment}{// erase opcodes: 4Kbytes: 0x20, 32Kbytes: 0x52, 64Kbytes: 0xD8}}
+\DoxyCodeLine{114     status = HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, erase\_command, 1, 500);}
+\DoxyCodeLine{115     \textcolor{keywordflow}{if}(status != HAL\_OK)}
+\DoxyCodeLine{116     \{}
+\DoxyCodeLine{117         \textcolor{keywordflow}{return} status;}
+\DoxyCodeLine{118     \}}
+\DoxyCodeLine{119     \textcolor{comment}{// Address :}}
+\DoxyCodeLine{120     uint8\_t address[3];}
+\DoxyCodeLine{121     this-\/>translate\_int\_to\_address(erase\_address, address);}
+\DoxyCodeLine{122     \textcolor{keywordflow}{return} HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, address, 3, 500);}
+\DoxyCodeLine{123 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d01/class_memory_a617c560509848b0d2dbd40086573a819_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_memory_a3fd9bbcb3d888b9f9ab465306b2bc1ac}\label{class_memory_a3fd9bbcb3d888b9f9ab465306b2bc1ac}} 
+\index{Memory@{Memory}!erase@{erase}}
+\index{erase@{erase}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily H\+A\+L\+\_\+\+Status\+Type\+Def Memory\+::erase (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 125 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126 \{}
+\DoxyCodeLine{127     uint8\_t erase\_command[1];}
+\DoxyCodeLine{128     erase\_command[0] = \mbox{\hyperlink{group___s_p_i_gaf2a2c5103e31479ed381dda3dce257b5}{ERASE\_CHIP2}};        \textcolor{comment}{// erase the entire chip}}
+\DoxyCodeLine{129     \textcolor{keywordflow}{return} HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, erase\_command, 1, 2500) ;}
+\DoxyCodeLine{130 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_memory_a36ba4739105d5bc76d2382ab07410cdb}\label{class_memory_a36ba4739105d5bc76d2382ab07410cdb}} 
+\index{Memory@{Memory}!print\_status@{print\_status}}
+\index{print\_status@{print\_status}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{print\_status()}{print\_status()}}
+{\footnotesize\ttfamily void Memory\+::print\+\_\+status (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41 \{}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     uint8\_t message[128];}
+\DoxyCodeLine{44     sprintf((\textcolor{keywordtype}{char}*)message,}
+\DoxyCodeLine{45         \textcolor{stringliteral}{"cs[\%d] read \%08X\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{46                          \textcolor{stringliteral}{"SRP0 [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{47                          \textcolor{stringliteral}{"SEC  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{48                          \textcolor{stringliteral}{"TB   [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{49                          \textcolor{stringliteral}{"BP2  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{50                          \textcolor{stringliteral}{"BP1  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{51                          \textcolor{stringliteral}{"BP0  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{52                          \textcolor{stringliteral}{"WEL  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{53                          \textcolor{stringliteral}{"WIP  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{54                          \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{55                          \textcolor{stringliteral}{"RES  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{56                          \textcolor{stringliteral}{"CMP  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{57                          \textcolor{stringliteral}{"LB3  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{58                          \textcolor{stringliteral}{"LB2  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{59                          \textcolor{stringliteral}{"LB1  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{60                          \textcolor{stringliteral}{"RES  [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{61                          \textcolor{stringliteral}{"QE   [\%d]\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{62                          \textcolor{stringliteral}{"SRP1 [\%d]\(\backslash\)r\(\backslash\)n"},}
+\DoxyCodeLine{63         this-\/>\mbox{\hyperlink{class_memory_acf94d0376bba460fa88a97dfd1b27cc6}{CS}},}
+\DoxyCodeLine{64         this-\/>\mbox{\hyperlink{class_memory_acf09ce347bef9f59dba7a4e97c788617}{status16\_t}}.\mbox{\hyperlink{unionbyte8__t__mem__status_acd432159843109bb6aa89fd965f2c566}{value}},}
+\DoxyCodeLine{65         this-\/>status16\_t.bits.SRP0,}
+\DoxyCodeLine{66         this-\/>status16\_t.bits.SEC,}
+\DoxyCodeLine{67         this-\/>status16\_t.bits.TB,}
+\DoxyCodeLine{68         this-\/>status16\_t.bits.BP2,}
+\DoxyCodeLine{69         this-\/>status16\_t.bits.BP1,}
+\DoxyCodeLine{70         this-\/>status16\_t.bits.BP0,}
+\DoxyCodeLine{71         this-\/>status16\_t.bits.WEL,}
+\DoxyCodeLine{72         this-\/>status16\_t.bits.WIP,}
+\DoxyCodeLine{73         this-\/>status16\_t.bits.RES,}
+\DoxyCodeLine{74         this-\/>status16\_t.bits.CMP,}
+\DoxyCodeLine{75         this-\/>status16\_t.bits.LB3,}
+\DoxyCodeLine{76         this-\/>status16\_t.bits.LB2,}
+\DoxyCodeLine{77         this-\/>status16\_t.bits.LB1,}
+\DoxyCodeLine{78         this-\/>status16\_t.bits.RES2,}
+\DoxyCodeLine{79         this-\/>status16\_t.bits.QE,}
+\DoxyCodeLine{80         this-\/>status16\_t.bits.SRP1);}
+\DoxyCodeLine{81     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, message, strlen((\textcolor{keywordtype}{char}*)message), 100);                     }
+\DoxyCodeLine{82 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d01/class_memory_a36ba4739105d5bc76d2382ab07410cdb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_memory_a31027c2b6257e0f059e499955dd25237}\label{class_memory_a31027c2b6257e0f059e499955dd25237}} 
+\index{Memory@{Memory}!read@{read}}
+\index{read@{read}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint32\+\_\+t Memory\+::read (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{read\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+Definition at line 223 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{224 \{}
+\DoxyCodeLine{225 }
+\DoxyCodeLine{226     uint8\_t spi\_read\_command[1];}
+\DoxyCodeLine{227     spi\_read\_command[0] = \mbox{\hyperlink{group___s_p_i_ga015a3e88f02f24b7d4d2a503150b41e6}{READ\_ARRAY1}};}
+\DoxyCodeLine{228     \textcolor{comment}{/*Read an array}}
+\DoxyCodeLine{229 \textcolor{comment}{     *0x0B needs an additional dummy byte to transmit data}}
+\DoxyCodeLine{230 \textcolor{comment}{     *difference is 0x03 can be used only at lower speeds}}
+\DoxyCodeLine{231 \textcolor{comment}{     *0x0B can be used at any speed}}
+\DoxyCodeLine{232 \textcolor{comment}{     *ONLY 0x0B needs a dummy byte}}
+\DoxyCodeLine{233 \textcolor{comment}{    */}}
+\DoxyCodeLine{234     HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, spi\_read\_command, 1, 500);}
+\DoxyCodeLine{235 }
+\DoxyCodeLine{236     uint8\_t address[4];}
+\DoxyCodeLine{237     uint8\_t spi\_read\_data[4];}
+\DoxyCodeLine{238     this-\/>translate\_int\_to\_address(read\_address, address);}
+\DoxyCodeLine{239     address[3] = 0xFF;    \textcolor{comment}{//doesn't matter}}
+\DoxyCodeLine{240 }
+\DoxyCodeLine{241     HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, address, 4, 500);}
+\DoxyCodeLine{242     HAL\_SPI\_Receive(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, spi\_read\_data, 4, 1000);}
+\DoxyCodeLine{243 }
+\DoxyCodeLine{244     \textcolor{keywordflow}{return} this-\/>translate\_address\_to\_int(spi\_read\_data);}
+\DoxyCodeLine{245 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d01/class_memory_a31027c2b6257e0f059e499955dd25237_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_memory_a14196b4392b152adb8041edbd9e79dd5}\label{class_memory_a14196b4392b152adb8041edbd9e79dd5}} 
+\index{Memory@{Memory}!read256@{read256}}
+\index{read256@{read256}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{read256()}{read256()}}
+{\footnotesize\ttfamily void Memory\+::read256 (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{read\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+Definition at line 247 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{248 \{}
+\DoxyCodeLine{249 }
+\DoxyCodeLine{250     uint8\_t spi\_read\_command[1];}
+\DoxyCodeLine{251     spi\_read\_command[0] = \mbox{\hyperlink{group___s_p_i_ga015a3e88f02f24b7d4d2a503150b41e6}{READ\_ARRAY1}};}
+\DoxyCodeLine{252     \textcolor{comment}{/*Read an array}}
+\DoxyCodeLine{253 \textcolor{comment}{     *0x0B needs an additional dummy byte to transmit data}}
+\DoxyCodeLine{254 \textcolor{comment}{     *difference is 0x03 can be used only at lower speeds}}
+\DoxyCodeLine{255 \textcolor{comment}{     *0x0B can be used at any speed}}
+\DoxyCodeLine{256 \textcolor{comment}{     *ONLY 0x0B needs a dummy byte}}
+\DoxyCodeLine{257 \textcolor{comment}{    */}}
+\DoxyCodeLine{258     HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, spi\_read\_command, 1, 500);}
+\DoxyCodeLine{259 }
+\DoxyCodeLine{260     uint8\_t address[4];}
+\DoxyCodeLine{261     uint8\_t spi\_read\_data;}
+\DoxyCodeLine{262     this-\/>translate\_int\_to\_address(read\_address, address);}
+\DoxyCodeLine{263     address[3] = 0xFF;     \textcolor{comment}{//doesn't matter}}
+\DoxyCodeLine{264 }
+\DoxyCodeLine{265     HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, address, 4, 5);}
+\DoxyCodeLine{266     \textcolor{keywordflow}{for} (uint8\_t i = 0; i < 255; i++)}
+\DoxyCodeLine{267     \{}
+\DoxyCodeLine{268         HAL\_SPI\_Receive(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, \&spi\_read\_data, 1, 1);}
+\DoxyCodeLine{269         \textcolor{keyword}{static} uint8\_t value[10];}
+\DoxyCodeLine{270         \textcolor{keywordflow}{if} (i \% 16 == 15)}
+\DoxyCodeLine{271         \{}
+\DoxyCodeLine{272             sprintf((\textcolor{keywordtype}{char}*)value, \textcolor{stringliteral}{"0x\%02x\(\backslash\)r\(\backslash\)n"}, spi\_read\_data \& 0xff);}
+\DoxyCodeLine{273         \}}
+\DoxyCodeLine{274         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{275         \{}
+\DoxyCodeLine{276             sprintf((\textcolor{keywordtype}{char}*)value, \textcolor{stringliteral}{"0x\%02x "}, spi\_read\_data \& 0xff);}
+\DoxyCodeLine{277         \}}
+\DoxyCodeLine{278         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, value, strlen((\textcolor{keywordtype}{char}*)value), 1);}
+\DoxyCodeLine{279     \}}
+\DoxyCodeLine{280 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d01/class_memory_a14196b4392b152adb8041edbd9e79dd5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_memory_a9910263cfa6b21725406d8173c07b3fc}\label{class_memory_a9910263cfa6b21725406d8173c07b3fc}} 
+\index{Memory@{Memory}!read\_status\_register1@{read\_status\_register1}}
+\index{read\_status\_register1@{read\_status\_register1}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{read\_status\_register1()}{read\_status\_register1()}}
+{\footnotesize\ttfamily void Memory\+::read\+\_\+status\+\_\+register1 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 167 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{168 \{}
+\DoxyCodeLine{169     \textcolor{comment}{/*}}
+\DoxyCodeLine{170 \textcolor{comment}{        7 SRP0 Status Register Protection bit-\/0 R/W See Table 10-\/3 on Status Register Protection}}
+\DoxyCodeLine{171 \textcolor{comment}{        6 SEC Block Protection R/W See Table 8-\/1 and 8-\/2 on Non-\/Volatile Protection}}
+\DoxyCodeLine{172 \textcolor{comment}{        5 TB Top or Bottom Protection R/W See Table 8-\/1 and 8-\/2 on Non-\/Volatile Protection}}
+\DoxyCodeLine{173 \textcolor{comment}{        4 BP2 Block Protection bit-\/2 R/W See Table 8-\/1 and 8-\/2 on Non-\/Volatile Protection}}
+\DoxyCodeLine{174 \textcolor{comment}{        3 BP1 Block Protection bit-\/1 R/W See Table 8-\/1 and 8-\/2 on Non-\/Volatile Protection}}
+\DoxyCodeLine{175 \textcolor{comment}{        2 BP0 Block Protection bit-\/0 R/W See Table 8-\/1 and 8-\/2 on Non-\/Volatile Protection}}
+\DoxyCodeLine{176 \textcolor{comment}{        1 WEL Write Enable Latch Status R 0 Device is not Write Enabled (default)}}
+\DoxyCodeLine{177 \textcolor{comment}{        1 Device is Write Enabled}}
+\DoxyCodeLine{178 \textcolor{comment}{        0 RDY/BSY}}
+\DoxyCodeLine{179 \textcolor{comment}{    */}}
+\DoxyCodeLine{180     uint8\_t cmd[1];}
+\DoxyCodeLine{181     cmd[0] = \mbox{\hyperlink{group___s_p_i_ga12adeb51511306b1b0c3ad0e124a551d}{READ\_STATUS\_REGISTER1}};}
+\DoxyCodeLine{182     }
+\DoxyCodeLine{183     HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, cmd, 1, 1000);}
+\DoxyCodeLine{184     HAL\_SPI\_Receive(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, \&this-\/>\mbox{\hyperlink{class_memory_acf09ce347bef9f59dba7a4e97c788617}{status16\_t}}.\mbox{\hyperlink{unionbyte8__t__mem__status_a84870d120c65ecb032093773422f5c23}{bytes}}.\mbox{\hyperlink{unionbyte8__t__mem__status_ae92a0e54e1e714201a6624705f218d90}{status1}}, 1, 1000);}
+\DoxyCodeLine{185 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d01/class_memory_a9910263cfa6b21725406d8173c07b3fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_memory_aa89a36c5cbc7934db9b53c1988dbb802}\label{class_memory_aa89a36c5cbc7934db9b53c1988dbb802}} 
+\index{Memory@{Memory}!read\_status\_register2@{read\_status\_register2}}
+\index{read\_status\_register2@{read\_status\_register2}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{read\_status\_register2()}{read\_status\_register2()}}
+{\footnotesize\ttfamily void Memory\+::read\+\_\+status\+\_\+register2 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 187 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{188 \{}
+\DoxyCodeLine{189     \textcolor{comment}{/*}}
+\DoxyCodeLine{190 \textcolor{comment}{        7 RES Reserve for future use R 0 Reserve for future use}}
+\DoxyCodeLine{191 \textcolor{comment}{        6 CMP Complement Block Protection R/W 0 See table on Block Protection}}
+\DoxyCodeLine{192 \textcolor{comment}{        5 LB3 Lock Security Register 3 R/W}}
+\DoxyCodeLine{193 \textcolor{comment}{            0 Security Register page-\/3 is not locked (default)}}
+\DoxyCodeLine{194 \textcolor{comment}{            1 Security Register page-\/3 cannot be erased/programmed}}
+\DoxyCodeLine{195 \textcolor{comment}{        4 LB2 Lock Security Register 2 R/W}}
+\DoxyCodeLine{196 \textcolor{comment}{            0 Security Register page-\/2 is not locked (default)}}
+\DoxyCodeLine{197 \textcolor{comment}{            1 Security Register page-\/2 cannot be erased/programmed}}
+\DoxyCodeLine{198 \textcolor{comment}{        3 LB1 Lock Security Register 1 R/W}}
+\DoxyCodeLine{199 \textcolor{comment}{            0 Security Register page-\/1 is not locked (default)}}
+\DoxyCodeLine{200 \textcolor{comment}{            1 Security Register page-\/1 cannot be erased/programmed}}
+\DoxyCodeLine{201 \textcolor{comment}{        2 RES Reserved for future use R 0 Reserved for future use}}
+\DoxyCodeLine{202 \textcolor{comment}{            1 QE Quad Enable R/W}}
+\DoxyCodeLine{203 \textcolor{comment}{            0 HOLD and WP function normally (default)}}
+\DoxyCodeLine{204 \textcolor{comment}{        1 HOLD and WP are I/O pins}}
+\DoxyCodeLine{205 \textcolor{comment}{        0 SRP1 Status Register Protect bit-\/1 R/W See table on Status Register Protection}}
+\DoxyCodeLine{206 \textcolor{comment}{     */}}
+\DoxyCodeLine{207     uint8\_t cmd[1];}
+\DoxyCodeLine{208     cmd[0] = \mbox{\hyperlink{group___s_p_i_gaaf11b99b3e767817de2e2da4ab9f6905}{READ\_STATUS\_REGISTER2}};}
+\DoxyCodeLine{209     }
+\DoxyCodeLine{210     HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, cmd, 1, 1000);}
+\DoxyCodeLine{211     HAL\_SPI\_Receive(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, \&this-\/>\mbox{\hyperlink{class_memory_acf09ce347bef9f59dba7a4e97c788617}{status16\_t}}.\mbox{\hyperlink{unionbyte8__t__mem__status_a84870d120c65ecb032093773422f5c23}{bytes}}.\mbox{\hyperlink{unionbyte8__t__mem__status_af20c1c023c171eaaed61742f8bd6135c}{status2}}, 1, 1000);}
+\DoxyCodeLine{212 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d01/class_memory_aa89a36c5cbc7934db9b53c1988dbb802_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_memory_ab2c1caf7f5aa2d449aacaddf20f00652}\label{class_memory_ab2c1caf7f5aa2d449aacaddf20f00652}} 
+\index{Memory@{Memory}!write@{write}}
+\index{write@{write}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily H\+A\+L\+\_\+\+Status\+Type\+Def Memory\+::write (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{write\+\_\+address,  }\item[{uint32\+\_\+t}]{write\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 282 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{283 \{}
+\DoxyCodeLine{284     uint8\_t spi\_read\_command[1];}
+\DoxyCodeLine{285     spi\_read\_command[0] = \mbox{\hyperlink{group___s_p_i_ga337d70f06f0dfe0f7fc86c8e84470a50}{BYTE\_PROGRAM}};}
+\DoxyCodeLine{286     \textcolor{comment}{// Address start : where to write :}}
+\DoxyCodeLine{287     uint8\_t address[4];}
+\DoxyCodeLine{288     uint8\_t counter\_in\_bytes[4];}
+\DoxyCodeLine{289     \textcolor{keyword}{volatile} uint8\_t complete\_write[8];}
+\DoxyCodeLine{290 }
+\DoxyCodeLine{291     address[3] = 0xFF;      \textcolor{comment}{//doesn't matter -\/ is not sent}}
+\DoxyCodeLine{292     translate\_int\_to\_address(write\_address, address);}
+\DoxyCodeLine{293     translate\_int\_to\_arr(write\_value, counter\_in\_bytes);}
+\DoxyCodeLine{294     \textcolor{comment}{// Address end :}}
+\DoxyCodeLine{295 }
+\DoxyCodeLine{296     \textcolor{comment}{// after push address start to write data one by one ....}}
+\DoxyCodeLine{297     \textcolor{comment}{//      until length 256 total per page}}
+\DoxyCodeLine{298 }
+\DoxyCodeLine{299     \textcolor{comment}{// datas start  from address  start 00-\/0F-\/FFh  00-\/00-\/00h}}
+\DoxyCodeLine{300 }
+\DoxyCodeLine{301     complete\_write[0] = spi\_read\_command[0];}
+\DoxyCodeLine{302     complete\_write[1] = address[0];}
+\DoxyCodeLine{303     complete\_write[2] = address[1];}
+\DoxyCodeLine{304     complete\_write[3] = address[2];}
+\DoxyCodeLine{305     complete\_write[4] = counter\_in\_bytes[0];}
+\DoxyCodeLine{306     complete\_write[5] = counter\_in\_bytes[1];}
+\DoxyCodeLine{307     complete\_write[6] = counter\_in\_bytes[2];}
+\DoxyCodeLine{308     complete\_write[7] = counter\_in\_bytes[3];}
+\DoxyCodeLine{309     \textcolor{keywordflow}{return} HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, (uint8\_t *)complete\_write, 8, 500);}
+\DoxyCodeLine{310 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d01/class_memory_ab2c1caf7f5aa2d449aacaddf20f00652_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_memory_a1fa2d43a2098b9be605ba5574a4f4ecb}\label{class_memory_a1fa2d43a2098b9be605ba5574a4f4ecb}} 
+\index{Memory@{Memory}!write\_disable@{write\_disable}}
+\index{write\_disable@{write\_disable}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{write\_disable()}{write\_disable()}}
+{\footnotesize\ttfamily H\+A\+L\+\_\+\+Status\+Type\+Def Memory\+::write\+\_\+disable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 153 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{154 \{}
+\DoxyCodeLine{155     uint8\_t spi\_write\_disable[1];}
+\DoxyCodeLine{156     spi\_write\_disable[0] = \mbox{\hyperlink{group___s_p_i_ga0a4d3a87fae6e2ee384ce3cc0d2b32f7}{WRITE\_DISABLE}};      \textcolor{comment}{// write enable}}
+\DoxyCodeLine{157     \textcolor{keywordflow}{return} HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, spi\_write\_disable, 1, 500);}
+\DoxyCodeLine{158 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d01/class_memory_a1fa2d43a2098b9be605ba5574a4f4ecb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_memory_aed28e5150da795f051b91a78ab3abd0c}\label{class_memory_aed28e5150da795f051b91a78ab3abd0c}} 
+\index{Memory@{Memory}!write\_enable@{write\_enable}}
+\index{write\_enable@{write\_enable}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{write\_enable()}{write\_enable()}}
+{\footnotesize\ttfamily H\+A\+L\+\_\+\+Status\+Type\+Def Memory\+::write\+\_\+enable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 160 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{161 \{}
+\DoxyCodeLine{162     uint8\_t spi\_write\_enable[1];}
+\DoxyCodeLine{163     spi\_write\_enable[0] = \mbox{\hyperlink{group___s_p_i_ga0b732dd9c6d99fbd9631f30e5a6572d8}{WRITE\_ENABLE}};         \textcolor{comment}{// write enable}}
+\DoxyCodeLine{164     \textcolor{keywordflow}{return} HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, spi\_write\_enable, 1, 2);}
+\DoxyCodeLine{165 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d01/class_memory_aed28e5150da795f051b91a78ab3abd0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_memory_a1b7fb352eb90b5c6e44278dcaa929853}\label{class_memory_a1b7fb352eb90b5c6e44278dcaa929853}} 
+\index{Memory@{Memory}!write\_status\_register@{write\_status\_register}}
+\index{write\_status\_register@{write\_status\_register}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{write\_status\_register()}{write\_status\_register()}}
+{\footnotesize\ttfamily void Memory\+::write\+\_\+status\+\_\+register (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{write\+\_\+now }\end{DoxyParamCaption})}
+
+
+
+Definition at line 214 of file mem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{215 \{}
+\DoxyCodeLine{216     uint8\_t cmd[3];}
+\DoxyCodeLine{217     cmd[0] = \mbox{\hyperlink{group___s_p_i_gaf43b6f7351fe56276b14fac089ba5f37}{WRITE\_STATUS\_REGISTER}};}
+\DoxyCodeLine{218     cmd[1] = (uint8\_t)((write\_now >> 8) \& 0xff);}
+\DoxyCodeLine{219     cmd[2] = (uint8\_t)((write\_now >> 0) \& 0xff);}
+\DoxyCodeLine{220     HAL\_SPI\_Transmit(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, cmd, 3, 1000);}
+\DoxyCodeLine{221 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d01/class_memory_a1b7fb352eb90b5c6e44278dcaa929853_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_memory_acf94d0376bba460fa88a97dfd1b27cc6}\label{class_memory_acf94d0376bba460fa88a97dfd1b27cc6}} 
+\index{Memory@{Memory}!CS@{CS}}
+\index{CS@{CS}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{CS}{CS}}
+{\footnotesize\ttfamily uint8\+\_\+t Memory\+::\+CS}
+
+
+
+Definition at line 44 of file mem.\+h.
+
+\mbox{\Hypertarget{class_memory_ac43d9bf14477c68f2e831302a53fbd83}\label{class_memory_ac43d9bf14477c68f2e831302a53fbd83}} 
+\index{Memory@{Memory}!cursor@{cursor}}
+\index{cursor@{cursor}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily uint32\+\_\+t Memory\+::cursor}
+
+
+
+Definition at line 49 of file mem.\+h.
+
+\mbox{\Hypertarget{class_memory_ad81207aee3196cd0106f5e4e2530fcb1}\label{class_memory_ad81207aee3196cd0106f5e4e2530fcb1}} 
+\index{Memory@{Memory}!date@{date}}
+\index{date@{date}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily uint32\+\_\+t Memory\+::date}
+
+
+
+Definition at line 53 of file mem.\+h.
+
+\mbox{\Hypertarget{class_memory_a7cc6400cee02d0bcbd26dfc09cb4c4a6}\label{class_memory_a7cc6400cee02d0bcbd26dfc09cb4c4a6}} 
+\index{Memory@{Memory}!id@{id}}
+\index{id@{id}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily uint8\+\_\+t Memory\+::id\mbox{[}3\mbox{]}}
+
+
+
+Definition at line 46 of file mem.\+h.
+
+\mbox{\Hypertarget{class_memory_a32e14a921e36c510d3deaa976a77ddd6}\label{class_memory_a32e14a921e36c510d3deaa976a77ddd6}} 
+\index{Memory@{Memory}!id\_valid@{id\_valid}}
+\index{id\_valid@{id\_valid}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{id\_valid}{id\_valid}}
+{\footnotesize\ttfamily bool Memory\+::id\+\_\+valid}
+
+
+
+Definition at line 47 of file mem.\+h.
+
+\mbox{\Hypertarget{class_memory_aa486017257c4ac2f30bfe69e4fa47aa5}\label{class_memory_aa486017257c4ac2f30bfe69e4fa47aa5}} 
+\index{Memory@{Memory}!max\_count@{max\_count}}
+\index{max\_count@{max\_count}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{max\_count}{max\_count}}
+{\footnotesize\ttfamily uint32\+\_\+t Memory\+::max\+\_\+count}
+
+
+
+Definition at line 52 of file mem.\+h.
+
+\mbox{\Hypertarget{class_memory_a0f2570b60ebd1f8689e0e30a28c3f88b}\label{class_memory_a0f2570b60ebd1f8689e0e30a28c3f88b}} 
+\index{Memory@{Memory}!name@{name}}
+\index{name@{name}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily char Memory\+::name\mbox{[}5\mbox{]}}
+
+
+
+Definition at line 45 of file mem.\+h.
+
+\mbox{\Hypertarget{class_memory_a952b630a9fad17f5ff01860af1400545}\label{class_memory_a952b630a9fad17f5ff01860af1400545}} 
+\index{Memory@{Memory}!pulses@{pulses}}
+\index{pulses@{pulses}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{pulses}{pulses}}
+{\footnotesize\ttfamily uint32\+\_\+t Memory\+::pulses}
+
+
+
+Definition at line 50 of file mem.\+h.
+
+\mbox{\Hypertarget{class_memory_a67a06ce841989636f775f7e82c0a7584}\label{class_memory_a67a06ce841989636f775f7e82c0a7584}} 
+\index{Memory@{Memory}!serial\_number@{serial\_number}}
+\index{serial\_number@{serial\_number}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{serial\_number}{serial\_number}}
+{\footnotesize\ttfamily uint32\+\_\+t Memory\+::serial\+\_\+number}
+
+
+
+Definition at line 51 of file mem.\+h.
+
+\mbox{\Hypertarget{class_memory_acf09ce347bef9f59dba7a4e97c788617}\label{class_memory_acf09ce347bef9f59dba7a4e97c788617}} 
+\index{Memory@{Memory}!status16\_t@{status16\_t}}
+\index{status16\_t@{status16\_t}!Memory@{Memory}}
+\doxysubsubsection{\texorpdfstring{status16\_t}{status16\_t}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionbyte8__t__mem__status}{byte8\+\_\+t\+\_\+mem\+\_\+status}} Memory\+::status16\+\_\+t}
+
+
+
+Definition at line 48 of file mem.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{mem_8h}{mem.\+h}}\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/\mbox{\hyperlink{mem_8cpp}{mem.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+<map id="Error_Handler" name="Error_Handler">
+<area shape="rect" id="node1" title="This function is executed in case of error occurrence." alt="" coords="315,208,416,235"/>
+<area shape="rect" id="node2" href="$de/d01/adc_8c.html#ac3139540667c403c5dfd37a99c610b1c" title=" " alt="" coords="120,5,251,32"/>
+<area shape="rect" id="node3" href="$de/d01/adc_8c.html#aca7f21e220653e353491bceced7c5df3" title=" " alt="" coords="136,56,235,83"/>
+<area shape="rect" id="node5" href="$d8/d13/crc_8c.html#a9f720fe95d685258cfe2ba29dc395c48" title=" " alt="" coords="136,107,235,133"/>
+<area shape="rect" id="node6" href="$d4/dcc/rtc_8c.html#abf4accd1ce479030808e546f3d4642c9" title=" " alt="" coords="137,157,233,184"/>
+<area shape="rect" id="node7" href="$da/d00/spi_8c.html#af81398f9775695df0b172367651ca3e6" title=" " alt="" coords="136,208,235,235"/>
+<area shape="rect" id="node8" href="$db/db1/tim_8c.html#ac648e7f125deef46d41cd8b3f632efe0" title=" " alt="" coords="132,259,239,285"/>
+<area shape="rect" id="node9" href="$dc/d08/usart_8c.html#a57d1167735baafab8e3288526c424929" title=" " alt="" coords="104,309,267,336"/>
+<area shape="rect" id="node10" href="$dc/d08/usart_8c.html#a052088fe5bb3f807a4b2502e664fd4fd" title=" " alt="" coords="104,360,267,387"/>
+<area shape="rect" id="node11" href="$df/d0a/main_8cpp.html#a70af21c671abfcc773614a9a4f63d920" title="System Clock Configuration." alt="" coords="114,411,257,437"/>
+<area shape="rect" id="node4" href="$df/d0a/main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,233,56,260"/>
+</map>

@@ -1,0 +1,1182 @@
+\hypertarget{class_monitor}{}\doxysection{Monitor Class Reference}
+\label{class_monitor}\index{Monitor@{Monitor}}
+
+
+{\ttfamily \#include $<$monitor.\+h$>$}
+
+
+
+Collaboration diagram for Monitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/d9f/class_monitor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monitor_a502d4093725f06fbe31072e24e35257f}{Monitor}} (\mbox{\hyperlink{class_main_controller}{Main\+Controller}} $\ast$)
+\item 
+\mbox{\hyperlink{class_monitor_a64aba8195effc068092ddea5a71e8176}{$\sim$\+Monitor}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a03107e629cb0ad6fe675f6d835f66b28}{rx\+\_\+write}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_aa4c4faffb5c4e32dba3dca75e65c5bef}{rx\+\_\+status\+\_\+read}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_aa27b127b992801f50bdb92fef49681ac}{rx\+\_\+status\+\_\+write}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_ae8ff06691bf8e8057e0e80cd64aeb34f}{rx\+\_\+read}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a75510e7d9ce36be654afd3fe71cbcdf5}{rx\+\_\+erase}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a3d43788a8c7bf3650101f27026778150}{rx\+\_\+nuke}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_aeab254b1ac44fa1bbf92fd3fcb845577}{rx\+\_\+start\+\_\+motor}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a47b23c9ccca566ad73d799ab9a5b71e6}{rx\+\_\+stop\+\_\+motor}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a510f67387387bdcb75de2214e64095cc}{rx\+\_\+go\+\_\+active}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_af7ccece404ba633257d6c3a835eef16c}{rx\+\_\+test\+\_\+read}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a11c09aec41a71ec6ad66e4f88f84c921}{rx\+\_\+set\+\_\+serial}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a6e2862a865c06d59014ebd39a878f77a}{rx\+\_\+set\+\_\+maxi}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a959d952f553cfd03d33bfd7dc1afd02b}{rx\+\_\+set\+\_\+date}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a03edce083403a7557c4ddfa65e2310ca}{rx\+\_\+scan}} (void)
+\item 
+void \mbox{\hyperlink{class_monitor_a542fa203099a841d7fc949c0d5204c65}{rx\+\_\+scan}} (uint8\+\_\+t cs\+\_\+num, uint32\+\_\+t \mbox{\hyperlink{class_monitor_a4ecea6bf82ce6dd586452d6869a7487e}{address}})
+\item 
+void \mbox{\hyperlink{class_monitor_a94a29f8bf492e5c64224b97e66216d13}{rx\+\_\+get\+\_\+man\+\_\+id}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_ad9f97a0c81fa14b21d44e6ce23de17dd}{rx\+\_\+find\+\_\+pulses}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a4133090a8c803d8e77bfac4d27c5de19}{rx\+\_\+upload}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a23fa055b469e9f31f7c5bae94b8c3a9d}{rx\+\_\+debug}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a86cbce15087bce51708d62fc4f5f7922}{rx\+\_\+exit}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a2123b93a71ceb440e2511de48a36b19e}{rx\+\_\+help}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_a92a553704cf82ff128e0a52e731ccca2}{rx\+\_\+pass}} ()
+\item 
+void \mbox{\hyperlink{class_monitor_ae529b40928ddfefb21d92a5d86faa304}{serial\+\_\+consume}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_monitor_a907e8bdaf19acb4b70855bcddabd0676}{buffer}} \mbox{[}\mbox{\hyperlink{group___auxilary_ga29d12c67e4b6e0ff96d7aa793757b094}{R\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_monitor_a4ecea6bf82ce6dd586452d6869a7487e}{address}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_monitor_ad1a91ed9ed1874c24b4fc6b270371470}{value}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_monitor_a6df6af1cb33e1e5c8f554105925f3af6}{chip\+\_\+select}}
+\item 
+\mbox{\hyperlink{class_main_controller}{Main\+Controller}} $\ast$ \mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 7 of file monitor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_monitor_a502d4093725f06fbe31072e24e35257f}\label{class_monitor_a502d4093725f06fbe31072e24e35257f}} 
+\index{Monitor@{Monitor}!Monitor@{Monitor}}
+\index{Monitor@{Monitor}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{Monitor()}{Monitor()}}
+{\footnotesize\ttfamily Monitor\+::\+Monitor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_main_controller}{Main\+Controller}} $\ast$}]{apt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     this-\/>apt = \mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}};}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_monitor_a64aba8195effc068092ddea5a71e8176}\label{class_monitor_a64aba8195effc068092ddea5a71e8176}} 
+\index{Monitor@{Monitor}!````~Monitor@{$\sim$Monitor}}
+\index{````~Monitor@{$\sim$Monitor}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{$\sim$Monitor()}{~Monitor()}}
+{\footnotesize\ttfamily Monitor\+::$\sim$\+Monitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12     }
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_monitor_a23fa055b469e9f31f7c5bae94b8c3a9d}\label{class_monitor_a23fa055b469e9f31f7c5bae94b8c3a9d}} 
+\index{Monitor@{Monitor}!rx\_debug@{rx\_debug}}
+\index{rx\_debug@{rx\_debug}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_debug()}{rx\_debug()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 346 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{347 \{}
+\DoxyCodeLine{348     this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa6d9f8689ea39a3158da65b5a604c294d}{UartDebug}};}
+\DoxyCodeLine{349     this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa6d9f8689ea39a3158da65b5a604c294d}{UartDebug}};}
+\DoxyCodeLine{350 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a23fa055b469e9f31f7c5bae94b8c3a9d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a75510e7d9ce36be654afd3fe71cbcdf5}\label{class_monitor_a75510e7d9ce36be654afd3fe71cbcdf5}} 
+\index{Monitor@{Monitor}!rx\_erase@{rx\_erase}}
+\index{rx\_erase@{rx\_erase}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_erase()}{rx\_erase()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+erase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 185 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{186 \{}
+\DoxyCodeLine{187     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 2)}
+\DoxyCodeLine{188     \{}
+\DoxyCodeLine{189         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};     \textcolor{comment}{// try to parse into cs number}}
+\DoxyCodeLine{190         uint32\_t \mbox{\hyperlink{class_monitor_ad1a91ed9ed1874c24b4fc6b270371470}{value}} = strtoul(this-\/>tokens[2], NULL, 16);}
+\DoxyCodeLine{191         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a91fcdb427c1e74dbd83e219251d14c35}{erase}}(cs\_num, \mbox{\hyperlink{class_monitor_ad1a91ed9ed1874c24b4fc6b270371470}{value}});}
+\DoxyCodeLine{192     \}}
+\DoxyCodeLine{193 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a75510e7d9ce36be654afd3fe71cbcdf5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a75510e7d9ce36be654afd3fe71cbcdf5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a86cbce15087bce51708d62fc4f5f7922}\label{class_monitor_a86cbce15087bce51708d62fc4f5f7922}} 
+\index{Monitor@{Monitor}!rx\_exit@{rx\_exit}}
+\index{rx\_exit@{rx\_exit}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_exit()}{rx\_exit()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 352 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{353 \{}
+\DoxyCodeLine{354     NVIC\_SystemReset();}
+\DoxyCodeLine{355 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a86cbce15087bce51708d62fc4f5f7922_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_ad9f97a0c81fa14b21d44e6ce23de17dd}\label{class_monitor_ad9f97a0c81fa14b21d44e6ce23de17dd}} 
+\index{Monitor@{Monitor}!rx\_find\_pulses@{rx\_find\_pulses}}
+\index{rx\_find\_pulses@{rx\_find\_pulses}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_find\_pulses()}{rx\_find\_pulses()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+find\+\_\+pulses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 328 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{329 \{}
+\DoxyCodeLine{330     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 1)}
+\DoxyCodeLine{331     \{}
+\DoxyCodeLine{332         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};          \textcolor{comment}{// try to parse into cs number}}
+\DoxyCodeLine{333         uint32\_t time\_delay = HAL\_GetTick();}
+\DoxyCodeLine{334         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ae85dff1f0412d3995db4dc27f12d9e83}{binary\_and\_patch}}();}
+\DoxyCodeLine{335         uint32\_t pulse\_count = *this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}{pulses}};}
+\DoxyCodeLine{336         \textcolor{keywordtype}{char} pulse\_str[40];}
+\DoxyCodeLine{337         sprintf(pulse\_str, \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)nFound: \%lu pulses in \%lu time"}, pulse\_count, HAL\_GetTick() -\/ time\_delay);}
+\DoxyCodeLine{338         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)pulse\_str, strlen(pulse\_str), 3);}
+\DoxyCodeLine{339     \}}
+\DoxyCodeLine{340 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_ad9f97a0c81fa14b21d44e6ce23de17dd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_ad9f97a0c81fa14b21d44e6ce23de17dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a94a29f8bf492e5c64224b97e66216d13}\label{class_monitor_a94a29f8bf492e5c64224b97e66216d13}} 
+\index{Monitor@{Monitor}!rx\_get\_man\_id@{rx\_get\_man\_id}}
+\index{rx\_get\_man\_id@{rx\_get\_man\_id}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_get\_man\_id()}{rx\_get\_man\_id()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+get\+\_\+man\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 320 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{321 \{}
+\DoxyCodeLine{322     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 1)}
+\DoxyCodeLine{323     \{}
+\DoxyCodeLine{324         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};         \textcolor{comment}{// try to parse into cs number}}
+\DoxyCodeLine{325         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a2e66c31e000c571a2c7ef5b5f2f78ab2}{check\_connections\_with\_printback}}(cs\_num);}
+\DoxyCodeLine{326     \}}
+\DoxyCodeLine{327 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a94a29f8bf492e5c64224b97e66216d13_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a94a29f8bf492e5c64224b97e66216d13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a510f67387387bdcb75de2214e64095cc}\label{class_monitor_a510f67387387bdcb75de2214e64095cc}} 
+\index{Monitor@{Monitor}!rx\_go\_active@{rx\_go\_active}}
+\index{rx\_go\_active@{rx\_go\_active}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_go\_active()}{rx\_go\_active()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+go\+\_\+active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 237 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{238 \{}
+\DoxyCodeLine{239     this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_addba7220ab2d6ea26b238445224f6e65}{start\_motor}}();}
+\DoxyCodeLine{240     this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} = 0;}
+\DoxyCodeLine{241     this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa26bd8444261cc58df7a86753c79d2520}{Active}};}
+\DoxyCodeLine{242     this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa26bd8444261cc58df7a86753c79d2520}{Active}};}
+\DoxyCodeLine{243 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a510f67387387bdcb75de2214e64095cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a510f67387387bdcb75de2214e64095cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a2123b93a71ceb440e2511de48a36b19e}\label{class_monitor_a2123b93a71ceb440e2511de48a36b19e}} 
+\index{Monitor@{Monitor}!rx\_help@{rx\_help}}
+\index{rx\_help@{rx\_help}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_help()}{rx\_help()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 357 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{358 \{}
+\DoxyCodeLine{359     \textcolor{keyword}{const} \textcolor{keywordtype}{char} help\_str[] = \(\backslash\)}
+\DoxyCodeLine{360     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n======================================================================"}\(\backslash\)}
+\DoxyCodeLine{361     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n=                                                                    ="}\(\backslash\)}
+\DoxyCodeLine{362     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= Usage:                                                             ="}\(\backslash\)}
+\DoxyCodeLine{363     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= help\# -\/ this message                                               ="}\(\backslash\)}
+\DoxyCodeLine{364     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= exit\# -\/ return to normal operation                                 ="}\(\backslash\)}
+\DoxyCodeLine{365     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= debug\# -\/ halt operation and read uart only                         ="}\(\backslash\)}
+\DoxyCodeLine{366     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= rd\# -\/ read arbitrary memory at chipselect                          ="}\(\backslash\)}
+\DoxyCodeLine{367     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n=                    ex. rd,3,0x000ffff0\#                            ="}\(\backslash\)}
+\DoxyCodeLine{368     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= wrt\# -\/ write arbitrary memory at chipselect                        ="}\(\backslash\)}
+\DoxyCodeLine{369     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n=                    ex. wrt,3,0x000ffff0,10\#                        ="}\(\backslash\)}
+\DoxyCodeLine{370     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= erase\# -\/ erase 4K block at loaction ex. erase,3,0x1000\#            ="}\(\backslash\)}
+\DoxyCodeLine{371     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= nuke\# -\/ erase whole chip wholly                                    ="}\(\backslash\)}
+\DoxyCodeLine{372     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= upload\# -\/ Xmodem transfer of data                                  ="}\(\backslash\)}
+\DoxyCodeLine{373     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= scan\# -\/ read 256 bytes                                             ="}\(\backslash\)}
+\DoxyCodeLine{374     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= status1/status2\# -\/ read status register                            ="}\(\backslash\)}
+\DoxyCodeLine{375     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= statusw\# -\/ write status register                                   ="}\(\backslash\)}
+\DoxyCodeLine{376     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= M=1\#/M=0 -\/ run/halt motor                                          ="}\(\backslash\)}
+\DoxyCodeLine{377     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= pass\# -\/ pass command to screen                                     ="}\(\backslash\)}
+\DoxyCodeLine{378     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n= snum,date,maxi, testread                      -\/ header settters    ="}\(\backslash\)}
+\DoxyCodeLine{379     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n======================================================================"}\(\backslash\)}
+\DoxyCodeLine{380     \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n"};}
+\DoxyCodeLine{381     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)help\_str, strlen(help\_str), 10);}
+\DoxyCodeLine{382 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a2123b93a71ceb440e2511de48a36b19e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a3d43788a8c7bf3650101f27026778150}\label{class_monitor_a3d43788a8c7bf3650101f27026778150}} 
+\index{Monitor@{Monitor}!rx\_nuke@{rx\_nuke}}
+\index{rx\_nuke@{rx\_nuke}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_nuke()}{rx\_nuke()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+nuke (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 176 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{177 \{}
+\DoxyCodeLine{178     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 0)}
+\DoxyCodeLine{179     \{}
+\DoxyCodeLine{180         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};    \textcolor{comment}{// try to parse into cs number}}
+\DoxyCodeLine{181         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a91fcdb427c1e74dbd83e219251d14c35}{erase}}(cs\_num);}
+\DoxyCodeLine{182     \}}
+\DoxyCodeLine{183 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a3d43788a8c7bf3650101f27026778150_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a3d43788a8c7bf3650101f27026778150_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a92a553704cf82ff128e0a52e731ccca2}\label{class_monitor_a92a553704cf82ff128e0a52e731ccca2}} 
+\index{Monitor@{Monitor}!rx\_pass@{rx\_pass}}
+\index{rx\_pass@{rx\_pass}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_pass()}{rx\_pass()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 383 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{384 \{}
+\DoxyCodeLine{385     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 0)}
+\DoxyCodeLine{386     \{}
+\DoxyCodeLine{387         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_ac101f90b243ffbb985ed7f530778fd5e}{pass\_to\_ard}}((uint8\_t*)this-\/>tokens[1]);}
+\DoxyCodeLine{388     \}}
+\DoxyCodeLine{389 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{d9/df7/class_monitor_a92a553704cf82ff128e0a52e731ccca2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a92a553704cf82ff128e0a52e731ccca2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_ae8ff06691bf8e8057e0e80cd64aeb34f}\label{class_monitor_ae8ff06691bf8e8057e0e80cd64aeb34f}} 
+\index{Monitor@{Monitor}!rx\_read@{rx\_read}}
+\index{rx\_read@{rx\_read}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_read()}{rx\_read()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 212 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{213 \{}
+\DoxyCodeLine{214     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 1)}
+\DoxyCodeLine{215     \{}
+\DoxyCodeLine{216         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};       \textcolor{comment}{// try to parse into cs number}}
+\DoxyCodeLine{217         uint32\_t \mbox{\hyperlink{class_monitor_a4ecea6bf82ce6dd586452d6869a7487e}{address}} = strtoul(this-\/>tokens[2], NULL, 16);}
+\DoxyCodeLine{218         uint32\_t \mbox{\hyperlink{class_monitor_ad1a91ed9ed1874c24b4fc6b270371470}{value}} = strtoul(this-\/>tokens[3], NULL, 16);}
+\DoxyCodeLine{219         uint32\_t read\_back = this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_aa9ca21741259055eec2a9174f23a0e19}{read}}(cs\_num, \mbox{\hyperlink{class_monitor_a4ecea6bf82ce6dd586452d6869a7487e}{address}});}
+\DoxyCodeLine{220 }
+\DoxyCodeLine{221         \textcolor{keywordtype}{char} read\_str[40];}
+\DoxyCodeLine{222         sprintf(read\_str, \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)nRead:  \%08lX at addr \%08lX\(\backslash\)r\(\backslash\)n"}, read\_back, \mbox{\hyperlink{class_monitor_a4ecea6bf82ce6dd586452d6869a7487e}{address}});}
+\DoxyCodeLine{223         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)read\_str, strlen(read\_str), 10);}
+\DoxyCodeLine{224     \}}
+\DoxyCodeLine{225 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_ae8ff06691bf8e8057e0e80cd64aeb34f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_ae8ff06691bf8e8057e0e80cd64aeb34f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a542fa203099a841d7fc949c0d5204c65}\label{class_monitor_a542fa203099a841d7fc949c0d5204c65}} 
+\index{Monitor@{Monitor}!rx\_scan@{rx\_scan}}
+\index{rx\_scan@{rx\_scan}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_scan()}{rx\_scan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+scan (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cs\+\_\+num,  }\item[{uint32\+\_\+t}]{address }\end{DoxyParamCaption})}
+
+
+
+Definition at line 315 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{316 \{}
+\DoxyCodeLine{317     this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ae27c6130e170e6c6a3f98631b5be5cdc}{read256}}(cs\_num, \mbox{\hyperlink{class_monitor_a4ecea6bf82ce6dd586452d6869a7487e}{address}});}
+\DoxyCodeLine{318 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a542fa203099a841d7fc949c0d5204c65_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a03edce083403a7557c4ddfa65e2310ca}\label{class_monitor_a03edce083403a7557c4ddfa65e2310ca}} 
+\index{Monitor@{Monitor}!rx\_scan@{rx\_scan}}
+\index{rx\_scan@{rx\_scan}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_scan()}{rx\_scan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+scan (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 305 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{306 \{}
+\DoxyCodeLine{307     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 2)}
+\DoxyCodeLine{308     \{}
+\DoxyCodeLine{309         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{310         uint32\_t token\_numeric = strtoul(this-\/>tokens[2], NULL, 16);}
+\DoxyCodeLine{311         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ae27c6130e170e6c6a3f98631b5be5cdc}{read256}}(cs\_num, token\_numeric);}
+\DoxyCodeLine{312     \}}
+\DoxyCodeLine{313 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a03edce083403a7557c4ddfa65e2310ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a03edce083403a7557c4ddfa65e2310ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a959d952f553cfd03d33bfd7dc1afd02b}\label{class_monitor_a959d952f553cfd03d33bfd7dc1afd02b}} 
+\index{Monitor@{Monitor}!rx\_set\_date@{rx\_set\_date}}
+\index{rx\_set\_date@{rx\_set\_date}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_set\_date()}{rx\_set\_date()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+set\+\_\+date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 294 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{295 \{}
+\DoxyCodeLine{296     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 2)}
+\DoxyCodeLine{297     \{}
+\DoxyCodeLine{298         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};            \textcolor{comment}{// try to parse into cs number}}
+\DoxyCodeLine{299         uint32\_t token\_numeric = strtoul(this-\/>tokens[2], NULL, 16);}
+\DoxyCodeLine{300 }
+\DoxyCodeLine{301         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(cs\_num, 0x00FFFF2, 0x44415445);}
+\DoxyCodeLine{302         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(cs\_num, 0x00FFFEE, token\_numeric);}
+\DoxyCodeLine{303     \}}
+\DoxyCodeLine{304 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a959d952f553cfd03d33bfd7dc1afd02b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a959d952f553cfd03d33bfd7dc1afd02b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a6e2862a865c06d59014ebd39a878f77a}\label{class_monitor_a6e2862a865c06d59014ebd39a878f77a}} 
+\index{Monitor@{Monitor}!rx\_set\_maxi@{rx\_set\_maxi}}
+\index{rx\_set\_maxi@{rx\_set\_maxi}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_set\_maxi()}{rx\_set\_maxi()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+set\+\_\+maxi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 282 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{283 \{}
+\DoxyCodeLine{284     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 2)}
+\DoxyCodeLine{285     \{}
+\DoxyCodeLine{286         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};            \textcolor{comment}{// try to parse into cs number}}
+\DoxyCodeLine{287         uint32\_t token\_numeric = strtoul(this-\/>tokens[2], NULL, 16);}
+\DoxyCodeLine{288 }
+\DoxyCodeLine{289         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(cs\_num, 0x00FFFEA, 0x4D415849);}
+\DoxyCodeLine{290         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(cs\_num, 0x00FFFE6, token\_numeric);}
+\DoxyCodeLine{291     \}}
+\DoxyCodeLine{292 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a6e2862a865c06d59014ebd39a878f77a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a6e2862a865c06d59014ebd39a878f77a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a11c09aec41a71ec6ad66e4f88f84c921}\label{class_monitor_a11c09aec41a71ec6ad66e4f88f84c921}} 
+\index{Monitor@{Monitor}!rx\_set\_serial@{rx\_set\_serial}}
+\index{rx\_set\_serial@{rx\_set\_serial}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_set\_serial()}{rx\_set\_serial()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+set\+\_\+serial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 271 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{272 \{}
+\DoxyCodeLine{273     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 2)}
+\DoxyCodeLine{274     \{}
+\DoxyCodeLine{275         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};           \textcolor{comment}{// try to parse into cs number}}
+\DoxyCodeLine{276         uint32\_t token\_numeric = strtoul(this-\/>tokens[2], NULL, 16);}
+\DoxyCodeLine{277 }
+\DoxyCodeLine{278         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(cs\_num, 0x00FFFFA, 0x534E554D);}
+\DoxyCodeLine{279         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(cs\_num, 0x00FFFF6, token\_numeric);}
+\DoxyCodeLine{280     \}}
+\DoxyCodeLine{281 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a11c09aec41a71ec6ad66e4f88f84c921_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a11c09aec41a71ec6ad66e4f88f84c921_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_aeab254b1ac44fa1bbf92fd3fcb845577}\label{class_monitor_aeab254b1ac44fa1bbf92fd3fcb845577}} 
+\index{Monitor@{Monitor}!rx\_start\_motor@{rx\_start\_motor}}
+\index{rx\_start\_motor@{rx\_start\_motor}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_start\_motor()}{rx\_start\_motor()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+start\+\_\+motor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 227 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{228 \{}
+\DoxyCodeLine{229     this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_addba7220ab2d6ea26b238445224f6e65}{start\_motor}}();}
+\DoxyCodeLine{230 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_aeab254b1ac44fa1bbf92fd3fcb845577_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_aeab254b1ac44fa1bbf92fd3fcb845577_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_aa4c4faffb5c4e32dba3dca75e65c5bef}\label{class_monitor_aa4c4faffb5c4e32dba3dca75e65c5bef}} 
+\index{Monitor@{Monitor}!rx\_status\_read@{rx\_status\_read}}
+\index{rx\_status\_read@{rx\_status\_read}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_status\_read()}{rx\_status\_read()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+status\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 156 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{157 \{}
+\DoxyCodeLine{158     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 0)}
+\DoxyCodeLine{159     \{}
+\DoxyCodeLine{160         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};  \textcolor{comment}{// try to parse into cs number}}
+\DoxyCodeLine{161         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a2e4081d6a11f1da091c1892d09df8c92}{print\_register}}(cs\_num);}
+\DoxyCodeLine{162     \}}
+\DoxyCodeLine{163 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_aa4c4faffb5c4e32dba3dca75e65c5bef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_aa4c4faffb5c4e32dba3dca75e65c5bef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_aa27b127b992801f50bdb92fef49681ac}\label{class_monitor_aa27b127b992801f50bdb92fef49681ac}} 
+\index{Monitor@{Monitor}!rx\_status\_write@{rx\_status\_write}}
+\index{rx\_status\_write@{rx\_status\_write}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_status\_write()}{rx\_status\_write()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+status\+\_\+write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 166 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{167 \{}
+\DoxyCodeLine{168     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 1)}
+\DoxyCodeLine{169     \{}
+\DoxyCodeLine{170         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};   \textcolor{comment}{// try to parse into cs number}}
+\DoxyCodeLine{171         uint16\_t \mbox{\hyperlink{class_monitor_ad1a91ed9ed1874c24b4fc6b270371470}{value}} = strtoul(this-\/>tokens[2], NULL, 16);}
+\DoxyCodeLine{172         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a926c13416fbb1004c26a6eca4fbe42a1}{write\_register}}(cs\_num, \mbox{\hyperlink{class_monitor_ad1a91ed9ed1874c24b4fc6b270371470}{value}});}
+\DoxyCodeLine{173     \}}
+\DoxyCodeLine{174 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_aa27b127b992801f50bdb92fef49681ac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_aa27b127b992801f50bdb92fef49681ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a47b23c9ccca566ad73d799ab9a5b71e6}\label{class_monitor_a47b23c9ccca566ad73d799ab9a5b71e6}} 
+\index{Monitor@{Monitor}!rx\_stop\_motor@{rx\_stop\_motor}}
+\index{rx\_stop\_motor@{rx\_stop\_motor}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_stop\_motor()}{rx\_stop\_motor()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+stop\+\_\+motor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 232 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{233 \{}
+\DoxyCodeLine{234     this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_a3a0173c0b6a9417f77048ec5809d73c9}{stop\_motor}}();}
+\DoxyCodeLine{235 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a47b23c9ccca566ad73d799ab9a5b71e6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a47b23c9ccca566ad73d799ab9a5b71e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_af7ccece404ba633257d6c3a835eef16c}\label{class_monitor_af7ccece404ba633257d6c3a835eef16c}} 
+\index{Monitor@{Monitor}!rx\_test\_read@{rx\_test\_read}}
+\index{rx\_test\_read@{rx\_test\_read}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_test\_read()}{rx\_test\_read()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+test\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 245 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{246 \{}
+\DoxyCodeLine{247     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 2)}
+\DoxyCodeLine{248     \{}
+\DoxyCodeLine{249         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{250 }
+\DoxyCodeLine{251         \textcolor{keywordtype}{int} t\_snum = this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_aa9ca21741259055eec2a9174f23a0e19}{read}}(cs\_num, 0x00FFFFA);}
+\DoxyCodeLine{252         \textcolor{keywordtype}{int} t\_snum\_v = this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_aa9ca21741259055eec2a9174f23a0e19}{read}}(cs\_num, 0x00FFFF6);}
+\DoxyCodeLine{253         \textcolor{keywordtype}{int} t\_date = this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_aa9ca21741259055eec2a9174f23a0e19}{read}}(cs\_num, 0x00FFFF2);}
+\DoxyCodeLine{254         \textcolor{keywordtype}{int} t\_date\_v = this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_aa9ca21741259055eec2a9174f23a0e19}{read}}(cs\_num, 0x00FFFEE);}
+\DoxyCodeLine{255         \textcolor{keywordtype}{int} t\_max = this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_aa9ca21741259055eec2a9174f23a0e19}{read}}(cs\_num, 0x00FFFEA);}
+\DoxyCodeLine{256         \textcolor{keywordtype}{int} t\_max\_v = this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_aa9ca21741259055eec2a9174f23a0e19}{read}}(cs\_num, 0x00FFFE6);}
+\DoxyCodeLine{257         }
+\DoxyCodeLine{258         \textcolor{keywordtype}{char} ap\_status[100];}
+\DoxyCodeLine{259         }
+\DoxyCodeLine{260         \textcolor{keywordtype}{char} snum[5];}
+\DoxyCodeLine{261         this-\/>translate\_int\_to\_arr(t\_snum, (uint8\_t*)snum);}
+\DoxyCodeLine{262         \textcolor{keywordtype}{char} date\_t[5];}
+\DoxyCodeLine{263         this-\/>translate\_int\_to\_arr(t\_date, (uint8\_t*)date\_t);}
+\DoxyCodeLine{264         \textcolor{keywordtype}{char} maxi[5];}
+\DoxyCodeLine{265         this-\/>translate\_int\_to\_arr(t\_max, (uint8\_t*)maxi);}
+\DoxyCodeLine{266         }
+\DoxyCodeLine{267         sprintf(ap\_status, \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n\%s \%08x\(\backslash\)r\(\backslash\)n\%s \%d\(\backslash\)r\(\backslash\)n\%s \%d\(\backslash\)r\(\backslash\)n"}, snum, t\_snum\_v, date\_t, t\_date\_v, maxi, t\_max\_v);}
+\DoxyCodeLine{268         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)ap\_status, strlen(ap\_status), 100);}
+\DoxyCodeLine{269     \}}
+\DoxyCodeLine{270 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_af7ccece404ba633257d6c3a835eef16c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_af7ccece404ba633257d6c3a835eef16c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a4133090a8c803d8e77bfac4d27c5de19}\label{class_monitor_a4133090a8c803d8e77bfac4d27c5de19}} 
+\index{Monitor@{Monitor}!rx\_upload@{rx\_upload}}
+\index{rx\_upload@{rx\_upload}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_upload()}{rx\_upload()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+upload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 342 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{343 \{}
+\DoxyCodeLine{344     \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_gae6fffe39f7afd74d76a311217db8cff1}{Main\_Menu}}();}
+\DoxyCodeLine{345 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a4133090a8c803d8e77bfac4d27c5de19_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a4133090a8c803d8e77bfac4d27c5de19_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_a03107e629cb0ad6fe675f6d835f66b28}\label{class_monitor_a03107e629cb0ad6fe675f6d835f66b28}} 
+\index{Monitor@{Monitor}!rx\_write@{rx\_write}}
+\index{rx\_write@{rx\_write}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{rx\_write()}{rx\_write()}}
+{\footnotesize\ttfamily void Monitor\+::rx\+\_\+write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 195 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{196 \{}
+\DoxyCodeLine{197     \textcolor{keywordflow}{if} (this-\/>tkn\_i > 3)}
+\DoxyCodeLine{198     \{}
+\DoxyCodeLine{199         uint8\_t cs\_num = *(this-\/>tokens[1]) -\/ \textcolor{charliteral}{'0'};      \textcolor{comment}{// try to parse into cs number}}
+\DoxyCodeLine{200         uint32\_t \mbox{\hyperlink{class_monitor_a4ecea6bf82ce6dd586452d6869a7487e}{address}} = strtoul(this-\/>tokens[2], NULL, 16);}
+\DoxyCodeLine{201         uint32\_t \mbox{\hyperlink{class_monitor_ad1a91ed9ed1874c24b4fc6b270371470}{value}} = strtoul(this-\/>tokens[3], NULL, 16);}
+\DoxyCodeLine{202         this-\/>\mbox{\hyperlink{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}{apt}}-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(cs\_num, \mbox{\hyperlink{class_monitor_a4ecea6bf82ce6dd586452d6869a7487e}{address}}, \mbox{\hyperlink{class_monitor_ad1a91ed9ed1874c24b4fc6b270371470}{value}});}
+\DoxyCodeLine{203         }
+\DoxyCodeLine{204         \textcolor{keywordtype}{char} write\_str[40];}
+\DoxyCodeLine{205         sprintf(write\_str, \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)nWrite: \%08lX at addr \%08lX\(\backslash\)r\(\backslash\)n"}, \mbox{\hyperlink{class_monitor_ad1a91ed9ed1874c24b4fc6b270371470}{value}}, \mbox{\hyperlink{class_monitor_a4ecea6bf82ce6dd586452d6869a7487e}{address}});}
+\DoxyCodeLine{206         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)write\_str, strlen(write\_str), 10);}
+\DoxyCodeLine{207         HAL\_Delay(1);}
+\DoxyCodeLine{208         this-\/>\mbox{\hyperlink{class_monitor_ae8ff06691bf8e8057e0e80cd64aeb34f}{rx\_read}}();}
+\DoxyCodeLine{209     \}}
+\DoxyCodeLine{210 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a03107e629cb0ad6fe675f6d835f66b28_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_a03107e629cb0ad6fe675f6d835f66b28_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_monitor_ae529b40928ddfefb21d92a5d86faa304}\label{class_monitor_ae529b40928ddfefb21d92a5d86faa304}} 
+\index{Monitor@{Monitor}!serial\_consume@{serial\_consume}}
+\index{serial\_consume@{serial\_consume}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{serial\_consume()}{serial\_consume()}}
+{\footnotesize\ttfamily void Monitor\+::serial\+\_\+consume (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 14 of file monitor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     HAL\_StatusTypeDef status;}
+\DoxyCodeLine{17     status = HAL\_UART\_Receive(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)\&this-\/>\mbox{\hyperlink{class_monitor_a907e8bdaf19acb4b70855bcddabd0676}{buffer}}[this-\/>index], 1, 10);}
+\DoxyCodeLine{18     \textcolor{keywordflow}{if} (status == HAL\_OK)}
+\DoxyCodeLine{19     \{}
+\DoxyCodeLine{20         \textcolor{keywordflow}{if} (rx\_char == \textcolor{charliteral}{'\%'} || rx\_char == \textcolor{charliteral}{'\#'})}
+\DoxyCodeLine{21         \{}
+\DoxyCodeLine{22             \mbox{\hyperlink{class_monitor_a907e8bdaf19acb4b70855bcddabd0676}{buffer}}[index] = 0;}
+\DoxyCodeLine{23             index = 0;}
+\DoxyCodeLine{24             \textcolor{keyword}{const} \textcolor{keywordtype}{char} brk[] = \textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"};}
+\DoxyCodeLine{25             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)brk, strlen(brk), 10);}
+\DoxyCodeLine{26             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, this-\/>\mbox{\hyperlink{class_monitor_a907e8bdaf19acb4b70855bcddabd0676}{buffer}}, strlen((\textcolor{keywordtype}{char}*)this-\/>\mbox{\hyperlink{class_monitor_a907e8bdaf19acb4b70855bcddabd0676}{buffer}}), 100);}
+\DoxyCodeLine{27             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)brk, strlen(brk), 10);}
+\DoxyCodeLine{28             \textcolor{keywordtype}{char}* rest = (\textcolor{keywordtype}{char}*)this-\/>\mbox{\hyperlink{class_monitor_a907e8bdaf19acb4b70855bcddabd0676}{buffer}}; }
+\DoxyCodeLine{29             \textcolor{comment}{// Returns first token}}
+\DoxyCodeLine{30             this-\/>tkn\_i = 0;}
+\DoxyCodeLine{31             this-\/>tokens[0] =  strtok\_r(rest, \textcolor{stringliteral}{","}, \&rest); }
+\DoxyCodeLine{32   }
+\DoxyCodeLine{33             \textcolor{comment}{// Keep printing tokens while one of the }}
+\DoxyCodeLine{34             \textcolor{comment}{// delimiters present in str[]. }}
+\DoxyCodeLine{35             \textcolor{keywordflow}{while}(this-\/>tokens[tkn\_i] != NULL) }
+\DoxyCodeLine{36             \{}
+\DoxyCodeLine{37                 this-\/>tkn\_i++;}
+\DoxyCodeLine{38                 this-\/>tokens[tkn\_i] = strtok\_r(rest, \textcolor{stringliteral}{","}, \&rest);}
+\DoxyCodeLine{39             \}}
+\DoxyCodeLine{40             \textcolor{keywordflow}{if} (this-\/>tokens[0] != NULL)}
+\DoxyCodeLine{41             \{}
+\DoxyCodeLine{42                 \textcolor{comment}{// PARSE THE STRING}}
+\DoxyCodeLine{43                 \textcolor{keywordflow}{if}(strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"wrt"}, 3) == 0) }
+\DoxyCodeLine{44                 \{}
+\DoxyCodeLine{45                     this-\/>\mbox{\hyperlink{class_monitor_a03107e629cb0ad6fe675f6d835f66b28}{rx\_write}}();}
+\DoxyCodeLine{46                 \}}
+\DoxyCodeLine{47                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"status1"}, 7) == 0) }
+\DoxyCodeLine{48                 \{}
+\DoxyCodeLine{49                     this-\/>\mbox{\hyperlink{class_monitor_aa4c4faffb5c4e32dba3dca75e65c5bef}{rx\_status\_read}}();}
+\DoxyCodeLine{50                 \}}
+\DoxyCodeLine{51                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"statusw"}, 7) == 0) }
+\DoxyCodeLine{52                 \{}
+\DoxyCodeLine{53                     this-\/>\mbox{\hyperlink{class_monitor_aa27b127b992801f50bdb92fef49681ac}{rx\_status\_write}}();}
+\DoxyCodeLine{54                 \}}
+\DoxyCodeLine{55                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"rd"}, 2) == 0) }
+\DoxyCodeLine{56                 \{}
+\DoxyCodeLine{57                     this-\/>\mbox{\hyperlink{class_monitor_ae8ff06691bf8e8057e0e80cd64aeb34f}{rx\_read}}();}
+\DoxyCodeLine{58                 \}}
+\DoxyCodeLine{59                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"erase"}, 5) == 0)}
+\DoxyCodeLine{60                 \{}
+\DoxyCodeLine{61                     this-\/>\mbox{\hyperlink{class_monitor_a75510e7d9ce36be654afd3fe71cbcdf5}{rx\_erase}}();}
+\DoxyCodeLine{62                 \}}
+\DoxyCodeLine{63                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"nuke"}, 4) == 0)}
+\DoxyCodeLine{64                 \{}
+\DoxyCodeLine{65                     this-\/>\mbox{\hyperlink{class_monitor_a3d43788a8c7bf3650101f27026778150}{rx\_nuke}}();}
+\DoxyCodeLine{66                 \}}
+\DoxyCodeLine{67                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"M=1"},3) == 0)}
+\DoxyCodeLine{68                 \{}
+\DoxyCodeLine{69                     this-\/>\mbox{\hyperlink{class_monitor_aeab254b1ac44fa1bbf92fd3fcb845577}{rx\_start\_motor}}();}
+\DoxyCodeLine{70                 \}}
+\DoxyCodeLine{71                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"M=0"},3) == 0)}
+\DoxyCodeLine{72                 \{}
+\DoxyCodeLine{73                     this-\/>\mbox{\hyperlink{class_monitor_a47b23c9ccca566ad73d799ab9a5b71e6}{rx\_stop\_motor}}();}
+\DoxyCodeLine{74                 \}}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"RUN"},3) == 0)}
+\DoxyCodeLine{76                 \{}
+\DoxyCodeLine{77                     this-\/>\mbox{\hyperlink{class_monitor_a510f67387387bdcb75de2214e64095cc}{rx\_go\_active}}();}
+\DoxyCodeLine{78                 \}}
+\DoxyCodeLine{79                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"testread"}, 8) == 0)}
+\DoxyCodeLine{80                 \{}
+\DoxyCodeLine{81                     this-\/>\mbox{\hyperlink{class_monitor_af7ccece404ba633257d6c3a835eef16c}{rx\_test\_read}}();}
+\DoxyCodeLine{82                 \}}
+\DoxyCodeLine{83                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"snum"}, 4) == 0)}
+\DoxyCodeLine{84                 \{}
+\DoxyCodeLine{85                     this-\/>\mbox{\hyperlink{class_monitor_a11c09aec41a71ec6ad66e4f88f84c921}{rx\_set\_serial}}();}
+\DoxyCodeLine{86                 \}}
+\DoxyCodeLine{87                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"maxi"}, 4) == 0)}
+\DoxyCodeLine{88                 \{}
+\DoxyCodeLine{89                     this-\/>\mbox{\hyperlink{class_monitor_a6e2862a865c06d59014ebd39a878f77a}{rx\_set\_maxi}}();}
+\DoxyCodeLine{90                 \}}
+\DoxyCodeLine{91                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"date"}, 4) == 0)}
+\DoxyCodeLine{92                 \{}
+\DoxyCodeLine{93                     this-\/>\mbox{\hyperlink{class_monitor_a959d952f553cfd03d33bfd7dc1afd02b}{rx\_set\_date}}();}
+\DoxyCodeLine{94                 \}}
+\DoxyCodeLine{95                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"scan"}, 4) == 0)}
+\DoxyCodeLine{96                 \{}
+\DoxyCodeLine{97                     this-\/>\mbox{\hyperlink{class_monitor_a03edce083403a7557c4ddfa65e2310ca}{rx\_scan}}();}
+\DoxyCodeLine{98                 \}}
+\DoxyCodeLine{99                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"dump"}, 4) == 0)}
+\DoxyCodeLine{100                 \{}
+\DoxyCodeLine{101                     \textcolor{keywordflow}{for} (uint32\_t i = 0; i < 0x100000 / 0x100; i++)}
+\DoxyCodeLine{102                     \{}
+\DoxyCodeLine{103                         this-\/>\mbox{\hyperlink{class_monitor_a03edce083403a7557c4ddfa65e2310ca}{rx\_scan}}(3, i * 0x100);}
+\DoxyCodeLine{104                     \}}
+\DoxyCodeLine{105                 \}}
+\DoxyCodeLine{106                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"flashread"}, 9) == 0)}
+\DoxyCodeLine{107                 \{}
+\DoxyCodeLine{108                     \textcolor{comment}{// flashread}}
+\DoxyCodeLine{109                     \textcolor{comment}{// 012345678}}
+\DoxyCodeLine{110                     \textcolor{keywordflow}{for}(uint32\_t i = 0 ; i < 0x100000 / 0x100 ; i++)}
+\DoxyCodeLine{111                     \{}
+\DoxyCodeLine{112                         this-\/>\mbox{\hyperlink{class_monitor_a03edce083403a7557c4ddfa65e2310ca}{rx\_scan}}(1, i * 0x100);}
+\DoxyCodeLine{113                     \}}
+\DoxyCodeLine{114                 \}}
+\DoxyCodeLine{115                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"getid"}, 5) == 0)}
+\DoxyCodeLine{116                 \{}
+\DoxyCodeLine{117                     this-\/>\mbox{\hyperlink{class_monitor_a94a29f8bf492e5c64224b97e66216d13}{rx\_get\_man\_id}}();}
+\DoxyCodeLine{118                 \}}
+\DoxyCodeLine{119                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"find"}, 4) == 0)}
+\DoxyCodeLine{120                 \{}
+\DoxyCodeLine{121                     this-\/>\mbox{\hyperlink{class_monitor_ad9f97a0c81fa14b21d44e6ce23de17dd}{rx\_find\_pulses}}();}
+\DoxyCodeLine{122                 \}}
+\DoxyCodeLine{123                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"upload"}, 5) == 0)}
+\DoxyCodeLine{124                 \{}
+\DoxyCodeLine{125                     this-\/>\mbox{\hyperlink{class_monitor_a4133090a8c803d8e77bfac4d27c5de19}{rx\_upload}}();}
+\DoxyCodeLine{126                 \}}
+\DoxyCodeLine{127                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"debug"}, 5) == 0)}
+\DoxyCodeLine{128                 \{}
+\DoxyCodeLine{129                     this-\/>\mbox{\hyperlink{class_monitor_a23fa055b469e9f31f7c5bae94b8c3a9d}{rx\_debug}}();}
+\DoxyCodeLine{130                 \}}
+\DoxyCodeLine{131                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"exit"}, 4) == 0)}
+\DoxyCodeLine{132                 \{}
+\DoxyCodeLine{133                     this-\/>\mbox{\hyperlink{class_monitor_a86cbce15087bce51708d62fc4f5f7922}{rx\_exit}}();}
+\DoxyCodeLine{134                 \}}
+\DoxyCodeLine{135                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"help"}, 4) == 0)}
+\DoxyCodeLine{136                 \{}
+\DoxyCodeLine{137                     this-\/>\mbox{\hyperlink{class_monitor_a2123b93a71ceb440e2511de48a36b19e}{rx\_help}}();}
+\DoxyCodeLine{138                 \}}
+\DoxyCodeLine{139                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(this-\/>tokens[0], \textcolor{stringliteral}{"pass"}, 4) == 0)}
+\DoxyCodeLine{140                 \{}
+\DoxyCodeLine{141                     this-\/>\mbox{\hyperlink{class_monitor_a92a553704cf82ff128e0a52e731ccca2}{rx\_pass}}();}
+\DoxyCodeLine{142                 \}}
+\DoxyCodeLine{143                                 }
+\DoxyCodeLine{144             \}}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146         \}}
+\DoxyCodeLine{147         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{148         \{}
+\DoxyCodeLine{149             this-\/>\mbox{\hyperlink{class_monitor_a907e8bdaf19acb4b70855bcddabd0676}{buffer}}[this-\/>index] = rx\_char ;}
+\DoxyCodeLine{150             this-\/>index++;}
+\DoxyCodeLine{151             this-\/>index = this-\/>index \% \mbox{\hyperlink{group___auxilary_ga29d12c67e4b6e0ff96d7aa793757b094}{RXBUFFERSIZE}};}
+\DoxyCodeLine{152         \}}
+\DoxyCodeLine{153     \}}
+\DoxyCodeLine{154 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_ae529b40928ddfefb21d92a5d86faa304_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/df7/class_monitor_ae529b40928ddfefb21d92a5d86faa304_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_monitor_a4ecea6bf82ce6dd586452d6869a7487e}\label{class_monitor_a4ecea6bf82ce6dd586452d6869a7487e}} 
+\index{Monitor@{Monitor}!address@{address}}
+\index{address@{address}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily uint32\+\_\+t Monitor\+::address}
+
+
+
+Definition at line 11 of file monitor.\+h.
+
+\mbox{\Hypertarget{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}\label{class_monitor_a9ea1510f70b2d72a5357daec3c7c0564}} 
+\index{Monitor@{Monitor}!apt@{apt}}
+\index{apt@{apt}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{apt}{apt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_main_controller}{Main\+Controller}}$\ast$ Monitor\+::apt}
+
+
+
+Definition at line 14 of file monitor.\+h.
+
+\mbox{\Hypertarget{class_monitor_a907e8bdaf19acb4b70855bcddabd0676}\label{class_monitor_a907e8bdaf19acb4b70855bcddabd0676}} 
+\index{Monitor@{Monitor}!buffer@{buffer}}
+\index{buffer@{buffer}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily uint8\+\_\+t Monitor\+::buffer\mbox{[}\mbox{\hyperlink{group___auxilary_ga29d12c67e4b6e0ff96d7aa793757b094}{R\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Definition at line 10 of file monitor.\+h.
+
+\mbox{\Hypertarget{class_monitor_a6df6af1cb33e1e5c8f554105925f3af6}\label{class_monitor_a6df6af1cb33e1e5c8f554105925f3af6}} 
+\index{Monitor@{Monitor}!chip\_select@{chip\_select}}
+\index{chip\_select@{chip\_select}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{chip\_select}{chip\_select}}
+{\footnotesize\ttfamily uint8\+\_\+t Monitor\+::chip\+\_\+select}
+
+
+
+Definition at line 13 of file monitor.\+h.
+
+\mbox{\Hypertarget{class_monitor_ad1a91ed9ed1874c24b4fc6b270371470}\label{class_monitor_ad1a91ed9ed1874c24b4fc6b270371470}} 
+\index{Monitor@{Monitor}!value@{value}}
+\index{value@{value}!Monitor@{Monitor}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily uint32\+\_\+t Monitor\+::value}
+
+
+
+Definition at line 12 of file monitor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{monitor_8h}{monitor.\+h}}\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{monitor_8cpp}{monitor.\+cpp}}\end{DoxyCompactItemize}

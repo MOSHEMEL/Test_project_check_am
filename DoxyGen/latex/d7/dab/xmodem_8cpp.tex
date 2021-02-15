@@ -1,0 +1,259 @@
+\hypertarget{xmodem_8cpp}{}\doxysection{C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/xmodem.cpp File Reference}
+\label{xmodem_8cpp}\index{C:/Users/nicko/source/repos/APTX1\_1/Core/Src/xmodem.cpp@{C:/Users/nicko/source/repos/APTX1\_1/Core/Src/xmodem.cpp}}
+
+
+This module is the implementation of the Xmodem protocol.  
+
+
+{\ttfamily \#include \char`\"{}xmodem.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}hardware.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}usart.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mem\+\_\+controller.\+h\char`\"{}}\newline
+Include dependency graph for xmodem.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/de3/xmodem_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{xmodem_8cpp_a6012201f5dc12bb3539fb52a07be782e}{xmodem\+\_\+receive}} (void)
+\begin{DoxyCompactList}\small\item\em This function is the base of the Xmodem protocol. When we receive a header from U\+A\+RT, it decides what action it shall take. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{xmodem_8cpp_aeed2e9f2b42e78601bfe2419c0c31b85}{xmodem\+\_\+calc\+\_\+crc}} (uint8\+\_\+t $\ast$data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Calculates the C\+R\+C-\/16 for the input package. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{xmodem_8cpp_a5c7d5088d135fe89f930ecb50320c810}{a\+Packet\+Data}} \mbox{[}\mbox{\hyperlink{xmodem_8h_a59d3a0acbce52b1864699cc3359df574}{P\+A\+C\+K\+E\+T\+\_\+1\+K\+\_\+\+S\+I\+ZE}}+\mbox{\hyperlink{xmodem_8h_af871a1543a0c48abde73a9cb9c826e69}{P\+A\+C\+K\+E\+T\+\_\+\+D\+A\+T\+A\+\_\+\+I\+N\+D\+EX}}+\mbox{\hyperlink{xmodem_8h_ac8fd88355429b352139100bbdfd73098}{P\+A\+C\+K\+E\+T\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}
+\item 
+\mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}} $\ast$ \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\+\_\+extern}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This module is the implementation of the Xmodem protocol. 
+
+\begin{DoxyAuthor}{Author}
+Ferenc Nemeth 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+21 Dec 2018 \begin{DoxyVerb}     Copyright (c) 2018 Ferenc Nemeth - https://github.com/ferenc-nemeth
+\end{DoxyVerb}
+ 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{xmodem_8cpp_aeed2e9f2b42e78601bfe2419c0c31b85}\label{xmodem_8cpp_aeed2e9f2b42e78601bfe2419c0c31b85}} 
+\index{xmodem.cpp@{xmodem.cpp}!xmodem\_calc\_crc@{xmodem\_calc\_crc}}
+\index{xmodem\_calc\_crc@{xmodem\_calc\_crc}!xmodem.cpp@{xmodem.cpp}}
+\doxysubsubsection{\texorpdfstring{xmodem\_calc\_crc()}{xmodem\_calc\_crc()}}
+{\footnotesize\ttfamily uint16\+\_\+t xmodem\+\_\+calc\+\_\+crc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{data,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Calculates the C\+R\+C-\/16 for the input package. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$data} & Array of the data which we want to calculate. \\
+\hline
+{\em length} & Size of the data, either 128 or 1024 bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status\+: The calculated C\+RC. 
+\end{DoxyReturn}
+
+
+Definition at line 155 of file xmodem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{156 \{}
+\DoxyCodeLine{157     uint16\_t crc = 0u;}
+\DoxyCodeLine{158     \textcolor{keywordflow}{while} (length)}
+\DoxyCodeLine{159     \{}
+\DoxyCodeLine{160         length-\/-\/;}
+\DoxyCodeLine{161         crc = crc \string^ ((uint16\_t)*data++ << 8u);}
+\DoxyCodeLine{162         \textcolor{keywordflow}{for} (uint8\_t i = 0u; i < 8u; i++)}
+\DoxyCodeLine{163         \{}
+\DoxyCodeLine{164             \textcolor{keywordflow}{if} (crc \& 0x8000u)}
+\DoxyCodeLine{165             \{}
+\DoxyCodeLine{166                 crc = (crc << 1u) \string^ 0x1021u;}
+\DoxyCodeLine{167             \}}
+\DoxyCodeLine{168             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{169             \{}
+\DoxyCodeLine{170                 crc = crc << 1u;}
+\DoxyCodeLine{171             \}}
+\DoxyCodeLine{172         \}}
+\DoxyCodeLine{173     \}}
+\DoxyCodeLine{174     \textcolor{keywordflow}{return} crc;}
+\DoxyCodeLine{175 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{xmodem_8cpp_a6012201f5dc12bb3539fb52a07be782e}\label{xmodem_8cpp_a6012201f5dc12bb3539fb52a07be782e}} 
+\index{xmodem.cpp@{xmodem.cpp}!xmodem\_receive@{xmodem\_receive}}
+\index{xmodem\_receive@{xmodem\_receive}!xmodem.cpp@{xmodem.cpp}}
+\doxysubsubsection{\texorpdfstring{xmodem\_receive()}{xmodem\_receive()}}
+{\footnotesize\ttfamily void xmodem\+\_\+receive (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function is the base of the Xmodem protocol. When we receive a header from U\+A\+RT, it decides what action it shall take. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file xmodem.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35 \{}
+\DoxyCodeLine{36     \textcolor{keyword}{volatile} \mbox{\hyperlink{xmodem_8h_aea7167d2c26cf965520dc1fb710115ec}{xmodem\_status}} status = \mbox{\hyperlink{xmodem_8h_aea7167d2c26cf965520dc1fb710115eca071078523d17f0cb6149f6e20b6a471c}{X\_OK}};}
+\DoxyCodeLine{37     uint8\_t error\_number = 0u;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     x\_first\_packet\_received = \textcolor{keyword}{false};}
+\DoxyCodeLine{40     xmodem\_packet\_number = 1u;}
+\DoxyCodeLine{41     xmodem\_actual\_flash\_address = \mbox{\hyperlink{flash__if_8h_acbbb997bab0d214c9b4b43bb63c47ede}{APPLICATION\_ADDRESS}};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{comment}{/* Loop until there isn't any error (or until we jump to the user application). */}}
+\DoxyCodeLine{44     \textcolor{keywordflow}{while} (\mbox{\hyperlink{xmodem_8h_aea7167d2c26cf965520dc1fb710115eca071078523d17f0cb6149f6e20b6a471c}{X\_OK}} == status)}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46         uint8\_t header = 0x00u;}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48         \textcolor{comment}{/* Get the header from UART. */}}
+\DoxyCodeLine{49         HAL\_StatusTypeDef comm\_status = HAL\_UART\_Receive(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, \&header, 1u, 100);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \textcolor{comment}{/* Spam the host (until we receive something) with ACSII "C", to notify it, we want to use CRC-\/16. */}}
+\DoxyCodeLine{52         \textcolor{keywordflow}{if} ((HAL\_OK != comm\_status) \&\& (\textcolor{keyword}{false} == x\_first\_packet\_received))}
+\DoxyCodeLine{53         \{}
+\DoxyCodeLine{54             (void)\mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gab476c3cee432ba1028f646a93ce0f252}{Serial\_PutByte}}(\mbox{\hyperlink{xmodem_8h_a7aa18333e82150f5ccf902aeccbd79fc}{X\_C}});}
+\DoxyCodeLine{55         \}}
+\DoxyCodeLine{56             \textcolor{comment}{/* Uart timeout or any other errors. */}}
+\DoxyCodeLine{57         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((HAL\_OK != comm\_status) \&\& (\textcolor{keyword}{true} == x\_first\_packet\_received))}
+\DoxyCodeLine{58         \{}
+\DoxyCodeLine{59             status = xmodem\_error\_handler(\&error\_number, \mbox{\hyperlink{xmodem_8h_aa94975fd54564bce1b82ee8d47960fcf}{X\_MAX\_ERRORS}});}
+\DoxyCodeLine{60         \}}
+\DoxyCodeLine{61         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{62         \{}
+\DoxyCodeLine{63             \textcolor{comment}{/* Do nothing. */}}
+\DoxyCodeLine{64         \}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66         \mbox{\hyperlink{xmodem_8h_aea7167d2c26cf965520dc1fb710115ec}{xmodem\_status}} packet\_status = \mbox{\hyperlink{xmodem_8h_aea7167d2c26cf965520dc1fb710115eca09b9c1c950082621894e9a6a1470c74f}{X\_ERROR}};}
+\DoxyCodeLine{67         packet\_status = xmodem\_handle\_packet(header);}
+\DoxyCodeLine{68         \textcolor{comment}{/* The header can be: SOH, STX, EOT and CAN. */}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70         \textcolor{keywordflow}{switch} (header)}
+\DoxyCodeLine{71         \{}
+\DoxyCodeLine{72             \textcolor{comment}{/* 128 or 1024 bytes of data. */}}
+\DoxyCodeLine{73         \textcolor{keywordflow}{case} \mbox{\hyperlink{xmodem_8h_a20f86ac37b1c9b112cbfd1bfc0598c71}{X\_SOH}}:}
+\DoxyCodeLine{74             \textcolor{comment}{/* If the handling was successful, then send an ACK. */}}
+\DoxyCodeLine{75             \textcolor{keywordflow}{if} (\mbox{\hyperlink{xmodem_8h_aea7167d2c26cf965520dc1fb710115eca071078523d17f0cb6149f6e20b6a471c}{X\_OK}} == packet\_status)}
+\DoxyCodeLine{76             \{}
+\DoxyCodeLine{77                 (void)\mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gab476c3cee432ba1028f646a93ce0f252}{Serial\_PutByte}}(\mbox{\hyperlink{xmodem_8h_ace562d0cb6579fea3bd3fd1da60e0a4f}{X\_ACK}});}
+\DoxyCodeLine{78             \}}
+\DoxyCodeLine{79             \textcolor{comment}{/* If the error was flash related, then immediately set the error counter to max (graceful abort). */}}
+\DoxyCodeLine{80             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{xmodem_8h_aea7167d2c26cf965520dc1fb710115eca850d0900c4f1682a63a7db1ce5de9415}{X\_ERROR\_FLASH}} == packet\_status)}
+\DoxyCodeLine{81             \{}
+\DoxyCodeLine{82                 error\_number = \mbox{\hyperlink{xmodem_8h_aa94975fd54564bce1b82ee8d47960fcf}{X\_MAX\_ERRORS}};}
+\DoxyCodeLine{83                 status = xmodem\_error\_handler(\&error\_number, \mbox{\hyperlink{xmodem_8h_aa94975fd54564bce1b82ee8d47960fcf}{X\_MAX\_ERRORS}});}
+\DoxyCodeLine{84             \}}
+\DoxyCodeLine{85             \textcolor{comment}{/* Error while processing the packet, either send a NAK or do graceful abort. */}}
+\DoxyCodeLine{86             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{87             \{}
+\DoxyCodeLine{88                 status = xmodem\_error\_handler(\&error\_number, \mbox{\hyperlink{xmodem_8h_aa94975fd54564bce1b82ee8d47960fcf}{X\_MAX\_ERRORS}});}
+\DoxyCodeLine{89             \}}
+\DoxyCodeLine{90             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{91         \textcolor{keywordflow}{case} \mbox{\hyperlink{xmodem_8h_abe0046fe2a3484c5e773db92c8b102cd}{X\_STX}}:}
+\DoxyCodeLine{92             \textcolor{comment}{/* If the handling was successful, then send an ACK. */}}
+\DoxyCodeLine{93             \textcolor{keywordflow}{if} (\mbox{\hyperlink{xmodem_8h_aea7167d2c26cf965520dc1fb710115eca071078523d17f0cb6149f6e20b6a471c}{X\_OK}} == packet\_status)}
+\DoxyCodeLine{94             \{}
+\DoxyCodeLine{95                 (void)\mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gab476c3cee432ba1028f646a93ce0f252}{Serial\_PutByte}}(\mbox{\hyperlink{xmodem_8h_ace562d0cb6579fea3bd3fd1da60e0a4f}{X\_ACK}});}
+\DoxyCodeLine{96             \}}
+\DoxyCodeLine{97                 \textcolor{comment}{/* If the error was flash related, then immediately set the error counter to max (graceful abort). */}}
+\DoxyCodeLine{98             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{xmodem_8h_aea7167d2c26cf965520dc1fb710115eca850d0900c4f1682a63a7db1ce5de9415}{X\_ERROR\_FLASH}} == packet\_status)}
+\DoxyCodeLine{99             \{}
+\DoxyCodeLine{100                 error\_number = \mbox{\hyperlink{xmodem_8h_aa94975fd54564bce1b82ee8d47960fcf}{X\_MAX\_ERRORS}};}
+\DoxyCodeLine{101                 status = xmodem\_error\_handler(\&error\_number, \mbox{\hyperlink{xmodem_8h_aa94975fd54564bce1b82ee8d47960fcf}{X\_MAX\_ERRORS}});}
+\DoxyCodeLine{102             \}}
+\DoxyCodeLine{103                 \textcolor{comment}{/* Error while processing the packet, either send a NAK or do graceful abort. */}}
+\DoxyCodeLine{104             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{105             \{}
+\DoxyCodeLine{106                 status = xmodem\_error\_handler(\&error\_number, \mbox{\hyperlink{xmodem_8h_aa94975fd54564bce1b82ee8d47960fcf}{X\_MAX\_ERRORS}});}
+\DoxyCodeLine{107             \}}
+\DoxyCodeLine{108             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{109             \textcolor{comment}{/* End of Transmission. */}}
+\DoxyCodeLine{110         \textcolor{keywordflow}{case} \mbox{\hyperlink{xmodem_8h_a6260fbddc4df59f2e92d06ef33120d9d}{X\_EOT}}:}
+\DoxyCodeLine{111             \textcolor{comment}{/* ACK, feedback to user (as a text), then jump to user application. */}}
+\DoxyCodeLine{112             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gab476c3cee432ba1028f646a93ce0f252}{Serial\_PutByte}}(\mbox{\hyperlink{xmodem_8h_ace562d0cb6579fea3bd3fd1da60e0a4f}{X\_ACK}});}
+\DoxyCodeLine{113             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)rFirmware updated!\(\backslash\)n\(\backslash\)r"});}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115             \textcolor{comment}{// Write out size of app}}
+\DoxyCodeLine{116             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\_extern}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(1, 0xfff04, xmodem\_actual\_flash\_address);}
+\DoxyCodeLine{117             uint8\_t size\_c[30];}
+\DoxyCodeLine{118             sprintf((\textcolor{keywordtype}{char}*)size\_c, \textcolor{stringliteral}{"Write Out: \%d\(\backslash\)r\(\backslash\)n"}, xmodem\_actual\_flash\_address);}
+\DoxyCodeLine{119             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, size\_c, strlen((\textcolor{keywordtype}{char}*)size\_c), 10);}
+\DoxyCodeLine{120             \textcolor{comment}{// Write out version of app}}
+\DoxyCodeLine{121             uint8\_t ver[30];}
+\DoxyCodeLine{122             sprintf((\textcolor{keywordtype}{char}*)ver, \textcolor{stringliteral}{"VERSION: \%s\(\backslash\)r\(\backslash\)n"}, \mbox{\hyperlink{group___globals_ga1c6d5de492ac61ad29aec7aa9a436bbf}{VERSION}});}
+\DoxyCodeLine{123             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, ver, strlen((\textcolor{keywordtype}{char}*)ver), 10);}
+\DoxyCodeLine{124             }
+\DoxyCodeLine{125             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\_extern}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(1, 0xfff08, \mbox{\hyperlink{group___globals_ga5a978c3827bb1c41911146f000d18ba2}{MCU\_VERSION\_MAJOR}});}
+\DoxyCodeLine{126             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\_extern}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(1, 0xfff0c, \mbox{\hyperlink{group___globals_gaf84f20466d357d2495d2d9e7a4143f92}{MCU\_VERSION\_MINOR}});}
+\DoxyCodeLine{127             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\_extern}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(1, 0xfff10, \mbox{\hyperlink{group___globals_ga829d22bd5bf8e80e77640fbcb3846560}{MCU\_VERSION\_PATCH}});}
+\DoxyCodeLine{128             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\_extern}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(1, 0xfff14, \mbox{\hyperlink{group___globals_gaa9d6fa62d5c87ef404e1295d913c37e7}{MCU\_VERSION\_RC}});}
+\DoxyCodeLine{129             }
+\DoxyCodeLine{130             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"Jumping to user application...\(\backslash\)n\(\backslash\)r"});}
+\DoxyCodeLine{131             HAL\_Delay(2500);}
+\DoxyCodeLine{132             NVIC\_SystemReset();}
+\DoxyCodeLine{133             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{134             \textcolor{comment}{/* Abort from host. */}}
+\DoxyCodeLine{135         \textcolor{keywordflow}{case} \mbox{\hyperlink{xmodem_8h_a1367e9ae908165cc92e4eeb9f164527b}{X\_CAN}}:}
+\DoxyCodeLine{136             status = \mbox{\hyperlink{xmodem_8h_aea7167d2c26cf965520dc1fb710115eca09b9c1c950082621894e9a6a1470c74f}{X\_ERROR}};}
+\DoxyCodeLine{137             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{138         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{139             \textcolor{comment}{/* Wrong header. */}}
+\DoxyCodeLine{140             \textcolor{keywordflow}{if} (HAL\_OK == comm\_status)}
+\DoxyCodeLine{141             \{}
+\DoxyCodeLine{142                 status = xmodem\_error\_handler(\&error\_number, \mbox{\hyperlink{xmodem_8h_aa94975fd54564bce1b82ee8d47960fcf}{X\_MAX\_ERRORS}});}
+\DoxyCodeLine{143             \}}
+\DoxyCodeLine{144             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{145         \}}
+\DoxyCodeLine{146     \}}
+\DoxyCodeLine{147 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/dab/xmodem_8cpp_a6012201f5dc12bb3539fb52a07be782e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{xmodem_8cpp_a5c7d5088d135fe89f930ecb50320c810}\label{xmodem_8cpp_a5c7d5088d135fe89f930ecb50320c810}} 
+\index{xmodem.cpp@{xmodem.cpp}!aPacketData@{aPacketData}}
+\index{aPacketData@{aPacketData}!xmodem.cpp@{xmodem.cpp}}
+\doxysubsubsection{\texorpdfstring{aPacketData}{aPacketData}}
+{\footnotesize\ttfamily uint8\+\_\+t a\+Packet\+Data\mbox{[}\mbox{\hyperlink{xmodem_8h_a59d3a0acbce52b1864699cc3359df574}{P\+A\+C\+K\+E\+T\+\_\+1\+K\+\_\+\+S\+I\+ZE}}+\mbox{\hyperlink{xmodem_8h_af871a1543a0c48abde73a9cb9c826e69}{P\+A\+C\+K\+E\+T\+\_\+\+D\+A\+T\+A\+\_\+\+I\+N\+D\+EX}}+\mbox{\hyperlink{xmodem_8h_ac8fd88355429b352139100bbdfd73098}{P\+A\+C\+K\+E\+T\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Definition at line 85 of file main.\+cpp.
+

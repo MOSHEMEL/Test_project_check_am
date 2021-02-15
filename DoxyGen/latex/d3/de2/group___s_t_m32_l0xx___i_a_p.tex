@@ -1,0 +1,309 @@
+\hypertarget{group___s_t_m32_l0xx___i_a_p}{}\doxysection{S\+T\+M32\+L0xx\+\_\+\+I\+AP}
+\label{group___s_t_m32_l0xx___i_a_p}\index{STM32L0xx\_IAP@{STM32L0xx\_IAP}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga6f15d7faa1bc40df5c4b00d8541824f5}{F\+L\+A\+S\+H\+\_\+\+If\+\_\+\+Erase}} (void)
+\begin{DoxyCompactList}\small\item\em This function does an erase of all user flash area. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_gaea33603cb203008ae319c39685c49aca}{F\+L\+A\+S\+H\+\_\+\+If\+\_\+\+Write}} (uint32\+\_\+t destination, uint8\+\_\+t $\ast$p\+\_\+source, uint32\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em This function writes a data buffer in flash (data are 32-\/bit aligned). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_gae0065df1ec814017a9b7d8c75787384a}{dump\+\_\+mem}} ()
+\item 
+void \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_gae6fffe39f7afd74d76a311217db8cff1}{Main\+\_\+\+Menu}} (void)
+\begin{DoxyCompactList}\small\item\em Display the Main Menu on Hyper\+Terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}} $\ast$ \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\+\_\+extern}}
+\item 
+\mbox{\hyperlink{menu_8h_aed53e618f2025481fbe48a5098f70079}{p\+Function}} \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga50f5583555bfb42297efdce8c82fe98f}{Jump\+To\+Application}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga77170d6dd28c130d54753378bdfa035e}{Jump\+Address}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga6b626a3bbf797eebfb528d3b6986c0d9}{Flash\+Protection}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga6c869f19f5b1625e13431d7b54c2d845}{a\+File\+Name}} \mbox{[}\mbox{\hyperlink{xmodem_8h_a2c0e4956715e74ea598ea1aacbe5f973}{F\+I\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}}\mbox{]}
+\item 
+\mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}} $\ast$ \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\+\_\+extern}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p_gae0065df1ec814017a9b7d8c75787384a}\label{group___s_t_m32_l0xx___i_a_p_gae0065df1ec814017a9b7d8c75787384a}} 
+\index{STM32L0xx\_IAP@{STM32L0xx\_IAP}!dump\_mem@{dump\_mem}}
+\index{dump\_mem@{dump\_mem}!STM32L0xx\_IAP@{STM32L0xx\_IAP}}
+\doxysubsubsection{\texorpdfstring{dump\_mem()}{dump\_mem()}}
+{\footnotesize\ttfamily void dump\+\_\+mem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file menu.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75 \{}
+\DoxyCodeLine{76     uint8\_t dump\_c[40];}
+\DoxyCodeLine{77     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{group___globals_ga75e88da8c3f38ce7c2d7d18342757551}{APP\_SIZE}}; i++)}
+\DoxyCodeLine{78     \{}
+\DoxyCodeLine{79         \textcolor{keywordflow}{if} (i \% 16 == 0 \&\& i > 0)}
+\DoxyCodeLine{80         \{}
+\DoxyCodeLine{81             sprintf((\textcolor{keywordtype}{char}*)dump\_c, \textcolor{stringliteral}{" 0x\%02x \(\backslash\)r\(\backslash\)n"}, *(\textcolor{keyword}{volatile} uint8\_t*)(\mbox{\hyperlink{group___globals_gaeeec01180221fc32a831f91982f6311e}{APP\_ADDRESS}}+i));}
+\DoxyCodeLine{82         \}}
+\DoxyCodeLine{83         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{84         \{}
+\DoxyCodeLine{85             sprintf((\textcolor{keywordtype}{char}*)dump\_c, \textcolor{stringliteral}{" 0x\%02x"}, *(\textcolor{keyword}{volatile} uint8\_t*)(\mbox{\hyperlink{group___globals_gaeeec01180221fc32a831f91982f6311e}{APP\_ADDRESS}} + i));}
+\DoxyCodeLine{86         \}}
+\DoxyCodeLine{87         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, dump\_c, strlen((\textcolor{keywordtype}{char}*)dump\_c), 10);}
+\DoxyCodeLine{88     \}}
+\DoxyCodeLine{89 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de2/group___s_t_m32_l0xx___i_a_p_gae0065df1ec814017a9b7d8c75787384a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p_ga6f15d7faa1bc40df5c4b00d8541824f5}\label{group___s_t_m32_l0xx___i_a_p_ga6f15d7faa1bc40df5c4b00d8541824f5}} 
+\index{STM32L0xx\_IAP@{STM32L0xx\_IAP}!FLASH\_If\_Erase@{FLASH\_If\_Erase}}
+\index{FLASH\_If\_Erase@{FLASH\_If\_Erase}!STM32L0xx\_IAP@{STM32L0xx\_IAP}}
+\doxysubsubsection{\texorpdfstring{FLASH\_If\_Erase()}{FLASH\_If\_Erase()}}
+{\footnotesize\ttfamily void F\+L\+A\+S\+H\+\_\+\+If\+\_\+\+Erase (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function does an erase of all user flash area. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & start of user flash area \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+L\+A\+S\+H\+I\+F\+\_\+\+OK} & \+: user flash area successfully erased F\+L\+A\+S\+H\+I\+F\+\_\+\+E\+R\+A\+S\+E\+KO \+: error occurred \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 62 of file flash\+\_\+if.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63 \{}
+\DoxyCodeLine{64     \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\_extern}}-\/>\mbox{\hyperlink{class_mem__ctrl_a91fcdb427c1e74dbd83e219251d14c35}{erase}}(1);}
+\DoxyCodeLine{65 \}   }
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de2/group___s_t_m32_l0xx___i_a_p_ga6f15d7faa1bc40df5c4b00d8541824f5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p_gaea33603cb203008ae319c39685c49aca}\label{group___s_t_m32_l0xx___i_a_p_gaea33603cb203008ae319c39685c49aca}} 
+\index{STM32L0xx\_IAP@{STM32L0xx\_IAP}!FLASH\_If\_Write@{FLASH\_If\_Write}}
+\index{FLASH\_If\_Write@{FLASH\_If\_Write}!STM32L0xx\_IAP@{STM32L0xx\_IAP}}
+\doxysubsubsection{\texorpdfstring{FLASH\_If\_Write()}{FLASH\_If\_Write()}}
+{\footnotesize\ttfamily uint32\+\_\+t F\+L\+A\+S\+H\+\_\+\+If\+\_\+\+Write (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{destination,  }\item[{uint8\+\_\+t $\ast$}]{p\+\_\+source,  }\item[{uint32\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+This function writes a data buffer in flash (data are 32-\/bit aligned). 
+
+\begin{DoxyNote}{Note}
+After writing data buffer, the flash content is checked. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em destination} & start address for target location \\
+\hline
+{\em p\+\_\+source} & pointer on buffer with data to write \\
+\hline
+{\em length} & length of data buffer (unit is 32-\/bit word) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em uint32\+\_\+t} & 0\+: Data successfully written to Flash memory 1\+: Error occurred while writing data in Flash memory 2\+: Written Data in flash memory is different from expected one \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 78 of file flash\+\_\+if.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79 \{}
+\DoxyCodeLine{80     \textcolor{keywordflow}{for} (uint32\_t i = 0; i < length; i++)}
+\DoxyCodeLine{81     \{}
+\DoxyCodeLine{82         uint32\_t value = p\_source[i*4]<<24 | p\_source[i*4+1]<<16 | p\_source[i*4+2]<<8 | p\_source[i*4+3];}
+\DoxyCodeLine{83         \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\_extern}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(1, destination + i * 4, value);}
+\DoxyCodeLine{84     \}}
+\DoxyCodeLine{85     HAL\_Delay(30);}
+\DoxyCodeLine{86   \textcolor{keywordflow}{return} HAL\_OK;}
+\DoxyCodeLine{87 \}   }
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de2/group___s_t_m32_l0xx___i_a_p_gaea33603cb203008ae319c39685c49aca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p_gae6fffe39f7afd74d76a311217db8cff1}\label{group___s_t_m32_l0xx___i_a_p_gae6fffe39f7afd74d76a311217db8cff1}} 
+\index{STM32L0xx\_IAP@{STM32L0xx\_IAP}!Main\_Menu@{Main\_Menu}}
+\index{Main\_Menu@{Main\_Menu}!STM32L0xx\_IAP@{STM32L0xx\_IAP}}
+\doxysubsubsection{\texorpdfstring{Main\_Menu()}{Main\_Menu()}}
+{\footnotesize\ttfamily void Main\+\_\+\+Menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Display the Main Menu on Hyper\+Terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 96 of file menu.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97 \{}
+\DoxyCodeLine{98     uint8\_t key = 0;}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100     \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n======================================================================"});}
+\DoxyCodeLine{101     \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n=              (C) COPYRIGHT 2019 ARMenta                            ="});}
+\DoxyCodeLine{102     \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n=                                                                    ="});}
+\DoxyCodeLine{103     \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n=  STM32F0xx In-\/Application Programming Application  (Version 1.0.0) ="});}
+\DoxyCodeLine{104     \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n=                                                                    ="});}
+\DoxyCodeLine{105     \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n======================================================================"});}
+\DoxyCodeLine{106     \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n"});}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109     \textcolor{keywordflow}{while} (1)}
+\DoxyCodeLine{110     \{}
+\DoxyCodeLine{111         \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n=================== Main Menu ============================\(\backslash\)r\(\backslash\)n\(\backslash\)n"});}
+\DoxyCodeLine{112         \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"  Download image to the internal Flash -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ 1\(\backslash\)r\(\backslash\)n\(\backslash\)n"});}
+\DoxyCodeLine{113         \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"  Download the image of the internal Flash -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ 2\(\backslash\)r\(\backslash\)n\(\backslash\)n"});}
+\DoxyCodeLine{114         \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"  Execute the loaded application -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ 3\(\backslash\)r\(\backslash\)n\(\backslash\)n"});}
+\DoxyCodeLine{115         \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"==========================================================\(\backslash\)r\(\backslash\)n\(\backslash\)n"});}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117         \textcolor{comment}{/* Clean the input path */}}
+\DoxyCodeLine{118         \textcolor{comment}{//\_\_HAL\_UART\_FLUSH\_DRREGISTER(SERIAL\_PC);}}
+\DoxyCodeLine{119         \textcolor{comment}{//\_\_HAL\_UART\_CLEAR\_IT(SERIAL\_PC, UART\_CLEAR\_OREF);}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121         \textcolor{comment}{/* Receive key */}}
+\DoxyCodeLine{122         HAL\_UART\_Receive(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, \&key, 1, \mbox{\hyperlink{common_8h_ab6426fc74901f4fbec94862ebb672b81}{RX\_TIMEOUT}});}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124         \textcolor{keywordflow}{switch} (key)}
+\DoxyCodeLine{125         \{}
+\DoxyCodeLine{126         \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}:}
+\DoxyCodeLine{127             \textcolor{comment}{/* Download user application in the Flash */}}
+\DoxyCodeLine{128             \mbox{\hyperlink{xmodem_8h_a6012201f5dc12bb3539fb52a07be782e}{xmodem\_receive}}();}
+\DoxyCodeLine{129             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{130         \textcolor{keywordflow}{case} \textcolor{charliteral}{'2'}:}
+\DoxyCodeLine{131             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_gae0065df1ec814017a9b7d8c75787384a}{dump\_mem}}();}
+\DoxyCodeLine{132             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{133         \textcolor{keywordflow}{case} \textcolor{charliteral}{'3'}:}
+\DoxyCodeLine{134             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"Start program execution......\(\backslash\)r\(\backslash\)n\(\backslash\)n"});}
+\DoxyCodeLine{135             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\_extern}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(1, 0xfff00, 0xf0f0f0f0);}
+\DoxyCodeLine{136             NVIC\_SystemReset();}
+\DoxyCodeLine{137             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{138         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{139             \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p___main_gaf460523c2799d1970b0f6702a6f61463}{Serial\_PutString}}(\textcolor{stringliteral}{"Invalid Number ! ==> The number should be either 1 or 2\(\backslash\)r\(\backslash\)n"});}
+\DoxyCodeLine{140             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{141         \}}
+\DoxyCodeLine{142     \}}
+\DoxyCodeLine{143 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de2/group___s_t_m32_l0xx___i_a_p_gae6fffe39f7afd74d76a311217db8cff1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de2/group___s_t_m32_l0xx___i_a_p_gae6fffe39f7afd74d76a311217db8cff1_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p_ga6c869f19f5b1625e13431d7b54c2d845}\label{group___s_t_m32_l0xx___i_a_p_ga6c869f19f5b1625e13431d7b54c2d845}} 
+\index{STM32L0xx\_IAP@{STM32L0xx\_IAP}!aFileName@{aFileName}}
+\index{aFileName@{aFileName}!STM32L0xx\_IAP@{STM32L0xx\_IAP}}
+\doxysubsubsection{\texorpdfstring{aFileName}{aFileName}}
+{\footnotesize\ttfamily uint8\+\_\+t a\+File\+Name\mbox{[}\mbox{\hyperlink{xmodem_8h_a2c0e4956715e74ea598ea1aacbe5f973}{F\+I\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}}\mbox{]}}
+
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p_ga6b626a3bbf797eebfb528d3b6986c0d9}\label{group___s_t_m32_l0xx___i_a_p_ga6b626a3bbf797eebfb528d3b6986c0d9}} 
+\index{STM32L0xx\_IAP@{STM32L0xx\_IAP}!FlashProtection@{FlashProtection}}
+\index{FlashProtection@{FlashProtection}!STM32L0xx\_IAP@{STM32L0xx\_IAP}}
+\doxysubsubsection{\texorpdfstring{FlashProtection}{FlashProtection}}
+{\footnotesize\ttfamily uint32\+\_\+t Flash\+Protection = 0}
+
+
+
+Definition at line 65 of file menu.\+cpp.
+
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p_ga77170d6dd28c130d54753378bdfa035e}\label{group___s_t_m32_l0xx___i_a_p_ga77170d6dd28c130d54753378bdfa035e}} 
+\index{STM32L0xx\_IAP@{STM32L0xx\_IAP}!JumpAddress@{JumpAddress}}
+\index{JumpAddress@{JumpAddress}!STM32L0xx\_IAP@{STM32L0xx\_IAP}}
+\doxysubsubsection{\texorpdfstring{JumpAddress}{JumpAddress}}
+{\footnotesize\ttfamily uint32\+\_\+t Jump\+Address}
+
+
+
+Definition at line 64 of file menu.\+cpp.
+
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p_ga50f5583555bfb42297efdce8c82fe98f}\label{group___s_t_m32_l0xx___i_a_p_ga50f5583555bfb42297efdce8c82fe98f}} 
+\index{STM32L0xx\_IAP@{STM32L0xx\_IAP}!JumpToApplication@{JumpToApplication}}
+\index{JumpToApplication@{JumpToApplication}!STM32L0xx\_IAP@{STM32L0xx\_IAP}}
+\doxysubsubsection{\texorpdfstring{JumpToApplication}{JumpToApplication}}
+{\footnotesize\ttfamily \mbox{\hyperlink{menu_8h_aed53e618f2025481fbe48a5098f70079}{p\+Function}} Jump\+To\+Application}
+
+
+
+Definition at line 63 of file menu.\+cpp.
+
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}\label{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}} 
+\index{STM32L0xx\_IAP@{STM32L0xx\_IAP}!memory\_extern@{memory\_extern}}
+\index{memory\_extern@{memory\_extern}!STM32L0xx\_IAP@{STM32L0xx\_IAP}}
+\doxysubsubsection{\texorpdfstring{memory\_extern}{memory\_extern}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}}$\ast$ memory\+\_\+extern}
+
+
+
+Definition at line 84 of file main.\+cpp.
+
+\mbox{\Hypertarget{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}\label{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}} 
+\index{STM32L0xx\_IAP@{STM32L0xx\_IAP}!memory\_extern@{memory\_extern}}
+\index{memory\_extern@{memory\_extern}!STM32L0xx\_IAP@{STM32L0xx\_IAP}}
+\doxysubsubsection{\texorpdfstring{memory\_extern}{memory\_extern}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}}$\ast$ memory\+\_\+extern}
+
+
+
+Definition at line 84 of file main.\+cpp.
+

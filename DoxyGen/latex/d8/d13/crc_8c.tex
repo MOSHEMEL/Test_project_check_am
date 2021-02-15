@@ -1,0 +1,145 @@
+\hypertarget{crc_8c}{}\doxysection{C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/crc.c File Reference}
+\label{crc_8c}\index{C:/Users/nicko/source/repos/APTX1\_1/Core/Src/crc.c@{C:/Users/nicko/source/repos/APTX1\_1/Core/Src/crc.c}}
+{\ttfamily \#include \char`\"{}crc.\+h\char`\"{}}\newline
+Include dependency graph for crc.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{d2/d03/crc_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{crc_8c_a9f720fe95d685258cfe2ba29dc395c48}{M\+X\+\_\+\+C\+R\+C\+\_\+\+Init}} (void)
+\item 
+void \mbox{\hyperlink{crc_8c_ae1f38188a289878bd5f589bf496b5754}{H\+A\+L\+\_\+\+C\+R\+C\+\_\+\+Msp\+Init}} (C\+R\+C\+\_\+\+Handle\+Type\+Def $\ast$crc\+Handle)
+\item 
+void \mbox{\hyperlink{crc_8c_a8807b5fa440bf4a65515720c5f37891d}{H\+A\+L\+\_\+\+C\+R\+C\+\_\+\+Msp\+De\+Init}} (C\+R\+C\+\_\+\+Handle\+Type\+Def $\ast$crc\+Handle)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+C\+R\+C\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{crc_8c_a8807b5fa440bf4a65515720c5f37891d}\label{crc_8c_a8807b5fa440bf4a65515720c5f37891d}} 
+\index{crc.c@{crc.c}!HAL\_CRC\_MspDeInit@{HAL\_CRC\_MspDeInit}}
+\index{HAL\_CRC\_MspDeInit@{HAL\_CRC\_MspDeInit}!crc.c@{crc.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_CRC\_MspDeInit()}{HAL\_CRC\_MspDeInit()}}
+{\footnotesize\ttfamily void H\+A\+L\+\_\+\+C\+R\+C\+\_\+\+Msp\+De\+Init (\begin{DoxyParamCaption}\item[{C\+R\+C\+\_\+\+Handle\+Type\+Def $\ast$}]{crc\+Handle }\end{DoxyParamCaption})}
+
+
+
+Definition at line 62 of file crc.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63 \{}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65   \textcolor{keywordflow}{if}(crcHandle-\/>Instance==CRC)}
+\DoxyCodeLine{66   \{}
+\DoxyCodeLine{67   \textcolor{comment}{/* USER CODE BEGIN CRC\_MspDeInit 0 */}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69   \textcolor{comment}{/* USER CODE END CRC\_MspDeInit 0 */}}
+\DoxyCodeLine{70     \textcolor{comment}{/* Peripheral clock disable */}}
+\DoxyCodeLine{71     \_\_HAL\_RCC\_CRC\_CLK\_DISABLE();}
+\DoxyCodeLine{72   \textcolor{comment}{/* USER CODE BEGIN CRC\_MspDeInit 1 */}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74   \textcolor{comment}{/* USER CODE END CRC\_MspDeInit 1 */}}
+\DoxyCodeLine{75   \}}
+\DoxyCodeLine{76 \} }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{crc_8c_ae1f38188a289878bd5f589bf496b5754}\label{crc_8c_ae1f38188a289878bd5f589bf496b5754}} 
+\index{crc.c@{crc.c}!HAL\_CRC\_MspInit@{HAL\_CRC\_MspInit}}
+\index{HAL\_CRC\_MspInit@{HAL\_CRC\_MspInit}!crc.c@{crc.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_CRC\_MspInit()}{HAL\_CRC\_MspInit()}}
+{\footnotesize\ttfamily void H\+A\+L\+\_\+\+C\+R\+C\+\_\+\+Msp\+Init (\begin{DoxyParamCaption}\item[{C\+R\+C\+\_\+\+Handle\+Type\+Def $\ast$}]{crc\+Handle }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file crc.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49   \textcolor{keywordflow}{if}(crcHandle-\/>Instance==CRC)}
+\DoxyCodeLine{50   \{}
+\DoxyCodeLine{51   \textcolor{comment}{/* USER CODE BEGIN CRC\_MspInit 0 */}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53   \textcolor{comment}{/* USER CODE END CRC\_MspInit 0 */}}
+\DoxyCodeLine{54     \textcolor{comment}{/* CRC clock enable */}}
+\DoxyCodeLine{55     \_\_HAL\_RCC\_CRC\_CLK\_ENABLE();}
+\DoxyCodeLine{56   \textcolor{comment}{/* USER CODE BEGIN CRC\_MspInit 1 */}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58   \textcolor{comment}{/* USER CODE END CRC\_MspInit 1 */}}
+\DoxyCodeLine{59   \}}
+\DoxyCodeLine{60 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{crc_8c_a9f720fe95d685258cfe2ba29dc395c48}\label{crc_8c_a9f720fe95d685258cfe2ba29dc395c48}} 
+\index{crc.c@{crc.c}!MX\_CRC\_Init@{MX\_CRC\_Init}}
+\index{MX\_CRC\_Init@{MX\_CRC\_Init}!crc.c@{crc.c}}
+\doxysubsubsection{\texorpdfstring{MX\_CRC\_Init()}{MX\_CRC\_Init()}}
+{\footnotesize\ttfamily void M\+X\+\_\+\+C\+R\+C\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file crc.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.Instance = CRC;}
+\DoxyCodeLine{34   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.Init.DefaultPolynomialUse = DEFAULT\_POLYNOMIAL\_ENABLE;}
+\DoxyCodeLine{35   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.Init.DefaultInitValueUse = DEFAULT\_INIT\_VALUE\_ENABLE;}
+\DoxyCodeLine{36   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.Init.InputDataInversionMode = CRC\_INPUTDATA\_INVERSION\_NONE;}
+\DoxyCodeLine{37   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.Init.OutputDataInversionMode = CRC\_OUTPUTDATA\_INVERSION\_DISABLE;}
+\DoxyCodeLine{38   \mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}.InputDataFormat = CRC\_INPUTDATA\_FORMAT\_BYTES;}
+\DoxyCodeLine{39   \textcolor{keywordflow}{if} (HAL\_CRC\_Init(\&\mbox{\hyperlink{crc_8c_ae3358c54a01c6487322df1275618d6b1}{hcrc}}) != HAL\_OK)}
+\DoxyCodeLine{40   \{}
+\DoxyCodeLine{41     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{42   \}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{d8/d13/crc_8c_a9f720fe95d685258cfe2ba29dc395c48_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{d8/d13/crc_8c_a9f720fe95d685258cfe2ba29dc395c48_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{crc_8c_ae3358c54a01c6487322df1275618d6b1}\label{crc_8c_ae3358c54a01c6487322df1275618d6b1}} 
+\index{crc.c@{crc.c}!hcrc@{hcrc}}
+\index{hcrc@{hcrc}!crc.c@{crc.c}}
+\doxysubsubsection{\texorpdfstring{hcrc}{hcrc}}
+{\footnotesize\ttfamily C\+R\+C\+\_\+\+Handle\+Type\+Def hcrc}
+
+File Name \+: C\+R\+C.\+c Description \+: This file provides code for the configuration of the C\+RC instances.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause 
+
+Definition at line 27 of file crc.\+c.
+

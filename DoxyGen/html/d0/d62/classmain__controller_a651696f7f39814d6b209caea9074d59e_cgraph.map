@@ -1,0 +1,24 @@
+<map id="main_controller::qa_state" name="main_controller::qa_state">
+<area shape="rect" id="node1" title=" " alt="" coords="5,370,137,411"/>
+<area shape="rect" id="node2" href="$df/d62/class_mem__ctrl.html#a68a25e091d4f139ea8e4f767e8dd93e6" title=" " alt="" coords="185,5,381,32"/>
+<area shape="rect" id="node3" href="$d6/d70/classadc__controller.html#a4602f27e7aad71c33c3cea114e45df14" title=" " alt="" coords="207,57,359,98"/>
+<area shape="rect" id="node4" href="$d6/d0f/class_screen__ctrl.html#a8e75991054f00f9e3f385ca65bd68eb0" title="update qa status to screen" alt="" coords="212,123,355,149"/>
+<area shape="rect" id="node5" href="$d7/d77/class_peripherial_devices.html#af9686ab99359c3b861a8d63dd84bd913" title=" " alt="" coords="429,217,557,258"/>
+<area shape="rect" id="node8" href="$d6/d70/classadc__controller.html#ab53e3aa3eb5298b78dd665a939414fb6" title=" " alt="" coords="215,173,351,200"/>
+<area shape="rect" id="node10" href="$d7/d77/class_peripherial_devices.html#a001bf2c8bbceb96fe2bdc61f321927ad" title=" " alt="" coords="219,275,347,317"/>
+<area shape="rect" id="node13" href="$d7/d77/class_peripherial_devices.html#a3a0173c0b6a9417f77048ec5809d73c9" title=" " alt="" coords="429,399,557,441"/>
+<area shape="rect" id="node15" href="$d7/d77/class_peripherial_devices.html#a10e61d2e94a9f0be7bd40ce8642694d4" title=" " alt="" coords="219,341,347,382"/>
+<area shape="rect" id="node17" href="$d2/dcf/class_debug_helper.html#ab825d1cd6f99c3f4449671d853cb5276" title=" " alt="" coords="212,457,355,484"/>
+<area shape="rect" id="node18" href="$d6/d0f/class_screen__ctrl.html#a5d4780f9929fd65439d081b1990dca36" title="update the battery" alt="" coords="216,509,351,550"/>
+<area shape="rect" id="node19" href="$d6/d0f/class_screen__ctrl.html#aaa2e0da635da3eea356563a13a001208" title="update pulse symbol on screen" alt="" coords="216,574,351,615"/>
+<area shape="rect" id="node20" href="$d6/d0f/class_screen__ctrl.html#a25d3f4f7131af154987713f1fd3e3d49" title="update the pressure" alt="" coords="216,639,351,681"/>
+<area shape="rect" id="node21" href="$d6/d0f/class_screen__ctrl.html#accc1bbcc4bf1ec3fa03e0299e3276d5d" title="update the pulses" alt="" coords="216,705,351,746"/>
+<area shape="rect" id="node22" href="$d6/d0f/class_screen__ctrl.html#a632112f7efc861929e8d4b0e29d0e45d" title="show percentage of AM usage on screen" alt="" coords="207,770,359,811"/>
+<area shape="rect" id="node6" href="$d6/d2e/class_c_s__reg.html#a0fb7487892cc0c3a65fc78aa90c613c4" title=" " alt="" coords="619,199,750,225"/>
+<area shape="rect" id="node7" href="$df/d19/class_s_t_a_t_u_s__reg.html#af171d497240ab066b156dee2c102234c" title=" " alt="" coords="605,249,764,276"/>
+<area shape="rect" id="node9" href="$d6/d2e/class_c_s__reg.html#aa945fb7731bea42a747b802f715b8d4c" title=" " alt="" coords="436,165,551,192"/>
+<area shape="rect" id="node11" href="$d7/d77/class_peripherial_devices.html#a28f503545bf784ce79e0ce4815b71842" title=" " alt="" coords="621,318,749,359"/>
+<area shape="rect" id="node12" href="$d6/d2e/class_c_s__reg.html#a93421b06c619434894958b45e2355b2b" title=" " alt="" coords="812,318,967,359"/>
+<area shape="rect" id="node14" href="$d6/d2e/class_c_s__reg.html#a9d840bf50a001ee76443fc88f07e8d1b" title=" " alt="" coords="615,387,754,413"/>
+<area shape="rect" id="node16" href="$d7/d77/class_peripherial_devices.html#addba7220ab2d6ea26b238445224f6e65" title=" " alt="" coords="429,334,557,375"/>
+</map>

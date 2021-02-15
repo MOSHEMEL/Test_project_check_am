@@ -1,0 +1,858 @@
+\hypertarget{class_main_controller}{}\doxysection{Main\+Controller Class Reference}
+\label{class_main_controller}\index{MainController@{MainController}}
+
+
+{\ttfamily \#include $<$main\+\_\+controller.\+h$>$}
+
+
+
+Collaboration diagram for Main\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d38/class_main_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_controller_a57539ddb5adbcf8912ee7735725e1330}{init\+\_\+before\+\_\+while}} ()
+\item 
+void \mbox{\hyperlink{class_main_controller_ac3b970119a35a0aa0a2b8db1362dc727}{init\+\_\+state}} ()
+\item 
+void \mbox{\hyperlink{class_main_controller_aa847592e8002c32b1d10c6a8b99034ef}{idle\+\_\+state}} ()
+\item 
+void \mbox{\hyperlink{class_main_controller_a04b7b03894e64a55a6b06ef2540208ab}{active\+\_\+state}} ()
+\item 
+void \mbox{\hyperlink{class_main_controller_a3a0391cb55c5c45c383407fca059db7e}{qa\+\_\+state}} ()
+\item 
+void \mbox{\hyperlink{class_main_controller_a34e9bec303edc7e4212819ddf3f15717}{update\+\_\+state}} ()
+\item 
+void \mbox{\hyperlink{class_main_controller_a4b5560f771e73e8bf3abdec30cd50dd8}{uart\+\_\+state}} ()
+\item 
+\mbox{\hyperlink{class_main_controller_a02525541fdab2a40ca4866c97c55ac4c}{Main\+Controller}} (Debug\+Helper $\ast$, \mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}} $\ast$, \mbox{\hyperlink{class_peripherial_devices}{Peripherial\+Devices}} $\ast$, \mbox{\hyperlink{class_state}{State}} $\ast$, \mbox{\hyperlink{class_screen__ctrl}{Screen\+\_\+ctrl}} $\ast$, \mbox{\hyperlink{class_adc_controller}{Adc\+Controller}} $\ast$)
+\item 
+\mbox{\hyperlink{class_main_controller_a8ed70b648628569c41bf45778ea0c1e7}{$\sim$\+Main\+Controller}} ()
+\item 
+bool \mbox{\hyperlink{class_main_controller_ae00b05c00889aadfd355ccc0745a298a}{need\+\_\+to\+\_\+stall}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Debug\+Helper $\ast$ \mbox{\hyperlink{class_main_controller_ac07e94f6740893157ce14b77c3de5f5e}{debug}}
+\item 
+\mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}} $\ast$ \mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}
+\item 
+\mbox{\hyperlink{class_peripherial_devices}{Peripherial\+Devices}} $\ast$ \mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}
+\item 
+\mbox{\hyperlink{class_state}{State}} $\ast$ \mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}
+\item 
+\mbox{\hyperlink{class_screen__ctrl}{Screen\+\_\+ctrl}} $\ast$ \mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}
+\item 
+\mbox{\hyperlink{class_adc_controller}{Adc\+Controller}} $\ast$ \mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}}
+\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}{pulses}}
+\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{class_main_controller_a273ef7e2f102411665997577b666760f}{max\+\_\+count}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\+\_\+on\+\_\+screen}}
+\item 
+bool $\ast$ \mbox{\hyperlink{class_main_controller_af2b5bb125b2eaaebe405a0966c26a0cc}{mcu\+\_\+valid}}
+\item 
+bool $\ast$ \mbox{\hyperlink{class_main_controller_afd1b394879c1ca920ee40963383c4579}{apt\+\_\+valid}}
+\item 
+bool $\ast$ \mbox{\hyperlink{class_main_controller_a6c709e879e4070047d3a0a3a5a4d4966}{am\+\_\+valid}}
+\item 
+int16\+\_\+t $\ast$ \mbox{\hyperlink{class_main_controller_aa8824d7468ce7ebf0fddb45a603985ed}{battery}}
+\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{class_main_controller_a560c198f48b7e7fb5a523ffc9a3063fc}{battery\+\_\+percent}}
+\item 
+int16\+\_\+t $\ast$ \mbox{\hyperlink{class_main_controller_a974377d0f42eda2fca8b53e9740f8b60}{pressure}}
+\item 
+bool $\ast$ \mbox{\hyperlink{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}{motor\+\_\+running}}
+\item 
+bool $\ast$ \mbox{\hyperlink{class_main_controller_a47b330b2e7eac73b72c1a830924c37d8}{pressure\+\_\+ok}}
+\item 
+\mbox{\hyperlink{unionbyte8__t__reg__status}{byte8\+\_\+t\+\_\+reg\+\_\+status}} $\ast$ \mbox{\hyperlink{class_main_controller_a4247cf6b0bdf8556c90a6b0ea85bd585}{status}}
+\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{class_main_controller_a36ee374e00fffa4971bf258ada7c2ee1}{mcu\+\_\+sn}}
+\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{class_main_controller_aa811f2ab20f53361a8379f39ca8f90c0}{apt\+\_\+sn}}
+\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{class_main_controller_a5f76e3d6c9b66f6c348aa525db5e080d}{am\+\_\+sn}}
+\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{class_main_controller_a8ecce2781d152f7bf1231f0ab0127954}{cursor}}
+\item 
+bool \mbox{\hyperlink{class_main_controller_a1e4b440a0f7f6e3168d3d815efc7d9c1}{is\+\_\+counting\+\_\+up}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file main\+\_\+controller.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_controller_a02525541fdab2a40ca4866c97c55ac4c}\label{class_main_controller_a02525541fdab2a40ca4866c97c55ac4c}} 
+\index{MainController@{MainController}!MainController@{MainController}}
+\index{MainController@{MainController}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{MainController()}{MainController()}}
+{\footnotesize\ttfamily Main\+Controller\+::\+Main\+Controller (\begin{DoxyParamCaption}\item[{Debug\+Helper $\ast$}]{debug\+\_\+,  }\item[{\mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}} $\ast$}]{mem\+\_\+,  }\item[{\mbox{\hyperlink{class_peripherial_devices}{Peripherial\+Devices}} $\ast$}]{device\+\_\+,  }\item[{\mbox{\hyperlink{class_state}{State}} $\ast$}]{state\+\_\+,  }\item[{\mbox{\hyperlink{class_screen__ctrl}{Screen\+\_\+ctrl}} $\ast$}]{screen\+\_\+,  }\item[{\mbox{\hyperlink{class_adc_controller}{Adc\+Controller}} $\ast$}]{adc\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 205 of file main\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{206 \{}
+\DoxyCodeLine{207     this-\/>\mbox{\hyperlink{class_main_controller_ac07e94f6740893157ce14b77c3de5f5e}{debug}} = debug\_;}
+\DoxyCodeLine{208     this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}} = mem\_;}
+\DoxyCodeLine{209     this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}} = device\_;}
+\DoxyCodeLine{210     this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}} = state\_;}
+\DoxyCodeLine{211     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}} = screen\_;}
+\DoxyCodeLine{212     this-\/>\mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}} = adc\_;}
+\DoxyCodeLine{213 }
+\DoxyCodeLine{214     \textcolor{comment}{// pointers in controller}}
+\DoxyCodeLine{215     \textcolor{comment}{//memories:}}
+\DoxyCodeLine{216     this-\/>\mbox{\hyperlink{class_main_controller_af2b5bb125b2eaaebe405a0966c26a0cc}{mcu\_valid}} = \&this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ab3091c041ce41523c3a4de7c9430c632}{MCU\_MEM}}-\/>\mbox{\hyperlink{class_memory_a32e14a921e36c510d3deaa976a77ddd6}{id\_valid}};}
+\DoxyCodeLine{217     this-\/>\mbox{\hyperlink{class_main_controller_afd1b394879c1ca920ee40963383c4579}{apt\_valid}} = \&this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a6c9d0c66da6c6722f14ee44814b6fb3c}{APT\_MEM}}-\/>\mbox{\hyperlink{class_memory_a32e14a921e36c510d3deaa976a77ddd6}{id\_valid}};}
+\DoxyCodeLine{218     this-\/>\mbox{\hyperlink{class_main_controller_a6c709e879e4070047d3a0a3a5a4d4966}{am\_valid}}  = \&this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ad6f6fac1355fadaca19b31c031ee55db}{AM\_MEM}}-\/>\mbox{\hyperlink{class_memory_a32e14a921e36c510d3deaa976a77ddd6}{id\_valid}};}
+\DoxyCodeLine{219     this-\/>\mbox{\hyperlink{class_main_controller_a36ee374e00fffa4971bf258ada7c2ee1}{mcu\_sn}} = \&this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ab3091c041ce41523c3a4de7c9430c632}{MCU\_MEM}}-\/>\mbox{\hyperlink{class_memory_a67a06ce841989636f775f7e82c0a7584}{serial\_number}};}
+\DoxyCodeLine{220     this-\/>\mbox{\hyperlink{class_main_controller_aa811f2ab20f53361a8379f39ca8f90c0}{apt\_sn}} = \&this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a6c9d0c66da6c6722f14ee44814b6fb3c}{APT\_MEM}}-\/>\mbox{\hyperlink{class_memory_a67a06ce841989636f775f7e82c0a7584}{serial\_number}};}
+\DoxyCodeLine{221     this-\/>\mbox{\hyperlink{class_main_controller_a5f76e3d6c9b66f6c348aa525db5e080d}{am\_sn}}  = \&this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ad6f6fac1355fadaca19b31c031ee55db}{AM\_MEM}}-\/>\mbox{\hyperlink{class_memory_a67a06ce841989636f775f7e82c0a7584}{serial\_number}};}
+\DoxyCodeLine{222     this-\/>\mbox{\hyperlink{class_main_controller_a273ef7e2f102411665997577b666760f}{max\_count}} = \&this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ad6f6fac1355fadaca19b31c031ee55db}{AM\_MEM}}-\/>\mbox{\hyperlink{class_memory_aa486017257c4ac2f30bfe69e4fa47aa5}{max\_count}};}
+\DoxyCodeLine{223     this-\/>\mbox{\hyperlink{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}{pulses}} = \&this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ad6f6fac1355fadaca19b31c031ee55db}{AM\_MEM}}-\/>\mbox{\hyperlink{class_memory_a952b630a9fad17f5ff01860af1400545}{pulses}};}
+\DoxyCodeLine{224     this-\/>\mbox{\hyperlink{class_main_controller_a8ecce2781d152f7bf1231f0ab0127954}{cursor}} = \&this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ad6f6fac1355fadaca19b31c031ee55db}{AM\_MEM}}-\/>\mbox{\hyperlink{class_memory_ac43d9bf14477c68f2e831302a53fbd83}{cursor}};}
+\DoxyCodeLine{225 }
+\DoxyCodeLine{226     \textcolor{comment}{//status:}}
+\DoxyCodeLine{227     this-\/>\mbox{\hyperlink{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}{motor\_running}} = \&this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_a54ef5d03a162af65b92b1c63da89f893}{motor\_running}};}
+\DoxyCodeLine{228     this-\/>\mbox{\hyperlink{class_main_controller_a4247cf6b0bdf8556c90a6b0ea85bd585}{status}} = \&this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_afd9fca5358dceb981c6241d22e00cb50}{StatusReg}}-\/>\mbox{\hyperlink{class_s_t_a_t_u_s__reg_a80014314707514597f2347efcaa1a521}{current}};}
+\DoxyCodeLine{229     this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} = 0;}
+\DoxyCodeLine{230     this-\/>\mbox{\hyperlink{class_main_controller_a1e4b440a0f7f6e3168d3d815efc7d9c1}{is\_counting\_up}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{231 }
+\DoxyCodeLine{232     \textcolor{comment}{//adc}}
+\DoxyCodeLine{233     this-\/>\mbox{\hyperlink{class_main_controller_aa8824d7468ce7ebf0fddb45a603985ed}{battery}} = \&this-\/>\mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}}-\/>\mbox{\hyperlink{class_adc_controller_abe50326bfd3e5dacf46372f5de7159b8}{channels\_buffer}}[\mbox{\hyperlink{adc__controller_8h_af5ee554b1b8c826fd6b6c7ccca93f2c5ac08cb96af135b5f4b2d246802dec7f26}{V12}}].\mbox{\hyperlink{unionchannel_a6e9d466e1bb72969dcb82d22fc520f68}{value}};}
+\DoxyCodeLine{234     this-\/>\mbox{\hyperlink{class_main_controller_a560c198f48b7e7fb5a523ffc9a3063fc}{battery\_percent}} = \&this-\/>\mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}}-\/>\mbox{\hyperlink{class_adc_controller_ae8afd600d1ad63d0f8894608ce6149bc}{bat\_percentage}};}
+\DoxyCodeLine{235     this-\/>\mbox{\hyperlink{class_main_controller_a974377d0f42eda2fca8b53e9740f8b60}{pressure}} = \&this-\/>\mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}}-\/>\mbox{\hyperlink{class_adc_controller_abe50326bfd3e5dacf46372f5de7159b8}{channels\_buffer}}[\mbox{\hyperlink{adc__controller_8h_af5ee554b1b8c826fd6b6c7ccca93f2c5a0fe3df87ac76a02e1d8865055c23b193}{Pressure}}].\mbox{\hyperlink{unionchannel_a6e9d466e1bb72969dcb82d22fc520f68}{value}};}
+\DoxyCodeLine{236     this-\/>\mbox{\hyperlink{class_main_controller_a47b330b2e7eac73b72c1a830924c37d8}{pressure\_ok}} = \&this-\/>\mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}}-\/>\mbox{\hyperlink{class_adc_controller_a9cbee6141d909740c466031cbd0509d4}{pressure\_ok}};}
+\DoxyCodeLine{237 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_main_controller_a8ed70b648628569c41bf45778ea0c1e7}\label{class_main_controller_a8ed70b648628569c41bf45778ea0c1e7}} 
+\index{MainController@{MainController}!````~MainController@{$\sim$MainController}}
+\index{````~MainController@{$\sim$MainController}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainController()}{~MainController()}}
+{\footnotesize\ttfamily Main\+Controller\+::$\sim$\+Main\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 248 of file main\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{249 \{}
+\DoxyCodeLine{250     }
+\DoxyCodeLine{251 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_controller_a04b7b03894e64a55a6b06ef2540208ab}\label{class_main_controller_a04b7b03894e64a55a6b06ef2540208ab}} 
+\index{MainController@{MainController}!active\_state@{active\_state}}
+\index{active\_state@{active\_state}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{active\_state()}{active\_state()}}
+{\footnotesize\ttfamily void Main\+Controller\+::active\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 102 of file main\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103 \{}
+\DoxyCodeLine{104     this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_af9686ab99359c3b861a8d63dd84bd913}{read}}();}
+\DoxyCodeLine{105     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_ae00b05c00889aadfd355ccc0745a298a}{need\_to\_stall}}())}
+\DoxyCodeLine{106     \{}
+\DoxyCodeLine{107         this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_a3a0173c0b6a9417f77048ec5809d73c9}{stop\_motor}}();}
+\DoxyCodeLine{108         this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fad3fa9ae9431d6cb1772f9d9df48cab19}{Idle}};}
+\DoxyCodeLine{109     \}}
+\DoxyCodeLine{110     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_afd9fca5358dceb981c6241d22e00cb50}{StatusReg}}-\/>\mbox{\hyperlink{class_s_t_a_t_u_s__reg_a80014314707514597f2347efcaa1a521}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a9f1c25973fa51d6ca3223dc505272c41}{bits}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a732cd0ace74615df4dd0ff6c2bba33f7}{FIRE\_STATUS}})}
+\DoxyCodeLine{111     \{}
+\DoxyCodeLine{112         \textcolor{keywordflow}{if} (!this-\/>\mbox{\hyperlink{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}{motor\_running}} \&\& !\mbox{\hyperlink{class_main_controller_ae00b05c00889aadfd355ccc0745a298a}{need\_to\_stall}}())}
+\DoxyCodeLine{113         \{}
+\DoxyCodeLine{114             this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_addba7220ab2d6ea26b238445224f6e65}{start\_motor}}();}
+\DoxyCodeLine{115             this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa26bd8444261cc58df7a86753c79d2520}{Active}};}
+\DoxyCodeLine{116         \}}
+\DoxyCodeLine{117         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{118         \{}
+\DoxyCodeLine{119             this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fad3fa9ae9431d6cb1772f9d9df48cab19}{Idle}};}
+\DoxyCodeLine{120         \}}
+\DoxyCodeLine{121     \}}
+\DoxyCodeLine{122     \textcolor{keyword}{volatile} uint32\_t added\_pulses = this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_a001bf2c8bbceb96fe2bdc61f321927ad}{read\_counter}}();}
+\DoxyCodeLine{123     \textcolor{keywordflow}{if} (added\_pulses > 0)}
+\DoxyCodeLine{124     \{}
+\DoxyCodeLine{125         \textcolor{keywordflow}{for} (uint32\_t i = 1; i <= added\_pulses; i++)}
+\DoxyCodeLine{126         \{}
+\DoxyCodeLine{127             this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(3, *this-\/>\mbox{\hyperlink{class_main_controller_a8ecce2781d152f7bf1231f0ab0127954}{cursor}} + 8*i -\/ 4, (*this-\/>\mbox{\hyperlink{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}{pulses}}) + 1);}
+\DoxyCodeLine{128             this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a8d48ee9a4626922b251d843a08bbd3ae}{write}}(3, *this-\/>\mbox{\hyperlink{class_main_controller_a8ecce2781d152f7bf1231f0ab0127954}{cursor}} + 8*i, (*this-\/>\mbox{\hyperlink{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}{pulses}}) + 1);}
+\DoxyCodeLine{129         \}}
+\DoxyCodeLine{130         this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ad6f6fac1355fadaca19b31c031ee55db}{AM\_MEM}}-\/>\mbox{\hyperlink{class_memory_a952b630a9fad17f5ff01860af1400545}{pulses}} += added\_pulses;     \textcolor{comment}{// add a function to spi write and increment}}
+\DoxyCodeLine{131         this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ad6f6fac1355fadaca19b31c031ee55db}{AM\_MEM}}-\/>\mbox{\hyperlink{class_memory_ac43d9bf14477c68f2e831302a53fbd83}{cursor}} += added\_pulses * 8;}
+\DoxyCodeLine{132         \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_a1e4b440a0f7f6e3168d3d815efc7d9c1}{is\_counting\_up}})}
+\DoxyCodeLine{133         \{}
+\DoxyCodeLine{134             this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} += added\_pulses;}
+\DoxyCodeLine{135         \}}
+\DoxyCodeLine{136         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{137         \{}
+\DoxyCodeLine{138             \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} > added\_pulses)}
+\DoxyCodeLine{139             \{}
+\DoxyCodeLine{140                 this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} = this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} -\/ added\_pulses;}
+\DoxyCodeLine{141             \}}
+\DoxyCodeLine{142             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{143             \{}
+\DoxyCodeLine{144                 this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} = 0;}
+\DoxyCodeLine{145                 this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_a3a0173c0b6a9417f77048ec5809d73c9}{stop\_motor}}();}
+\DoxyCodeLine{146             \}}
+\DoxyCodeLine{147         \}}
+\DoxyCodeLine{148     \}}
+\DoxyCodeLine{149     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_accc1bbcc4bf1ec3fa03e0299e3276d5d}{update\_pulse\_counter}}(this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}});}
+\DoxyCodeLine{150 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d0b/class_main_controller_a04b7b03894e64a55a6b06ef2540208ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{d9/d0b/class_main_controller_a04b7b03894e64a55a6b06ef2540208ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_controller_aa847592e8002c32b1d10c6a8b99034ef}\label{class_main_controller_aa847592e8002c32b1d10c6a8b99034ef}} 
+\index{MainController@{MainController}!idle\_state@{idle\_state}}
+\index{idle\_state@{idle\_state}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{idle\_state()}{idle\_state()}}
+{\footnotesize\ttfamily void Main\+Controller\+::idle\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file main\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66 \{}
+\DoxyCodeLine{67     \textcolor{keywordflow}{if} (\mbox{\hyperlink{main__controller_8cpp_a414ea658e45ae6cadb7babe6756a7208}{reset\_pressed}})}
+\DoxyCodeLine{68     \{}
+\DoxyCodeLine{69         this-\/>\mbox{\hyperlink{class_main_controller_a1e4b440a0f7f6e3168d3d815efc7d9c1}{is\_counting\_up}} = ~this-\/>is\_counting\_up;}
+\DoxyCodeLine{70         \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_a1e4b440a0f7f6e3168d3d815efc7d9c1}{is\_counting\_up}})}
+\DoxyCodeLine{71         \{}
+\DoxyCodeLine{72             this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} = 0;}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{75         \{}
+\DoxyCodeLine{76             this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} = 400;}
+\DoxyCodeLine{77         \}}
+\DoxyCodeLine{78         \mbox{\hyperlink{main__controller_8cpp_a414ea658e45ae6cadb7babe6756a7208}{reset\_pressed}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{79     \}}
+\DoxyCodeLine{80     this-\/>\mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}}-\/>\mbox{\hyperlink{class_adc_controller_ab90340b9e1e08cd530b4a68701ddafe8}{read}}();}
+\DoxyCodeLine{81     this-\/>\mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}}-\/>\mbox{\hyperlink{class_adc_controller_a0b68f65fa2ff32d520453116211d618c}{convert\_to\_volt}}();}
+\DoxyCodeLine{82     this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_af9686ab99359c3b861a8d63dd84bd913}{read}}();}
+\DoxyCodeLine{83     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_afd9fca5358dceb981c6241d22e00cb50}{StatusReg}}-\/>\mbox{\hyperlink{class_s_t_a_t_u_s__reg_a80014314707514597f2347efcaa1a521}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a9f1c25973fa51d6ca3223dc505272c41}{bits}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a732cd0ace74615df4dd0ff6c2bba33f7}{FIRE\_STATUS}})}
+\DoxyCodeLine{84     \{}
+\DoxyCodeLine{85         \textcolor{keywordflow}{if} (!this-\/>\mbox{\hyperlink{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}{motor\_running}} \&\& !\mbox{\hyperlink{class_main_controller_ae00b05c00889aadfd355ccc0745a298a}{need\_to\_stall}}())}
+\DoxyCodeLine{86         \{}
+\DoxyCodeLine{87             this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_addba7220ab2d6ea26b238445224f6e65}{start\_motor}}();}
+\DoxyCodeLine{88             this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa26bd8444261cc58df7a86753c79d2520}{Active}};}
+\DoxyCodeLine{89         \}}
+\DoxyCodeLine{90         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{91         \{}
+\DoxyCodeLine{92             this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fad3fa9ae9431d6cb1772f9d9df48cab19}{Idle}};}
+\DoxyCodeLine{93         \}}
+\DoxyCodeLine{94     \}}
+\DoxyCodeLine{95     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a5d4780f9929fd65439d081b1990dca36}{update\_battery}}(*this-\/>\mbox{\hyperlink{class_main_controller_aa8824d7468ce7ebf0fddb45a603985ed}{battery}}, *this-\/>\mbox{\hyperlink{class_main_controller_a560c198f48b7e7fb5a523ffc9a3063fc}{battery\_percent}});}
+\DoxyCodeLine{96     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a25d3f4f7131af154987713f1fd3e3d49}{update\_pressure}}(*this-\/>\mbox{\hyperlink{class_main_controller_a974377d0f42eda2fca8b53e9740f8b60}{pressure}});}
+\DoxyCodeLine{97     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a632112f7efc861929e8d4b0e29d0e45d}{update\_remaining\_in\_percent}}(*this-\/>\mbox{\hyperlink{class_main_controller_a273ef7e2f102411665997577b666760f}{max\_count}}, *this-\/>\mbox{\hyperlink{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}{pulses}});}
+\DoxyCodeLine{98     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a001f12c46c4c676920b324cd17e1d7da}{update\_piazo}}(*this-\/>\mbox{\hyperlink{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}{motor\_running}});}
+\DoxyCodeLine{99     this-\/>\mbox{\hyperlink{class_main_controller_ac07e94f6740893157ce14b77c3de5f5e}{debug}}-\/>update(*this-\/>\mbox{\hyperlink{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}{motor\_running}}, *this-\/>\mbox{\hyperlink{class_main_controller_a47b330b2e7eac73b72c1a830924c37d8}{pressure\_ok}}, *this-\/>\mbox{\hyperlink{class_main_controller_af2b5bb125b2eaaebe405a0966c26a0cc}{mcu\_valid}}, *this-\/>\mbox{\hyperlink{class_main_controller_afd1b394879c1ca920ee40963383c4579}{apt\_valid}}, *this-\/>\mbox{\hyperlink{class_main_controller_a6c709e879e4070047d3a0a3a5a4d4966}{am\_valid}});}
+\DoxyCodeLine{100 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d0b/class_main_controller_aa847592e8002c32b1d10c6a8b99034ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{d9/d0b/class_main_controller_aa847592e8002c32b1d10c6a8b99034ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_controller_a57539ddb5adbcf8912ee7735725e1330}\label{class_main_controller_a57539ddb5adbcf8912ee7735725e1330}} 
+\index{MainController@{MainController}!init\_before\_while@{init\_before\_while}}
+\index{init\_before\_while@{init\_before\_while}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{init\_before\_while()}{init\_before\_while()}}
+{\footnotesize\ttfamily void Main\+Controller\+::init\+\_\+before\+\_\+while (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file main\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6     this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a9f9fdadeb2ff6c9238c8f4dac3b96bb7}{init\_first\_step}}();}
+\DoxyCodeLine{7 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d9/d0b/class_main_controller_a57539ddb5adbcf8912ee7735725e1330_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{d9/d0b/class_main_controller_a57539ddb5adbcf8912ee7735725e1330_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_controller_ac3b970119a35a0aa0a2b8db1362dc727}\label{class_main_controller_ac3b970119a35a0aa0a2b8db1362dc727}} 
+\index{MainController@{MainController}!init\_state@{init\_state}}
+\index{init\_state@{init\_state}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{init\_state()}{init\_state()}}
+{\footnotesize\ttfamily void Main\+Controller\+::init\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file main\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa1ff76aa808bb8209a13fcdbaf330587e}{Init}};}
+\DoxyCodeLine{12     this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a68a25e091d4f139ea8e4f767e8dd93e6}{check\_connections}}();}
+\DoxyCodeLine{13     this-\/>\mbox{\hyperlink{class_main_controller_ac07e94f6740893157ce14b77c3de5f5e}{debug}}-\/>update();}
+\DoxyCodeLine{14     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a54eb7fb96a458296e4ec636ba03458c6}{value}} == 3)}
+\DoxyCodeLine{15     \{}
+\DoxyCodeLine{16         this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fad3fa9ae9431d6cb1772f9d9df48cab19}{Idle}}; }
+\DoxyCodeLine{17     \}}
+\DoxyCodeLine{18     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a54eb7fb96a458296e4ec636ba03458c6}{value}} == 4)}
+\DoxyCodeLine{19     \{}
+\DoxyCodeLine{20         this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa1bd72899508ed7f9e142d8f84e092d72}{QA}};}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a54eb7fb96a458296e4ec636ba03458c6}{value}} == 8)}
+\DoxyCodeLine{23     \{}
+\DoxyCodeLine{24         \textcolor{comment}{// In this state we check connections and connect apt and then pass uart state}}
+\DoxyCodeLine{25         this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa6d9f8689ea39a3158da65b5a604c294d}{UartDebug}};}
+\DoxyCodeLine{26     \}}
+\DoxyCodeLine{27     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{28     \{}
+\DoxyCodeLine{29         \textcolor{keywordflow}{if} (*this-\/>\mbox{\hyperlink{class_main_controller_af2b5bb125b2eaaebe405a0966c26a0cc}{mcu\_valid}} \&\& *this-\/>\mbox{\hyperlink{class_main_controller_afd1b394879c1ca920ee40963383c4579}{apt\_valid}} \&\& *this-\/>\mbox{\hyperlink{class_main_controller_a6c709e879e4070047d3a0a3a5a4d4966}{am\_valid}})}
+\DoxyCodeLine{30         \{}
+\DoxyCodeLine{31             this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_aea2d5b6c381972783928763bf78c3263}{get\_serial}}();}
+\DoxyCodeLine{32             this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_aed37efb821eb5801e5e88a6d577fb697}{get\_max}}();}
+\DoxyCodeLine{33             this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ad8b715c9dff173ff208a36a210afe664}{get\_date}}();}
+\DoxyCodeLine{34             this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ae85dff1f0412d3995db4dc27f12d9e83}{binary\_and\_patch}}();}
+\DoxyCodeLine{35         \}}
+\DoxyCodeLine{36         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!*this-\/>\mbox{\hyperlink{class_main_controller_af2b5bb125b2eaaebe405a0966c26a0cc}{mcu\_valid}})}
+\DoxyCodeLine{37         \{}
+\DoxyCodeLine{38             this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a44a54035276c9e6cff8faa5a727d394b}{tx\_send\_general\_error}}(404);}
+\DoxyCodeLine{39         \}}
+\DoxyCodeLine{40         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!*this-\/>\mbox{\hyperlink{class_main_controller_afd1b394879c1ca920ee40963383c4579}{apt\_valid}})}
+\DoxyCodeLine{41         \{}
+\DoxyCodeLine{42             this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a44a54035276c9e6cff8faa5a727d394b}{tx\_send\_general\_error}}(405);}
+\DoxyCodeLine{43         \}}
+\DoxyCodeLine{44         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!*this-\/>\mbox{\hyperlink{class_main_controller_a6c709e879e4070047d3a0a3a5a4d4966}{am\_valid}})}
+\DoxyCodeLine{45         \{}
+\DoxyCodeLine{46             this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a44a54035276c9e6cff8faa5a727d394b}{tx\_send\_general\_error}}(406);}
+\DoxyCodeLine{47         \}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         \textcolor{comment}{// Init step 2.}}
+\DoxyCodeLine{50         \textcolor{keywordflow}{if}(*this-\/>\mbox{\hyperlink{class_main_controller_a5f76e3d6c9b66f6c348aa525db5e080d}{am\_sn}} == 0xffffffff || *this-\/>\mbox{\hyperlink{class_main_controller_a5f76e3d6c9b66f6c348aa525db5e080d}{am\_sn}} == 0x00000000 || *this-\/>\mbox{\hyperlink{class_main_controller_a273ef7e2f102411665997577b666760f}{max\_count}} == 0xffffffff || *this-\/>\mbox{\hyperlink{class_main_controller_a273ef7e2f102411665997577b666760f}{max\_count}} == 0)}
+\DoxyCodeLine{51         \{}
+\DoxyCodeLine{52             this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a44a54035276c9e6cff8faa5a727d394b}{tx\_send\_general\_error}}(501);}
+\DoxyCodeLine{53         \}}
+\DoxyCodeLine{54         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(*this-\/>\mbox{\hyperlink{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}{pulses}} >= *this-\/>\mbox{\hyperlink{class_main_controller_a273ef7e2f102411665997577b666760f}{max\_count}})}
+\DoxyCodeLine{55         \{}
+\DoxyCodeLine{56             this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_adf2c77e3f1cef8be94932d36ea540de5}{update\_error\_remaining}}(0);}
+\DoxyCodeLine{57         \}}
+\DoxyCodeLine{58         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{59         \{}
+\DoxyCodeLine{60             this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fad3fa9ae9431d6cb1772f9d9df48cab19}{Idle}};}
+\DoxyCodeLine{61         \}}
+\DoxyCodeLine{62     \}}
+\DoxyCodeLine{63 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d0b/class_main_controller_ac3b970119a35a0aa0a2b8db1362dc727_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{d9/d0b/class_main_controller_ac3b970119a35a0aa0a2b8db1362dc727_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_controller_ae00b05c00889aadfd355ccc0745a298a}\label{class_main_controller_ae00b05c00889aadfd355ccc0745a298a}} 
+\index{MainController@{MainController}!need\_to\_stall@{need\_to\_stall}}
+\index{need\_to\_stall@{need\_to\_stall}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{need\_to\_stall()}{need\_to\_stall()}}
+{\footnotesize\ttfamily bool Main\+Controller\+::need\+\_\+to\+\_\+stall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 253 of file main\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{254 \{}
+\DoxyCodeLine{255     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}{motor\_running}})}
+\DoxyCodeLine{256     \{}
+\DoxyCodeLine{257         \textcolor{keywordflow}{if} (*this-\/>\mbox{\hyperlink{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}{pulses}} > *this-\/>\mbox{\hyperlink{class_main_controller_a273ef7e2f102411665997577b666760f}{max\_count}})}
+\DoxyCodeLine{258         \{}
+\DoxyCodeLine{259             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{260         \}}
+\DoxyCodeLine{261         \textcolor{keywordflow}{if} (!*this-\/>\mbox{\hyperlink{class_main_controller_a47b330b2e7eac73b72c1a830924c37d8}{pressure\_ok}})}
+\DoxyCodeLine{262         \{}
+\DoxyCodeLine{263             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{264         \}}
+\DoxyCodeLine{265         \textcolor{keywordflow}{if} (!*this-\/>\mbox{\hyperlink{class_main_controller_a6c709e879e4070047d3a0a3a5a4d4966}{am\_valid}})}
+\DoxyCodeLine{266         \{}
+\DoxyCodeLine{267             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{268         \}}
+\DoxyCodeLine{269         \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} == 0 \&\& !this-\/>\mbox{\hyperlink{class_main_controller_a1e4b440a0f7f6e3168d3d815efc7d9c1}{is\_counting\_up}})}
+\DoxyCodeLine{270         \{}
+\DoxyCodeLine{271             this-\/>\mbox{\hyperlink{class_main_controller_a1e4b440a0f7f6e3168d3d815efc7d9c1}{is\_counting\_up}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{272             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{273         \}       }
+\DoxyCodeLine{274     \}}
+\DoxyCodeLine{275     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{276     \{}
+\DoxyCodeLine{277         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{278     \}}
+\DoxyCodeLine{279     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{280 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d0b/class_main_controller_ae00b05c00889aadfd355ccc0745a298a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_controller_a3a0391cb55c5c45c383407fca059db7e}\label{class_main_controller_a3a0391cb55c5c45c383407fca059db7e}} 
+\index{MainController@{MainController}!qa\_state@{qa\_state}}
+\index{qa\_state@{qa\_state}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{qa\_state()}{qa\_state()}}
+{\footnotesize\ttfamily void Main\+Controller\+::qa\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 152 of file main\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{153 \{}
+\DoxyCodeLine{154     this-\/>\mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}}-\/>\mbox{\hyperlink{class_adc_controller_ab90340b9e1e08cd530b4a68701ddafe8}{read}}();}
+\DoxyCodeLine{155     this-\/>\mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}}-\/>\mbox{\hyperlink{class_adc_controller_a0b68f65fa2ff32d520453116211d618c}{convert\_to\_volt}}();}
+\DoxyCodeLine{156     this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_af9686ab99359c3b861a8d63dd84bd913}{read}}();}
+\DoxyCodeLine{157     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_a4247cf6b0bdf8556c90a6b0ea85bd585}{status}}-\/>\mbox{\hyperlink{unionbyte8__t__reg__status_a9f1c25973fa51d6ca3223dc505272c41}{bits}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a732cd0ace74615df4dd0ff6c2bba33f7}{FIRE\_STATUS}})}
+\DoxyCodeLine{158     \{}
+\DoxyCodeLine{159         this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_a10e61d2e94a9f0be7bd40ce8642694d4}{toggle\_motor}}();}
+\DoxyCodeLine{160     \}}
+\DoxyCodeLine{161     }
+\DoxyCodeLine{162     \textcolor{keyword}{volatile} uint32\_t added\_pulses = this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_a001bf2c8bbceb96fe2bdc61f321927ad}{read\_counter}}();}
+\DoxyCodeLine{163     \textcolor{keywordflow}{if} (added\_pulses > 0)}
+\DoxyCodeLine{164     \{}
+\DoxyCodeLine{165         this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ad6f6fac1355fadaca19b31c031ee55db}{AM\_MEM}}-\/>\mbox{\hyperlink{class_memory_a952b630a9fad17f5ff01860af1400545}{pulses}} += added\_pulses;      \textcolor{comment}{// add a function to spi write and increment}}
+\DoxyCodeLine{166         this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_ad6f6fac1355fadaca19b31c031ee55db}{AM\_MEM}}-\/>\mbox{\hyperlink{class_memory_ac43d9bf14477c68f2e831302a53fbd83}{cursor}} += added\_pulses * 8;}
+\DoxyCodeLine{167         \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_a1e4b440a0f7f6e3168d3d815efc7d9c1}{is\_counting\_up}})}
+\DoxyCodeLine{168         \{}
+\DoxyCodeLine{169             this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} += added\_pulses;}
+\DoxyCodeLine{170         \}}
+\DoxyCodeLine{171         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{172         \{}
+\DoxyCodeLine{173             \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} > added\_pulses)}
+\DoxyCodeLine{174             \{}
+\DoxyCodeLine{175                 this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} = this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} -\/ added\_pulses;}
+\DoxyCodeLine{176             \}}
+\DoxyCodeLine{177             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{178             \{}
+\DoxyCodeLine{179                 this-\/>\mbox{\hyperlink{class_main_controller_a212652d145f1abb9d23a2012a3daf988}{pulses\_on\_screen}} = 0;}
+\DoxyCodeLine{180                 this-\/>\mbox{\hyperlink{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}{device}}-\/>\mbox{\hyperlink{class_peripherial_devices_a3a0173c0b6a9417f77048ec5809d73c9}{stop\_motor}}();}
+\DoxyCodeLine{181             \}}
+\DoxyCodeLine{182         \}}
+\DoxyCodeLine{183     \}}
+\DoxyCodeLine{184     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_accc1bbcc4bf1ec3fa03e0299e3276d5d}{update\_pulse\_counter}}(*this-\/>\mbox{\hyperlink{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}{pulses}});}
+\DoxyCodeLine{185     this-\/>\mbox{\hyperlink{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}{mem}}-\/>\mbox{\hyperlink{class_mem__ctrl_a68a25e091d4f139ea8e4f767e8dd93e6}{check\_connections}}();}
+\DoxyCodeLine{186     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a5d4780f9929fd65439d081b1990dca36}{update\_battery}}(*this-\/>\mbox{\hyperlink{class_main_controller_aa8824d7468ce7ebf0fddb45a603985ed}{battery}}, *this-\/>\mbox{\hyperlink{class_main_controller_a560c198f48b7e7fb5a523ffc9a3063fc}{battery\_percent}});}
+\DoxyCodeLine{187     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a25d3f4f7131af154987713f1fd3e3d49}{update\_pressure}}(*this-\/>\mbox{\hyperlink{class_main_controller_a974377d0f42eda2fca8b53e9740f8b60}{pressure}});}
+\DoxyCodeLine{188     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a632112f7efc861929e8d4b0e29d0e45d}{update\_remaining\_in\_percent}}(10000, *this-\/>\mbox{\hyperlink{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}{pulses}}); \textcolor{comment}{//default is 10000 for initial run}}
+\DoxyCodeLine{189     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a001f12c46c4c676920b324cd17e1d7da}{update\_piazo}}(*this-\/>\mbox{\hyperlink{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}{motor\_running}});}
+\DoxyCodeLine{190     \textcolor{comment}{// special to QA:}}
+\DoxyCodeLine{191     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a8e75991054f00f9e3f385ca65bd68eb0}{qa\_mon}}(*this-\/>\mbox{\hyperlink{class_main_controller_af2b5bb125b2eaaebe405a0966c26a0cc}{mcu\_valid}}, *this-\/>\mbox{\hyperlink{class_main_controller_afd1b394879c1ca920ee40963383c4579}{apt\_valid}}, *this-\/>\mbox{\hyperlink{class_main_controller_a6c709e879e4070047d3a0a3a5a4d4966}{am\_valid}});}
+\DoxyCodeLine{192     this-\/>\mbox{\hyperlink{class_main_controller_ac07e94f6740893157ce14b77c3de5f5e}{debug}}-\/>update(*this-\/>\mbox{\hyperlink{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}{motor\_running}}, *this-\/>\mbox{\hyperlink{class_main_controller_a47b330b2e7eac73b72c1a830924c37d8}{pressure\_ok}}, *this-\/>\mbox{\hyperlink{class_main_controller_af2b5bb125b2eaaebe405a0966c26a0cc}{mcu\_valid}}, *this-\/>\mbox{\hyperlink{class_main_controller_afd1b394879c1ca920ee40963383c4579}{apt\_valid}}, *this-\/>\mbox{\hyperlink{class_main_controller_a6c709e879e4070047d3a0a3a5a4d4966}{am\_valid}});}
+\DoxyCodeLine{193 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d0b/class_main_controller_a3a0391cb55c5c45c383407fca059db7e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{d9/d0b/class_main_controller_a3a0391cb55c5c45c383407fca059db7e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_controller_a4b5560f771e73e8bf3abdec30cd50dd8}\label{class_main_controller_a4b5560f771e73e8bf3abdec30cd50dd8}} 
+\index{MainController@{MainController}!uart\_state@{uart\_state}}
+\index{uart\_state@{uart\_state}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{uart\_state()}{uart\_state()}}
+{\footnotesize\ttfamily void Main\+Controller\+::uart\+\_\+state (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 239 of file main\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{240 \{}
+\DoxyCodeLine{241     \mbox{\hyperlink{class_monitor}{Monitor}} monitor = \mbox{\hyperlink{class_monitor}{Monitor}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{242     \textcolor{keywordflow}{while} (this-\/>\mbox{\hyperlink{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}{state}}-\/>\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}}==\mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa6d9f8689ea39a3158da65b5a604c294d}{UartDebug}})}
+\DoxyCodeLine{243     \{}
+\DoxyCodeLine{244         monitor.\mbox{\hyperlink{class_monitor_ae529b40928ddfefb21d92a5d86faa304}{serial\_consume}}();}
+\DoxyCodeLine{245     \}}
+\DoxyCodeLine{246 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d0b/class_main_controller_a4b5560f771e73e8bf3abdec30cd50dd8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{d9/d0b/class_main_controller_a4b5560f771e73e8bf3abdec30cd50dd8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_controller_a34e9bec303edc7e4212819ddf3f15717}\label{class_main_controller_a34e9bec303edc7e4212819ddf3f15717}} 
+\index{MainController@{MainController}!update\_state@{update\_state}}
+\index{update\_state@{update\_state}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{update\_state()}{update\_state()}}
+{\footnotesize\ttfamily void Main\+Controller\+::update\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 195 of file main\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{196 \{}
+\DoxyCodeLine{197     this-\/>\mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}}-\/>\mbox{\hyperlink{class_adc_controller_ab90340b9e1e08cd530b4a68701ddafe8}{read}}();}
+\DoxyCodeLine{198     this-\/>\mbox{\hyperlink{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}{adc}}-\/>\mbox{\hyperlink{class_adc_controller_a0b68f65fa2ff32d520453116211d618c}{convert\_to\_volt}}();}
+\DoxyCodeLine{199     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a5d4780f9929fd65439d081b1990dca36}{update\_battery}}(*this-\/>\mbox{\hyperlink{class_main_controller_aa8824d7468ce7ebf0fddb45a603985ed}{battery}}, *this-\/>\mbox{\hyperlink{class_main_controller_a560c198f48b7e7fb5a523ffc9a3063fc}{battery\_percent}});}
+\DoxyCodeLine{200     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a25d3f4f7131af154987713f1fd3e3d49}{update\_pressure}}(*this-\/>\mbox{\hyperlink{class_main_controller_a974377d0f42eda2fca8b53e9740f8b60}{pressure}});}
+\DoxyCodeLine{201     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a632112f7efc861929e8d4b0e29d0e45d}{update\_remaining\_in\_percent}}(*this-\/>\mbox{\hyperlink{class_main_controller_a273ef7e2f102411665997577b666760f}{max\_count}}, *this-\/>\mbox{\hyperlink{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}{pulses}});}
+\DoxyCodeLine{202     this-\/>\mbox{\hyperlink{class_main_controller_a20380b2cb30037425a6e89d838886f5a}{screen}}-\/>\mbox{\hyperlink{class_screen__ctrl_a001f12c46c4c676920b324cd17e1d7da}{update\_piazo}}(*this-\/>\mbox{\hyperlink{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}{motor\_running}});}
+\DoxyCodeLine{203 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d0b/class_main_controller_a34e9bec303edc7e4212819ddf3f15717_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{d9/d0b/class_main_controller_a34e9bec303edc7e4212819ddf3f15717_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}\label{class_main_controller_a790dda86ce5ca3af6ca5e4d4a8e379a8}} 
+\index{MainController@{MainController}!adc@{adc}}
+\index{adc@{adc}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{adc}{adc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_adc_controller}{Adc\+Controller}}$\ast$ Main\+Controller\+::adc}
+
+
+
+Definition at line 17 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a5f76e3d6c9b66f6c348aa525db5e080d}\label{class_main_controller_a5f76e3d6c9b66f6c348aa525db5e080d}} 
+\index{MainController@{MainController}!am\_sn@{am\_sn}}
+\index{am\_sn@{am\_sn}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{am\_sn}{am\_sn}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ Main\+Controller\+::am\+\_\+sn}
+
+
+
+Definition at line 32 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a6c709e879e4070047d3a0a3a5a4d4966}\label{class_main_controller_a6c709e879e4070047d3a0a3a5a4d4966}} 
+\index{MainController@{MainController}!am\_valid@{am\_valid}}
+\index{am\_valid@{am\_valid}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{am\_valid}{am\_valid}}
+{\footnotesize\ttfamily bool$\ast$ Main\+Controller\+::am\+\_\+valid}
+
+
+
+Definition at line 23 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_aa811f2ab20f53361a8379f39ca8f90c0}\label{class_main_controller_aa811f2ab20f53361a8379f39ca8f90c0}} 
+\index{MainController@{MainController}!apt\_sn@{apt\_sn}}
+\index{apt\_sn@{apt\_sn}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{apt\_sn}{apt\_sn}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ Main\+Controller\+::apt\+\_\+sn}
+
+
+
+Definition at line 31 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_afd1b394879c1ca920ee40963383c4579}\label{class_main_controller_afd1b394879c1ca920ee40963383c4579}} 
+\index{MainController@{MainController}!apt\_valid@{apt\_valid}}
+\index{apt\_valid@{apt\_valid}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{apt\_valid}{apt\_valid}}
+{\footnotesize\ttfamily bool$\ast$ Main\+Controller\+::apt\+\_\+valid}
+
+
+
+Definition at line 22 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_aa8824d7468ce7ebf0fddb45a603985ed}\label{class_main_controller_aa8824d7468ce7ebf0fddb45a603985ed}} 
+\index{MainController@{MainController}!battery@{battery}}
+\index{battery@{battery}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{battery}{battery}}
+{\footnotesize\ttfamily int16\+\_\+t$\ast$ Main\+Controller\+::battery}
+
+
+
+Definition at line 24 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a560c198f48b7e7fb5a523ffc9a3063fc}\label{class_main_controller_a560c198f48b7e7fb5a523ffc9a3063fc}} 
+\index{MainController@{MainController}!battery\_percent@{battery\_percent}}
+\index{battery\_percent@{battery\_percent}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{battery\_percent}{battery\_percent}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ Main\+Controller\+::battery\+\_\+percent}
+
+
+
+Definition at line 25 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a8ecce2781d152f7bf1231f0ab0127954}\label{class_main_controller_a8ecce2781d152f7bf1231f0ab0127954}} 
+\index{MainController@{MainController}!cursor@{cursor}}
+\index{cursor@{cursor}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ Main\+Controller\+::cursor}
+
+
+
+Definition at line 33 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_ac07e94f6740893157ce14b77c3de5f5e}\label{class_main_controller_ac07e94f6740893157ce14b77c3de5f5e}} 
+\index{MainController@{MainController}!debug@{debug}}
+\index{debug@{debug}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily Debug\+Helper$\ast$ Main\+Controller\+::debug}
+
+
+
+Definition at line 12 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}\label{class_main_controller_a259e5fc15256256b73e9fc2ceda859b4}} 
+\index{MainController@{MainController}!device@{device}}
+\index{device@{device}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{device}{device}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_peripherial_devices}{Peripherial\+Devices}}$\ast$ Main\+Controller\+::device}
+
+
+
+Definition at line 14 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a1e4b440a0f7f6e3168d3d815efc7d9c1}\label{class_main_controller_a1e4b440a0f7f6e3168d3d815efc7d9c1}} 
+\index{MainController@{MainController}!is\_counting\_up@{is\_counting\_up}}
+\index{is\_counting\_up@{is\_counting\_up}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{is\_counting\_up}{is\_counting\_up}}
+{\footnotesize\ttfamily bool Main\+Controller\+::is\+\_\+counting\+\_\+up}
+
+
+
+Definition at line 34 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a273ef7e2f102411665997577b666760f}\label{class_main_controller_a273ef7e2f102411665997577b666760f}} 
+\index{MainController@{MainController}!max\_count@{max\_count}}
+\index{max\_count@{max\_count}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{max\_count}{max\_count}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ Main\+Controller\+::max\+\_\+count}
+
+
+
+Definition at line 19 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a36ee374e00fffa4971bf258ada7c2ee1}\label{class_main_controller_a36ee374e00fffa4971bf258ada7c2ee1}} 
+\index{MainController@{MainController}!mcu\_sn@{mcu\_sn}}
+\index{mcu\_sn@{mcu\_sn}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{mcu\_sn}{mcu\_sn}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ Main\+Controller\+::mcu\+\_\+sn}
+
+
+
+Definition at line 30 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_af2b5bb125b2eaaebe405a0966c26a0cc}\label{class_main_controller_af2b5bb125b2eaaebe405a0966c26a0cc}} 
+\index{MainController@{MainController}!mcu\_valid@{mcu\_valid}}
+\index{mcu\_valid@{mcu\_valid}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{mcu\_valid}{mcu\_valid}}
+{\footnotesize\ttfamily bool$\ast$ Main\+Controller\+::mcu\+\_\+valid}
+
+
+
+Definition at line 21 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}\label{class_main_controller_abfff0dd2160f8cc748be0fb774b86e9e}} 
+\index{MainController@{MainController}!mem@{mem}}
+\index{mem@{mem}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{mem}{mem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}}$\ast$ Main\+Controller\+::mem}
+
+
+
+Definition at line 13 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}\label{class_main_controller_a94cf8a91e4ede0d5f74275e70fcbc3f7}} 
+\index{MainController@{MainController}!motor\_running@{motor\_running}}
+\index{motor\_running@{motor\_running}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{motor\_running}{motor\_running}}
+{\footnotesize\ttfamily bool$\ast$ Main\+Controller\+::motor\+\_\+running}
+
+
+
+Definition at line 27 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a974377d0f42eda2fca8b53e9740f8b60}\label{class_main_controller_a974377d0f42eda2fca8b53e9740f8b60}} 
+\index{MainController@{MainController}!pressure@{pressure}}
+\index{pressure@{pressure}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{pressure}{pressure}}
+{\footnotesize\ttfamily int16\+\_\+t$\ast$ Main\+Controller\+::pressure}
+
+
+
+Definition at line 26 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a47b330b2e7eac73b72c1a830924c37d8}\label{class_main_controller_a47b330b2e7eac73b72c1a830924c37d8}} 
+\index{MainController@{MainController}!pressure\_ok@{pressure\_ok}}
+\index{pressure\_ok@{pressure\_ok}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{pressure\_ok}{pressure\_ok}}
+{\footnotesize\ttfamily bool$\ast$ Main\+Controller\+::pressure\+\_\+ok}
+
+
+
+Definition at line 28 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}\label{class_main_controller_a28cd2c4eb766f4ae8aa0d9b836c8270a}} 
+\index{MainController@{MainController}!pulses@{pulses}}
+\index{pulses@{pulses}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{pulses}{pulses}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ Main\+Controller\+::pulses}
+
+
+
+Definition at line 18 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a212652d145f1abb9d23a2012a3daf988}\label{class_main_controller_a212652d145f1abb9d23a2012a3daf988}} 
+\index{MainController@{MainController}!pulses\_on\_screen@{pulses\_on\_screen}}
+\index{pulses\_on\_screen@{pulses\_on\_screen}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{pulses\_on\_screen}{pulses\_on\_screen}}
+{\footnotesize\ttfamily uint32\+\_\+t Main\+Controller\+::pulses\+\_\+on\+\_\+screen}
+
+
+
+Definition at line 20 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a20380b2cb30037425a6e89d838886f5a}\label{class_main_controller_a20380b2cb30037425a6e89d838886f5a}} 
+\index{MainController@{MainController}!screen@{screen}}
+\index{screen@{screen}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen__ctrl}{Screen\+\_\+ctrl}}$\ast$ Main\+Controller\+::screen}
+
+
+
+Definition at line 16 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}\label{class_main_controller_ad93f8e59a70a80e9fc8255a6a4045d95}} 
+\index{MainController@{MainController}!state@{state}}
+\index{state@{state}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_state}{State}}$\ast$ Main\+Controller\+::state}
+
+
+
+Definition at line 15 of file main\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_main_controller_a4247cf6b0bdf8556c90a6b0ea85bd585}\label{class_main_controller_a4247cf6b0bdf8556c90a6b0ea85bd585}} 
+\index{MainController@{MainController}!status@{status}}
+\index{status@{status}!MainController@{MainController}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionbyte8__t__reg__status}{byte8\+\_\+t\+\_\+reg\+\_\+status}}$\ast$ Main\+Controller\+::status}
+
+
+
+Definition at line 29 of file main\+\_\+controller.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{main__controller_8h}{main\+\_\+controller.\+h}}\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/\mbox{\hyperlink{main__controller_8cpp}{main\+\_\+controller.\+cpp}}\end{DoxyCompactItemize}

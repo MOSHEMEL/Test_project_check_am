@@ -1,0 +1,14 @@
+<map id="Main_Menu" name="Main_Menu">
+<area shape="rect" id="node1" title="Display the Main Menu on HyperTerminal." alt="" coords="5,94,95,121"/>
+<area shape="rect" id="node2" href="$d3/de2/group___s_t_m32_l0xx___i_a_p.html#gae0065df1ec814017a9b7d8c75787384a" title=" " alt="" coords="157,18,247,45"/>
+<area shape="rect" id="node3" href="$d9/da9/group___s_t_m32_l0xx___i_a_p___main.html#gaf460523c2799d1970b0f6702a6f61463" title="Print a string on the HyperTerminal." alt="" coords="144,69,260,95"/>
+<area shape="rect" id="node4" href="$df/d62/class_mem__ctrl.html#a8d48ee9a4626922b251d843a08bbd3ae" title=" " alt="" coords="147,119,257,146"/>
+<area shape="rect" id="node12" href="$d3/d9d/xmodem_8h.html#a6012201f5dc12bb3539fb52a07be782e" title="This function is the base of the Xmodem protocol. When we receive a header from UART,..." alt="" coords="143,170,261,197"/>
+<area shape="rect" id="node5" href="$df/d62/class_mem__ctrl.html#a59ef59d9e5d6b25e268cc30ba3bbeed4" title=" " alt="" coords="309,17,473,43"/>
+<area shape="rect" id="node7" href="$df/d62/class_mem__ctrl.html#aa9ca21741259055eec2a9174f23a0e19" title=" " alt="" coords="337,69,446,95"/>
+<area shape="rect" id="node9" href="$d2/d01/class_memory.html#ab2c1caf7f5aa2d449aacaddf20f00652" title=" " alt="" coords="339,119,443,146"/>
+<area shape="rect" id="node10" href="$d2/d01/class_memory.html#a1fa2d43a2098b9be605ba5574a4f4ecb" title=" " alt="" coords="315,170,467,197"/>
+<area shape="rect" id="node11" href="$d2/d01/class_memory.html#aed28e5150da795f051b91a78ab3abd0c" title=" " alt="" coords="317,221,466,247"/>
+<area shape="rect" id="node6" href="$d2/d01/class_memory.html#a9910263cfa6b21725406d8173c07b3fc" title=" " alt="" coords="521,5,667,47"/>
+<area shape="rect" id="node8" href="$d2/d01/class_memory.html#a31027c2b6257e0f059e499955dd25237" title=" " alt="" coords="543,71,645,98"/>
+</map>

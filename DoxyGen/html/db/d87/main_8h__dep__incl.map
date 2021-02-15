@@ -1,0 +1,41 @@
+<map id="C:/Users/nicko/source/repos/APTX1_1/Core/Inc/main.h" name="C:/Users/nicko/source/repos/APTX1_1/Core/Inc/main.h">
+<area shape="rect" id="node1" title=": Header for main.c file. This file contains the common defines of the application." alt="" coords="2765,5,2931,61"/>
+<area shape="rect" id="node2" href="$d7/d19/adc_8h.html" title=" " alt="" coords="1297,117,1500,158"/>
+<area shape="rect" id="node4" href="$df/d0a/main_8cpp.html" title=": Main program body" alt="" coords="1172,421,1343,477"/>
+<area shape="rect" id="node5" href="$de/dce/adc__controller_8h.html" title=" " alt="" coords="398,109,565,165"/>
+<area shape="rect" id="node11" href="$dc/de6/crc_8h.html" title=" " alt="" coords="1579,117,1779,158"/>
+<area shape="rect" id="node13" href="$d9/d4b/debug__facilities_8h.html" title=" " alt="" coords="182,109,349,165"/>
+<area shape="rect" id="node14" href="$d2/db1/debug__facilities_8cpp.html" title=" " alt="" coords="5,213,176,269"/>
+<area shape="rect" id="node15" href="$d9/d95/dma_8h.html" title=" " alt="" coords="589,117,795,158"/>
+<area shape="rect" id="node17" href="$d6/d7c/gpio_8h.html" title=" " alt="" coords="1051,109,1218,165"/>
+<area shape="rect" id="node19" href="$db/de4/usart_8h.html" title=" " alt="" coords="2686,109,2853,165"/>
+<area shape="rect" id="node20" href="$d9/df9/common_8cpp.html" title="This file provides all the common functions." alt="" coords="1804,213,1975,269"/>
+<area shape="rect" id="node21" href="$d8/d95/cs__register_8cpp.html" title=" " alt="" coords="2879,213,3049,269"/>
+<area shape="rect" id="node24" href="$d6/d5d/mem__controller_8cpp.html" title=" " alt="" coords="3268,213,3439,269"/>
+<area shape="rect" id="node25" href="$d0/d25/menu_8cpp.html" title="This file provides the software which contains the main menu routine. The main menu gives the options..." alt="" coords="1999,213,2169,269"/>
+<area shape="rect" id="node27" href="$d4/d0c/status__reg_8cpp.html" title=" " alt="" coords="3708,213,3879,269"/>
+<area shape="rect" id="node30" href="$dc/d1b/rtc_8h.html" title=" " alt="" coords="4064,117,4261,158"/>
+<area shape="rect" id="node32" href="$da/d87/spi_8h.html" title=" " alt="" coords="3254,117,3453,158"/>
+<area shape="rect" id="node35" href="$d3/db0/tim_8h.html" title=" " alt="" coords="4512,117,4712,158"/>
+<area shape="rect" id="node37" href="$da/da4/state_8cpp.html" title=" " alt="" coords="4856,109,5027,165"/>
+<area shape="rect" id="node38" href="$dc/db2/stm32f0xx__hal__msp_8c.html" title=" " alt="" coords="5051,109,5221,165"/>
+<area shape="rect" id="node39" href="$d6/d7e/stm32f0xx__it_8c.html" title="Interrupt Service Routines." alt="" coords="5245,109,5416,165"/>
+<area shape="rect" id="node3" href="$de/d01/adc_8c.html" title=" " alt="" coords="1295,221,1502,262"/>
+<area shape="rect" id="node6" href="$d8/d37/main__controller_8h.html" title=" " alt="" coords="277,213,443,269"/>
+<area shape="rect" id="node10" href="$de/d1c/adc__controller_8cpp.html" title=" " alt="" coords="804,213,975,269"/>
+<area shape="rect" id="node7" href="$d5/d60/monitor_8h.html" title=" " alt="" coords="302,317,469,373"/>
+<area shape="rect" id="node8" href="$d5/d34/main__controller_8cpp.html" title=" " alt="" coords="179,421,349,477"/>
+<area shape="rect" id="node9" href="$d4/de7/monitor_8cpp.html" title=" " alt="" coords="373,421,544,477"/>
+<area shape="rect" id="node12" href="$d8/d13/crc_8c.html" title=" " alt="" coords="1577,221,1780,262"/>
+<area shape="rect" id="node16" href="$d8/d51/dma_8c.html" title=" " alt="" coords="569,221,780,262"/>
+<area shape="rect" id="node18" href="$d8/da0/gpio_8c.html" title=" " alt="" coords="1049,213,1220,269"/>
+<area shape="rect" id="node22" href="$d3/d51/error__controller_8cpp.html" title=" " alt="" coords="2489,213,2660,269"/>
+<area shape="rect" id="node23" href="$d1/d6f/mem_8cpp.html" title=" " alt="" coords="3073,213,3244,269"/>
+<area shape="rect" id="node26" href="$d9/d36/screen__controller_8cpp.html" title=" " alt="" coords="3903,213,4073,269"/>
+<area shape="rect" id="node28" href="$dc/d08/usart_8c.html" title=" " alt="" coords="2684,213,2855,269"/>
+<area shape="rect" id="node29" href="$d7/dab/xmodem_8cpp.html" title="This module is the implementation of the Xmodem protocol." alt="" coords="2295,213,2465,269"/>
+<area shape="rect" id="node31" href="$d4/dcc/rtc_8c.html" title=" " alt="" coords="4375,221,4575,262"/>
+<area shape="rect" id="node33" href="$d0/db1/peripherial__controller_8cpp.html" title=" " alt="" coords="3513,213,3684,269"/>
+<area shape="rect" id="node34" href="$da/d00/spi_8c.html" title=" " alt="" coords="4097,221,4300,262"/>
+<area shape="rect" id="node36" href="$db/db1/tim_8c.html" title=" " alt="" coords="4649,221,4852,262"/>
+</map>

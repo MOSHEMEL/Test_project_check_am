@@ -1,0 +1,137 @@
+\hypertarget{classerror__controller}{}\doxysection{error\+\_\+controller Class Reference}
+\label{classerror__controller}\index{error\_controller@{error\_controller}}
+
+
+{\ttfamily \#include $<$error\+\_\+controller.\+h$>$}
+
+
+
+Collaboration diagram for error\+\_\+controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{de/d9a/classerror__controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classerror__controller_a5951394928ae101cb13ce39a2cf66b1e}{error\+\_\+controller}} ()
+\item 
+\mbox{\hyperlink{classerror__controller_a57d6276ab6e15ac00d96269b120cb85f}{$\sim$error\+\_\+controller}} ()
+\item 
+void \mbox{\hyperlink{classerror__controller_a4d97a3bfe8c219daa172f9c5b29247db}{log}} (\mbox{\hyperlink{error__controller_8h_a14507ca6a5b882f9d176f0e35eea872f}{D\+E\+B\+U\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+}}, const char $\ast$, uint16\+\_\+t size)
+\item 
+void \mbox{\hyperlink{classerror__controller_a6f1dbfb64b7577782ee03f17a64b4ba0}{on\+\_\+fatal}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{error__controller_8h_a14507ca6a5b882f9d176f0e35eea872f}{D\+E\+B\+U\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+}} \mbox{\hyperlink{classerror__controller_a00429f970bf12aad8815b1887ba2b22a}{error\+\_\+level\+\_\+output}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 15 of file error\+\_\+controller.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classerror__controller_a5951394928ae101cb13ce39a2cf66b1e}\label{classerror__controller_a5951394928ae101cb13ce39a2cf66b1e}} 
+\index{error\_controller@{error\_controller}!error\_controller@{error\_controller}}
+\index{error\_controller@{error\_controller}!error\_controller@{error\_controller}}
+\doxysubsubsection{\texorpdfstring{error\_controller()}{error\_controller()}}
+{\footnotesize\ttfamily error\+\_\+controller\+::error\+\_\+controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file error\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5                                   : \mbox{\hyperlink{classerror__controller_a00429f970bf12aad8815b1887ba2b22a}{error\_level\_output}}(\mbox{\hyperlink{error__controller_8h_a14507ca6a5b882f9d176f0e35eea872fa90e6d499ba06fb43bdcfe0ba075c6525}{DEBUG\_LEVEL\_OFF}})}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classerror__controller_a57d6276ab6e15ac00d96269b120cb85f}\label{classerror__controller_a57d6276ab6e15ac00d96269b120cb85f}} 
+\index{error\_controller@{error\_controller}!````~error\_controller@{$\sim$error\_controller}}
+\index{````~error\_controller@{$\sim$error\_controller}!error\_controller@{error\_controller}}
+\doxysubsubsection{\texorpdfstring{$\sim$error\_controller()}{~error\_controller()}}
+{\footnotesize\ttfamily error\+\_\+controller\+::$\sim$error\+\_\+controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file error\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classerror__controller_a4d97a3bfe8c219daa172f9c5b29247db}\label{classerror__controller_a4d97a3bfe8c219daa172f9c5b29247db}} 
+\index{error\_controller@{error\_controller}!log@{log}}
+\index{log@{log}!error\_controller@{error\_controller}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void error\+\_\+controller\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{error__controller_8h_a14507ca6a5b882f9d176f0e35eea872f}{D\+E\+B\+U\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+}}}]{debug\+\_\+level,  }\item[{const char $\ast$}]{string\+\_\+to\+\_\+print,  }\item[{uint16\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file error\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     \textcolor{keywordflow}{if} (debug\_level > this-\/>\mbox{\hyperlink{classerror__controller_a00429f970bf12aad8815b1887ba2b22a}{error\_level\_output}})}
+\DoxyCodeLine{15     \{}
+\DoxyCodeLine{16         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)string\_to\_print, size, 10);}
+\DoxyCodeLine{17         HAL\_Delay(10);}
+\DoxyCodeLine{18         NVIC\_SystemReset();}
+\DoxyCodeLine{19     \}}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classerror__controller_a6f1dbfb64b7577782ee03f17a64b4ba0}\label{classerror__controller_a6f1dbfb64b7577782ee03f17a64b4ba0}} 
+\index{error\_controller@{error\_controller}!on\_fatal@{on\_fatal}}
+\index{on\_fatal@{on\_fatal}!error\_controller@{error\_controller}}
+\doxysubsubsection{\texorpdfstring{on\_fatal()}{on\_fatal()}}
+{\footnotesize\ttfamily void error\+\_\+controller\+::on\+\_\+fatal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file error\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     \textcolor{comment}{// write to memory mcu}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classerror__controller_a00429f970bf12aad8815b1887ba2b22a}\label{classerror__controller_a00429f970bf12aad8815b1887ba2b22a}} 
+\index{error\_controller@{error\_controller}!error\_level\_output@{error\_level\_output}}
+\index{error\_level\_output@{error\_level\_output}!error\_controller@{error\_controller}}
+\doxysubsubsection{\texorpdfstring{error\_level\_output}{error\_level\_output}}
+{\footnotesize\ttfamily \mbox{\hyperlink{error__controller_8h_a14507ca6a5b882f9d176f0e35eea872f}{D\+E\+B\+U\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+}} error\+\_\+controller\+::error\+\_\+level\+\_\+output}
+
+
+
+Definition at line 19 of file error\+\_\+controller.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{error__controller_8h}{error\+\_\+controller.\+h}}\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/\mbox{\hyperlink{error__controller_8cpp}{error\+\_\+controller.\+cpp}}\end{DoxyCompactItemize}

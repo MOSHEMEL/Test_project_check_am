@@ -1,0 +1,238 @@
+\hypertarget{flash__if_8h}{}\doxysection{C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/flash\+\_\+if.h File Reference}
+\label{flash__if_8h}\index{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/flash\_if.h@{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/flash\_if.h}}
+
+
+This file provides all the headers of the flash\+\_\+if functions.  
+
+
+{\ttfamily \#include \char`\"{}stm32f0xx\+\_\+hal.\+h\char`\"{}}\newline
+Include dependency graph for flash\+\_\+if.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{d9/d40/flash__if_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d59/flash__if_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{flash__if_8h_a6fe3767b9ca88df80b164fd455ae9b8c}{F\+L\+A\+S\+H\+\_\+\+P\+A\+G\+E\+\_\+\+S\+T\+EP}}~0x100           /$\ast$ Size of page \+: 256 bytes $\ast$/
+\item 
+\#define \mbox{\hyperlink{flash__if_8h_acbbb997bab0d214c9b4b43bb63c47ede}{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+D\+D\+R\+E\+SS}}~(uint32\+\_\+t)0x00000000      /$\ast$ Start user code address\+: A\+D\+D\+R\+\_\+\+F\+L\+A\+S\+H\+\_\+\+P\+A\+G\+E\+\_\+8 $\ast$/
+\item 
+\#define \mbox{\hyperlink{flash__if_8h_a1dabf62c2d3570fb53488233e35c1e40}{U\+S\+E\+R\+\_\+\+F\+L\+A\+S\+H\+\_\+\+S\+I\+ZE}}~0x100000
+\item 
+\#define \mbox{\hyperlink{flash__if_8h_aa58e6ff3ce60a2e1dbb3e8a3649c26f3}{A\+B\+S\+\_\+\+R\+E\+T\+U\+RN}}(x,  y)~(((x) $<$ (y)) ? (y) \+: (x))
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea816d1b5029945979b324a8ff946ee367}{F\+L\+A\+S\+H\+I\+F\+\_\+\+OK}} = 0, 
+\mbox{\hyperlink{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea4362eb5382989e5cf5d49b3308820223}{F\+L\+A\+S\+H\+I\+F\+\_\+\+E\+R\+A\+S\+E\+KO}}, 
+\mbox{\hyperlink{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea6498fc3e03f4356fb3485f1f341fb6d2}{F\+L\+A\+S\+H\+I\+F\+\_\+\+W\+R\+I\+T\+I\+N\+G\+C\+T\+R\+L\+\_\+\+E\+R\+R\+OR}}, 
+\mbox{\hyperlink{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea8d48fa560036e7f3a5badcd8681f7651}{F\+L\+A\+S\+H\+I\+F\+\_\+\+W\+R\+I\+T\+I\+N\+G\+\_\+\+E\+R\+R\+OR}}, 
+\newline
+\mbox{\hyperlink{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea898f39600ecdac537d63667e3dae519c}{F\+L\+A\+S\+H\+I\+F\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+R\+OR}}
+ \}
+\item 
+enum \{ \mbox{\hyperlink{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a92c3badc44d88186137e9dddc554b709}{F\+L\+A\+S\+H\+I\+F\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a195cfb67f0dabae82f3af97410783385}{F\+L\+A\+S\+H\+I\+F\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N\+\_\+\+P\+C\+R\+O\+P\+E\+N\+A\+B\+L\+ED}} = 0x1, 
+\mbox{\hyperlink{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a4635e21b10f97ee8d988843036654360}{F\+L\+A\+S\+H\+I\+F\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N\+\_\+\+W\+R\+P\+E\+N\+A\+B\+L\+ED}} = 0x2, 
+\mbox{\hyperlink{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635aa0c81ffa3be808d9268aae6034a04c70}{F\+L\+A\+S\+H\+I\+F\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N\+\_\+\+R\+D\+P\+E\+N\+A\+B\+L\+ED}} = 0x4
+ \}
+\item 
+enum \{ \mbox{\hyperlink{flash__if_8h_a0411cd49bb5b71852cecd93bcbf0ca2dad03961db28f0db4798b0063040f7b166}{F\+L\+A\+S\+H\+I\+F\+\_\+\+W\+R\+P\+\_\+\+E\+N\+A\+B\+LE}}, 
+\mbox{\hyperlink{flash__if_8h_a0411cd49bb5b71852cecd93bcbf0ca2da52395d06a6b4287bc9fabf793d827eb8}{F\+L\+A\+S\+H\+I\+F\+\_\+\+W\+R\+P\+\_\+\+D\+I\+S\+A\+B\+LE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga6f15d7faa1bc40df5c4b00d8541824f5}{F\+L\+A\+S\+H\+\_\+\+If\+\_\+\+Erase}} (void)
+\begin{DoxyCompactList}\small\item\em This function does an erase of all user flash area. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_gaea33603cb203008ae319c39685c49aca}{F\+L\+A\+S\+H\+\_\+\+If\+\_\+\+Write}} (uint32\+\_\+t destination, uint8\+\_\+t $\ast$p\+\_\+source, uint32\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em This function writes a data buffer in flash (data are 32-\/bit aligned). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file provides all the headers of the flash\+\_\+if functions. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+8-\/April-\/2015 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+H\+T(c) 2015 S\+T\+Microelectronics\end{center} }
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met\+:
+\begin{DoxyEnumerate}
+\item Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+\item Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+\item Neither the name of S\+T\+Microelectronics nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+\end{DoxyEnumerate}
+
+T\+H\+IS S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED BY T\+HE C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS A\+ND C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS \char`\"{}\+A\+S I\+S\char`\"{} A\+ND A\+NY E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES, I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, T\+HE I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY A\+ND F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+RE D\+I\+S\+C\+L\+A\+I\+M\+ED. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+ER OR C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT, I\+N\+C\+I\+D\+E\+N\+T\+AL, S\+P\+E\+C\+I\+AL, E\+X\+E\+M\+P\+L\+A\+RY, OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES (I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, P\+R\+O\+C\+U\+R\+E\+M\+E\+NT OF S\+U\+B\+S\+T\+I\+T\+U\+TE G\+O\+O\+DS OR S\+E\+R\+V\+I\+C\+ES; L\+O\+SS OF U\+SE, D\+A\+TA, OR P\+R\+O\+F\+I\+TS; OR B\+U\+S\+I\+N\+E\+SS I\+N\+T\+E\+R\+R\+U\+P\+T\+I\+ON) H\+O\+W\+E\+V\+ER C\+A\+U\+S\+ED A\+ND ON A\+NY T\+H\+E\+O\+RY OF L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN C\+O\+N\+T\+R\+A\+CT, S\+T\+R\+I\+CT L\+I\+A\+B\+I\+L\+I\+TY, OR T\+O\+RT (I\+N\+C\+L\+U\+D\+I\+NG N\+E\+G\+L\+I\+G\+E\+N\+CE OR O\+T\+H\+E\+R\+W\+I\+SE) A\+R\+I\+S\+I\+NG IN A\+NY W\+AY O\+UT OF T\+HE U\+SE OF T\+H\+IS S\+O\+F\+T\+W\+A\+RE, E\+V\+EN IF A\+D\+V\+I\+S\+ED OF T\+HE P\+O\+S\+S\+I\+B\+I\+L\+I\+TY OF S\+U\+CH D\+A\+M\+A\+GE. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{flash__if_8h_aa58e6ff3ce60a2e1dbb3e8a3649c26f3}\label{flash__if_8h_aa58e6ff3ce60a2e1dbb3e8a3649c26f3}} 
+\index{flash\_if.h@{flash\_if.h}!ABS\_RETURN@{ABS\_RETURN}}
+\index{ABS\_RETURN@{ABS\_RETURN}!flash\_if.h@{flash\_if.h}}
+\doxysubsubsection{\texorpdfstring{ABS\_RETURN}{ABS\_RETURN}}
+{\footnotesize\ttfamily \#define A\+B\+S\+\_\+\+R\+E\+T\+U\+RN(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(((x) $<$ (y)) ? (y) \+: (x))}
+
+
+
+Definition at line 82 of file flash\+\_\+if.\+h.
+
+\mbox{\Hypertarget{flash__if_8h_acbbb997bab0d214c9b4b43bb63c47ede}\label{flash__if_8h_acbbb997bab0d214c9b4b43bb63c47ede}} 
+\index{flash\_if.h@{flash\_if.h}!APPLICATION\_ADDRESS@{APPLICATION\_ADDRESS}}
+\index{APPLICATION\_ADDRESS@{APPLICATION\_ADDRESS}!flash\_if.h@{flash\_if.h}}
+\doxysubsubsection{\texorpdfstring{APPLICATION\_ADDRESS}{APPLICATION\_ADDRESS}}
+{\footnotesize\ttfamily \#define A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+D\+D\+R\+E\+SS~(uint32\+\_\+t)0x00000000      /$\ast$ Start user code address\+: A\+D\+D\+R\+\_\+\+F\+L\+A\+S\+H\+\_\+\+P\+A\+G\+E\+\_\+8 $\ast$/}
+
+
+
+Definition at line 76 of file flash\+\_\+if.\+h.
+
+\mbox{\Hypertarget{flash__if_8h_a6fe3767b9ca88df80b164fd455ae9b8c}\label{flash__if_8h_a6fe3767b9ca88df80b164fd455ae9b8c}} 
+\index{flash\_if.h@{flash\_if.h}!FLASH\_PAGE\_STEP@{FLASH\_PAGE\_STEP}}
+\index{FLASH\_PAGE\_STEP@{FLASH\_PAGE\_STEP}!flash\_if.h@{flash\_if.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_PAGE\_STEP}{FLASH\_PAGE\_STEP}}
+{\footnotesize\ttfamily \#define F\+L\+A\+S\+H\+\_\+\+P\+A\+G\+E\+\_\+\+S\+T\+EP~0x100           /$\ast$ Size of page \+: 256 bytes $\ast$/}
+
+
+
+Definition at line 75 of file flash\+\_\+if.\+h.
+
+\mbox{\Hypertarget{flash__if_8h_a1dabf62c2d3570fb53488233e35c1e40}\label{flash__if_8h_a1dabf62c2d3570fb53488233e35c1e40}} 
+\index{flash\_if.h@{flash\_if.h}!USER\_FLASH\_SIZE@{USER\_FLASH\_SIZE}}
+\index{USER\_FLASH\_SIZE@{USER\_FLASH\_SIZE}!flash\_if.h@{flash\_if.h}}
+\doxysubsubsection{\texorpdfstring{USER\_FLASH\_SIZE}{USER\_FLASH\_SIZE}}
+{\footnotesize\ttfamily \#define U\+S\+E\+R\+\_\+\+F\+L\+A\+S\+H\+\_\+\+S\+I\+ZE~0x100000}
+
+
+
+Definition at line 77 of file flash\+\_\+if.\+h.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{flash__if_8h_a61dadd085c1777f559549e05962b2c9e}\label{flash__if_8h_a61dadd085c1777f559549e05962b2c9e}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASHIF\_OK@{FLASHIF\_OK}!flash\_if.h@{flash\_if.h}}\index{flash\_if.h@{flash\_if.h}!FLASHIF\_OK@{FLASHIF\_OK}}}\mbox{\Hypertarget{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea816d1b5029945979b324a8ff946ee367}\label{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea816d1b5029945979b324a8ff946ee367}} 
+F\+L\+A\+S\+H\+I\+F\+\_\+\+OK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASHIF\_ERASEKO@{FLASHIF\_ERASEKO}!flash\_if.h@{flash\_if.h}}\index{flash\_if.h@{flash\_if.h}!FLASHIF\_ERASEKO@{FLASHIF\_ERASEKO}}}\mbox{\Hypertarget{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea4362eb5382989e5cf5d49b3308820223}\label{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea4362eb5382989e5cf5d49b3308820223}} 
+F\+L\+A\+S\+H\+I\+F\+\_\+\+E\+R\+A\+S\+E\+KO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASHIF\_WRITINGCTRL\_ERROR@{FLASHIF\_WRITINGCTRL\_ERROR}!flash\_if.h@{flash\_if.h}}\index{flash\_if.h@{flash\_if.h}!FLASHIF\_WRITINGCTRL\_ERROR@{FLASHIF\_WRITINGCTRL\_ERROR}}}\mbox{\Hypertarget{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea6498fc3e03f4356fb3485f1f341fb6d2}\label{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea6498fc3e03f4356fb3485f1f341fb6d2}} 
+F\+L\+A\+S\+H\+I\+F\+\_\+\+W\+R\+I\+T\+I\+N\+G\+C\+T\+R\+L\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASHIF\_WRITING\_ERROR@{FLASHIF\_WRITING\_ERROR}!flash\_if.h@{flash\_if.h}}\index{flash\_if.h@{flash\_if.h}!FLASHIF\_WRITING\_ERROR@{FLASHIF\_WRITING\_ERROR}}}\mbox{\Hypertarget{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea8d48fa560036e7f3a5badcd8681f7651}\label{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea8d48fa560036e7f3a5badcd8681f7651}} 
+F\+L\+A\+S\+H\+I\+F\+\_\+\+W\+R\+I\+T\+I\+N\+G\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASHIF\_PROTECTION\_ERRROR@{FLASHIF\_PROTECTION\_ERRROR}!flash\_if.h@{flash\_if.h}}\index{flash\_if.h@{flash\_if.h}!FLASHIF\_PROTECTION\_ERRROR@{FLASHIF\_PROTECTION\_ERRROR}}}\mbox{\Hypertarget{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea898f39600ecdac537d63667e3dae519c}\label{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea898f39600ecdac537d63667e3dae519c}} 
+F\+L\+A\+S\+H\+I\+F\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N\+\_\+\+E\+R\+R\+R\+OR&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 50 of file flash\+\_\+if.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{}
+\DoxyCodeLine{52   \mbox{\hyperlink{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea816d1b5029945979b324a8ff946ee367}{FLASHIF\_OK}} = 0,}
+\DoxyCodeLine{53   \mbox{\hyperlink{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea4362eb5382989e5cf5d49b3308820223}{FLASHIF\_ERASEKO}},}
+\DoxyCodeLine{54   \mbox{\hyperlink{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea6498fc3e03f4356fb3485f1f341fb6d2}{FLASHIF\_WRITINGCTRL\_ERROR}},}
+\DoxyCodeLine{55   \mbox{\hyperlink{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea8d48fa560036e7f3a5badcd8681f7651}{FLASHIF\_WRITING\_ERROR}},}
+\DoxyCodeLine{56   \mbox{\hyperlink{flash__if_8h_a61dadd085c1777f559549e05962b2c9ea898f39600ecdac537d63667e3dae519c}{FLASHIF\_PROTECTION\_ERRROR}}}
+\DoxyCodeLine{57 \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635}\label{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASHIF\_PROTECTION\_NONE@{FLASHIF\_PROTECTION\_NONE}!flash\_if.h@{flash\_if.h}}\index{flash\_if.h@{flash\_if.h}!FLASHIF\_PROTECTION\_NONE@{FLASHIF\_PROTECTION\_NONE}}}\mbox{\Hypertarget{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a92c3badc44d88186137e9dddc554b709}\label{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a92c3badc44d88186137e9dddc554b709}} 
+F\+L\+A\+S\+H\+I\+F\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASHIF\_PROTECTION\_PCROPENABLED@{FLASHIF\_PROTECTION\_PCROPENABLED}!flash\_if.h@{flash\_if.h}}\index{flash\_if.h@{flash\_if.h}!FLASHIF\_PROTECTION\_PCROPENABLED@{FLASHIF\_PROTECTION\_PCROPENABLED}}}\mbox{\Hypertarget{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a195cfb67f0dabae82f3af97410783385}\label{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a195cfb67f0dabae82f3af97410783385}} 
+F\+L\+A\+S\+H\+I\+F\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N\+\_\+\+P\+C\+R\+O\+P\+E\+N\+A\+B\+L\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASHIF\_PROTECTION\_WRPENABLED@{FLASHIF\_PROTECTION\_WRPENABLED}!flash\_if.h@{flash\_if.h}}\index{flash\_if.h@{flash\_if.h}!FLASHIF\_PROTECTION\_WRPENABLED@{FLASHIF\_PROTECTION\_WRPENABLED}}}\mbox{\Hypertarget{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a4635e21b10f97ee8d988843036654360}\label{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a4635e21b10f97ee8d988843036654360}} 
+F\+L\+A\+S\+H\+I\+F\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N\+\_\+\+W\+R\+P\+E\+N\+A\+B\+L\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASHIF\_PROTECTION\_RDPENABLED@{FLASHIF\_PROTECTION\_RDPENABLED}!flash\_if.h@{flash\_if.h}}\index{flash\_if.h@{flash\_if.h}!FLASHIF\_PROTECTION\_RDPENABLED@{FLASHIF\_PROTECTION\_RDPENABLED}}}\mbox{\Hypertarget{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635aa0c81ffa3be808d9268aae6034a04c70}\label{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635aa0c81ffa3be808d9268aae6034a04c70}} 
+F\+L\+A\+S\+H\+I\+F\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N\+\_\+\+R\+D\+P\+E\+N\+A\+B\+L\+ED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 60 of file flash\+\_\+if.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60     \{}
+\DoxyCodeLine{61   \mbox{\hyperlink{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a92c3badc44d88186137e9dddc554b709}{FLASHIF\_PROTECTION\_NONE}}         = 0,}
+\DoxyCodeLine{62   \mbox{\hyperlink{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a195cfb67f0dabae82f3af97410783385}{FLASHIF\_PROTECTION\_PCROPENABLED}} = 0x1,}
+\DoxyCodeLine{63   \mbox{\hyperlink{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635a4635e21b10f97ee8d988843036654360}{FLASHIF\_PROTECTION\_WRPENABLED}}   = 0x2,}
+\DoxyCodeLine{64   \mbox{\hyperlink{flash__if_8h_a726ca809ffd3d67ab4b8476646f26635aa0c81ffa3be808d9268aae6034a04c70}{FLASHIF\_PROTECTION\_RDPENABLED}}   = 0x4,}
+\DoxyCodeLine{65 \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{flash__if_8h_a0411cd49bb5b71852cecd93bcbf0ca2d}\label{flash__if_8h_a0411cd49bb5b71852cecd93bcbf0ca2d}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASHIF\_WRP\_ENABLE@{FLASHIF\_WRP\_ENABLE}!flash\_if.h@{flash\_if.h}}\index{flash\_if.h@{flash\_if.h}!FLASHIF\_WRP\_ENABLE@{FLASHIF\_WRP\_ENABLE}}}\mbox{\Hypertarget{flash__if_8h_a0411cd49bb5b71852cecd93bcbf0ca2dad03961db28f0db4798b0063040f7b166}\label{flash__if_8h_a0411cd49bb5b71852cecd93bcbf0ca2dad03961db28f0db4798b0063040f7b166}} 
+F\+L\+A\+S\+H\+I\+F\+\_\+\+W\+R\+P\+\_\+\+E\+N\+A\+B\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLASHIF\_WRP\_DISABLE@{FLASHIF\_WRP\_DISABLE}!flash\_if.h@{flash\_if.h}}\index{flash\_if.h@{flash\_if.h}!FLASHIF\_WRP\_DISABLE@{FLASHIF\_WRP\_DISABLE}}}\mbox{\Hypertarget{flash__if_8h_a0411cd49bb5b71852cecd93bcbf0ca2da52395d06a6b4287bc9fabf793d827eb8}\label{flash__if_8h_a0411cd49bb5b71852cecd93bcbf0ca2da52395d06a6b4287bc9fabf793d827eb8}} 
+F\+L\+A\+S\+H\+I\+F\+\_\+\+W\+R\+P\+\_\+\+D\+I\+S\+A\+B\+LE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 68 of file flash\+\_\+if.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68      \{}
+\DoxyCodeLine{69     \mbox{\hyperlink{flash__if_8h_a0411cd49bb5b71852cecd93bcbf0ca2dad03961db28f0db4798b0063040f7b166}{FLASHIF\_WRP\_ENABLE}},}
+\DoxyCodeLine{70     \mbox{\hyperlink{flash__if_8h_a0411cd49bb5b71852cecd93bcbf0ca2da52395d06a6b4287bc9fabf793d827eb8}{FLASHIF\_WRP\_DISABLE}}}
+\DoxyCodeLine{71 \};}
+
+\end{DoxyCode}

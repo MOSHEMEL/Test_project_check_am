@@ -1,0 +1,153 @@
+\hypertarget{class_s_t_a_t_u_s__reg}{}\doxysection{S\+T\+A\+T\+U\+S\+\_\+reg Class Reference}
+\label{class_s_t_a_t_u_s__reg}\index{STATUS\_reg@{STATUS\_reg}}
+
+
+{\ttfamily \#include $<$status\+\_\+reg.\+h$>$}
+
+
+
+Collaboration diagram for S\+T\+A\+T\+U\+S\+\_\+reg\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d5/da4/class_s_t_a_t_u_s__reg__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_t_a_t_u_s__reg_acb35c7312ddf2dc8ad0300a3c74083a9}{S\+T\+A\+T\+U\+S\+\_\+reg}} ()
+\item 
+\mbox{\hyperlink{class_s_t_a_t_u_s__reg_a0040ebc286b6d33d6bd13c3e8ebde892}{$\sim$\+S\+T\+A\+T\+U\+S\+\_\+reg}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_s_t_a_t_u_s__reg_af171d497240ab066b156dee2c102234c}{get\+\_\+value}} (void)
+\item 
+void \mbox{\hyperlink{class_s_t_a_t_u_s__reg_ada9605510881b0e0af4339ce5e92afdc}{print\+\_\+current}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{unionbyte8__t__reg__status}{byte8\+\_\+t\+\_\+reg\+\_\+status}} \mbox{\hyperlink{class_s_t_a_t_u_s__reg_a80014314707514597f2347efcaa1a521}{current}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 31 of file status\+\_\+reg.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s_t_a_t_u_s__reg_acb35c7312ddf2dc8ad0300a3c74083a9}\label{class_s_t_a_t_u_s__reg_acb35c7312ddf2dc8ad0300a3c74083a9}} 
+\index{STATUS\_reg@{STATUS\_reg}!STATUS\_reg@{STATUS\_reg}}
+\index{STATUS\_reg@{STATUS\_reg}!STATUS\_reg@{STATUS\_reg}}
+\doxysubsubsection{\texorpdfstring{STATUS\_reg()}{STATUS\_reg()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+U\+S\+\_\+reg\+::\+S\+T\+A\+T\+U\+S\+\_\+reg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file status\+\_\+reg.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     }
+\DoxyCodeLine{12 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_s_t_a_t_u_s__reg_a0040ebc286b6d33d6bd13c3e8ebde892}\label{class_s_t_a_t_u_s__reg_a0040ebc286b6d33d6bd13c3e8ebde892}} 
+\index{STATUS\_reg@{STATUS\_reg}!````~STATUS\_reg@{$\sim$STATUS\_reg}}
+\index{````~STATUS\_reg@{$\sim$STATUS\_reg}!STATUS\_reg@{STATUS\_reg}}
+\doxysubsubsection{\texorpdfstring{$\sim$STATUS\_reg()}{~STATUS\_reg()}}
+{\footnotesize\ttfamily S\+T\+A\+T\+U\+S\+\_\+reg\+::$\sim$\+S\+T\+A\+T\+U\+S\+\_\+reg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 14 of file status\+\_\+reg.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     }
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_t_a_t_u_s__reg_af171d497240ab066b156dee2c102234c}\label{class_s_t_a_t_u_s__reg_af171d497240ab066b156dee2c102234c}} 
+\index{STATUS\_reg@{STATUS\_reg}!get\_value@{get\_value}}
+\index{get\_value@{get\_value}!STATUS\_reg@{STATUS\_reg}}
+\doxysubsubsection{\texorpdfstring{get\_value()}{get\_value()}}
+{\footnotesize\ttfamily uint8\+\_\+t S\+T\+A\+T\+U\+S\+\_\+reg\+::get\+\_\+value (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file status\+\_\+reg.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     HAL\_SPI\_Receive(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, \&this-\/>\mbox{\hyperlink{class_s_t_a_t_u_s__reg_a80014314707514597f2347efcaa1a521}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a5a9ef3ea617459205acf1faadcb317bd}{value}}, 1, 10);}
+\DoxyCodeLine{22     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_s_t_a_t_u_s__reg_a80014314707514597f2347efcaa1a521}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a5a9ef3ea617459205acf1faadcb317bd}{value}};}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d19/class_s_t_a_t_u_s__reg_af171d497240ab066b156dee2c102234c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_a_t_u_s__reg_ada9605510881b0e0af4339ce5e92afdc}\label{class_s_t_a_t_u_s__reg_ada9605510881b0e0af4339ce5e92afdc}} 
+\index{STATUS\_reg@{STATUS\_reg}!print\_current@{print\_current}}
+\index{print\_current@{print\_current}!STATUS\_reg@{STATUS\_reg}}
+\doxysubsubsection{\texorpdfstring{print\_current()}{print\_current()}}
+{\footnotesize\ttfamily void S\+T\+A\+T\+U\+S\+\_\+reg\+::print\+\_\+current (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file status\+\_\+reg.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27     uint8\_t status[64];}
+\DoxyCodeLine{28     sprintf((\textcolor{keywordtype}{char}*)status,}
+\DoxyCodeLine{29         \textcolor{stringliteral}{"[\%d] OPTO\_Count\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{30         \textcolor{stringliteral}{"[\%d] RESERVED\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{31         \textcolor{stringliteral}{"[\%d] SWITCHES\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{32         \textcolor{stringliteral}{"[\%d] OPTO\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{33         \textcolor{stringliteral}{"[\%d] FIRE\(\backslash\)r\(\backslash\)n"},}
+\DoxyCodeLine{34         this-\/>\mbox{\hyperlink{class_s_t_a_t_u_s__reg_a80014314707514597f2347efcaa1a521}{current}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a1d91ac69a4fbb9458609645bf69fe885}{nibbles}}.\mbox{\hyperlink{unionbyte8__t__reg__status_a60ce89fb57bf61ec412bb102e9511d10}{nibble\_OPTO}},}
+\DoxyCodeLine{35         this-\/>current.bits.RESERVED,}
+\DoxyCodeLine{36         this-\/>current.bits.SWITCHES\_STATUS,}
+\DoxyCodeLine{37         this-\/>current.bits.OPTO\_STATUS,}
+\DoxyCodeLine{38         this-\/>current.bits.FIRE\_STATUS);}
+\DoxyCodeLine{39     \textcolor{comment}{// TODO: consider decorator}}
+\DoxyCodeLine{40     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, status, strlen((\textcolor{keywordtype}{char}*)status), 100);}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_s_t_a_t_u_s__reg_a80014314707514597f2347efcaa1a521}\label{class_s_t_a_t_u_s__reg_a80014314707514597f2347efcaa1a521}} 
+\index{STATUS\_reg@{STATUS\_reg}!current@{current}}
+\index{current@{current}!STATUS\_reg@{STATUS\_reg}}
+\doxysubsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionbyte8__t__reg__status}{byte8\+\_\+t\+\_\+reg\+\_\+status}} S\+T\+A\+T\+U\+S\+\_\+reg\+::current}
+
+
+
+Definition at line 35 of file status\+\_\+reg.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{status__reg_8h}{status\+\_\+reg.\+h}}\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/\mbox{\hyperlink{status__reg_8cpp}{status\+\_\+reg.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="TIM16_IRQHandler" name="TIM16_IRQHandler">
+<area shape="rect" id="node1" title="This function handles TIM16 global interrupt." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node2" href="$d6/d7e/stm32f0xx__it_8c.html#a503deec6ed4a495c61bc35e2221807ff" title=" " alt="" coords="184,5,324,32"/>
+<area shape="rect" id="node3" href="$d6/d7e/stm32f0xx__it_8c.html#a6669c81befaca0d2fb1ae68540008471" title=" " alt="" coords="372,5,499,32"/>
+</map>

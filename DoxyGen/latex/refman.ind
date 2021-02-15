@@ -1,0 +1,2159 @@
+\begin{theindex}
+
+  \item {\_\_HAL\_SYSCFG\_REMAPMEMORY\_SRAM}
+    \subitem {main.cpp}, \hyperpage{280}
+  \item {\_\_attribute\_\_}
+    \subitem {main.cpp}, \hyperpage{280}
+  \item {$\sim$AdcController}
+    \subitem {AdcController}, \hyperpage{52}
+  \item {$\sim$CS\_reg}
+    \subitem {CS\_reg}, \hyperpage{75}
+  \item {$\sim$MainController}
+    \subitem {MainController}, \hyperpage{82}
+  \item {$\sim$Mem\_ctrl}
+    \subitem {Mem\_ctrl}, \hyperpage{98}
+  \item {$\sim$Memory}
+    \subitem {Memory}, \hyperpage{113}
+  \item {$\sim$Monitor}
+    \subitem {Monitor}, \hyperpage{124}
+  \item {$\sim$PeripherialDevices}
+    \subitem {PeripherialDevices}, \hyperpage{144}
+  \item {$\sim$STATUS\_reg}
+    \subitem {STATUS\_reg}, \hyperpage{167}
+  \item {$\sim$Screen\_ctrl}
+    \subitem {Screen\_ctrl}, \hyperpage{152}
+  \item {$\sim$State}
+    \subitem {State}, \hyperpage{163}
+
+  \indexspace
+
+  \item {ABORT1}
+    \subitem {xmodem.h}, \hyperpage{251}
+  \item {ABORT2}
+    \subitem {xmodem.h}, \hyperpage{251}
+  \item {ABS\_RETURN}
+    \subitem {flash\_if.h}, \hyperpage{187}
+  \item {ACK}
+    \subitem {xmodem.h}, \hyperpage{251}
+  \item {Active}
+    \subitem {state.h}, \hyperpage{227}
+  \item {active\_state}
+    \subitem {MainController}, \hyperpage{82}
+  \item {ADC}, \hyperpage{23}
+    \subitem {ADC\_RESERVED}, \hyperpage{23}
+    \subitem {ADC\_RESERVED2}, \hyperpage{23}
+    \subitem {FIFOREAD}, \hyperpage{24}
+    \subitem {HARDWARE\_DEFAULT}, \hyperpage{24}
+    \subitem {SELECT\_CHANNEL\_0}, \hyperpage{24}
+    \subitem {SELECT\_CHANNEL\_1}, \hyperpage{24}
+    \subitem {SELECT\_CHANNEL\_2}, \hyperpage{24}
+    \subitem {SELECT\_CHANNEL\_3}, \hyperpage{24}
+    \subitem {SELECT\_CHANNEL\_4}, \hyperpage{25}
+    \subitem {SELECT\_CHANNEL\_5}, \hyperpage{25}
+    \subitem {SELECT\_CHANNEL\_6}, \hyperpage{25}
+    \subitem {SELECT\_CHANNEL\_7}, \hyperpage{25}
+    \subitem {SELECT\_TEST\_REFM}, \hyperpage{25}
+    \subitem {SELECT\_TEST\_REFP}, \hyperpage{25}
+    \subitem {SELECT\_TEST\_VDIV2}, \hyperpage{26}
+    \subitem {WRITE\_CFR}, \hyperpage{26}
+  \item {adc}
+    \subitem {MainController}, \hyperpage{92}
+  \item {adc.c}
+    \subitem {hadc}, \hyperpage{264}
+    \subitem {HAL\_ADC\_MspDeInit}, \hyperpage{261}
+    \subitem {HAL\_ADC\_MspInit}, \hyperpage{262}
+    \subitem {hdma\_adc}, \hyperpage{265}
+    \subitem {MX\_ADC\_Init}, \hyperpage{263}
+  \item {adc.h}
+    \subitem {hadc}, \hyperpage{172}
+    \subitem {MX\_ADC\_Init}, \hyperpage{170}
+  \item {ADC\_Battery}
+    \subitem {Globals}, \hyperpage{9}
+  \item {adc\_command}, \hyperpage{47}
+    \subitem {b1}, \hyperpage{48}
+    \subitem {b2}, \hyperpage{48}
+    \subitem {bits}, \hyperpage{48}
+    \subitem {bytes}, \hyperpage{48}
+    \subitem {CLK\_SOURCE}, \hyperpage{49}
+    \subitem {CMR}, \hyperpage{49}
+    \subitem {CONV\_OUTPUT\_FORMAT}, \hyperpage{49}
+    \subitem {CONVERSION\_MODE\_SELECT}, \hyperpage{49}
+    \subitem {D11}, \hyperpage{49}
+    \subitem {EOC\_INT\_FUNC}, \hyperpage{49}
+    \subitem {FIFO\_TRIG\_LEVEL}, \hyperpage{50}
+    \subitem {INPUT\_SELECT\_MODE}, \hyperpage{50}
+    \subitem {SAMPLE\_PERIOD}, \hyperpage{50}
+    \subitem {SWEEP\_SEQ\_SELECT}, \hyperpage{50}
+    \subitem {value}, \hyperpage{50}
+  \item {adc\_controller}
+    \subitem {main.cpp}, \hyperpage{287}
+  \item {adc\_controller.h}
+    \subitem {Motor\_current\_sense}, \hyperpage{174}
+    \subitem {Pressure}, \hyperpage{174}
+    \subitem {select\_channel}, \hyperpage{174}
+    \subitem {Temp}, \hyperpage{174}
+    \subitem {Undefined}, \hyperpage{174}
+    \subitem {V12}, \hyperpage{174}
+    \subitem {V5}, \hyperpage{174}
+    \subitem {V\_Motor}, \hyperpage{174}
+    \subitem {VDD\_sense}, \hyperpage{174}
+  \item {ADC\_CURRENT\_SENSE\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{196}
+  \item {ADC\_CURRENT\_SENSE\_Pin}
+    \subitem {main.h}, \hyperpage{196}
+  \item {ADC\_Presure}
+    \subitem {Globals}, \hyperpage{9}
+  \item {ADC\_Presure\_20\_bar}
+    \subitem {Globals}, \hyperpage{10}
+  \item {ADC\_Presure\_27\_bar}
+    \subitem {Globals}, \hyperpage{10}
+  \item {ADC\_RESERVED}
+    \subitem {ADC}, \hyperpage{23}
+  \item {ADC\_RESERVED2}
+    \subitem {ADC}, \hyperpage{23}
+  \item {AdcController}, \hyperpage{51}
+    \subitem {$\sim$AdcController}, \hyperpage{52}
+    \subitem {AdcController}, \hyperpage{52}
+    \subitem {bat\_percentage}, \hyperpage{55}
+    \subitem {battery\_volt}, \hyperpage{55}
+    \subitem {channels\_buffer}, \hyperpage{55}
+    \subitem {convert\_to\_volt}, \hyperpage{53}
+    \subitem {cs\_register}, \hyperpage{55}
+    \subitem {current\_sense}, \hyperpage{55}
+    \subitem {dma\_ring\_buffer}, \hyperpage{56}
+    \subitem {pressure\_check}, \hyperpage{53}
+    \subitem {pressure\_ok}, \hyperpage{56}
+    \subitem {read}, \hyperpage{54}
+    \subitem {stall\_pressure}, \hyperpage{56}
+    \subitem {temperature\_mcu}, \hyperpage{56}
+    \subitem {vbat}, \hyperpage{56}
+    \subitem {vref}, \hyperpage{56}
+  \item {address}
+    \subitem {Monitor}, \hyperpage{141}
+  \item {aFileName}
+    \subitem {menu.h}, \hyperpage{217}
+    \subitem {STM32L0xx\_IAP}, \hyperpage{34}
+  \item {AHBPrescTable}
+    \subitem {STM32F0xx\_System\_Private\_Variables}, \hyperpage{42}
+  \item {AM\_MEM}
+    \subitem {Mem\_ctrl}, \hyperpage{110}
+  \item {am\_sn}
+    \subitem {MainController}, \hyperpage{92}
+  \item {am\_valid}
+    \subitem {MainController}, \hyperpage{93}
+  \item {AM\_WARNING\_TIMES}
+    \subitem {Auxilary}, \hyperpage{18}
+  \item {aPacketData}
+    \subitem {main.cpp}, \hyperpage{287}
+    \subitem {xmodem.cpp}, \hyperpage{328}
+  \item {APBPrescTable}
+    \subitem {STM32F0xx\_System\_Private\_Variables}, \hyperpage{42}
+  \item {APP\_ADDRESS}
+    \subitem {Globals}, \hyperpage{10}
+  \item {APP\_ADDRESS\_P}
+    \subitem {Globals}, \hyperpage{10}
+  \item {APP\_SIZE}
+    \subitem {Globals}, \hyperpage{10}
+  \item {APPLICATION\_ADDRESS}
+    \subitem {flash\_if.h}, \hyperpage{187}
+  \item {apt}
+    \subitem {Monitor}, \hyperpage{141}
+  \item {APT\_MEM}
+    \subitem {Mem\_ctrl}, \hyperpage{110}
+  \item {apt\_sn}
+    \subitem {MainController}, \hyperpage{93}
+  \item {apt\_valid}
+    \subitem {MainController}, \hyperpage{93}
+  \item {Armenta}, \hyperpage{8}
+  \item {assert\_param}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{231}
+  \item {atp\_extern}
+    \subitem {main.cpp}, \hyperpage{287}
+  \item {Auxilary}, \hyperpage{18}
+    \subitem {AM\_WARNING\_TIMES}, \hyperpage{18}
+    \subitem {BEEP\_COUNTER\_0}, \hyperpage{18}
+    \subitem {BEEP\_COUNTER\_200}, \hyperpage{19}
+    \subitem {BEEP\_COUNTER\_400}, \hyperpage{19}
+    \subitem {Beep\_Every\_X\_Counting}, \hyperpage{19}
+    \subitem {Configuration\_register\_add}, \hyperpage{19}
+    \subitem {HDC\_1080\_ADD}, \hyperpage{19}
+    \subitem {Humidity\_register\_add}, \hyperpage{19}
+    \subitem {KEY\_PRESS}, \hyperpage{20}
+    \subitem {MOTOR\_1\_PWM\_OFF}, \hyperpage{20}
+    \subitem {MOTOR\_1\_PWM\_ON}, \hyperpage{20}
+    \subitem {MOTOR\_1\_PWM\_ON\_50}, \hyperpage{20}
+    \subitem {MOTOR\_1\_PWM\_ON\_75}, \hyperpage{20}
+    \subitem {RXBUFFERSIZE}, \hyperpage{20}
+    \subitem {SERIAL\_PC}, \hyperpage{21}
+    \subitem {SERIAL\_SCREEN}, \hyperpage{21}
+    \subitem {START\_BEEP}, \hyperpage{21}
+    \subitem {Temperature\_register\_add}, \hyperpage{21}
+    \subitem {TICKS\_FOR\_UPDATE}, \hyperpage{21}
+    \subitem {TICKS\_SCREEN\_UPDATE\_LONG}, \hyperpage{21}
+    \subitem {TICKS\_SCREEN\_UPDATE\_SUPER\_LONG}, \hyperpage{22}
+    \subitem {TIMEOUT\_SCREEN}, \hyperpage{22}
+
+  \indexspace
+
+  \item {b1}
+    \subitem {adc\_command}, \hyperpage{48}
+    \subitem {channel}, \hyperpage{73}
+  \item {b2}
+    \subitem {adc\_command}, \hyperpage{48}
+    \subitem {channel}, \hyperpage{73}
+  \item {bat\_percentage}
+    \subitem {AdcController}, \hyperpage{55}
+  \item {battery}
+    \subitem {MainController}, \hyperpage{93}
+    \subitem {State}, \hyperpage{164}
+  \item {battery\_percent}
+    \subitem {MainController}, \hyperpage{93}
+  \item {battery\_volt}
+    \subitem {AdcController}, \hyperpage{55}
+  \item {BEEP\_COUNTER\_0}
+    \subitem {Auxilary}, \hyperpage{18}
+  \item {BEEP\_COUNTER\_200}
+    \subitem {Auxilary}, \hyperpage{19}
+  \item {BEEP\_COUNTER\_400}
+    \subitem {Auxilary}, \hyperpage{19}
+  \item {Beep\_Every\_X\_Counting}
+    \subitem {Auxilary}, \hyperpage{19}
+  \item {binary\_and\_patch}
+    \subitem {Mem\_ctrl}, \hyperpage{99}
+  \item {bits}
+    \subitem {adc\_command}, \hyperpage{48}
+    \subitem {bypass\_state}, \hyperpage{58}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{60}
+    \subitem {byte8\_t\_reg\_cs}, \hyperpage{65}
+    \subitem {byte8\_t\_reg\_readback}, \hyperpage{67}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{70}
+  \item {BLINKING\_LED\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{196}
+  \item {BLINKING\_LED\_Pin}
+    \subitem {main.h}, \hyperpage{197}
+  \item {BLOCK\_ERASE\_32K}
+    \subitem {SPI}, \hyperpage{14}
+  \item {BLOCK\_ERASE\_4K}
+    \subitem {SPI}, \hyperpage{14}
+  \item {BLOCK\_ERASE\_64K}
+    \subitem {SPI}, \hyperpage{15}
+  \item {BP0}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{60}
+  \item {BP1}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{60}
+  \item {BP2}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{61}
+  \item {buffer}
+    \subitem {Monitor}, \hyperpage{142}
+  \item {BUZZER\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{197}
+  \item {BUZZER\_Pin}
+    \subitem {main.h}, \hyperpage{197}
+  \item {bypass}
+    \subitem {State}, \hyperpage{164}
+  \item {bypass1}
+    \subitem {bypass\_state}, \hyperpage{58}
+  \item {bypass2}
+    \subitem {bypass\_state}, \hyperpage{58}
+  \item {bypass3}
+    \subitem {bypass\_state}, \hyperpage{58}
+  \item {bypass4}
+    \subitem {bypass\_state}, \hyperpage{58}
+  \item {bypass\_state}, \hyperpage{57}
+    \subitem {bits}, \hyperpage{58}
+    \subitem {bypass1}, \hyperpage{58}
+    \subitem {bypass2}, \hyperpage{58}
+    \subitem {bypass3}, \hyperpage{58}
+    \subitem {bypass4}, \hyperpage{58}
+    \subitem {reserved}, \hyperpage{58}
+    \subitem {value}, \hyperpage{58}
+  \item {byte8\_t\_mem\_status}, \hyperpage{59}
+    \subitem {bits}, \hyperpage{60}
+    \subitem {BP0}, \hyperpage{60}
+    \subitem {BP1}, \hyperpage{60}
+    \subitem {BP2}, \hyperpage{61}
+    \subitem {bytes}, \hyperpage{61}
+    \subitem {CMP}, \hyperpage{61}
+    \subitem {LB1}, \hyperpage{61}
+    \subitem {LB2}, \hyperpage{61}
+    \subitem {LB3}, \hyperpage{61}
+    \subitem {QE}, \hyperpage{62}
+    \subitem {RES}, \hyperpage{62}
+    \subitem {RES2}, \hyperpage{62}
+    \subitem {SEC}, \hyperpage{62}
+    \subitem {SRP0}, \hyperpage{62}
+    \subitem {SRP1}, \hyperpage{62}
+    \subitem {status1}, \hyperpage{63}
+    \subitem {status2}, \hyperpage{63}
+    \subitem {TB}, \hyperpage{63}
+    \subitem {value}, \hyperpage{63}
+    \subitem {WEL}, \hyperpage{63}
+    \subitem {WIP}, \hyperpage{63}
+  \item {byte8\_t\_reg\_cs}, \hyperpage{64}
+    \subitem {bits}, \hyperpage{65}
+    \subitem {DECODER}, \hyperpage{65}
+    \subitem {INA\_MOTOR}, \hyperpage{65}
+    \subitem {INB\_MOTOR}, \hyperpage{65}
+    \subitem {nibble\_CS}, \hyperpage{65}
+    \subitem {nibble\_PERIPH}, \hyperpage{65}
+    \subitem {nibbles}, \hyperpage{66}
+    \subitem {QC}, \hyperpage{66}
+    \subitem {QG}, \hyperpage{66}
+    \subitem {QH}, \hyperpage{66}
+    \subitem {value}, \hyperpage{66}
+  \item {byte8\_t\_reg\_readback}, \hyperpage{67}
+    \subitem {bits}, \hyperpage{67}
+    \subitem {CS\_MEM2}, \hyperpage{67}
+    \subitem {CS\_MEM3}, \hyperpage{68}
+    \subitem {CS\_STATUS\_INV}, \hyperpage{68}
+    \subitem {DECODER}, \hyperpage{68}
+    \subitem {INA\_MOTOR}, \hyperpage{68}
+    \subitem {INB\_MOTOR}, \hyperpage{68}
+    \subitem {value}, \hyperpage{68}
+  \item {byte8\_t\_reg\_status}, \hyperpage{69}
+    \subitem {bits}, \hyperpage{70}
+    \subitem {FIRE\_STATUS}, \hyperpage{70}
+    \subitem {nibble\_OPTO}, \hyperpage{70}
+    \subitem {nibble\_PERIPH}, \hyperpage{70}
+    \subitem {nibbles}, \hyperpage{70}
+    \subitem {OPTO\_A}, \hyperpage{70}
+    \subitem {OPTO\_B}, \hyperpage{71}
+    \subitem {OPTO\_C}, \hyperpage{71}
+    \subitem {OPTO\_D}, \hyperpage{71}
+    \subitem {OPTO\_STATUS}, \hyperpage{71}
+    \subitem {RESERVED}, \hyperpage{71}
+    \subitem {SWITCHES\_STATUS}, \hyperpage{71}
+    \subitem {value}, \hyperpage{72}
+  \item {BYTE\_PROGRAM}
+    \subitem {SPI}, \hyperpage{15}
+  \item {bytes}
+    \subitem {adc\_command}, \hyperpage{48}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{61}
+    \subitem {channel}, \hyperpage{73}
+
+  \indexspace
+
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/adc.h}, 
+		\hyperpage{169}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/adc\_controller.h}, 
+		\hyperpage{173}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/common.h}, 
+		\hyperpage{174}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/crc.h}, 
+		\hyperpage{179}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/cs\_register.h}, 
+		\hyperpage{181}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/dma.h}, 
+		\hyperpage{183}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/flash\_if.h}, 
+		\hyperpage{185}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/gpio.h}, 
+		\hyperpage{189}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/hardware.h}, 
+		\hyperpage{192}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/main.h}, 
+		\hyperpage{194}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/main\_controller.h}, 
+		\hyperpage{211}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/mem.h}, 
+		\hyperpage{212}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/mem\_controller.h}, 
+		\hyperpage{213}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/menu.h}, 
+		\hyperpage{214}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/monitor.cpp}, 
+		\hyperpage{217}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/monitor.h}, 
+		\hyperpage{218}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/peripherial\_controller.h}, 
+		\hyperpage{218}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/rtc.h}, 
+		\hyperpage{219}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/screen\_controller.h}, 
+		\hyperpage{223}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/spi.h}, 
+		\hyperpage{224}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/state.h}, 
+		\hyperpage{226}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/status\_reg.h}, 
+		\hyperpage{228}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/stm32f0xx\_hal\_conf.h}, 
+		\hyperpage{229}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/stm32f0xx\_it.h}, 
+		\hyperpage{238}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/tim.h}, 
+		\hyperpage{242}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/usart.h}, 
+		\hyperpage{245}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/xmodem.h}, 
+		\hyperpage{248}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/adc.c}, 
+		\hyperpage{260}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/adc\_controller.cpp}, 
+		\hyperpage{265}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/common.cpp}, 
+		\hyperpage{266}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/crc.c}, 
+		\hyperpage{268}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/cs\_register.cpp}, 
+		\hyperpage{271}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/debug\_facilities.cpp}, 
+		\hyperpage{271}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/dma.c}, 
+		\hyperpage{272}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/flash\_if.cpp}, 
+		\hyperpage{274}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/gpio.c}, 
+		\hyperpage{276}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/main.cpp}, 
+		\hyperpage{278}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/main\_controller.cpp}, 
+		\hyperpage{290}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/mem.cpp}, 
+		\hyperpage{291}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/mem\_controller.cpp}, 
+		\hyperpage{291}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/menu.cpp}, 
+		\hyperpage{292}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/peripherial\_controller.cpp}, 
+		\hyperpage{294}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/rtc.c}, 
+		\hyperpage{295}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/screen\_controller.cpp}, 
+		\hyperpage{298}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/spi.c}, 
+		\hyperpage{299}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/state.cpp}, 
+		\hyperpage{302}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/status\_reg.cpp}, 
+		\hyperpage{302}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/stm32f0xx\_hal\_msp.c}, 
+		\hyperpage{303}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/stm32f0xx\_hal\_timebase\_tim.c}, 
+		\hyperpage{304}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/stm32f0xx\_it.c}, 
+		\hyperpage{308}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/system\_stm32f0xx.c}, 
+		\hyperpage{315}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/tim.c}, 
+		\hyperpage{317}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/usart.c}, 
+		\hyperpage{320}
+  \item {C:/Users/nicko/source/repos/APTX1\_1/Core/Src/xmodem.cpp}, 
+		\hyperpage{325}
+  \item {CA}
+    \subitem {xmodem.h}, \hyperpage{251}
+  \item {channel}, \hyperpage{72}
+    \subitem {b1}, \hyperpage{73}
+    \subitem {b2}, \hyperpage{73}
+    \subitem {bytes}, \hyperpage{73}
+    \subitem {value}, \hyperpage{73}
+  \item {channels\_buffer}
+    \subitem {AdcController}, \hyperpage{55}
+  \item {check\_connections}
+    \subitem {Mem\_ctrl}, \hyperpage{100}
+  \item {check\_connections\_with\_printback}
+    \subitem {Mem\_ctrl}, \hyperpage{101}
+  \item {check\_id}
+    \subitem {Memory}, \hyperpage{113}
+  \item {chip\_select}
+    \subitem {Monitor}, \hyperpage{142}
+  \item {CHIP\_SELECT\_MCU\_MEM\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{197}
+  \item {CHIP\_SELECT\_MCU\_MEM\_Pin}
+    \subitem {main.h}, \hyperpage{197}
+  \item {CHIP\_SELECT\_RESERVED\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{197}
+  \item {CHIP\_SELECT\_RESERVED\_Pin}
+    \subitem {main.h}, \hyperpage{198}
+  \item {CHIP\_SELECT\_SERIAL\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{198}
+  \item {CHIP\_SELECT\_SERIAL\_Pin}
+    \subitem {main.h}, \hyperpage{198}
+  \item {clean\_screen}
+    \subitem {Screen\_ctrl}, \hyperpage{152}
+  \item {clear\_counter}
+    \subitem {PeripherialDevices}, \hyperpage{144}
+  \item {CLK\_SOURCE}
+    \subitem {adc\_command}, \hyperpage{49}
+  \item {CMP}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{61}
+  \item {CMR}
+    \subitem {adc\_command}, \hyperpage{49}
+  \item {CMSIS}, \hyperpage{36}
+  \item {common.h}
+    \subitem {CONVERTDEC}, \hyperpage{177}
+    \subitem {CONVERTHEX}, \hyperpage{177}
+    \subitem {CONVERTHEX\_ALPHA}, \hyperpage{177}
+    \subitem {IS\_09}, \hyperpage{177}
+    \subitem {IS\_CAP\_LETTER}, \hyperpage{177}
+    \subitem {IS\_LC\_LETTER}, \hyperpage{177}
+    \subitem {ISVALIDDEC}, \hyperpage{178}
+    \subitem {ISVALIDHEX}, \hyperpage{178}
+    \subitem {RX\_TIMEOUT}, \hyperpage{178}
+    \subitem {TX\_TIMEOUT}, \hyperpage{178}
+  \item {Configuration\_register\_add}
+    \subitem {Auxilary}, \hyperpage{19}
+  \item {CONV\_OUTPUT\_FORMAT}
+    \subitem {adc\_command}, \hyperpage{49}
+  \item {CONVERSION\_MODE\_SELECT}
+    \subitem {adc\_command}, \hyperpage{49}
+  \item {convert\_to\_volt}
+    \subitem {AdcController}, \hyperpage{53}
+  \item {CONVERTDEC}
+    \subitem {common.h}, \hyperpage{177}
+  \item {CONVERTHEX}
+    \subitem {common.h}, \hyperpage{177}
+  \item {CONVERTHEX\_ALPHA}
+    \subitem {common.h}, \hyperpage{177}
+  \item {CORE}, \hyperpage{7}
+  \item {crc.c}
+    \subitem {HAL\_CRC\_MspDeInit}, \hyperpage{268}
+    \subitem {HAL\_CRC\_MspInit}, \hyperpage{269}
+    \subitem {hcrc}, \hyperpage{270}
+    \subitem {MX\_CRC\_Init}, \hyperpage{269}
+  \item {crc.h}
+    \subitem {hcrc}, \hyperpage{180}
+    \subitem {MX\_CRC\_Init}, \hyperpage{180}
+  \item {CRC16}
+    \subitem {xmodem.h}, \hyperpage{251}
+  \item {CS}
+    \subitem {Memory}, \hyperpage{120}
+  \item {cs1}
+    \subitem {CS\_reg}, \hyperpage{75}
+  \item {cs1\_value}
+    \subitem {CS\_reg}, \hyperpage{79}
+  \item {cs2}
+    \subitem {CS\_reg}, \hyperpage{75}
+  \item {cs3}
+    \subitem {CS\_reg}, \hyperpage{76}
+  \item {CS\_A2D}
+    \subitem {cs\_register.h}, \hyperpage{182}
+  \item {cs\_a2d}
+    \subitem {CS\_reg}, \hyperpage{76}
+  \item {cs\_clear\_opto\_counter}
+    \subitem {CS\_reg}, \hyperpage{77}
+  \item {cs\_decoder}
+    \subitem {cs\_register.h}, \hyperpage{182}
+  \item {CS\_MEM2}
+    \subitem {byte8\_t\_reg\_readback}, \hyperpage{67}
+    \subitem {cs\_register.h}, \hyperpage{182}
+  \item {CS\_MEM3}
+    \subitem {byte8\_t\_reg\_readback}, \hyperpage{68}
+    \subitem {cs\_register.h}, \hyperpage{182}
+  \item {CS\_READBACK\_SER}
+    \subitem {cs\_register.h}, \hyperpage{182}
+  \item {CS\_reg}, \hyperpage{74}
+    \subitem {$\sim$CS\_reg}, \hyperpage{75}
+    \subitem {cs1}, \hyperpage{75}
+    \subitem {cs1\_value}, \hyperpage{79}
+    \subitem {cs2}, \hyperpage{75}
+    \subitem {cs3}, \hyperpage{76}
+    \subitem {cs\_a2d}, \hyperpage{76}
+    \subitem {cs\_clear\_opto\_counter}, \hyperpage{77}
+    \subitem {CS\_reg}, \hyperpage{75}
+    \subitem {cs\_status}, \hyperpage{77}
+    \subitem {current}, \hyperpage{79}
+    \subitem {motor\_cmd}, \hyperpage{78}
+    \subitem {print\_current}, \hyperpage{78}
+    \subitem {readback\_register}, \hyperpage{79}
+  \item {cs\_register}
+    \subitem {AdcController}, \hyperpage{55}
+    \subitem {main.cpp}, \hyperpage{288}
+    \subitem {Mem\_ctrl}, \hyperpage{110}
+  \item {cs\_register.h}
+    \subitem {CS\_A2D}, \hyperpage{182}
+    \subitem {cs\_decoder}, \hyperpage{182}
+    \subitem {CS\_MEM2}, \hyperpage{182}
+    \subitem {CS\_MEM3}, \hyperpage{182}
+    \subitem {CS\_READBACK\_SER}, \hyperpage{182}
+    \subitem {CS\_STATUS}, \hyperpage{182}
+    \subitem {OPTO\_CNT\_CLRN}, \hyperpage{182}
+    \subitem {Y0}, \hyperpage{182}
+  \item {CS\_STATUS}
+    \subitem {cs\_register.h}, \hyperpage{182}
+  \item {cs\_status}
+    \subitem {CS\_reg}, \hyperpage{77}
+  \item {CS\_STATUS\_INV}
+    \subitem {byte8\_t\_reg\_readback}, \hyperpage{68}
+  \item {CsRegister}
+    \subitem {PeripherialDevices}, \hyperpage{150}
+  \item {current}
+    \subitem {CS\_reg}, \hyperpage{79}
+    \subitem {State}, \hyperpage{164}
+    \subitem {STATUS\_reg}, \hyperpage{168}
+  \item {current\_sense}
+    \subitem {AdcController}, \hyperpage{55}
+  \item {cursor}
+    \subitem {MainController}, \hyperpage{93}
+    \subitem {Memory}, \hyperpage{120}
+  \item {cycle}
+    \subitem {main.cpp}, \hyperpage{288}
+
+  \indexspace
+
+  \item {D11}
+    \subitem {adc\_command}, \hyperpage{49}
+  \item {DATA\_CACHE\_ENABLE}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{231}
+  \item {date}
+    \subitem {Memory}, \hyperpage{120}
+  \item {debug}
+    \subitem {main.cpp}, \hyperpage{288}
+    \subitem {MainController}, \hyperpage{94}
+  \item {DEBUG\_AM\_OK\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{198}
+  \item {DEBUG\_AM\_OK\_Pin}
+    \subitem {main.h}, \hyperpage{198}
+  \item {DEBUG\_APT\_OK\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{198}
+  \item {DEBUG\_APT\_OK\_Pin}
+    \subitem {main.h}, \hyperpage{199}
+  \item {DEBUG\_BRK1\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{199}
+  \item {DEBUG\_BRK1\_Pin}
+    \subitem {main.h}, \hyperpage{199}
+  \item {DEBUG\_BRK2\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{199}
+  \item {DEBUG\_BRK2\_Pin}
+    \subitem {main.h}, \hyperpage{199}
+  \item {DEBUG\_CLK\_AUX\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{199}
+  \item {DEBUG\_CLK\_AUX\_Pin}
+    \subitem {main.h}, \hyperpage{200}
+  \item {DEBUG\_DATA\_AUX\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{200}
+  \item {DEBUG\_DATA\_AUX\_Pin}
+    \subitem {main.h}, \hyperpage{200}
+  \item {DEBUG\_LATCH\_AUX\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{200}
+  \item {DEBUG\_LATCH\_AUX\_Pin}
+    \subitem {main.h}, \hyperpage{200}
+  \item {DEBUG\_MCU\_OK\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{200}
+  \item {DEBUG\_MCU\_OK\_Pin}
+    \subitem {main.h}, \hyperpage{201}
+  \item {DEBUG\_MOTOR\_RUNNING\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{201}
+  \item {DEBUG\_MOTOR\_RUNNING\_Pin}
+    \subitem {main.h}, \hyperpage{201}
+  \item {DEBUG\_PRESSURE\_OK\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{201}
+  \item {DEBUG\_PRESSURE\_OK\_Pin}
+    \subitem {main.h}, \hyperpage{201}
+  \item {DEBUG\_PRINT}
+    \subitem {Globals}, \hyperpage{11}
+  \item {DEBUG\_STATE\_1\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{201}
+  \item {DEBUG\_STATE\_1\_Pin}
+    \subitem {main.h}, \hyperpage{202}
+  \item {DEBUG\_STATE\_2\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{202}
+  \item {DEBUG\_STATE\_2\_Pin}
+    \subitem {main.h}, \hyperpage{202}
+  \item {DEBUG\_STATE\_3\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{202}
+  \item {DEBUG\_STATE\_3\_Pin}
+    \subitem {main.h}, \hyperpage{202}
+  \item {DECODER}
+    \subitem {byte8\_t\_reg\_cs}, \hyperpage{65}
+    \subitem {byte8\_t\_reg\_readback}, \hyperpage{68}
+  \item {device}
+    \subitem {MainController}, \hyperpage{94}
+  \item {dma.c}
+    \subitem {MX\_DMA\_Init}, \hyperpage{273}
+  \item {dma.h}
+    \subitem {MX\_DMA\_Init}, \hyperpage{183}
+  \item {DMA1\_Channel1\_IRQHandler}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{310}
+    \subitem {stm32f0xx\_it.h}, \hyperpage{239}
+  \item {DMA\_LENGTH}
+    \subitem {main.h}, \hyperpage{202}
+  \item {dma\_ring\_buffer}
+    \subitem {AdcController}, \hyperpage{56}
+  \item {DONT\_BEEP}
+    \subitem {Globals}, \hyperpage{11}
+  \item {DOWNLOAD\_TIMEOUT}
+    \subitem {xmodem.h}, \hyperpage{251}
+  \item {dump\_mem}
+    \subitem {STM32L0xx\_IAP}, \hyperpage{31}
+
+  \indexspace
+
+  \item {ENABLE\_POWER\_12V\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{203}
+  \item {ENABLE\_POWER\_12V\_Pin}
+    \subitem {main.h}, \hyperpage{203}
+  \item {END\_ADDRESS}
+    \subitem {Globals}, \hyperpage{11}
+  \item {EOC\_INT\_FUNC}
+    \subitem {adc\_command}, \hyperpage{49}
+  \item {EOT}
+    \subitem {xmodem.h}, \hyperpage{252}
+  \item {erase}
+    \subitem {Mem\_ctrl}, \hyperpage{101, 102}
+    \subitem {Memory}, \hyperpage{113, 114}
+  \item {ERASE\_CHIP1}
+    \subitem {SPI}, \hyperpage{15}
+  \item {ERASE\_CHIP2}
+    \subitem {SPI}, \hyperpage{15}
+  \item {Error\_Handler}
+    \subitem {main.cpp}, \hyperpage{280}
+    \subitem {main.h}, \hyperpage{210}
+  \item {EXPERIMENTAL}
+    \subitem {Globals}, \hyperpage{11}
+
+  \indexspace
+
+  \item {FIFO\_TRIG\_LEVEL}
+    \subitem {adc\_command}, \hyperpage{50}
+  \item {FIFOREAD}
+    \subitem {ADC}, \hyperpage{24}
+  \item {FILE\_NAME\_LENGTH}
+    \subitem {xmodem.h}, \hyperpage{252}
+  \item {FILE\_SIZE\_LENGTH}
+    \subitem {xmodem.h}, \hyperpage{252}
+  \item {FIRE\_STATUS}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{70}
+  \item {flash\_if.h}
+    \subitem {ABS\_RETURN}, \hyperpage{187}
+    \subitem {APPLICATION\_ADDRESS}, \hyperpage{187}
+    \subitem {FLASH\_PAGE\_STEP}, \hyperpage{187}
+    \subitem {FLASHIF\_ERASEKO}, \hyperpage{188}
+    \subitem {FLASHIF\_OK}, \hyperpage{188}
+    \subitem {FLASHIF\_PROTECTION\_ERRROR}, \hyperpage{188}
+    \subitem {FLASHIF\_PROTECTION\_NONE}, \hyperpage{188}
+    \subitem {FLASHIF\_PROTECTION\_PCROPENABLED}, \hyperpage{188}
+    \subitem {FLASHIF\_PROTECTION\_RDPENABLED}, \hyperpage{188}
+    \subitem {FLASHIF\_PROTECTION\_WRPENABLED}, \hyperpage{188}
+    \subitem {FLASHIF\_WRITING\_ERROR}, \hyperpage{188}
+    \subitem {FLASHIF\_WRITINGCTRL\_ERROR}, \hyperpage{188}
+    \subitem {FLASHIF\_WRP\_DISABLE}, \hyperpage{188}
+    \subitem {FLASHIF\_WRP\_ENABLE}, \hyperpage{188}
+    \subitem {USER\_FLASH\_SIZE}, \hyperpage{187}
+  \item {FLASH\_If\_Erase}
+    \subitem {STM32L0xx\_IAP}, \hyperpage{31}
+  \item {FLASH\_If\_Write}
+    \subitem {STM32L0xx\_IAP}, \hyperpage{32}
+  \item {FLASH\_PAGE\_STEP}
+    \subitem {flash\_if.h}, \hyperpage{187}
+  \item {FLASHIF\_ERASEKO}
+    \subitem {flash\_if.h}, \hyperpage{188}
+  \item {FLASHIF\_OK}
+    \subitem {flash\_if.h}, \hyperpage{188}
+  \item {FLASHIF\_PROTECTION\_ERRROR}
+    \subitem {flash\_if.h}, \hyperpage{188}
+  \item {FLASHIF\_PROTECTION\_NONE}
+    \subitem {flash\_if.h}, \hyperpage{188}
+  \item {FLASHIF\_PROTECTION\_PCROPENABLED}
+    \subitem {flash\_if.h}, \hyperpage{188}
+  \item {FLASHIF\_PROTECTION\_RDPENABLED}
+    \subitem {flash\_if.h}, \hyperpage{188}
+  \item {FLASHIF\_PROTECTION\_WRPENABLED}
+    \subitem {flash\_if.h}, \hyperpage{188}
+  \item {FLASHIF\_WRITING\_ERROR}
+    \subitem {flash\_if.h}, \hyperpage{188}
+  \item {FLASHIF\_WRITINGCTRL\_ERROR}
+    \subitem {flash\_if.h}, \hyperpage{188}
+  \item {FLASHIF\_WRP\_DISABLE}
+    \subitem {flash\_if.h}, \hyperpage{188}
+  \item {FLASHIF\_WRP\_ENABLE}
+    \subitem {flash\_if.h}, \hyperpage{188}
+  \item {FlashProtection}
+    \subitem {STM32L0xx\_IAP}, \hyperpage{35}
+  \item {FROM\_BOOTLOADER}
+    \subitem {Globals}, \hyperpage{11}
+
+  \indexspace
+
+  \item {get\_date}
+    \subitem {Mem\_ctrl}, \hyperpage{103}
+  \item {get\_max}
+    \subitem {Mem\_ctrl}, \hyperpage{103}
+  \item {get\_serial}
+    \subitem {Mem\_ctrl}, \hyperpage{103}
+  \item {get\_time}
+    \subitem {Screen\_ctrl}, \hyperpage{153}
+  \item {get\_value}
+    \subitem {STATUS\_reg}, \hyperpage{167}
+  \item {Globals}, \hyperpage{9}
+    \subitem {ADC\_Battery}, \hyperpage{9}
+    \subitem {ADC\_Presure}, \hyperpage{9}
+    \subitem {ADC\_Presure\_20\_bar}, \hyperpage{10}
+    \subitem {ADC\_Presure\_27\_bar}, \hyperpage{10}
+    \subitem {APP\_ADDRESS}, \hyperpage{10}
+    \subitem {APP\_ADDRESS\_P}, \hyperpage{10}
+    \subitem {APP\_SIZE}, \hyperpage{10}
+    \subitem {DEBUG\_PRINT}, \hyperpage{11}
+    \subitem {DONT\_BEEP}, \hyperpage{11}
+    \subitem {END\_ADDRESS}, \hyperpage{11}
+    \subitem {EXPERIMENTAL}, \hyperpage{11}
+    \subitem {FROM\_BOOTLOADER}, \hyperpage{11}
+    \subitem {MAX\_HOLE\_SIZE}, \hyperpage{12}
+    \subitem {MCU\_VERSION\_MAJOR}, \hyperpage{12}
+    \subitem {MCU\_VERSION\_MINOR}, \hyperpage{12}
+    \subitem {MCU\_VERSION\_PATCH}, \hyperpage{12}
+    \subitem {MCU\_VERSION\_RC}, \hyperpage{12}
+    \subitem {PASS\_PRESSURE\_CHECK}, \hyperpage{13}
+    \subitem {PASS\_SPI}, \hyperpage{13}
+    \subitem {TECHNICIAN\_ENABLED}, \hyperpage{13}
+    \subitem {VERSION}, \hyperpage{13}
+  \item {gpio.c}
+    \subitem {MX\_GPIO\_Init}, \hyperpage{276}
+  \item {gpio.h}
+    \subitem {MX\_GPIO\_Init}, \hyperpage{189}
+  \item {grand\_ctrl}
+    \subitem {main.cpp}, \hyperpage{288}
+
+  \indexspace
+
+  \item {hadc}
+    \subitem {adc.c}, \hyperpage{264}
+    \subitem {adc.h}, \hyperpage{172}
+  \item {HAL\_ADC\_ConvCpltCallback}
+    \subitem {main.cpp}, \hyperpage{281}
+  \item {HAL\_ADC\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{232}
+  \item {HAL\_ADC\_MspDeInit}
+    \subitem {adc.c}, \hyperpage{261}
+  \item {HAL\_ADC\_MspInit}
+    \subitem {adc.c}, \hyperpage{262}
+  \item {HAL\_CORTEX\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{232}
+  \item {HAL\_CRC\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{232}
+  \item {HAL\_CRC\_MspDeInit}
+    \subitem {crc.c}, \hyperpage{268}
+  \item {HAL\_CRC\_MspInit}
+    \subitem {crc.c}, \hyperpage{269}
+  \item {HAL\_DMA\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{232}
+  \item {HAL\_FLASH\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{232}
+  \item {HAL\_GPIO\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{232}
+  \item {HAL\_I2C\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{233}
+  \item {HAL\_InitTick}
+    \subitem {stm32f0xx\_hal\_timebase\_tim.c}, \hyperpage{306}
+  \item {HAL\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{233}
+  \item {HAL\_MspInit}
+    \subitem {stm32f0xx\_hal\_msp.c}, \hyperpage{304}
+  \item {HAL\_PWR\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{233}
+  \item {HAL\_RCC\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{233}
+  \item {HAL\_ResumeTick}
+    \subitem {stm32f0xx\_hal\_timebase\_tim.c}, \hyperpage{307}
+  \item {HAL\_RTC\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{233}
+  \item {HAL\_RTC\_MspDeInit}
+    \subitem {rtc.c}, \hyperpage{295}
+  \item {HAL\_RTC\_MspInit}
+    \subitem {rtc.c}, \hyperpage{296}
+  \item {HAL\_SPI\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{233}
+  \item {HAL\_SPI\_MspDeInit}
+    \subitem {spi.c}, \hyperpage{299}
+  \item {HAL\_SPI\_MspInit}
+    \subitem {spi.c}, \hyperpage{300}
+  \item {HAL\_SuspendTick}
+    \subitem {stm32f0xx\_hal\_timebase\_tim.c}, \hyperpage{307}
+  \item {HAL\_TIM\_Base\_MspDeInit}
+    \subitem {tim.c}, \hyperpage{318}
+  \item {HAL\_TIM\_Base\_MspInit}
+    \subitem {tim.c}, \hyperpage{318}
+  \item {HAL\_TIM\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{234}
+  \item {HAL\_TIM\_PeriodElapsedCallback}
+    \subitem {main.cpp}, \hyperpage{281}
+  \item {HAL\_UART\_MODULE\_ENABLED}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{234}
+  \item {HAL\_UART\_MspDeInit}
+    \subitem {usart.c}, \hyperpage{321}
+  \item {HAL\_UART\_MspInit}
+    \subitem {usart.c}, \hyperpage{321}
+  \item {HardFault\_Handler}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{310}
+    \subitem {stm32f0xx\_it.h}, \hyperpage{239}
+  \item {HARDWARE\_DEFAULT}
+    \subitem {ADC}, \hyperpage{24}
+  \item {hcrc}
+    \subitem {crc.c}, \hyperpage{270}
+    \subitem {crc.h}, \hyperpage{180}
+  \item {HDC\_1080\_ADD}
+    \subitem {Auxilary}, \hyperpage{19}
+  \item {hdma\_adc}
+    \subitem {adc.c}, \hyperpage{265}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{314}
+  \item {HIGH}
+    \subitem {SPI}, \hyperpage{15}
+  \item {hrtc}
+    \subitem {rtc.c}, \hyperpage{297}
+    \subitem {rtc.h}, \hyperpage{222}
+  \item {HSE\_STARTUP\_TIMEOUT}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{234}
+  \item {HSE\_VALUE}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{234}
+    \subitem {STM32F0xx\_System\_Private\_Defines}, \hyperpage{40}
+  \item {HSI14\_VALUE}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{234}
+  \item {HSI48\_VALUE}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{235}
+    \subitem {STM32F0xx\_System\_Private\_Defines}, \hyperpage{40}
+  \item {HSI\_STARTUP\_TIMEOUT}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{235}
+  \item {HSI\_VALUE}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{235}
+    \subitem {STM32F0xx\_System\_Private\_Defines}, \hyperpage{40}
+  \item {hspi1}
+    \subitem {spi.c}, \hyperpage{301}
+    \subitem {spi.h}, \hyperpage{225}
+  \item {htim1}
+    \subitem {stm32f0xx\_hal\_timebase\_tim.c}, \hyperpage{308}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{314}
+  \item {htim16}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{314}
+    \subitem {tim.c}, \hyperpage{319}
+    \subitem {tim.h}, \hyperpage{244}
+  \item {huart1}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{314}
+    \subitem {usart.c}, \hyperpage{324}
+    \subitem {usart.h}, \hyperpage{247}
+  \item {huart2}
+    \subitem {usart.c}, \hyperpage{324}
+    \subitem {usart.h}, \hyperpage{248}
+  \item {Humidity\_register\_add}
+    \subitem {Auxilary}, \hyperpage{19}
+
+  \indexspace
+
+  \item {id}
+    \subitem {Memory}, \hyperpage{120}
+  \item {id\_valid}
+    \subitem {Memory}, \hyperpage{121}
+  \item {Idle}
+    \subitem {state.h}, \hyperpage{227}
+  \item {idle\_state}
+    \subitem {MainController}, \hyperpage{84}
+  \item {INA\_MOTOR}
+    \subitem {byte8\_t\_reg\_cs}, \hyperpage{65}
+    \subitem {byte8\_t\_reg\_readback}, \hyperpage{68}
+  \item {INB\_MOTOR}
+    \subitem {byte8\_t\_reg\_cs}, \hyperpage{65}
+    \subitem {byte8\_t\_reg\_readback}, \hyperpage{68}
+  \item {Init}
+    \subitem {state.h}, \hyperpage{227}
+  \item {init\_before\_while}
+    \subitem {MainController}, \hyperpage{85}
+  \item {init\_first\_step}
+    \subitem {State}, \hyperpage{163}
+  \item {init\_state}
+    \subitem {MainController}, \hyperpage{86}
+  \item {INPUT\_SELECT\_MODE}
+    \subitem {adc\_command}, \hyperpage{50}
+  \item {INSTRUCTION\_CACHE\_ENABLE}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{235}
+  \item {Int2Str}
+    \subitem {STM32L0xx\_IAP\_Main}, \hyperpage{27}
+  \item {IS\_09}
+    \subitem {common.h}, \hyperpage{177}
+  \item {IS\_CAP\_LETTER}
+    \subitem {common.h}, \hyperpage{177}
+  \item {is\_counting\_up}
+    \subitem {MainController}, \hyperpage{94}
+  \item {IS\_LC\_LETTER}
+    \subitem {common.h}, \hyperpage{177}
+  \item {ISVALIDDEC}
+    \subitem {common.h}, \hyperpage{178}
+  \item {ISVALIDHEX}
+    \subitem {common.h}, \hyperpage{178}
+
+  \indexspace
+
+  \item {JumpAddress}
+    \subitem {STM32L0xx\_IAP}, \hyperpage{35}
+  \item {JumpToApplication}
+    \subitem {STM32L0xx\_IAP}, \hyperpage{35}
+
+  \indexspace
+
+  \item {KEY\_PRESS}
+    \subitem {Auxilary}, \hyperpage{20}
+
+  \indexspace
+
+  \item {LB1}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{61}
+  \item {LB2}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{61}
+  \item {LB3}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{61}
+  \item {LOGIC\_BYPASS\_1\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{203}
+  \item {LOGIC\_BYPASS\_1\_Pin}
+    \subitem {main.h}, \hyperpage{203}
+  \item {LOGIC\_BYPASS\_2\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{203}
+  \item {LOGIC\_BYPASS\_2\_Pin}
+    \subitem {main.h}, \hyperpage{203}
+  \item {LOGIC\_BYPASS\_3\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{204}
+  \item {LOGIC\_BYPASS\_3\_Pin}
+    \subitem {main.h}, \hyperpage{204}
+  \item {LOGIC\_BYPASS\_4\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{204}
+  \item {LOGIC\_BYPASS\_4\_Pin}
+    \subitem {main.h}, \hyperpage{204}
+  \item {LOW}
+    \subitem {SPI}, \hyperpage{15}
+  \item {LSE\_STARTUP\_TIMEOUT}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{236}
+  \item {LSE\_VALUE}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{236}
+  \item {LSI\_VALUE}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{236}
+  \item {LVDS\_RESERVED\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{204}
+  \item {LVDS\_RESERVED\_Pin}
+    \subitem {main.h}, \hyperpage{204}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{282}
+  \item {main.cpp}
+    \subitem {\_\_HAL\_SYSCFG\_REMAPMEMORY\_SRAM}, \hyperpage{280}
+    \subitem {\_\_attribute\_\_}, \hyperpage{280}
+    \subitem {adc\_controller}, \hyperpage{287}
+    \subitem {aPacketData}, \hyperpage{287}
+    \subitem {atp\_extern}, \hyperpage{287}
+    \subitem {cs\_register}, \hyperpage{288}
+    \subitem {cycle}, \hyperpage{288}
+    \subitem {debug}, \hyperpage{288}
+    \subitem {Error\_Handler}, \hyperpage{280}
+    \subitem {grand\_ctrl}, \hyperpage{288}
+    \subitem {HAL\_ADC\_ConvCpltCallback}, \hyperpage{281}
+    \subitem {HAL\_TIM\_PeriodElapsedCallback}, \hyperpage{281}
+    \subitem {main}, \hyperpage{282}
+    \subitem {memory\_am}, \hyperpage{288}
+    \subitem {memory\_apt}, \hyperpage{288}
+    \subitem {memory\_controller}, \hyperpage{289}
+    \subitem {memory\_mcu}, \hyperpage{289}
+    \subitem {ph\_device}, \hyperpage{289}
+    \subitem {remapMemToSRAM}, \hyperpage{285}
+    \subitem {reset\_pressed}, \hyperpage{289}
+    \subitem {screen}, \hyperpage{289}
+    \subitem {state}, \hyperpage{289}
+    \subitem {status\_register}, \hyperpage{290}
+    \subitem {SystemClock\_Config}, \hyperpage{286}
+    \subitem {timer\_last\_update}, \hyperpage{290}
+  \item {main.h}
+    \subitem {ADC\_CURRENT\_SENSE\_GPIO\_Port}, \hyperpage{196}
+    \subitem {ADC\_CURRENT\_SENSE\_Pin}, \hyperpage{196}
+    \subitem {BLINKING\_LED\_GPIO\_Port}, \hyperpage{196}
+    \subitem {BLINKING\_LED\_Pin}, \hyperpage{197}
+    \subitem {BUZZER\_GPIO\_Port}, \hyperpage{197}
+    \subitem {BUZZER\_Pin}, \hyperpage{197}
+    \subitem {CHIP\_SELECT\_MCU\_MEM\_GPIO\_Port}, \hyperpage{197}
+    \subitem {CHIP\_SELECT\_MCU\_MEM\_Pin}, \hyperpage{197}
+    \subitem {CHIP\_SELECT\_RESERVED\_GPIO\_Port}, \hyperpage{197}
+    \subitem {CHIP\_SELECT\_RESERVED\_Pin}, \hyperpage{198}
+    \subitem {CHIP\_SELECT\_SERIAL\_GPIO\_Port}, \hyperpage{198}
+    \subitem {CHIP\_SELECT\_SERIAL\_Pin}, \hyperpage{198}
+    \subitem {DEBUG\_AM\_OK\_GPIO\_Port}, \hyperpage{198}
+    \subitem {DEBUG\_AM\_OK\_Pin}, \hyperpage{198}
+    \subitem {DEBUG\_APT\_OK\_GPIO\_Port}, \hyperpage{198}
+    \subitem {DEBUG\_APT\_OK\_Pin}, \hyperpage{199}
+    \subitem {DEBUG\_BRK1\_GPIO\_Port}, \hyperpage{199}
+    \subitem {DEBUG\_BRK1\_Pin}, \hyperpage{199}
+    \subitem {DEBUG\_BRK2\_GPIO\_Port}, \hyperpage{199}
+    \subitem {DEBUG\_BRK2\_Pin}, \hyperpage{199}
+    \subitem {DEBUG\_CLK\_AUX\_GPIO\_Port}, \hyperpage{199}
+    \subitem {DEBUG\_CLK\_AUX\_Pin}, \hyperpage{200}
+    \subitem {DEBUG\_DATA\_AUX\_GPIO\_Port}, \hyperpage{200}
+    \subitem {DEBUG\_DATA\_AUX\_Pin}, \hyperpage{200}
+    \subitem {DEBUG\_LATCH\_AUX\_GPIO\_Port}, \hyperpage{200}
+    \subitem {DEBUG\_LATCH\_AUX\_Pin}, \hyperpage{200}
+    \subitem {DEBUG\_MCU\_OK\_GPIO\_Port}, \hyperpage{200}
+    \subitem {DEBUG\_MCU\_OK\_Pin}, \hyperpage{201}
+    \subitem {DEBUG\_MOTOR\_RUNNING\_GPIO\_Port}, \hyperpage{201}
+    \subitem {DEBUG\_MOTOR\_RUNNING\_Pin}, \hyperpage{201}
+    \subitem {DEBUG\_PRESSURE\_OK\_GPIO\_Port}, \hyperpage{201}
+    \subitem {DEBUG\_PRESSURE\_OK\_Pin}, \hyperpage{201}
+    \subitem {DEBUG\_STATE\_1\_GPIO\_Port}, \hyperpage{201}
+    \subitem {DEBUG\_STATE\_1\_Pin}, \hyperpage{202}
+    \subitem {DEBUG\_STATE\_2\_GPIO\_Port}, \hyperpage{202}
+    \subitem {DEBUG\_STATE\_2\_Pin}, \hyperpage{202}
+    \subitem {DEBUG\_STATE\_3\_GPIO\_Port}, \hyperpage{202}
+    \subitem {DEBUG\_STATE\_3\_Pin}, \hyperpage{202}
+    \subitem {DMA\_LENGTH}, \hyperpage{202}
+    \subitem {ENABLE\_POWER\_12V\_GPIO\_Port}, \hyperpage{203}
+    \subitem {ENABLE\_POWER\_12V\_Pin}, \hyperpage{203}
+    \subitem {Error\_Handler}, \hyperpage{210}
+    \subitem {LOGIC\_BYPASS\_1\_GPIO\_Port}, \hyperpage{203}
+    \subitem {LOGIC\_BYPASS\_1\_Pin}, \hyperpage{203}
+    \subitem {LOGIC\_BYPASS\_2\_GPIO\_Port}, \hyperpage{203}
+    \subitem {LOGIC\_BYPASS\_2\_Pin}, \hyperpage{203}
+    \subitem {LOGIC\_BYPASS\_3\_GPIO\_Port}, \hyperpage{204}
+    \subitem {LOGIC\_BYPASS\_3\_Pin}, \hyperpage{204}
+    \subitem {LOGIC\_BYPASS\_4\_GPIO\_Port}, \hyperpage{204}
+    \subitem {LOGIC\_BYPASS\_4\_Pin}, \hyperpage{204}
+    \subitem {LVDS\_RESERVED\_GPIO\_Port}, \hyperpage{204}
+    \subitem {LVDS\_RESERVED\_Pin}, \hyperpage{204}
+    \subitem {PA1\_RESERVED\_ASK\_SHAUL\_GPIO\_Port}, \hyperpage{205}
+    \subitem {PA1\_RESERVED\_ASK\_SHAUL\_Pin}, \hyperpage{205}
+    \subitem {POWER\_FAIL\_MCU\_GPIO\_Port}, \hyperpage{205}
+    \subitem {POWER\_FAIL\_MCU\_Pin}, \hyperpage{205}
+    \subitem {RESERVED\_UART6\_RX\_GPIO\_Port}, \hyperpage{205}
+    \subitem {RESERVED\_UART6\_RX\_Pin}, \hyperpage{205}
+    \subitem {RESERVED\_UART6\_TX\_GPIO\_Port}, \hyperpage{206}
+    \subitem {RESERVED\_UART6\_TX\_Pin}, \hyperpage{206}
+    \subitem {RTC\_TIMESTAMP\_GPIO\_Port}, \hyperpage{206}
+    \subitem {RTC\_TIMESTAMP\_Pin}, \hyperpage{206}
+    \subitem {SIMPLE\_INTERLOCK\_GPIO\_Port}, \hyperpage{206}
+    \subitem {SIMPLE\_INTERLOCK\_Pin}, \hyperpage{206}
+    \subitem {SYS\_SWO\_RESERVERED\_GPIO\_Port}, \hyperpage{207}
+    \subitem {SYS\_SWO\_RESERVERED\_Pin}, \hyperpage{207}
+    \subitem {TOGGLE400\_RESET\_BTN\_GPIO\_Port}, \hyperpage{207}
+    \subitem {TOGGLE400\_RESET\_BTN\_Pin}, \hyperpage{207}
+    \subitem {UART1\_PC\_RX\_GPIO\_Port}, \hyperpage{207}
+    \subitem {UART1\_PC\_RX\_Pin}, \hyperpage{207}
+    \subitem {UART1\_PC\_TX\_GPIO\_Port}, \hyperpage{208}
+    \subitem {UART1\_PC\_TX\_Pin}, \hyperpage{208}
+    \subitem {UART2\_SCREEN\_RX\_GPIO\_Port}, \hyperpage{208}
+    \subitem {UART2\_SCREEN\_RX\_Pin}, \hyperpage{208}
+    \subitem {UART2\_SCREEN\_TX\_GPIO\_Port}, \hyperpage{208}
+    \subitem {UART2\_SCREEN\_TX\_Pin}, \hyperpage{208}
+    \subitem {USB\_DM\_RESERVED\_GPIO\_Port}, \hyperpage{209}
+    \subitem {USB\_DM\_RESERVED\_Pin}, \hyperpage{209}
+    \subitem {USB\_DP\_RESERVED\_GPIO\_Port}, \hyperpage{209}
+    \subitem {USB\_DP\_RESERVED\_Pin}, \hyperpage{209}
+    \subitem {WATCHDOG\_OUT\_GPIO\_Port}, \hyperpage{209}
+    \subitem {WATCHDOG\_OUT\_Pin}, \hyperpage{209}
+  \item {main\_controller.cpp}
+    \subitem {reset\_pressed}, \hyperpage{291}
+  \item {Main\_Menu}
+    \subitem {STM32L0xx\_IAP}, \hyperpage{33}
+  \item {MainController}, \hyperpage{80}
+    \subitem {$\sim$MainController}, \hyperpage{82}
+    \subitem {active\_state}, \hyperpage{82}
+    \subitem {adc}, \hyperpage{92}
+    \subitem {am\_sn}, \hyperpage{92}
+    \subitem {am\_valid}, \hyperpage{93}
+    \subitem {apt\_sn}, \hyperpage{93}
+    \subitem {apt\_valid}, \hyperpage{93}
+    \subitem {battery}, \hyperpage{93}
+    \subitem {battery\_percent}, \hyperpage{93}
+    \subitem {cursor}, \hyperpage{93}
+    \subitem {debug}, \hyperpage{94}
+    \subitem {device}, \hyperpage{94}
+    \subitem {idle\_state}, \hyperpage{84}
+    \subitem {init\_before\_while}, \hyperpage{85}
+    \subitem {init\_state}, \hyperpage{86}
+    \subitem {is\_counting\_up}, \hyperpage{94}
+    \subitem {MainController}, \hyperpage{81}
+    \subitem {max\_count}, \hyperpage{94}
+    \subitem {mcu\_sn}, \hyperpage{94}
+    \subitem {mcu\_valid}, \hyperpage{94}
+    \subitem {mem}, \hyperpage{95}
+    \subitem {motor\_running}, \hyperpage{95}
+    \subitem {need\_to\_stall}, \hyperpage{88}
+    \subitem {pressure}, \hyperpage{95}
+    \subitem {pressure\_ok}, \hyperpage{95}
+    \subitem {pulses}, \hyperpage{95}
+    \subitem {pulses\_on\_screen}, \hyperpage{95}
+    \subitem {qa\_state}, \hyperpage{88}
+    \subitem {screen}, \hyperpage{96}
+    \subitem {state}, \hyperpage{96}
+    \subitem {status}, \hyperpage{96}
+    \subitem {uart\_state}, \hyperpage{90}
+    \subitem {update\_state}, \hyperpage{91}
+  \item {max\_count}
+    \subitem {MainController}, \hyperpage{94}
+    \subitem {Memory}, \hyperpage{121}
+  \item {MAX\_ERRORS}
+    \subitem {xmodem.h}, \hyperpage{252}
+  \item {MAX\_HOLE\_SIZE}
+    \subitem {Globals}, \hyperpage{12}
+  \item {MCU\_MEM}
+    \subitem {Mem\_ctrl}, \hyperpage{110}
+  \item {mcu\_sn}
+    \subitem {MainController}, \hyperpage{94}
+  \item {mcu\_valid}
+    \subitem {MainController}, \hyperpage{94}
+  \item {MCU\_VERSION\_MAJOR}
+    \subitem {Globals}, \hyperpage{12}
+  \item {MCU\_VERSION\_MINOR}
+    \subitem {Globals}, \hyperpage{12}
+  \item {MCU\_VERSION\_PATCH}
+    \subitem {Globals}, \hyperpage{12}
+  \item {MCU\_VERSION\_RC}
+    \subitem {Globals}, \hyperpage{12}
+  \item {mem}
+    \subitem {MainController}, \hyperpage{95}
+  \item {Mem\_ctrl}, \hyperpage{97}
+    \subitem {$\sim$Mem\_ctrl}, \hyperpage{98}
+    \subitem {AM\_MEM}, \hyperpage{110}
+    \subitem {APT\_MEM}, \hyperpage{110}
+    \subitem {binary\_and\_patch}, \hyperpage{99}
+    \subitem {check\_connections}, \hyperpage{100}
+    \subitem {check\_connections\_with\_printback}, \hyperpage{101}
+    \subitem {cs\_register}, \hyperpage{110}
+    \subitem {erase}, \hyperpage{101, 102}
+    \subitem {get\_date}, \hyperpage{103}
+    \subitem {get\_max}, \hyperpage{103}
+    \subitem {get\_serial}, \hyperpage{103}
+    \subitem {MCU\_MEM}, \hyperpage{110}
+    \subitem {Mem\_ctrl}, \hyperpage{98}
+    \subitem {poll\_complete}, \hyperpage{104}
+    \subitem {print\_register}, \hyperpage{105}
+    \subitem {read}, \hyperpage{106}
+    \subitem {read256}, \hyperpage{107}
+    \subitem {write}, \hyperpage{107}
+    \subitem {write\_register}, \hyperpage{109}
+  \item {Memory}, \hyperpage{111}
+    \subitem {$\sim$Memory}, \hyperpage{113}
+    \subitem {check\_id}, \hyperpage{113}
+    \subitem {CS}, \hyperpage{120}
+    \subitem {cursor}, \hyperpage{120}
+    \subitem {date}, \hyperpage{120}
+    \subitem {erase}, \hyperpage{113, 114}
+    \subitem {id}, \hyperpage{120}
+    \subitem {id\_valid}, \hyperpage{121}
+    \subitem {max\_count}, \hyperpage{121}
+    \subitem {Memory}, \hyperpage{112}
+    \subitem {name}, \hyperpage{121}
+    \subitem {print\_status}, \hyperpage{114}
+    \subitem {pulses}, \hyperpage{121}
+    \subitem {read}, \hyperpage{115}
+    \subitem {read256}, \hyperpage{116}
+    \subitem {read\_status\_register1}, \hyperpage{116}
+    \subitem {read\_status\_register2}, \hyperpage{117}
+    \subitem {serial\_number}, \hyperpage{121}
+    \subitem {status16\_t}, \hyperpage{121}
+    \subitem {write}, \hyperpage{118}
+    \subitem {write\_disable}, \hyperpage{118}
+    \subitem {write\_enable}, \hyperpage{119}
+    \subitem {write\_status\_register}, \hyperpage{119}
+  \item {memory\_am}
+    \subitem {main.cpp}, \hyperpage{288}
+  \item {memory\_apt}
+    \subitem {main.cpp}, \hyperpage{288}
+  \item {memory\_controller}
+    \subitem {main.cpp}, \hyperpage{289}
+  \item {memory\_extern}
+    \subitem {STM32L0xx\_IAP}, \hyperpage{35}
+  \item {memory\_mcu}
+    \subitem {main.cpp}, \hyperpage{289}
+  \item {menu.h}
+    \subitem {aFileName}, \hyperpage{217}
+    \subitem {pFunction}, \hyperpage{217}
+    \subitem {SerialDownload}, \hyperpage{217}
+  \item {Monitor}, \hyperpage{122}
+    \subitem {$\sim$Monitor}, \hyperpage{124}
+    \subitem {address}, \hyperpage{141}
+    \subitem {apt}, \hyperpage{141}
+    \subitem {buffer}, \hyperpage{142}
+    \subitem {chip\_select}, \hyperpage{142}
+    \subitem {Monitor}, \hyperpage{124}
+    \subitem {rx\_debug}, \hyperpage{125}
+    \subitem {rx\_erase}, \hyperpage{125}
+    \subitem {rx\_exit}, \hyperpage{126}
+    \subitem {rx\_find\_pulses}, \hyperpage{126}
+    \subitem {rx\_get\_man\_id}, \hyperpage{127}
+    \subitem {rx\_go\_active}, \hyperpage{127}
+    \subitem {rx\_help}, \hyperpage{128}
+    \subitem {rx\_nuke}, \hyperpage{128}
+    \subitem {rx\_pass}, \hyperpage{129}
+    \subitem {rx\_read}, \hyperpage{130}
+    \subitem {rx\_scan}, \hyperpage{130, 131}
+    \subitem {rx\_set\_date}, \hyperpage{131}
+    \subitem {rx\_set\_maxi}, \hyperpage{132}
+    \subitem {rx\_set\_serial}, \hyperpage{133}
+    \subitem {rx\_start\_motor}, \hyperpage{134}
+    \subitem {rx\_status\_read}, \hyperpage{134}
+    \subitem {rx\_status\_write}, \hyperpage{135}
+    \subitem {rx\_stop\_motor}, \hyperpage{136}
+    \subitem {rx\_test\_read}, \hyperpage{136}
+    \subitem {rx\_upload}, \hyperpage{137}
+    \subitem {rx\_write}, \hyperpage{138}
+    \subitem {serial\_consume}, \hyperpage{138}
+    \subitem {value}, \hyperpage{142}
+  \item {MOTOR\_1\_PWM\_OFF}
+    \subitem {Auxilary}, \hyperpage{20}
+  \item {MOTOR\_1\_PWM\_ON}
+    \subitem {Auxilary}, \hyperpage{20}
+  \item {MOTOR\_1\_PWM\_ON\_50}
+    \subitem {Auxilary}, \hyperpage{20}
+  \item {MOTOR\_1\_PWM\_ON\_75}
+    \subitem {Auxilary}, \hyperpage{20}
+  \item {motor\_cmd}
+    \subitem {CS\_reg}, \hyperpage{78}
+  \item {Motor\_current\_sense}
+    \subitem {adc\_controller.h}, \hyperpage{174}
+  \item {motor\_running}
+    \subitem {MainController}, \hyperpage{95}
+    \subitem {PeripherialDevices}, \hyperpage{150}
+  \item {MX\_ADC\_Init}
+    \subitem {adc.c}, \hyperpage{263}
+    \subitem {adc.h}, \hyperpage{170}
+  \item {MX\_CRC\_Init}
+    \subitem {crc.c}, \hyperpage{269}
+    \subitem {crc.h}, \hyperpage{180}
+  \item {MX\_DMA\_Init}
+    \subitem {dma.c}, \hyperpage{273}
+    \subitem {dma.h}, \hyperpage{183}
+  \item {MX\_GPIO\_Init}
+    \subitem {gpio.c}, \hyperpage{276}
+    \subitem {gpio.h}, \hyperpage{189}
+  \item {MX\_RTC\_Init}
+    \subitem {rtc.c}, \hyperpage{296}
+    \subitem {rtc.h}, \hyperpage{220}
+  \item {MX\_SPI1\_Init}
+    \subitem {spi.c}, \hyperpage{300}
+    \subitem {spi.h}, \hyperpage{224}
+  \item {MX\_TIM16\_Init}
+    \subitem {tim.c}, \hyperpage{318}
+    \subitem {tim.h}, \hyperpage{243}
+  \item {MX\_USART1\_UART\_Init}
+    \subitem {usart.c}, \hyperpage{322}
+    \subitem {usart.h}, \hyperpage{246}
+  \item {MX\_USART2\_UART\_Init}
+    \subitem {usart.c}, \hyperpage{323}
+    \subitem {usart.h}, \hyperpage{246}
+
+  \indexspace
+
+  \item {NAK}
+    \subitem {xmodem.h}, \hyperpage{252}
+  \item {NAK\_TIMEOUT}
+    \subitem {xmodem.h}, \hyperpage{252}
+  \item {name}
+    \subitem {Memory}, \hyperpage{121}
+  \item {need\_to\_stall}
+    \subitem {MainController}, \hyperpage{88}
+  \item {NEGATIVE\_BYTE}
+    \subitem {xmodem.h}, \hyperpage{253}
+  \item {next}
+    \subitem {State}, \hyperpage{164}
+  \item {nibble\_CS}
+    \subitem {byte8\_t\_reg\_cs}, \hyperpage{65}
+  \item {nibble\_OPTO}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{70}
+  \item {nibble\_PERIPH}
+    \subitem {byte8\_t\_reg\_cs}, \hyperpage{65}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{70}
+  \item {nibbles}
+    \subitem {byte8\_t\_reg\_cs}, \hyperpage{66}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{70}
+  \item {NMI\_Handler}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{310}
+    \subitem {stm32f0xx\_it.h}, \hyperpage{239}
+
+  \indexspace
+
+  \item {OPTO\_A}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{70}
+  \item {OPTO\_B}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{71}
+  \item {OPTO\_C}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{71}
+  \item {OPTO\_CNT\_CLRN}
+    \subitem {cs\_register.h}, \hyperpage{182}
+  \item {OPTO\_D}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{71}
+  \item {OPTO\_STATUS}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{71}
+
+  \indexspace
+
+  \item {PA1\_RESERVED\_ASK\_SHAUL\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{205}
+  \item {PA1\_RESERVED\_ASK\_SHAUL\_Pin}
+    \subitem {main.h}, \hyperpage{205}
+  \item {PACKET\_1K\_SIZE}
+    \subitem {xmodem.h}, \hyperpage{253}
+  \item {PACKET\_CNUMBER\_INDEX}
+    \subitem {xmodem.h}, \hyperpage{253}
+  \item {PACKET\_DATA\_INDEX}
+    \subitem {xmodem.h}, \hyperpage{253}
+  \item {PACKET\_HEADER\_SIZE}
+    \subitem {xmodem.h}, \hyperpage{253}
+  \item {PACKET\_NUMBER\_INDEX}
+    \subitem {xmodem.h}, \hyperpage{253}
+  \item {PACKET\_OVERHEAD\_SIZE}
+    \subitem {xmodem.h}, \hyperpage{254}
+  \item {PACKET\_SIZE}
+    \subitem {xmodem.h}, \hyperpage{254}
+  \item {PACKET\_START\_INDEX}
+    \subitem {xmodem.h}, \hyperpage{254}
+  \item {PACKET\_TRAILER\_SIZE}
+    \subitem {xmodem.h}, \hyperpage{254}
+  \item {PASS\_PRESSURE\_CHECK}
+    \subitem {Globals}, \hyperpage{13}
+  \item {PASS\_SPI}
+    \subitem {Globals}, \hyperpage{13}
+  \item {pass\_to\_ard}
+    \subitem {Screen\_ctrl}, \hyperpage{153}
+  \item {PendSV\_Handler}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{310}
+    \subitem {stm32f0xx\_it.h}, \hyperpage{240}
+  \item {PeripherialDevices}, \hyperpage{143}
+    \subitem {$\sim$PeripherialDevices}, \hyperpage{144}
+    \subitem {clear\_counter}, \hyperpage{144}
+    \subitem {CsRegister}, \hyperpage{150}
+    \subitem {motor\_running}, \hyperpage{150}
+    \subitem {PeripherialDevices}, \hyperpage{144}
+    \subitem {read}, \hyperpage{145}
+    \subitem {read\_counter}, \hyperpage{146}
+    \subitem {read\_fire\_button\_press}, \hyperpage{147}
+    \subitem {start\_motor}, \hyperpage{147}
+    \subitem {StatusReg}, \hyperpage{150}
+    \subitem {stop\_motor}, \hyperpage{148}
+    \subitem {toggle\_motor}, \hyperpage{149}
+  \item {pFunction}
+    \subitem {menu.h}, \hyperpage{217}
+  \item {ph\_device}
+    \subitem {main.cpp}, \hyperpage{289}
+  \item {poll\_complete}
+    \subitem {Mem\_ctrl}, \hyperpage{104}
+  \item {POWER\_FAIL\_MCU\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{205}
+  \item {POWER\_FAIL\_MCU\_Pin}
+    \subitem {main.h}, \hyperpage{205}
+  \item {PREFETCH\_ENABLE}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{236}
+  \item {Pressure}
+    \subitem {adc\_controller.h}, \hyperpage{174}
+  \item {pressure}
+    \subitem {MainController}, \hyperpage{95}
+    \subitem {State}, \hyperpage{165}
+  \item {pressure\_check}
+    \subitem {AdcController}, \hyperpage{53}
+  \item {pressure\_ok}
+    \subitem {AdcController}, \hyperpage{56}
+    \subitem {MainController}, \hyperpage{95}
+  \item {print\_current}
+    \subitem {CS\_reg}, \hyperpage{78}
+    \subitem {STATUS\_reg}, \hyperpage{167}
+  \item {print\_logo}
+    \subitem {Screen\_ctrl}, \hyperpage{153}
+  \item {print\_register}
+    \subitem {Mem\_ctrl}, \hyperpage{105}
+  \item {print\_status}
+    \subitem {Memory}, \hyperpage{114}
+  \item {print\_version}
+    \subitem {Screen\_ctrl}, \hyperpage{154}
+  \item {pulses}
+    \subitem {MainController}, \hyperpage{95}
+    \subitem {Memory}, \hyperpage{121}
+  \item {pulses\_on\_screen}
+    \subitem {MainController}, \hyperpage{95}
+  \item {pulses\_to\_screen}
+    \subitem {State}, \hyperpage{165}
+
+  \indexspace
+
+  \item {QA}
+    \subitem {state.h}, \hyperpage{227}
+  \item {qa\_mon}
+    \subitem {Screen\_ctrl}, \hyperpage{154}
+  \item {qa\_state}
+    \subitem {MainController}, \hyperpage{88}
+  \item {QC}
+    \subitem {byte8\_t\_reg\_cs}, \hyperpage{66}
+  \item {QE}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{62}
+  \item {QG}
+    \subitem {byte8\_t\_reg\_cs}, \hyperpage{66}
+  \item {QH}
+    \subitem {byte8\_t\_reg\_cs}, \hyperpage{66}
+
+  \indexspace
+
+  \item {read}
+    \subitem {AdcController}, \hyperpage{54}
+    \subitem {Mem\_ctrl}, \hyperpage{106}
+    \subitem {Memory}, \hyperpage{115}
+    \subitem {PeripherialDevices}, \hyperpage{145}
+  \item {read256}
+    \subitem {Mem\_ctrl}, \hyperpage{107}
+    \subitem {Memory}, \hyperpage{116}
+  \item {READ\_ARRAY1}
+    \subitem {SPI}, \hyperpage{16}
+  \item {READ\_ARRAY2}
+    \subitem {SPI}, \hyperpage{16}
+  \item {read\_counter}
+    \subitem {PeripherialDevices}, \hyperpage{146}
+  \item {READ\_DEVICE\_ID}
+    \subitem {SPI}, \hyperpage{16}
+  \item {READ\_DUAL}
+    \subitem {SPI}, \hyperpage{16}
+  \item {read\_fire\_button\_press}
+    \subitem {PeripherialDevices}, \hyperpage{147}
+  \item {READ\_MANUFACTURE\_ID}
+    \subitem {SPI}, \hyperpage{16}
+  \item {READ\_QUAD}
+    \subitem {SPI}, \hyperpage{16}
+  \item {read\_reset\_button}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{311}
+  \item {READ\_STATUS\_REGISTER1}
+    \subitem {SPI}, \hyperpage{17}
+  \item {read\_status\_register1}
+    \subitem {Memory}, \hyperpage{116}
+  \item {READ\_STATUS\_REGISTER2}
+    \subitem {SPI}, \hyperpage{17}
+  \item {read\_status\_register2}
+    \subitem {Memory}, \hyperpage{117}
+  \item {readback\_register}
+    \subitem {CS\_reg}, \hyperpage{79}
+  \item {remapMemToSRAM}
+    \subitem {main.cpp}, \hyperpage{285}
+  \item {RES}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{62}
+  \item {RES2}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{62}
+  \item {RESERVED}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{71}
+  \item {reserved}
+    \subitem {bypass\_state}, \hyperpage{58}
+  \item {RESERVED\_UART6\_RX\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{205}
+  \item {RESERVED\_UART6\_RX\_Pin}
+    \subitem {main.h}, \hyperpage{205}
+  \item {RESERVED\_UART6\_TX\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{206}
+  \item {RESERVED\_UART6\_TX\_Pin}
+    \subitem {main.h}, \hyperpage{206}
+  \item {reset\_pressed}
+    \subitem {main.cpp}, \hyperpage{289}
+    \subitem {main\_controller.cpp}, \hyperpage{291}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{315}
+  \item {rtc.c}
+    \subitem {HAL\_RTC\_MspDeInit}, \hyperpage{295}
+    \subitem {HAL\_RTC\_MspInit}, \hyperpage{296}
+    \subitem {hrtc}, \hyperpage{297}
+    \subitem {MX\_RTC\_Init}, \hyperpage{296}
+  \item {rtc.h}
+    \subitem {hrtc}, \hyperpage{222}
+    \subitem {MX\_RTC\_Init}, \hyperpage{220}
+  \item {RTC\_TIMESTAMP\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{206}
+  \item {RTC\_TIMESTAMP\_Pin}
+    \subitem {main.h}, \hyperpage{206}
+  \item {rx\_debug}
+    \subitem {Monitor}, \hyperpage{125}
+  \item {rx\_erase}
+    \subitem {Monitor}, \hyperpage{125}
+  \item {rx\_exit}
+    \subitem {Monitor}, \hyperpage{126}
+  \item {rx\_find\_pulses}
+    \subitem {Monitor}, \hyperpage{126}
+  \item {rx\_get\_man\_id}
+    \subitem {Monitor}, \hyperpage{127}
+  \item {rx\_go\_active}
+    \subitem {Monitor}, \hyperpage{127}
+  \item {rx\_help}
+    \subitem {Monitor}, \hyperpage{128}
+  \item {rx\_nuke}
+    \subitem {Monitor}, \hyperpage{128}
+  \item {rx\_pass}
+    \subitem {Monitor}, \hyperpage{129}
+  \item {rx\_read}
+    \subitem {Monitor}, \hyperpage{130}
+  \item {rx\_scan}
+    \subitem {Monitor}, \hyperpage{130, 131}
+  \item {rx\_set\_date}
+    \subitem {Monitor}, \hyperpage{131}
+  \item {rx\_set\_maxi}
+    \subitem {Monitor}, \hyperpage{132}
+  \item {rx\_set\_serial}
+    \subitem {Monitor}, \hyperpage{133}
+  \item {rx\_start\_motor}
+    \subitem {Monitor}, \hyperpage{134}
+  \item {rx\_status\_read}
+    \subitem {Monitor}, \hyperpage{134}
+  \item {rx\_status\_write}
+    \subitem {Monitor}, \hyperpage{135}
+  \item {rx\_stop\_motor}
+    \subitem {Monitor}, \hyperpage{136}
+  \item {rx\_test\_read}
+    \subitem {Monitor}, \hyperpage{136}
+  \item {RX\_TIMEOUT}
+    \subitem {common.h}, \hyperpage{178}
+  \item {rx\_upload}
+    \subitem {Monitor}, \hyperpage{137}
+  \item {rx\_write}
+    \subitem {Monitor}, \hyperpage{138}
+  \item {RXBUFFERSIZE}
+    \subitem {Auxilary}, \hyperpage{20}
+
+  \indexspace
+
+  \item {SAMPLE\_PERIOD}
+    \subitem {adc\_command}, \hyperpage{50}
+  \item {screen}
+    \subitem {main.cpp}, \hyperpage{289}
+    \subitem {MainController}, \hyperpage{96}
+  \item {Screen\_ctrl}, \hyperpage{151}
+    \subitem {$\sim$Screen\_ctrl}, \hyperpage{152}
+    \subitem {clean\_screen}, \hyperpage{152}
+    \subitem {get\_time}, \hyperpage{153}
+    \subitem {pass\_to\_ard}, \hyperpage{153}
+    \subitem {print\_logo}, \hyperpage{153}
+    \subitem {print\_version}, \hyperpage{154}
+    \subitem {qa\_mon}, \hyperpage{154}
+    \subitem {Screen\_ctrl}, \hyperpage{152}
+    \subitem {tx\_send\_general\_error}, \hyperpage{155}
+    \subitem {update\_battery}, \hyperpage{156}
+    \subitem {update\_error\_remaining}, \hyperpage{157}
+    \subitem {update\_piazo}, \hyperpage{158}
+    \subitem {update\_pressure}, \hyperpage{159}
+    \subitem {update\_pulse\_counter}, \hyperpage{160}
+    \subitem {update\_remaining\_in\_percent}, \hyperpage{160}
+  \item {SEC}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{62}
+  \item {select\_channel}
+    \subitem {adc\_controller.h}, \hyperpage{174}
+  \item {SELECT\_CHANNEL\_0}
+    \subitem {ADC}, \hyperpage{24}
+  \item {SELECT\_CHANNEL\_1}
+    \subitem {ADC}, \hyperpage{24}
+  \item {SELECT\_CHANNEL\_2}
+    \subitem {ADC}, \hyperpage{24}
+  \item {SELECT\_CHANNEL\_3}
+    \subitem {ADC}, \hyperpage{24}
+  \item {SELECT\_CHANNEL\_4}
+    \subitem {ADC}, \hyperpage{25}
+  \item {SELECT\_CHANNEL\_5}
+    \subitem {ADC}, \hyperpage{25}
+  \item {SELECT\_CHANNEL\_6}
+    \subitem {ADC}, \hyperpage{25}
+  \item {SELECT\_CHANNEL\_7}
+    \subitem {ADC}, \hyperpage{25}
+  \item {SELECT\_TEST\_REFM}
+    \subitem {ADC}, \hyperpage{25}
+  \item {SELECT\_TEST\_REFP}
+    \subitem {ADC}, \hyperpage{25}
+  \item {SELECT\_TEST\_VDIV2}
+    \subitem {ADC}, \hyperpage{26}
+  \item {serial\_consume}
+    \subitem {Monitor}, \hyperpage{138}
+  \item {serial\_number}
+    \subitem {Memory}, \hyperpage{121}
+  \item {SERIAL\_PC}
+    \subitem {Auxilary}, \hyperpage{21}
+  \item {Serial\_PutByte}
+    \subitem {STM32L0xx\_IAP\_Main}, \hyperpage{28}
+  \item {Serial\_PutString}
+    \subitem {STM32L0xx\_IAP\_Main}, \hyperpage{28}
+  \item {SERIAL\_SCREEN}
+    \subitem {Auxilary}, \hyperpage{21}
+  \item {SerialDownload}
+    \subitem {menu.h}, \hyperpage{217}
+  \item {SIMPLE\_INTERLOCK\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{206}
+  \item {SIMPLE\_INTERLOCK\_Pin}
+    \subitem {main.h}, \hyperpage{206}
+  \item {SOH}
+    \subitem {xmodem.h}, \hyperpage{254}
+  \item {SPI}, \hyperpage{14}
+    \subitem {BLOCK\_ERASE\_32K}, \hyperpage{14}
+    \subitem {BLOCK\_ERASE\_4K}, \hyperpage{14}
+    \subitem {BLOCK\_ERASE\_64K}, \hyperpage{15}
+    \subitem {BYTE\_PROGRAM}, \hyperpage{15}
+    \subitem {ERASE\_CHIP1}, \hyperpage{15}
+    \subitem {ERASE\_CHIP2}, \hyperpage{15}
+    \subitem {HIGH}, \hyperpage{15}
+    \subitem {LOW}, \hyperpage{15}
+    \subitem {READ\_ARRAY1}, \hyperpage{16}
+    \subitem {READ\_ARRAY2}, \hyperpage{16}
+    \subitem {READ\_DEVICE\_ID}, \hyperpage{16}
+    \subitem {READ\_DUAL}, \hyperpage{16}
+    \subitem {READ\_MANUFACTURE\_ID}, \hyperpage{16}
+    \subitem {READ\_QUAD}, \hyperpage{16}
+    \subitem {READ\_STATUS\_REGISTER1}, \hyperpage{17}
+    \subitem {READ\_STATUS\_REGISTER2}, \hyperpage{17}
+    \subitem {WRITE\_DISABLE}, \hyperpage{17}
+    \subitem {WRITE\_ENABLE}, \hyperpage{17}
+    \subitem {WRITE\_ENABLE\_STATUS\_REGISTER\_VOLATILE}, 
+		\hyperpage{17}
+    \subitem {WRITE\_STATUS\_REGISTER}, \hyperpage{17}
+  \item {spi.c}
+    \subitem {HAL\_SPI\_MspDeInit}, \hyperpage{299}
+    \subitem {HAL\_SPI\_MspInit}, \hyperpage{300}
+    \subitem {hspi1}, \hyperpage{301}
+    \subitem {MX\_SPI1\_Init}, \hyperpage{300}
+  \item {spi.h}
+    \subitem {hspi1}, \hyperpage{225}
+    \subitem {MX\_SPI1\_Init}, \hyperpage{224}
+  \item {SRP0}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{62}
+  \item {SRP1}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{62}
+  \item {stall\_pressure}
+    \subitem {AdcController}, \hyperpage{56}
+  \item {START\_BEEP}
+    \subitem {Auxilary}, \hyperpage{21}
+  \item {start\_motor}
+    \subitem {PeripherialDevices}, \hyperpage{147}
+  \item {State}, \hyperpage{162}
+    \subitem {$\sim$State}, \hyperpage{163}
+    \subitem {battery}, \hyperpage{164}
+    \subitem {bypass}, \hyperpage{164}
+    \subitem {current}, \hyperpage{164}
+    \subitem {init\_first\_step}, \hyperpage{163}
+    \subitem {next}, \hyperpage{164}
+    \subitem {pressure}, \hyperpage{165}
+    \subitem {pulses\_to\_screen}, \hyperpage{165}
+    \subitem {State}, \hyperpage{163}
+  \item {state}
+    \subitem {main.cpp}, \hyperpage{289}
+    \subitem {MainController}, \hyperpage{96}
+  \item {state.h}
+    \subitem {Active}, \hyperpage{227}
+    \subitem {Idle}, \hyperpage{227}
+    \subitem {Init}, \hyperpage{227}
+    \subitem {QA}, \hyperpage{227}
+    \subitem {statesMachine}, \hyperpage{227}
+    \subitem {UartDebug}, \hyperpage{227}
+    \subitem {UpdateData}, \hyperpage{227}
+  \item {statesMachine}
+    \subitem {state.h}, \hyperpage{227}
+  \item {status}
+    \subitem {MainController}, \hyperpage{96}
+  \item {status1}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{63}
+  \item {status16\_t}
+    \subitem {Memory}, \hyperpage{121}
+  \item {status2}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{63}
+  \item {STATUS\_reg}, \hyperpage{165}
+    \subitem {$\sim$STATUS\_reg}, \hyperpage{167}
+    \subitem {current}, \hyperpage{168}
+    \subitem {get\_value}, \hyperpage{167}
+    \subitem {print\_current}, \hyperpage{167}
+    \subitem {STATUS\_reg}, \hyperpage{167}
+  \item {status\_register}
+    \subitem {main.cpp}, \hyperpage{290}
+  \item {StatusReg}
+    \subitem {PeripherialDevices}, \hyperpage{150}
+  \item {stm32f0xx\_hal\_conf.h}
+    \subitem {assert\_param}, \hyperpage{231}
+    \subitem {DATA\_CACHE\_ENABLE}, \hyperpage{231}
+    \subitem {HAL\_ADC\_MODULE\_ENABLED}, \hyperpage{232}
+    \subitem {HAL\_CORTEX\_MODULE\_ENABLED}, \hyperpage{232}
+    \subitem {HAL\_CRC\_MODULE\_ENABLED}, \hyperpage{232}
+    \subitem {HAL\_DMA\_MODULE\_ENABLED}, \hyperpage{232}
+    \subitem {HAL\_FLASH\_MODULE\_ENABLED}, \hyperpage{232}
+    \subitem {HAL\_GPIO\_MODULE\_ENABLED}, \hyperpage{232}
+    \subitem {HAL\_I2C\_MODULE\_ENABLED}, \hyperpage{233}
+    \subitem {HAL\_MODULE\_ENABLED}, \hyperpage{233}
+    \subitem {HAL\_PWR\_MODULE\_ENABLED}, \hyperpage{233}
+    \subitem {HAL\_RCC\_MODULE\_ENABLED}, \hyperpage{233}
+    \subitem {HAL\_RTC\_MODULE\_ENABLED}, \hyperpage{233}
+    \subitem {HAL\_SPI\_MODULE\_ENABLED}, \hyperpage{233}
+    \subitem {HAL\_TIM\_MODULE\_ENABLED}, \hyperpage{234}
+    \subitem {HAL\_UART\_MODULE\_ENABLED}, \hyperpage{234}
+    \subitem {HSE\_STARTUP\_TIMEOUT}, \hyperpage{234}
+    \subitem {HSE\_VALUE}, \hyperpage{234}
+    \subitem {HSI14\_VALUE}, \hyperpage{234}
+    \subitem {HSI48\_VALUE}, \hyperpage{235}
+    \subitem {HSI\_STARTUP\_TIMEOUT}, \hyperpage{235}
+    \subitem {HSI\_VALUE}, \hyperpage{235}
+    \subitem {INSTRUCTION\_CACHE\_ENABLE}, \hyperpage{235}
+    \subitem {LSE\_STARTUP\_TIMEOUT}, \hyperpage{236}
+    \subitem {LSE\_VALUE}, \hyperpage{236}
+    \subitem {LSI\_VALUE}, \hyperpage{236}
+    \subitem {PREFETCH\_ENABLE}, \hyperpage{236}
+    \subitem {TICK\_INT\_PRIORITY}, \hyperpage{236}
+    \subitem {USE\_RTOS}, \hyperpage{237}
+    \subitem {USE\_SPI\_CRC}, \hyperpage{237}
+    \subitem {VDD\_VALUE}, \hyperpage{237}
+  \item {stm32f0xx\_hal\_msp.c}
+    \subitem {HAL\_MspInit}, \hyperpage{304}
+  \item {stm32f0xx\_hal\_timebase\_tim.c}
+    \subitem {HAL\_InitTick}, \hyperpage{306}
+    \subitem {HAL\_ResumeTick}, \hyperpage{307}
+    \subitem {HAL\_SuspendTick}, \hyperpage{307}
+    \subitem {htim1}, \hyperpage{308}
+  \item {stm32f0xx\_it.c}
+    \subitem {DMA1\_Channel1\_IRQHandler}, \hyperpage{310}
+    \subitem {HardFault\_Handler}, \hyperpage{310}
+    \subitem {hdma\_adc}, \hyperpage{314}
+    \subitem {htim1}, \hyperpage{314}
+    \subitem {htim16}, \hyperpage{314}
+    \subitem {huart1}, \hyperpage{314}
+    \subitem {NMI\_Handler}, \hyperpage{310}
+    \subitem {PendSV\_Handler}, \hyperpage{310}
+    \subitem {read\_reset\_button}, \hyperpage{311}
+    \subitem {reset\_pressed}, \hyperpage{315}
+    \subitem {SVC\_Handler}, \hyperpage{311}
+    \subitem {SysTick\_Handler}, \hyperpage{311}
+    \subitem {test\_for\_reset\_press}, \hyperpage{312}
+    \subitem {TIM16\_IRQHandler}, \hyperpage{312}
+    \subitem {TIM1\_BRK\_UP\_TRG\_COM\_IRQHandler}, \hyperpage{313}
+    \subitem {USART1\_IRQHandler}, \hyperpage{313}
+  \item {stm32f0xx\_it.h}
+    \subitem {DMA1\_Channel1\_IRQHandler}, \hyperpage{239}
+    \subitem {HardFault\_Handler}, \hyperpage{239}
+    \subitem {NMI\_Handler}, \hyperpage{239}
+    \subitem {PendSV\_Handler}, \hyperpage{240}
+    \subitem {SVC\_Handler}, \hyperpage{240}
+    \subitem {SysTick\_Handler}, \hyperpage{240}
+    \subitem {TIM16\_IRQHandler}, \hyperpage{241}
+    \subitem {TIM1\_BRK\_UP\_TRG\_COM\_IRQHandler}, \hyperpage{241}
+    \subitem {USART1\_IRQHandler}, \hyperpage{242}
+  \item {Stm32f0xx\_system}, \hyperpage{37}
+  \item {STM32F0xx\_System\_Private\_Defines}, \hyperpage{40}
+    \subitem {HSE\_VALUE}, \hyperpage{40}
+    \subitem {HSI48\_VALUE}, \hyperpage{40}
+    \subitem {HSI\_VALUE}, \hyperpage{40}
+  \item {STM32F0xx\_System\_Private\_FunctionPrototypes}, 
+		\hyperpage{43}
+  \item {STM32F0xx\_System\_Private\_Functions}, \hyperpage{44}
+    \subitem {SystemCoreClockUpdate}, \hyperpage{44}
+    \subitem {SystemInit}, \hyperpage{45}
+  \item {STM32F0xx\_System\_Private\_Includes}, \hyperpage{38}
+  \item {STM32F0xx\_System\_Private\_Macros}, \hyperpage{41}
+  \item {STM32F0xx\_System\_Private\_TypesDefinitions}, \hyperpage{39}
+  \item {STM32F0xx\_System\_Private\_Variables}, \hyperpage{42}
+    \subitem {AHBPrescTable}, \hyperpage{42}
+    \subitem {APBPrescTable}, \hyperpage{42}
+    \subitem {SystemCoreClock}, \hyperpage{42}
+  \item {STM32L0xx\_IAP}, \hyperpage{31}
+    \subitem {aFileName}, \hyperpage{34}
+    \subitem {dump\_mem}, \hyperpage{31}
+    \subitem {FLASH\_If\_Erase}, \hyperpage{31}
+    \subitem {FLASH\_If\_Write}, \hyperpage{32}
+    \subitem {FlashProtection}, \hyperpage{35}
+    \subitem {JumpAddress}, \hyperpage{35}
+    \subitem {JumpToApplication}, \hyperpage{35}
+    \subitem {Main\_Menu}, \hyperpage{33}
+    \subitem {memory\_extern}, \hyperpage{35}
+  \item {STM32L0xx\_IAP\_Main}, \hyperpage{27}
+    \subitem {Int2Str}, \hyperpage{27}
+    \subitem {Serial\_PutByte}, \hyperpage{28}
+    \subitem {Serial\_PutString}, \hyperpage{28}
+    \subitem {Str2Int}, \hyperpage{29}
+  \item {stop\_motor}
+    \subitem {PeripherialDevices}, \hyperpage{148}
+  \item {Str2Int}
+    \subitem {STM32L0xx\_IAP\_Main}, \hyperpage{29}
+  \item {STX}
+    \subitem {xmodem.h}, \hyperpage{254}
+  \item {SVC\_Handler}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{311}
+    \subitem {stm32f0xx\_it.h}, \hyperpage{240}
+  \item {SWEEP\_SEQ\_SELECT}
+    \subitem {adc\_command}, \hyperpage{50}
+  \item {SWITCHES\_STATUS}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{71}
+  \item {SYS\_SWO\_RESERVERED\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{207}
+  \item {SYS\_SWO\_RESERVERED\_Pin}
+    \subitem {main.h}, \hyperpage{207}
+  \item {SystemClock\_Config}
+    \subitem {main.cpp}, \hyperpage{286}
+  \item {SystemCoreClock}
+    \subitem {STM32F0xx\_System\_Private\_Variables}, \hyperpage{42}
+  \item {SystemCoreClockUpdate}
+    \subitem {STM32F0xx\_System\_Private\_Functions}, \hyperpage{44}
+  \item {SystemInit}
+    \subitem {STM32F0xx\_System\_Private\_Functions}, \hyperpage{45}
+  \item {SysTick\_Handler}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{311}
+    \subitem {stm32f0xx\_it.h}, \hyperpage{240}
+
+  \indexspace
+
+  \item {TB}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{63}
+  \item {TECHNICIAN\_ENABLED}
+    \subitem {Globals}, \hyperpage{13}
+  \item {Temp}
+    \subitem {adc\_controller.h}, \hyperpage{174}
+  \item {temperature\_mcu}
+    \subitem {AdcController}, \hyperpage{56}
+  \item {Temperature\_register\_add}
+    \subitem {Auxilary}, \hyperpage{21}
+  \item {test\_for\_reset\_press}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{312}
+  \item {TICK\_INT\_PRIORITY}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{236}
+  \item {TICKS\_FOR\_UPDATE}
+    \subitem {Auxilary}, \hyperpage{21}
+  \item {TICKS\_SCREEN\_UPDATE\_LONG}
+    \subitem {Auxilary}, \hyperpage{21}
+  \item {TICKS\_SCREEN\_UPDATE\_SUPER\_LONG}
+    \subitem {Auxilary}, \hyperpage{22}
+  \item {tim.c}
+    \subitem {HAL\_TIM\_Base\_MspDeInit}, \hyperpage{318}
+    \subitem {HAL\_TIM\_Base\_MspInit}, \hyperpage{318}
+    \subitem {htim16}, \hyperpage{319}
+    \subitem {MX\_TIM16\_Init}, \hyperpage{318}
+  \item {tim.h}
+    \subitem {htim16}, \hyperpage{244}
+    \subitem {MX\_TIM16\_Init}, \hyperpage{243}
+  \item {TIM16\_IRQHandler}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{312}
+    \subitem {stm32f0xx\_it.h}, \hyperpage{241}
+  \item {TIM1\_BRK\_UP\_TRG\_COM\_IRQHandler}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{313}
+    \subitem {stm32f0xx\_it.h}, \hyperpage{241}
+  \item {TIMEOUT\_SCREEN}
+    \subitem {Auxilary}, \hyperpage{22}
+  \item {timer\_last\_update}
+    \subitem {main.cpp}, \hyperpage{290}
+  \item {TOGGLE400\_RESET\_BTN\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{207}
+  \item {TOGGLE400\_RESET\_BTN\_Pin}
+    \subitem {main.h}, \hyperpage{207}
+  \item {toggle\_motor}
+    \subitem {PeripherialDevices}, \hyperpage{149}
+  \item {tx\_send\_general\_error}
+    \subitem {Screen\_ctrl}, \hyperpage{155}
+  \item {TX\_TIMEOUT}
+    \subitem {common.h}, \hyperpage{178}
+
+  \indexspace
+
+  \item {UART1\_PC\_RX\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{207}
+  \item {UART1\_PC\_RX\_Pin}
+    \subitem {main.h}, \hyperpage{207}
+  \item {UART1\_PC\_TX\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{208}
+  \item {UART1\_PC\_TX\_Pin}
+    \subitem {main.h}, \hyperpage{208}
+  \item {UART2\_SCREEN\_RX\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{208}
+  \item {UART2\_SCREEN\_RX\_Pin}
+    \subitem {main.h}, \hyperpage{208}
+  \item {UART2\_SCREEN\_TX\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{208}
+  \item {UART2\_SCREEN\_TX\_Pin}
+    \subitem {main.h}, \hyperpage{208}
+  \item {uart\_state}
+    \subitem {MainController}, \hyperpage{90}
+  \item {UartDebug}
+    \subitem {state.h}, \hyperpage{227}
+  \item {Undefined}
+    \subitem {adc\_controller.h}, \hyperpage{174}
+  \item {update\_battery}
+    \subitem {Screen\_ctrl}, \hyperpage{156}
+  \item {update\_error\_remaining}
+    \subitem {Screen\_ctrl}, \hyperpage{157}
+  \item {update\_piazo}
+    \subitem {Screen\_ctrl}, \hyperpage{158}
+  \item {update\_pressure}
+    \subitem {Screen\_ctrl}, \hyperpage{159}
+  \item {update\_pulse\_counter}
+    \subitem {Screen\_ctrl}, \hyperpage{160}
+  \item {update\_remaining\_in\_percent}
+    \subitem {Screen\_ctrl}, \hyperpage{160}
+  \item {update\_state}
+    \subitem {MainController}, \hyperpage{91}
+  \item {UpdateData}
+    \subitem {state.h}, \hyperpage{227}
+  \item {usart.c}
+    \subitem {HAL\_UART\_MspDeInit}, \hyperpage{321}
+    \subitem {HAL\_UART\_MspInit}, \hyperpage{321}
+    \subitem {huart1}, \hyperpage{324}
+    \subitem {huart2}, \hyperpage{324}
+    \subitem {MX\_USART1\_UART\_Init}, \hyperpage{322}
+    \subitem {MX\_USART2\_UART\_Init}, \hyperpage{323}
+  \item {usart.h}
+    \subitem {huart1}, \hyperpage{247}
+    \subitem {huart2}, \hyperpage{248}
+    \subitem {MX\_USART1\_UART\_Init}, \hyperpage{246}
+    \subitem {MX\_USART2\_UART\_Init}, \hyperpage{246}
+  \item {USART1\_IRQHandler}
+    \subitem {stm32f0xx\_it.c}, \hyperpage{313}
+    \subitem {stm32f0xx\_it.h}, \hyperpage{242}
+  \item {USB\_DM\_RESERVED\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{209}
+  \item {USB\_DM\_RESERVED\_Pin}
+    \subitem {main.h}, \hyperpage{209}
+  \item {USB\_DP\_RESERVED\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{209}
+  \item {USB\_DP\_RESERVED\_Pin}
+    \subitem {main.h}, \hyperpage{209}
+  \item {USE\_RTOS}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{237}
+  \item {USE\_SPI\_CRC}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{237}
+  \item {USER\_FLASH\_SIZE}
+    \subitem {flash\_if.h}, \hyperpage{187}
+
+  \indexspace
+
+  \item {V12}
+    \subitem {adc\_controller.h}, \hyperpage{174}
+  \item {V5}
+    \subitem {adc\_controller.h}, \hyperpage{174}
+  \item {V\_Motor}
+    \subitem {adc\_controller.h}, \hyperpage{174}
+  \item {value}
+    \subitem {adc\_command}, \hyperpage{50}
+    \subitem {bypass\_state}, \hyperpage{58}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{63}
+    \subitem {byte8\_t\_reg\_cs}, \hyperpage{66}
+    \subitem {byte8\_t\_reg\_readback}, \hyperpage{68}
+    \subitem {byte8\_t\_reg\_status}, \hyperpage{72}
+    \subitem {channel}, \hyperpage{73}
+    \subitem {Monitor}, \hyperpage{142}
+  \item {vbat}
+    \subitem {AdcController}, \hyperpage{56}
+  \item {VDD\_sense}
+    \subitem {adc\_controller.h}, \hyperpage{174}
+  \item {VDD\_VALUE}
+    \subitem {stm32f0xx\_hal\_conf.h}, \hyperpage{237}
+  \item {VERSION}
+    \subitem {Globals}, \hyperpage{13}
+  \item {vref}
+    \subitem {AdcController}, \hyperpage{56}
+
+  \indexspace
+
+  \item {WATCHDOG\_OUT\_GPIO\_Port}
+    \subitem {main.h}, \hyperpage{209}
+  \item {WATCHDOG\_OUT\_Pin}
+    \subitem {main.h}, \hyperpage{209}
+  \item {WEL}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{63}
+  \item {WIP}
+    \subitem {byte8\_t\_mem\_status}, \hyperpage{63}
+  \item {write}
+    \subitem {Mem\_ctrl}, \hyperpage{107}
+    \subitem {Memory}, \hyperpage{118}
+  \item {WRITE\_CFR}
+    \subitem {ADC}, \hyperpage{26}
+  \item {WRITE\_DISABLE}
+    \subitem {SPI}, \hyperpage{17}
+  \item {write\_disable}
+    \subitem {Memory}, \hyperpage{118}
+  \item {WRITE\_ENABLE}
+    \subitem {SPI}, \hyperpage{17}
+  \item {write\_enable}
+    \subitem {Memory}, \hyperpage{119}
+  \item {WRITE\_ENABLE\_STATUS\_REGISTER\_VOLATILE}
+    \subitem {SPI}, \hyperpage{17}
+  \item {write\_register}
+    \subitem {Mem\_ctrl}, \hyperpage{109}
+  \item {WRITE\_STATUS\_REGISTER}
+    \subitem {SPI}, \hyperpage{17}
+  \item {write\_status\_register}
+    \subitem {Memory}, \hyperpage{119}
+
+  \indexspace
+
+  \item {X\_ACK}
+    \subitem {xmodem.h}, \hyperpage{255}
+  \item {X\_C}
+    \subitem {xmodem.h}, \hyperpage{255}
+  \item {X\_CAN}
+    \subitem {xmodem.h}, \hyperpage{255}
+  \item {X\_EOT}
+    \subitem {xmodem.h}, \hyperpage{255}
+  \item {X\_ERROR}
+    \subitem {xmodem.h}, \hyperpage{257}
+  \item {X\_ERROR\_CRC}
+    \subitem {xmodem.h}, \hyperpage{257}
+  \item {X\_ERROR\_FLASH}
+    \subitem {xmodem.h}, \hyperpage{257}
+  \item {X\_ERROR\_NUMBER}
+    \subitem {xmodem.h}, \hyperpage{257}
+  \item {X\_ERROR\_UART}
+    \subitem {xmodem.h}, \hyperpage{257}
+  \item {X\_MAX\_ERRORS}
+    \subitem {xmodem.h}, \hyperpage{255}
+  \item {X\_NAK}
+    \subitem {xmodem.h}, \hyperpage{256}
+  \item {X\_OK}
+    \subitem {xmodem.h}, \hyperpage{257}
+  \item {X\_PACKET\_1024\_SIZE}
+    \subitem {xmodem.h}, \hyperpage{256}
+  \item {X\_PACKET\_128\_SIZE}
+    \subitem {xmodem.h}, \hyperpage{256}
+  \item {X\_PACKET\_CRC\_SIZE}
+    \subitem {xmodem.h}, \hyperpage{256}
+  \item {X\_PACKET\_DATA\_INDEX}
+    \subitem {xmodem.h}, \hyperpage{256}
+  \item {X\_PACKET\_NUMBER\_COMPLEMENT\_INDEX}
+    \subitem {xmodem.h}, \hyperpage{256}
+  \item {X\_PACKET\_NUMBER\_INDEX}
+    \subitem {xmodem.h}, \hyperpage{257}
+  \item {X\_SOH}
+    \subitem {xmodem.h}, \hyperpage{257}
+  \item {X\_STX}
+    \subitem {xmodem.h}, \hyperpage{257}
+  \item {xmodem.cpp}
+    \subitem {aPacketData}, \hyperpage{328}
+    \subitem {xmodem\_calc\_crc}, \hyperpage{326}
+    \subitem {xmodem\_receive}, \hyperpage{326}
+  \item {xmodem.h}
+    \subitem {ABORT1}, \hyperpage{251}
+    \subitem {ABORT2}, \hyperpage{251}
+    \subitem {ACK}, \hyperpage{251}
+    \subitem {CA}, \hyperpage{251}
+    \subitem {CRC16}, \hyperpage{251}
+    \subitem {DOWNLOAD\_TIMEOUT}, \hyperpage{251}
+    \subitem {EOT}, \hyperpage{252}
+    \subitem {FILE\_NAME\_LENGTH}, \hyperpage{252}
+    \subitem {FILE\_SIZE\_LENGTH}, \hyperpage{252}
+    \subitem {MAX\_ERRORS}, \hyperpage{252}
+    \subitem {NAK}, \hyperpage{252}
+    \subitem {NAK\_TIMEOUT}, \hyperpage{252}
+    \subitem {NEGATIVE\_BYTE}, \hyperpage{253}
+    \subitem {PACKET\_1K\_SIZE}, \hyperpage{253}
+    \subitem {PACKET\_CNUMBER\_INDEX}, \hyperpage{253}
+    \subitem {PACKET\_DATA\_INDEX}, \hyperpage{253}
+    \subitem {PACKET\_HEADER\_SIZE}, \hyperpage{253}
+    \subitem {PACKET\_NUMBER\_INDEX}, \hyperpage{253}
+    \subitem {PACKET\_OVERHEAD\_SIZE}, \hyperpage{254}
+    \subitem {PACKET\_SIZE}, \hyperpage{254}
+    \subitem {PACKET\_START\_INDEX}, \hyperpage{254}
+    \subitem {PACKET\_TRAILER\_SIZE}, \hyperpage{254}
+    \subitem {SOH}, \hyperpage{254}
+    \subitem {STX}, \hyperpage{254}
+    \subitem {X\_ACK}, \hyperpage{255}
+    \subitem {X\_C}, \hyperpage{255}
+    \subitem {X\_CAN}, \hyperpage{255}
+    \subitem {X\_EOT}, \hyperpage{255}
+    \subitem {X\_ERROR}, \hyperpage{257}
+    \subitem {X\_ERROR\_CRC}, \hyperpage{257}
+    \subitem {X\_ERROR\_FLASH}, \hyperpage{257}
+    \subitem {X\_ERROR\_NUMBER}, \hyperpage{257}
+    \subitem {X\_ERROR\_UART}, \hyperpage{257}
+    \subitem {X\_MAX\_ERRORS}, \hyperpage{255}
+    \subitem {X\_NAK}, \hyperpage{256}
+    \subitem {X\_OK}, \hyperpage{257}
+    \subitem {X\_PACKET\_1024\_SIZE}, \hyperpage{256}
+    \subitem {X\_PACKET\_128\_SIZE}, \hyperpage{256}
+    \subitem {X\_PACKET\_CRC\_SIZE}, \hyperpage{256}
+    \subitem {X\_PACKET\_DATA\_INDEX}, \hyperpage{256}
+    \subitem {X\_PACKET\_NUMBER\_COMPLEMENT\_INDEX}, \hyperpage{256}
+    \subitem {X\_PACKET\_NUMBER\_INDEX}, \hyperpage{257}
+    \subitem {X\_SOH}, \hyperpage{257}
+    \subitem {X\_STX}, \hyperpage{257}
+    \subitem {xmodem\_calc\_crc}, \hyperpage{258}
+    \subitem {xmodem\_receive}, \hyperpage{258}
+    \subitem {xmodem\_status}, \hyperpage{257}
+  \item {xmodem\_calc\_crc}
+    \subitem {xmodem.cpp}, \hyperpage{326}
+    \subitem {xmodem.h}, \hyperpage{258}
+  \item {xmodem\_receive}
+    \subitem {xmodem.cpp}, \hyperpage{326}
+    \subitem {xmodem.h}, \hyperpage{258}
+  \item {xmodem\_status}
+    \subitem {xmodem.h}, \hyperpage{257}
+
+  \indexspace
+
+  \item {Y0}
+    \subitem {cs\_register.h}, \hyperpage{182}
+
+\end{theindex}

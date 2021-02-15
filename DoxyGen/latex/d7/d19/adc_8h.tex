@@ -1,0 +1,150 @@
+\hypertarget{adc_8h}{}\doxysection{C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/adc.h File Reference}
+\label{adc_8h}\index{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/adc.h@{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/adc.h}}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+Include dependency graph for adc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{dd/dce/adc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d44/adc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{adc_8h_aca7f21e220653e353491bceced7c5df3}{M\+X\+\_\+\+A\+D\+C\+\_\+\+Init}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+A\+D\+C\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{adc_8h_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{adc_8h_aca7f21e220653e353491bceced7c5df3}\label{adc_8h_aca7f21e220653e353491bceced7c5df3}} 
+\index{adc.h@{adc.h}!MX\_ADC\_Init@{MX\_ADC\_Init}}
+\index{MX\_ADC\_Init@{MX\_ADC\_Init}!adc.h@{adc.h}}
+\doxysubsubsection{\texorpdfstring{MX\_ADC\_Init()}{MX\_ADC\_Init()}}
+{\footnotesize\ttfamily void M\+X\+\_\+\+A\+D\+C\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Configure the global features of the A\+DC (Clock, Resolution, Data Alignment and number of conversion)
+
+Configure for the selected A\+DC regular channel to be converted.
+
+Configure for the selected A\+DC regular channel to be converted.
+
+Configure for the selected A\+DC regular channel to be converted.
+
+Configure for the selected A\+DC regular channel to be converted.
+
+Definition at line 31 of file adc.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33   ADC\_ChannelConfTypeDef sConfig = \{0\};}
+\DoxyCodeLine{34 \textcolor{comment}{}}
+\DoxyCodeLine{35 \textcolor{comment}{  /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion) }}
+\DoxyCodeLine{36 \textcolor{comment}{  */}}
+\DoxyCodeLine{37   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Instance = ADC1;}
+\DoxyCodeLine{38   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.ClockPrescaler = ADC\_CLOCK\_ASYNC\_DIV1;}
+\DoxyCodeLine{39   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.Resolution = ADC\_RESOLUTION\_10B;}
+\DoxyCodeLine{40   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.DataAlign = ADC\_DATAALIGN\_RIGHT;}
+\DoxyCodeLine{41   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.ScanConvMode = ADC\_SCAN\_DIRECTION\_FORWARD;}
+\DoxyCodeLine{42   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.EOCSelection = ADC\_EOC\_SEQ\_CONV;}
+\DoxyCodeLine{43   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.LowPowerAutoWait = DISABLE;}
+\DoxyCodeLine{44   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.LowPowerAutoPowerOff = DISABLE;}
+\DoxyCodeLine{45   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.ContinuousConvMode = ENABLE;}
+\DoxyCodeLine{46   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.DiscontinuousConvMode = DISABLE;}
+\DoxyCodeLine{47   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.ExternalTrigConv = ADC\_SOFTWARE\_START;}
+\DoxyCodeLine{48   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.ExternalTrigConvEdge = ADC\_EXTERNALTRIGCONVEDGE\_NONE;}
+\DoxyCodeLine{49   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.DMAContinuousRequests = ENABLE;}
+\DoxyCodeLine{50   \mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}.Init.Overrun = ADC\_OVR\_DATA\_OVERWRITTEN;}
+\DoxyCodeLine{51   \textcolor{keywordflow}{if} (HAL\_ADC\_Init(\&\mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}) != HAL\_OK)}
+\DoxyCodeLine{52   \{}
+\DoxyCodeLine{53     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{54   \}\textcolor{comment}{}}
+\DoxyCodeLine{55 \textcolor{comment}{  /** Configure for the selected ADC regular channel to be converted. }}
+\DoxyCodeLine{56 \textcolor{comment}{  */}}
+\DoxyCodeLine{57   sConfig.Channel = ADC\_CHANNEL\_10;}
+\DoxyCodeLine{58   sConfig.Rank = ADC\_RANK\_CHANNEL\_NUMBER;}
+\DoxyCodeLine{59   sConfig.SamplingTime = ADC\_SAMPLETIME\_239CYCLES\_5;}
+\DoxyCodeLine{60   \textcolor{keywordflow}{if} (HAL\_ADC\_ConfigChannel(\&\mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}, \&sConfig) != HAL\_OK)}
+\DoxyCodeLine{61   \{}
+\DoxyCodeLine{62     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{63   \}\textcolor{comment}{}}
+\DoxyCodeLine{64 \textcolor{comment}{  /** Configure for the selected ADC regular channel to be converted. }}
+\DoxyCodeLine{65 \textcolor{comment}{  */}}
+\DoxyCodeLine{66   sConfig.Channel = ADC\_CHANNEL\_TEMPSENSOR;}
+\DoxyCodeLine{67   \textcolor{keywordflow}{if} (HAL\_ADC\_ConfigChannel(\&\mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}, \&sConfig) != HAL\_OK)}
+\DoxyCodeLine{68   \{}
+\DoxyCodeLine{69     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{70   \}\textcolor{comment}{}}
+\DoxyCodeLine{71 \textcolor{comment}{  /** Configure for the selected ADC regular channel to be converted. }}
+\DoxyCodeLine{72 \textcolor{comment}{  */}}
+\DoxyCodeLine{73   sConfig.Channel = ADC\_CHANNEL\_VREFINT;}
+\DoxyCodeLine{74   \textcolor{keywordflow}{if} (HAL\_ADC\_ConfigChannel(\&\mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}, \&sConfig) != HAL\_OK)}
+\DoxyCodeLine{75   \{}
+\DoxyCodeLine{76     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{77   \}\textcolor{comment}{}}
+\DoxyCodeLine{78 \textcolor{comment}{  /** Configure for the selected ADC regular channel to be converted. }}
+\DoxyCodeLine{79 \textcolor{comment}{  */}}
+\DoxyCodeLine{80   sConfig.Channel = ADC\_CHANNEL\_VBAT;}
+\DoxyCodeLine{81   \textcolor{keywordflow}{if} (HAL\_ADC\_ConfigChannel(\&\mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}, \&sConfig) != HAL\_OK)}
+\DoxyCodeLine{82   \{}
+\DoxyCodeLine{83     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{84   \}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{d7/d19/adc_8h_aca7f21e220653e353491bceced7c5df3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{d7/d19/adc_8h_aca7f21e220653e353491bceced7c5df3_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{adc_8h_a62fcafba91cf315db7e0e0c8f22c656f}\label{adc_8h_a62fcafba91cf315db7e0e0c8f22c656f}} 
+\index{adc.h@{adc.h}!hadc@{hadc}}
+\index{hadc@{hadc}!adc.h@{adc.h}}
+\doxysubsubsection{\texorpdfstring{hadc}{hadc}}
+{\footnotesize\ttfamily A\+D\+C\+\_\+\+Handle\+Type\+Def hadc}
+
+File Name \+: \mbox{\hyperlink{adc_8h}{A\+D\+C.\+h}} Description \+: This file provides code for the configuration of the A\+DC instances.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause
+
+File Name \+: A\+D\+C.\+c Description \+: This file provides code for the configuration of the A\+DC instances.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause 
+
+Definition at line 27 of file adc.\+c.
+

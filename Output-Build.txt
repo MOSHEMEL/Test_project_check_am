@@ -1,0 +1,13 @@
+﻿1>------ Build started: Project: APTX1_1, Configuration: Debug VisualGDB ------
+1>mem_controller.cpp
+1>Linking VisualGDB/Debug/APTX1_1...
+1>Memory region         Used Size  Region Size  %age Used
+1>           FLASH:       71100 B        96 KB     72.33%
+1>            SRAM:        4540 B        16 KB     27.71%
+1>Map file saved to file://C:\Users\Moshe\source\repos\APTX1_1\VisualGDB\Debug\APTX1_1.map
+1>------------------- Memory utilization report -------------------
+1>Used FLASH: 69KB out of 128KB (54%) [+64]
+1>Used SRAM: 4540 bytes out of 16KB (27%)
+1>note : Executing post-build actions
+1>C:\srecord-1.63-win32\srec_cat.exe APTX1_1.hex -Intel -CRop 0x8008000 0x8020000 -offset -0x8008000  -o APTX1_srec.bin -Binary
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

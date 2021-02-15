@@ -1,0 +1,8 @@
+<map id="PeripherialDevices::toggle_motor" name="PeripherialDevices::toggle_motor">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,133,80"/>
+<area shape="rect" id="node2" href="$d7/d77/class_peripherial_devices.html#addba7220ab2d6ea26b238445224f6e65" title=" " alt="" coords="181,5,309,47"/>
+<area shape="rect" id="node6" href="$d7/d77/class_peripherial_devices.html#a3a0173c0b6a9417f77048ec5809d73c9" title=" " alt="" coords="181,71,309,112"/>
+<area shape="rect" id="node3" href="$d7/d77/class_peripherial_devices.html#a28f503545bf784ce79e0ce4815b71842" title=" " alt="" coords="363,5,491,47"/>
+<area shape="rect" id="node5" href="$d6/d2e/class_c_s__reg.html#a9d840bf50a001ee76443fc88f07e8d1b" title=" " alt="" coords="357,74,496,101"/>
+<area shape="rect" id="node4" href="$d6/d2e/class_c_s__reg.html#a93421b06c619434894958b45e2355b2b" title=" " alt="" coords="544,5,699,47"/>
+</map>

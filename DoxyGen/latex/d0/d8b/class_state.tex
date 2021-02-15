@@ -1,0 +1,212 @@
+\hypertarget{class_state}{}\doxysection{State Class Reference}
+\label{class_state}\index{State@{State}}
+
+
+{\ttfamily \#include $<$state.\+h$>$}
+
+
+
+Collaboration diagram for State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{dc/d8f/class_state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_state_ab91bb1dd5aa6260ab2a456581daf9ec2}{State}} ()
+\item 
+\mbox{\hyperlink{class_state_afab438d92b90dc18d194dbd9c9c8bab3}{$\sim$\+State}} ()
+\item 
+void \mbox{\hyperlink{class_state_a9f9fdadeb2ff6c9238c8f4dac3b96bb7}{init\+\_\+first\+\_\+step}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90f}{states\+Machine}} \mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}}
+\item 
+enum \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90f}{states\+Machine}} \mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}}
+\item 
+\mbox{\hyperlink{unionbypass__state}{bypass\+\_\+state}} \mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_state_a6b47fb8ec2a522661ce6ffe989fcea72}{battery}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_state_a384d7e81d30cde7316a79adfe95c345d}{pressure}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_state_ae28760f65d1fbd76ed91e3ed27421f85}{pulses\+\_\+to\+\_\+screen}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 33 of file state.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_state_ab91bb1dd5aa6260ab2a456581daf9ec2}\label{class_state_ab91bb1dd5aa6260ab2a456581daf9ec2}} 
+\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily State\+::\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file state.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     this-\/>\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa1ff76aa808bb8209a13fcdbaf330587e}{Init}};}
+\DoxyCodeLine{8     this-\/>\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fad3fa9ae9431d6cb1772f9d9df48cab19}{Idle}};}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_state_afab438d92b90dc18d194dbd9c9c8bab3}\label{class_state_afab438d92b90dc18d194dbd9c9c8bab3}} 
+\index{State@{State}!````~State@{$\sim$State}}
+\index{````~State@{$\sim$State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{$\sim$State()}{~State()}}
+{\footnotesize\ttfamily State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file state.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     }
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_state_a9f9fdadeb2ff6c9238c8f4dac3b96bb7}\label{class_state_a9f9fdadeb2ff6c9238c8f4dac3b96bb7}} 
+\index{State@{State}!init\_first\_step@{init\_first\_step}}
+\index{init\_first\_step@{init\_first\_step}!State@{State}}
+\doxysubsubsection{\texorpdfstring{init\_first\_step()}{init\_first\_step()}}
+{\footnotesize\ttfamily void State\+::init\+\_\+first\+\_\+step (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file state.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33     \textcolor{keywordflow}{while} (this-\/>\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}} == \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa1ff76aa808bb8209a13fcdbaf330587e}{Init}})}
+\DoxyCodeLine{34     \{}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36         this-\/>LOGIC\_BYPASS\_1 = (bool)HAL\_GPIO\_ReadPin(\mbox{\hyperlink{main_8h_a2bd54dd959e600f7610e21cf8aa08f63}{LOGIC\_BYPASS\_1\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_a71106494fca8518f1614c98241b8ad54}{LOGIC\_BYPASS\_1\_Pin}});}
+\DoxyCodeLine{37         this-\/>LOGIC\_BYPASS\_2 = (bool)HAL\_GPIO\_ReadPin(\mbox{\hyperlink{main_8h_a49de8aa030ab534e4bb5edd81727c427}{LOGIC\_BYPASS\_2\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_a5d4f92a9934a64db2088d2ba6ced3e19}{LOGIC\_BYPASS\_2\_Pin}});}
+\DoxyCodeLine{38         this-\/>LOGIC\_BYPASS\_3 = (bool)HAL\_GPIO\_ReadPin(\mbox{\hyperlink{main_8h_a00141cb0f66f123860e6ab39111503d0}{LOGIC\_BYPASS\_3\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_adfb84e1d9c801cf374c7de002fc6aa7d}{LOGIC\_BYPASS\_3\_Pin}});}
+\DoxyCodeLine{39         this-\/>LOGIC\_BYPASS\_4 = (bool)HAL\_GPIO\_ReadPin(\mbox{\hyperlink{main_8h_ac00f986a6ea178e03ffbda42eee95c7f}{LOGIC\_BYPASS\_4\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_ab964416d0f214cfa33dc7df44a4eb5d4}{LOGIC\_BYPASS\_4\_Pin}});}
+\DoxyCodeLine{40         this-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a995f34b7ba9c10de113a14a4289b30a7}{bits}}.\mbox{\hyperlink{unionbypass__state_ab9e02512dc388fed79cba8f092ac8e0e}{bypass1}} = this-\/>LOGIC\_BYPASS\_1;}
+\DoxyCodeLine{41         this-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a995f34b7ba9c10de113a14a4289b30a7}{bits}}.\mbox{\hyperlink{unionbypass__state_aa6f7fee66dc81ab16038664b03d9aaeb}{bypass2}} = this-\/>LOGIC\_BYPASS\_2;}
+\DoxyCodeLine{42         this-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a995f34b7ba9c10de113a14a4289b30a7}{bits}}.\mbox{\hyperlink{unionbypass__state_a5da6053fa36d0bda625667bd84204908}{bypass3}} = this-\/>LOGIC\_BYPASS\_3;}
+\DoxyCodeLine{43         this-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a995f34b7ba9c10de113a14a4289b30a7}{bits}}.\mbox{\hyperlink{unionbypass__state_a127c0c7c06472c08b4c99771a9158297}{bypass4}} = this-\/>LOGIC\_BYPASS\_4;}
+\DoxyCodeLine{44         this-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a995f34b7ba9c10de113a14a4289b30a7}{bits}}.\mbox{\hyperlink{unionbypass__state_a03bc307511b97a4442e66237049c2069}{reserved}} = 0;}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46         \textcolor{comment}{// Debug since bypass killed the voltage reg.}}
+\DoxyCodeLine{47         this-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a54eb7fb96a458296e4ec636ba03458c6}{value}} = 2;}
+\DoxyCodeLine{48         HAL\_GPIO\_WritePin(\mbox{\hyperlink{main_8h_a8e4109b2f7acfb3618b1da0f0b2d98d1}{ENABLE\_POWER\_12V\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_abc97a87faf3895dbbd657c2e984d309b}{ENABLE\_POWER\_12V\_Pin}}, GPIO\_PIN\_SET);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50         \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a54eb7fb96a458296e4ec636ba03458c6}{value}} == 0)}
+\DoxyCodeLine{51         \{}
+\DoxyCodeLine{52             this-\/>read\_interlock();}
+\DoxyCodeLine{53         \}}
+\DoxyCodeLine{54         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a54eb7fb96a458296e4ec636ba03458c6}{value}} == 1)}
+\DoxyCodeLine{55         \{}
+\DoxyCodeLine{56             \textcolor{comment}{// don't connect the apt}}
+\DoxyCodeLine{57             this-\/>\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fad3fa9ae9431d6cb1772f9d9df48cab19}{Idle}};}
+\DoxyCodeLine{58         \}}
+\DoxyCodeLine{59         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_state_aaba36b0beee0216a35716e37bf7308b8}{bypass}}.\mbox{\hyperlink{unionbypass__state_a54eb7fb96a458296e4ec636ba03458c6}{value}} == 2)}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             \textcolor{comment}{// don't connect apt and start uart}}
+\DoxyCodeLine{62             this-\/>\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa6d9f8689ea39a3158da65b5a604c294d}{UartDebug}};}
+\DoxyCodeLine{63         \}}
+\DoxyCodeLine{64     \}}
+\DoxyCodeLine{65 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d8b/class_state_a9f9fdadeb2ff6c9238c8f4dac3b96bb7_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_state_a6b47fb8ec2a522661ce6ffe989fcea72}\label{class_state_a6b47fb8ec2a522661ce6ffe989fcea72}} 
+\index{State@{State}!battery@{battery}}
+\index{battery@{battery}!State@{State}}
+\doxysubsubsection{\texorpdfstring{battery}{battery}}
+{\footnotesize\ttfamily uint32\+\_\+t State\+::battery}
+
+
+
+Definition at line 39 of file state.\+h.
+
+\mbox{\Hypertarget{class_state_aaba36b0beee0216a35716e37bf7308b8}\label{class_state_aaba36b0beee0216a35716e37bf7308b8}} 
+\index{State@{State}!bypass@{bypass}}
+\index{bypass@{bypass}!State@{State}}
+\doxysubsubsection{\texorpdfstring{bypass}{bypass}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionbypass__state}{bypass\+\_\+state}} State\+::bypass}
+
+
+
+Definition at line 38 of file state.\+h.
+
+\mbox{\Hypertarget{class_state_aa3f9637db0632d540d7e23a70bf6a150}\label{class_state_aa3f9637db0632d540d7e23a70bf6a150}} 
+\index{State@{State}!current@{current}}
+\index{current@{current}!State@{State}}
+\doxysubsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90f}{states\+Machine}} State\+::current}
+
+Currently in this state. 
+
+Definition at line 36 of file state.\+h.
+
+\mbox{\Hypertarget{class_state_a267d012d079d65471739ced3964d95fd}\label{class_state_a267d012d079d65471739ced3964d95fd}} 
+\index{State@{State}!next@{next}}
+\index{next@{next}!State@{State}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90f}{states\+Machine}} State\+::next}
+
+Switch to this state next iteration. 
+
+Definition at line 37 of file state.\+h.
+
+\mbox{\Hypertarget{class_state_a384d7e81d30cde7316a79adfe95c345d}\label{class_state_a384d7e81d30cde7316a79adfe95c345d}} 
+\index{State@{State}!pressure@{pressure}}
+\index{pressure@{pressure}!State@{State}}
+\doxysubsubsection{\texorpdfstring{pressure}{pressure}}
+{\footnotesize\ttfamily uint32\+\_\+t State\+::pressure}
+
+
+
+Definition at line 40 of file state.\+h.
+
+\mbox{\Hypertarget{class_state_ae28760f65d1fbd76ed91e3ed27421f85}\label{class_state_ae28760f65d1fbd76ed91e3ed27421f85}} 
+\index{State@{State}!pulses\_to\_screen@{pulses\_to\_screen}}
+\index{pulses\_to\_screen@{pulses\_to\_screen}!State@{State}}
+\doxysubsubsection{\texorpdfstring{pulses\_to\_screen}{pulses\_to\_screen}}
+{\footnotesize\ttfamily uint32\+\_\+t State\+::pulses\+\_\+to\+\_\+screen}
+
+
+
+Definition at line 41 of file state.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{state_8h}{state.\+h}}\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/\mbox{\hyperlink{state_8cpp}{state.\+cpp}}\end{DoxyCompactItemize}

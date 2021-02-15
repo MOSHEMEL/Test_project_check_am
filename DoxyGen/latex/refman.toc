@@ -1,0 +1,892 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Module Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Modules}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Module Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}RE}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Armenta}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{8}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Globals}{9}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{9}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Macro Definition Documentation}{9}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}ADC\_Battery}{9}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}ADC\_Presure}{10}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}ADC\_Presure\_20\_bar}{10}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.2.4}ADC\_Presure\_27\_bar}{10}{subsubsection.4.3.2.4}%
+\contentsline {subsubsection}{\numberline {4.3.2.5}APP\_ADDRESS}{10}{subsubsection.4.3.2.5}%
+\contentsline {subsubsection}{\numberline {4.3.2.6}APP\_ADDRESS\_P}{10}{subsubsection.4.3.2.6}%
+\contentsline {subsubsection}{\numberline {4.3.2.7}APP\_SIZE}{11}{subsubsection.4.3.2.7}%
+\contentsline {subsubsection}{\numberline {4.3.2.8}DEBUG\_PRINT}{11}{subsubsection.4.3.2.8}%
+\contentsline {subsubsection}{\numberline {4.3.2.9}DONT\_BEEP}{11}{subsubsection.4.3.2.9}%
+\contentsline {subsubsection}{\numberline {4.3.2.10}END\_ADDRESS}{11}{subsubsection.4.3.2.10}%
+\contentsline {subsubsection}{\numberline {4.3.2.11}EXPERIMENTAL}{11}{subsubsection.4.3.2.11}%
+\contentsline {subsubsection}{\numberline {4.3.2.12}FROM\_BOOTLOADER}{12}{subsubsection.4.3.2.12}%
+\contentsline {subsubsection}{\numberline {4.3.2.13}MAX\_HOLE\_SIZE}{12}{subsubsection.4.3.2.13}%
+\contentsline {subsubsection}{\numberline {4.3.2.14}MCU\_VERSION\_MAJOR}{12}{subsubsection.4.3.2.14}%
+\contentsline {subsubsection}{\numberline {4.3.2.15}MCU\_VERSION\_MINOR}{12}{subsubsection.4.3.2.15}%
+\contentsline {subsubsection}{\numberline {4.3.2.16}MCU\_VERSION\_PATCH}{12}{subsubsection.4.3.2.16}%
+\contentsline {subsubsection}{\numberline {4.3.2.17}MCU\_VERSION\_RC}{13}{subsubsection.4.3.2.17}%
+\contentsline {subsubsection}{\numberline {4.3.2.18}PASS\_PRESSURE\_CHECK}{13}{subsubsection.4.3.2.18}%
+\contentsline {subsubsection}{\numberline {4.3.2.19}PASS\_SPI}{13}{subsubsection.4.3.2.19}%
+\contentsline {subsubsection}{\numberline {4.3.2.20}TECHNICIAN\_ENABLED}{13}{subsubsection.4.3.2.20}%
+\contentsline {subsubsection}{\numberline {4.3.2.21}VERSION}{13}{subsubsection.4.3.2.21}%
+\contentsline {section}{\numberline {4.4}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}PI}{14}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{14}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Macro Definition Documentation}{14}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}BLOCK\_ERASE\_32K}{14}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}BLOCK\_ERASE\_4K}{15}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}BLOCK\_ERASE\_64K}{15}{subsubsection.4.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.4.2.4}BYTE\_PROGRAM}{15}{subsubsection.4.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.4.2.5}ERASE\_CHIP1}{15}{subsubsection.4.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.4.2.6}ERASE\_CHIP2}{15}{subsubsection.4.4.2.6}%
+\contentsline {subsubsection}{\numberline {4.4.2.7}HIGH}{15}{subsubsection.4.4.2.7}%
+\contentsline {subsubsection}{\numberline {4.4.2.8}LOW}{16}{subsubsection.4.4.2.8}%
+\contentsline {subsubsection}{\numberline {4.4.2.9}READ\_ARRAY1}{16}{subsubsection.4.4.2.9}%
+\contentsline {subsubsection}{\numberline {4.4.2.10}READ\_ARRAY2}{16}{subsubsection.4.4.2.10}%
+\contentsline {subsubsection}{\numberline {4.4.2.11}READ\_DEVICE\_ID}{16}{subsubsection.4.4.2.11}%
+\contentsline {subsubsection}{\numberline {4.4.2.12}READ\_DUAL}{16}{subsubsection.4.4.2.12}%
+\contentsline {subsubsection}{\numberline {4.4.2.13}READ\_MANUFACTURE\_ID}{16}{subsubsection.4.4.2.13}%
+\contentsline {subsubsection}{\numberline {4.4.2.14}READ\_QUAD}{17}{subsubsection.4.4.2.14}%
+\contentsline {subsubsection}{\numberline {4.4.2.15}READ\_STATUS\_REGISTER1}{17}{subsubsection.4.4.2.15}%
+\contentsline {subsubsection}{\numberline {4.4.2.16}READ\_STATUS\_REGISTER2}{17}{subsubsection.4.4.2.16}%
+\contentsline {subsubsection}{\numberline {4.4.2.17}WRITE\_DISABLE}{17}{subsubsection.4.4.2.17}%
+\contentsline {subsubsection}{\numberline {4.4.2.18}WRITE\_ENABLE}{17}{subsubsection.4.4.2.18}%
+\contentsline {subsubsection}{\numberline {4.4.2.19}WRITE\_ENABLE\_STATUS\_REGISTER\_VOLATILE}{17}{subsubsection.4.4.2.19}%
+\contentsline {subsubsection}{\numberline {4.4.2.20}WRITE\_STATUS\_REGISTER}{17}{subsubsection.4.4.2.20}%
+\contentsline {section}{\numberline {4.5}Auxilary}{18}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{18}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Macro Definition Documentation}{18}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}AM\_WARNING\_TIMES}{18}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}BEEP\_COUNTER\_0}{19}{subsubsection.4.5.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}BEEP\_COUNTER\_200}{19}{subsubsection.4.5.2.3}%
+\contentsline {subsubsection}{\numberline {4.5.2.4}BEEP\_COUNTER\_400}{19}{subsubsection.4.5.2.4}%
+\contentsline {subsubsection}{\numberline {4.5.2.5}Beep\_Every\_X\_Counting}{19}{subsubsection.4.5.2.5}%
+\contentsline {subsubsection}{\numberline {4.5.2.6}Configuration\_register\_add}{19}{subsubsection.4.5.2.6}%
+\contentsline {subsubsection}{\numberline {4.5.2.7}HDC\_1080\_ADD}{19}{subsubsection.4.5.2.7}%
+\contentsline {subsubsection}{\numberline {4.5.2.8}Humidity\_register\_add}{20}{subsubsection.4.5.2.8}%
+\contentsline {subsubsection}{\numberline {4.5.2.9}KEY\_PRESS}{20}{subsubsection.4.5.2.9}%
+\contentsline {subsubsection}{\numberline {4.5.2.10}MOTOR\_1\_PWM\_OFF}{20}{subsubsection.4.5.2.10}%
+\contentsline {subsubsection}{\numberline {4.5.2.11}MOTOR\_1\_PWM\_ON}{20}{subsubsection.4.5.2.11}%
+\contentsline {subsubsection}{\numberline {4.5.2.12}MOTOR\_1\_PWM\_ON\_50}{20}{subsubsection.4.5.2.12}%
+\contentsline {subsubsection}{\numberline {4.5.2.13}MOTOR\_1\_PWM\_ON\_75}{20}{subsubsection.4.5.2.13}%
+\contentsline {subsubsection}{\numberline {4.5.2.14}RXBUFFERSIZE}{21}{subsubsection.4.5.2.14}%
+\contentsline {subsubsection}{\numberline {4.5.2.15}SERIAL\_PC}{21}{subsubsection.4.5.2.15}%
+\contentsline {subsubsection}{\numberline {4.5.2.16}SERIAL\_SCREEN}{21}{subsubsection.4.5.2.16}%
+\contentsline {subsubsection}{\numberline {4.5.2.17}START\_BEEP}{21}{subsubsection.4.5.2.17}%
+\contentsline {subsubsection}{\numberline {4.5.2.18}Temperature\_register\_add}{21}{subsubsection.4.5.2.18}%
+\contentsline {subsubsection}{\numberline {4.5.2.19}TICKS\_FOR\_UPDATE}{21}{subsubsection.4.5.2.19}%
+\contentsline {subsubsection}{\numberline {4.5.2.20}TICKS\_SCREEN\_UPDATE\_LONG}{22}{subsubsection.4.5.2.20}%
+\contentsline {subsubsection}{\numberline {4.5.2.21}TICKS\_SCREEN\_UPDATE\_SUPER\_LONG}{22}{subsubsection.4.5.2.21}%
+\contentsline {subsubsection}{\numberline {4.5.2.22}TIMEOUT\_SCREEN}{22}{subsubsection.4.5.2.22}%
+\contentsline {section}{\numberline {4.6}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DC}{23}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{23}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Macro Definition Documentation}{23}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}ADC\_RESERVED}{23}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.2}ADC\_RESERVED2}{24}{subsubsection.4.6.2.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.3}FIFOREAD}{24}{subsubsection.4.6.2.3}%
+\contentsline {subsubsection}{\numberline {4.6.2.4}HARDWARE\_DEFAULT}{24}{subsubsection.4.6.2.4}%
+\contentsline {subsubsection}{\numberline {4.6.2.5}SELECT\_CHANNEL\_0}{24}{subsubsection.4.6.2.5}%
+\contentsline {subsubsection}{\numberline {4.6.2.6}SELECT\_CHANNEL\_1}{24}{subsubsection.4.6.2.6}%
+\contentsline {subsubsection}{\numberline {4.6.2.7}SELECT\_CHANNEL\_2}{24}{subsubsection.4.6.2.7}%
+\contentsline {subsubsection}{\numberline {4.6.2.8}SELECT\_CHANNEL\_3}{25}{subsubsection.4.6.2.8}%
+\contentsline {subsubsection}{\numberline {4.6.2.9}SELECT\_CHANNEL\_4}{25}{subsubsection.4.6.2.9}%
+\contentsline {subsubsection}{\numberline {4.6.2.10}SELECT\_CHANNEL\_5}{25}{subsubsection.4.6.2.10}%
+\contentsline {subsubsection}{\numberline {4.6.2.11}SELECT\_CHANNEL\_6}{25}{subsubsection.4.6.2.11}%
+\contentsline {subsubsection}{\numberline {4.6.2.12}SELECT\_CHANNEL\_7}{25}{subsubsection.4.6.2.12}%
+\contentsline {subsubsection}{\numberline {4.6.2.13}SELECT\_TEST\_REFM}{25}{subsubsection.4.6.2.13}%
+\contentsline {subsubsection}{\numberline {4.6.2.14}SELECT\_TEST\_REFP}{26}{subsubsection.4.6.2.14}%
+\contentsline {subsubsection}{\numberline {4.6.2.15}SELECT\_TEST\_VDIV2}{26}{subsubsection.4.6.2.15}%
+\contentsline {subsubsection}{\numberline {4.6.2.16}WRITE\_CFR}{26}{subsubsection.4.6.2.16}%
+\contentsline {section}{\numberline {4.7}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main}{27}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{27}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Function Documentation}{27}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}Int2Str()}{27}{subsubsection.4.7.2.1}%
+\contentsline {subsubsection}{\numberline {4.7.2.2}Serial\_PutByte()}{28}{subsubsection.4.7.2.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.3}Serial\_PutString()}{28}{subsubsection.4.7.2.3}%
+\contentsline {subsubsection}{\numberline {4.7.2.4}Str2Int()}{29}{subsubsection.4.7.2.4}%
+\contentsline {section}{\numberline {4.8}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AP}{31}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{31}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Function Documentation}{31}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}dump\_mem()}{31}{subsubsection.4.8.2.1}%
+\contentsline {subsubsection}{\numberline {4.8.2.2}FLASH\_If\_Erase()}{32}{subsubsection.4.8.2.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.3}FLASH\_If\_Write()}{32}{subsubsection.4.8.2.3}%
+\contentsline {subsubsection}{\numberline {4.8.2.4}Main\_Menu()}{33}{subsubsection.4.8.2.4}%
+\contentsline {subsection}{\numberline {4.8.3}Variable Documentation}{34}{subsection.4.8.3}%
+\contentsline {subsubsection}{\numberline {4.8.3.1}aFileName}{35}{subsubsection.4.8.3.1}%
+\contentsline {subsubsection}{\numberline {4.8.3.2}FlashProtection}{35}{subsubsection.4.8.3.2}%
+\contentsline {subsubsection}{\numberline {4.8.3.3}JumpAddress}{35}{subsubsection.4.8.3.3}%
+\contentsline {subsubsection}{\numberline {4.8.3.4}JumpToApplication}{35}{subsubsection.4.8.3.4}%
+\contentsline {subsubsection}{\numberline {4.8.3.5}memory\_extern\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{35}{subsubsection.4.8.3.5}%
+\contentsline {subsubsection}{\numberline {4.8.3.6}memory\_extern\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{35}{subsubsection.4.8.3.6}%
+\contentsline {section}{\numberline {4.9}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IS}{36}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{36}{subsection.4.9.1}%
+\contentsline {section}{\numberline {4.10}Stm32f0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}system}{37}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{37}{subsection.4.10.1}%
+\contentsline {section}{\numberline {4.11}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Includes}{38}{section.4.11}%
+\contentsline {section}{\numberline {4.12}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Definitions}{39}{section.4.12}%
+\contentsline {section}{\numberline {4.13}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Defines}{40}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{40}{subsection.4.13.1}%
+\contentsline {subsection}{\numberline {4.13.2}Macro Definition Documentation}{40}{subsection.4.13.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.1}HSE\_VALUE}{40}{subsubsection.4.13.2.1}%
+\contentsline {subsubsection}{\numberline {4.13.2.2}HSI48\_VALUE}{40}{subsubsection.4.13.2.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.3}HSI\_VALUE}{40}{subsubsection.4.13.2.3}%
+\contentsline {section}{\numberline {4.14}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Macros}{41}{section.4.14}%
+\contentsline {section}{\numberline {4.15}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Variables}{42}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{42}{subsection.4.15.1}%
+\contentsline {subsection}{\numberline {4.15.2}Variable Documentation}{42}{subsection.4.15.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.1}AHBPrescTable}{42}{subsubsection.4.15.2.1}%
+\contentsline {subsubsection}{\numberline {4.15.2.2}APBPrescTable}{42}{subsubsection.4.15.2.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.3}SystemCoreClock}{42}{subsubsection.4.15.2.3}%
+\contentsline {section}{\numberline {4.16}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Function\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prototypes}{43}{section.4.16}%
+\contentsline {section}{\numberline {4.17}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions}{44}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Detailed Description}{44}{subsection.4.17.1}%
+\contentsline {subsection}{\numberline {4.17.2}Function Documentation}{44}{subsection.4.17.2}%
+\contentsline {subsubsection}{\numberline {4.17.2.1}SystemCoreClockUpdate()}{44}{subsubsection.4.17.2.1}%
+\contentsline {subsubsection}{\numberline {4.17.2.2}SystemInit()}{45}{subsubsection.4.17.2.2}%
+\contentsline {chapter}{\numberline {5}Class Documentation}{47}{chapter.5}%
+\contentsline {section}{\numberline {5.1}adc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}command Union Reference}{47}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{48}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Member Data Documentation}{48}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}b1}{48}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}b2}{48}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}bits}{48}{subsubsection.5.1.2.3}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}bytes}{49}{subsubsection.5.1.2.4}%
+\contentsline {subsubsection}{\numberline {5.1.2.5}CLK\_SOURCE}{49}{subsubsection.5.1.2.5}%
+\contentsline {subsubsection}{\numberline {5.1.2.6}CMR}{49}{subsubsection.5.1.2.6}%
+\contentsline {subsubsection}{\numberline {5.1.2.7}CONV\_OUTPUT\_FORMAT}{49}{subsubsection.5.1.2.7}%
+\contentsline {subsubsection}{\numberline {5.1.2.8}CONVERSION\_MODE\_SELECT}{49}{subsubsection.5.1.2.8}%
+\contentsline {subsubsection}{\numberline {5.1.2.9}D11}{49}{subsubsection.5.1.2.9}%
+\contentsline {subsubsection}{\numberline {5.1.2.10}EOC\_INT\_FUNC}{50}{subsubsection.5.1.2.10}%
+\contentsline {subsubsection}{\numberline {5.1.2.11}FIFO\_TRIG\_LEVEL}{50}{subsubsection.5.1.2.11}%
+\contentsline {subsubsection}{\numberline {5.1.2.12}INPUT\_SELECT\_MODE}{50}{subsubsection.5.1.2.12}%
+\contentsline {subsubsection}{\numberline {5.1.2.13}SAMPLE\_PERIOD}{50}{subsubsection.5.1.2.13}%
+\contentsline {subsubsection}{\numberline {5.1.2.14}SWEEP\_SEQ\_SELECT}{50}{subsubsection.5.1.2.14}%
+\contentsline {subsubsection}{\numberline {5.1.2.15}value}{50}{subsubsection.5.1.2.15}%
+\contentsline {section}{\numberline {5.2}Adc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller Class Reference}{51}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{52}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Constructor \& Destructor Documentation}{52}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}AdcController()}{52}{subsubsection.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}$\sim $AdcController()}{52}{subsubsection.5.2.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Member Function Documentation}{53}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}convert\_to\_volt()}{53}{subsubsection.5.2.3.1}%
+\contentsline {subsubsection}{\numberline {5.2.3.2}pressure\_check()}{53}{subsubsection.5.2.3.2}%
+\contentsline {subsubsection}{\numberline {5.2.3.3}read()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{54}{subsubsection.5.2.3.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.4}read()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{55}{subsubsection.5.2.3.4}%
+\contentsline {subsection}{\numberline {5.2.4}Member Data Documentation}{55}{subsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.1}bat\_percentage}{55}{subsubsection.5.2.4.1}%
+\contentsline {subsubsection}{\numberline {5.2.4.2}battery\_volt}{55}{subsubsection.5.2.4.2}%
+\contentsline {subsubsection}{\numberline {5.2.4.3}channels\_buffer}{55}{subsubsection.5.2.4.3}%
+\contentsline {subsubsection}{\numberline {5.2.4.4}cs\_register}{55}{subsubsection.5.2.4.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.5}current\_sense}{56}{subsubsection.5.2.4.5}%
+\contentsline {subsubsection}{\numberline {5.2.4.6}dma\_ring\_buffer}{56}{subsubsection.5.2.4.6}%
+\contentsline {subsubsection}{\numberline {5.2.4.7}pressure\_ok}{56}{subsubsection.5.2.4.7}%
+\contentsline {subsubsection}{\numberline {5.2.4.8}stall\_pressure}{56}{subsubsection.5.2.4.8}%
+\contentsline {subsubsection}{\numberline {5.2.4.9}temperature\_mcu}{56}{subsubsection.5.2.4.9}%
+\contentsline {subsubsection}{\numberline {5.2.4.10}vbat}{56}{subsubsection.5.2.4.10}%
+\contentsline {subsubsection}{\numberline {5.2.4.11}vref}{57}{subsubsection.5.2.4.11}%
+\contentsline {section}{\numberline {5.3}bypass\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}state Union Reference}{57}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{57}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Member Data Documentation}{58}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}bits}{58}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}bypass1}{58}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.3}bypass2}{58}{subsubsection.5.3.2.3}%
+\contentsline {subsubsection}{\numberline {5.3.2.4}bypass3}{58}{subsubsection.5.3.2.4}%
+\contentsline {subsubsection}{\numberline {5.3.2.5}bypass4}{58}{subsubsection.5.3.2.5}%
+\contentsline {subsubsection}{\numberline {5.3.2.6}reserved}{58}{subsubsection.5.3.2.6}%
+\contentsline {subsubsection}{\numberline {5.3.2.7}value}{59}{subsubsection.5.3.2.7}%
+\contentsline {section}{\numberline {5.4}byte8\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}mem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}status Union Reference}{59}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{60}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Member Data Documentation}{60}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}bits}{60}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}BP0}{60}{subsubsection.5.4.2.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.3}BP1}{61}{subsubsection.5.4.2.3}%
+\contentsline {subsubsection}{\numberline {5.4.2.4}BP2}{61}{subsubsection.5.4.2.4}%
+\contentsline {subsubsection}{\numberline {5.4.2.5}bytes}{61}{subsubsection.5.4.2.5}%
+\contentsline {subsubsection}{\numberline {5.4.2.6}CMP}{61}{subsubsection.5.4.2.6}%
+\contentsline {subsubsection}{\numberline {5.4.2.7}LB1}{61}{subsubsection.5.4.2.7}%
+\contentsline {subsubsection}{\numberline {5.4.2.8}LB2}{61}{subsubsection.5.4.2.8}%
+\contentsline {subsubsection}{\numberline {5.4.2.9}LB3}{62}{subsubsection.5.4.2.9}%
+\contentsline {subsubsection}{\numberline {5.4.2.10}QE}{62}{subsubsection.5.4.2.10}%
+\contentsline {subsubsection}{\numberline {5.4.2.11}RES}{62}{subsubsection.5.4.2.11}%
+\contentsline {subsubsection}{\numberline {5.4.2.12}RES2}{62}{subsubsection.5.4.2.12}%
+\contentsline {subsubsection}{\numberline {5.4.2.13}SEC}{62}{subsubsection.5.4.2.13}%
+\contentsline {subsubsection}{\numberline {5.4.2.14}SRP0}{62}{subsubsection.5.4.2.14}%
+\contentsline {subsubsection}{\numberline {5.4.2.15}SRP1}{63}{subsubsection.5.4.2.15}%
+\contentsline {subsubsection}{\numberline {5.4.2.16}status1}{63}{subsubsection.5.4.2.16}%
+\contentsline {subsubsection}{\numberline {5.4.2.17}status2}{63}{subsubsection.5.4.2.17}%
+\contentsline {subsubsection}{\numberline {5.4.2.18}TB}{63}{subsubsection.5.4.2.18}%
+\contentsline {subsubsection}{\numberline {5.4.2.19}value}{63}{subsubsection.5.4.2.19}%
+\contentsline {subsubsection}{\numberline {5.4.2.20}WEL}{63}{subsubsection.5.4.2.20}%
+\contentsline {subsubsection}{\numberline {5.4.2.21}WIP}{64}{subsubsection.5.4.2.21}%
+\contentsline {section}{\numberline {5.5}byte8\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}reg\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs Union Reference}{64}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{65}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Member Data Documentation}{65}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}bits}{65}{subsubsection.5.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}DECODER}{65}{subsubsection.5.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.3}INA\_MOTOR}{65}{subsubsection.5.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.5.2.4}INB\_MOTOR}{65}{subsubsection.5.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.5.2.5}nibble\_CS}{65}{subsubsection.5.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.5.2.6}nibble\_PERIPH}{66}{subsubsection.5.5.2.6}%
+\contentsline {subsubsection}{\numberline {5.5.2.7}nibbles}{66}{subsubsection.5.5.2.7}%
+\contentsline {subsubsection}{\numberline {5.5.2.8}QC}{66}{subsubsection.5.5.2.8}%
+\contentsline {subsubsection}{\numberline {5.5.2.9}QG}{66}{subsubsection.5.5.2.9}%
+\contentsline {subsubsection}{\numberline {5.5.2.10}QH}{66}{subsubsection.5.5.2.10}%
+\contentsline {subsubsection}{\numberline {5.5.2.11}value}{66}{subsubsection.5.5.2.11}%
+\contentsline {section}{\numberline {5.6}byte8\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}reg\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}readback Union Reference}{67}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{67}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Member Data Documentation}{67}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}bits}{67}{subsubsection.5.6.2.1}%
+\contentsline {subsubsection}{\numberline {5.6.2.2}CS\_MEM2}{68}{subsubsection.5.6.2.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.3}CS\_MEM3}{68}{subsubsection.5.6.2.3}%
+\contentsline {subsubsection}{\numberline {5.6.2.4}CS\_STATUS\_INV}{68}{subsubsection.5.6.2.4}%
+\contentsline {subsubsection}{\numberline {5.6.2.5}DECODER}{68}{subsubsection.5.6.2.5}%
+\contentsline {subsubsection}{\numberline {5.6.2.6}INA\_MOTOR}{68}{subsubsection.5.6.2.6}%
+\contentsline {subsubsection}{\numberline {5.6.2.7}INB\_MOTOR}{68}{subsubsection.5.6.2.7}%
+\contentsline {subsubsection}{\numberline {5.6.2.8}value}{69}{subsubsection.5.6.2.8}%
+\contentsline {section}{\numberline {5.7}byte8\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}reg\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}status Union Reference}{69}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{70}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Member Data Documentation}{70}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}bits}{70}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}FIRE\_STATUS}{70}{subsubsection.5.7.2.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.3}nibble\_OPTO}{70}{subsubsection.5.7.2.3}%
+\contentsline {subsubsection}{\numberline {5.7.2.4}nibble\_PERIPH}{70}{subsubsection.5.7.2.4}%
+\contentsline {subsubsection}{\numberline {5.7.2.5}nibbles}{70}{subsubsection.5.7.2.5}%
+\contentsline {subsubsection}{\numberline {5.7.2.6}OPTO\_A}{71}{subsubsection.5.7.2.6}%
+\contentsline {subsubsection}{\numberline {5.7.2.7}OPTO\_B}{71}{subsubsection.5.7.2.7}%
+\contentsline {subsubsection}{\numberline {5.7.2.8}OPTO\_C}{71}{subsubsection.5.7.2.8}%
+\contentsline {subsubsection}{\numberline {5.7.2.9}OPTO\_D}{71}{subsubsection.5.7.2.9}%
+\contentsline {subsubsection}{\numberline {5.7.2.10}OPTO\_STATUS}{71}{subsubsection.5.7.2.10}%
+\contentsline {subsubsection}{\numberline {5.7.2.11}RESERVED}{71}{subsubsection.5.7.2.11}%
+\contentsline {subsubsection}{\numberline {5.7.2.12}SWITCHES\_STATUS}{72}{subsubsection.5.7.2.12}%
+\contentsline {subsubsection}{\numberline {5.7.2.13}value}{72}{subsubsection.5.7.2.13}%
+\contentsline {section}{\numberline {5.8}channel Union Reference}{72}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{73}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Member Data Documentation}{73}{subsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.1}b1}{73}{subsubsection.5.8.2.1}%
+\contentsline {subsubsection}{\numberline {5.8.2.2}b2}{73}{subsubsection.5.8.2.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.3}bytes}{73}{subsubsection.5.8.2.3}%
+\contentsline {subsubsection}{\numberline {5.8.2.4}value}{73}{subsubsection.5.8.2.4}%
+\contentsline {section}{\numberline {5.9}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}reg Class Reference}{74}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{75}{subsection.5.9.1}%
+\contentsline {subsection}{\numberline {5.9.2}Constructor \& Destructor Documentation}{75}{subsection.5.9.2}%
+\contentsline {subsubsection}{\numberline {5.9.2.1}CS\_reg()}{75}{subsubsection.5.9.2.1}%
+\contentsline {subsubsection}{\numberline {5.9.2.2}$\sim $CS\_reg()}{75}{subsubsection.5.9.2.2}%
+\contentsline {subsection}{\numberline {5.9.3}Member Function Documentation}{75}{subsection.5.9.3}%
+\contentsline {subsubsection}{\numberline {5.9.3.1}cs1()}{75}{subsubsection.5.9.3.1}%
+\contentsline {subsubsection}{\numberline {5.9.3.2}cs2()}{76}{subsubsection.5.9.3.2}%
+\contentsline {subsubsection}{\numberline {5.9.3.3}cs3()}{76}{subsubsection.5.9.3.3}%
+\contentsline {subsubsection}{\numberline {5.9.3.4}cs\_a2d()}{76}{subsubsection.5.9.3.4}%
+\contentsline {subsubsection}{\numberline {5.9.3.5}cs\_clear\_opto\_counter()}{77}{subsubsection.5.9.3.5}%
+\contentsline {subsubsection}{\numberline {5.9.3.6}cs\_status()}{77}{subsubsection.5.9.3.6}%
+\contentsline {subsubsection}{\numberline {5.9.3.7}motor\_cmd()}{78}{subsubsection.5.9.3.7}%
+\contentsline {subsubsection}{\numberline {5.9.3.8}print\_current()}{79}{subsubsection.5.9.3.8}%
+\contentsline {subsection}{\numberline {5.9.4}Member Data Documentation}{79}{subsection.5.9.4}%
+\contentsline {subsubsection}{\numberline {5.9.4.1}cs1\_value}{79}{subsubsection.5.9.4.1}%
+\contentsline {subsubsection}{\numberline {5.9.4.2}current}{79}{subsubsection.5.9.4.2}%
+\contentsline {subsubsection}{\numberline {5.9.4.3}readback\_register}{79}{subsubsection.5.9.4.3}%
+\contentsline {section}{\numberline {5.10}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller Class Reference}{80}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Detailed Description}{81}{subsection.5.10.1}%
+\contentsline {subsection}{\numberline {5.10.2}Constructor \& Destructor Documentation}{81}{subsection.5.10.2}%
+\contentsline {subsubsection}{\numberline {5.10.2.1}MainController()}{82}{subsubsection.5.10.2.1}%
+\contentsline {subsubsection}{\numberline {5.10.2.2}$\sim $MainController()}{82}{subsubsection.5.10.2.2}%
+\contentsline {subsection}{\numberline {5.10.3}Member Function Documentation}{82}{subsection.5.10.3}%
+\contentsline {subsubsection}{\numberline {5.10.3.1}active\_state()}{83}{subsubsection.5.10.3.1}%
+\contentsline {subsubsection}{\numberline {5.10.3.2}idle\_state()}{84}{subsubsection.5.10.3.2}%
+\contentsline {subsubsection}{\numberline {5.10.3.3}init\_before\_while()}{86}{subsubsection.5.10.3.3}%
+\contentsline {subsubsection}{\numberline {5.10.3.4}init\_state()}{86}{subsubsection.5.10.3.4}%
+\contentsline {subsubsection}{\numberline {5.10.3.5}need\_to\_stall()}{88}{subsubsection.5.10.3.5}%
+\contentsline {subsubsection}{\numberline {5.10.3.6}qa\_state()}{89}{subsubsection.5.10.3.6}%
+\contentsline {subsubsection}{\numberline {5.10.3.7}uart\_state()}{90}{subsubsection.5.10.3.7}%
+\contentsline {subsubsection}{\numberline {5.10.3.8}update\_state()}{91}{subsubsection.5.10.3.8}%
+\contentsline {subsection}{\numberline {5.10.4}Member Data Documentation}{92}{subsection.5.10.4}%
+\contentsline {subsubsection}{\numberline {5.10.4.1}adc}{92}{subsubsection.5.10.4.1}%
+\contentsline {subsubsection}{\numberline {5.10.4.2}am\_sn}{93}{subsubsection.5.10.4.2}%
+\contentsline {subsubsection}{\numberline {5.10.4.3}am\_valid}{93}{subsubsection.5.10.4.3}%
+\contentsline {subsubsection}{\numberline {5.10.4.4}apt\_sn}{93}{subsubsection.5.10.4.4}%
+\contentsline {subsubsection}{\numberline {5.10.4.5}apt\_valid}{93}{subsubsection.5.10.4.5}%
+\contentsline {subsubsection}{\numberline {5.10.4.6}battery}{93}{subsubsection.5.10.4.6}%
+\contentsline {subsubsection}{\numberline {5.10.4.7}battery\_percent}{93}{subsubsection.5.10.4.7}%
+\contentsline {subsubsection}{\numberline {5.10.4.8}cursor}{94}{subsubsection.5.10.4.8}%
+\contentsline {subsubsection}{\numberline {5.10.4.9}debug}{94}{subsubsection.5.10.4.9}%
+\contentsline {subsubsection}{\numberline {5.10.4.10}device}{94}{subsubsection.5.10.4.10}%
+\contentsline {subsubsection}{\numberline {5.10.4.11}is\_counting\_up}{94}{subsubsection.5.10.4.11}%
+\contentsline {subsubsection}{\numberline {5.10.4.12}max\_count}{94}{subsubsection.5.10.4.12}%
+\contentsline {subsubsection}{\numberline {5.10.4.13}mcu\_sn}{94}{subsubsection.5.10.4.13}%
+\contentsline {subsubsection}{\numberline {5.10.4.14}mcu\_valid}{95}{subsubsection.5.10.4.14}%
+\contentsline {subsubsection}{\numberline {5.10.4.15}mem}{95}{subsubsection.5.10.4.15}%
+\contentsline {subsubsection}{\numberline {5.10.4.16}motor\_running}{95}{subsubsection.5.10.4.16}%
+\contentsline {subsubsection}{\numberline {5.10.4.17}pressure}{95}{subsubsection.5.10.4.17}%
+\contentsline {subsubsection}{\numberline {5.10.4.18}pressure\_ok}{95}{subsubsection.5.10.4.18}%
+\contentsline {subsubsection}{\numberline {5.10.4.19}pulses}{95}{subsubsection.5.10.4.19}%
+\contentsline {subsubsection}{\numberline {5.10.4.20}pulses\_on\_screen}{96}{subsubsection.5.10.4.20}%
+\contentsline {subsubsection}{\numberline {5.10.4.21}screen}{96}{subsubsection.5.10.4.21}%
+\contentsline {subsubsection}{\numberline {5.10.4.22}state}{96}{subsubsection.5.10.4.22}%
+\contentsline {subsubsection}{\numberline {5.10.4.23}status}{96}{subsubsection.5.10.4.23}%
+\contentsline {section}{\numberline {5.11}Mem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ctrl Class Reference}{97}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{98}{subsection.5.11.1}%
+\contentsline {subsection}{\numberline {5.11.2}Constructor \& Destructor Documentation}{98}{subsection.5.11.2}%
+\contentsline {subsubsection}{\numberline {5.11.2.1}Mem\_ctrl()}{98}{subsubsection.5.11.2.1}%
+\contentsline {subsubsection}{\numberline {5.11.2.2}$\sim $Mem\_ctrl()}{99}{subsubsection.5.11.2.2}%
+\contentsline {subsection}{\numberline {5.11.3}Member Function Documentation}{99}{subsection.5.11.3}%
+\contentsline {subsubsection}{\numberline {5.11.3.1}binary\_and\_patch()}{99}{subsubsection.5.11.3.1}%
+\contentsline {subsubsection}{\numberline {5.11.3.2}check\_connections()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{100}{subsubsection.5.11.3.2}%
+\contentsline {subsubsection}{\numberline {5.11.3.3}check\_connections()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{100}{subsubsection.5.11.3.3}%
+\contentsline {subsubsection}{\numberline {5.11.3.4}check\_connections\_with\_printback()}{101}{subsubsection.5.11.3.4}%
+\contentsline {subsubsection}{\numberline {5.11.3.5}erase()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{102}{subsubsection.5.11.3.5}%
+\contentsline {subsubsection}{\numberline {5.11.3.6}erase()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{102}{subsubsection.5.11.3.6}%
+\contentsline {subsubsection}{\numberline {5.11.3.7}get\_date()}{103}{subsubsection.5.11.3.7}%
+\contentsline {subsubsection}{\numberline {5.11.3.8}get\_max()}{103}{subsubsection.5.11.3.8}%
+\contentsline {subsubsection}{\numberline {5.11.3.9}get\_serial()}{104}{subsubsection.5.11.3.9}%
+\contentsline {subsubsection}{\numberline {5.11.3.10}poll\_complete()}{104}{subsubsection.5.11.3.10}%
+\contentsline {subsubsection}{\numberline {5.11.3.11}print\_register()}{105}{subsubsection.5.11.3.11}%
+\contentsline {subsubsection}{\numberline {5.11.3.12}read()}{106}{subsubsection.5.11.3.12}%
+\contentsline {subsubsection}{\numberline {5.11.3.13}read256()}{107}{subsubsection.5.11.3.13}%
+\contentsline {subsubsection}{\numberline {5.11.3.14}write()}{108}{subsubsection.5.11.3.14}%
+\contentsline {subsubsection}{\numberline {5.11.3.15}write\_register()}{109}{subsubsection.5.11.3.15}%
+\contentsline {subsection}{\numberline {5.11.4}Member Data Documentation}{110}{subsection.5.11.4}%
+\contentsline {subsubsection}{\numberline {5.11.4.1}AM\_MEM}{110}{subsubsection.5.11.4.1}%
+\contentsline {subsubsection}{\numberline {5.11.4.2}APT\_MEM}{110}{subsubsection.5.11.4.2}%
+\contentsline {subsubsection}{\numberline {5.11.4.3}cs\_register}{110}{subsubsection.5.11.4.3}%
+\contentsline {subsubsection}{\numberline {5.11.4.4}MCU\_MEM}{110}{subsubsection.5.11.4.4}%
+\contentsline {section}{\numberline {5.12}Memory Class Reference}{111}{section.5.12}%
+\contentsline {subsection}{\numberline {5.12.1}Detailed Description}{112}{subsection.5.12.1}%
+\contentsline {subsection}{\numberline {5.12.2}Constructor \& Destructor Documentation}{112}{subsection.5.12.2}%
+\contentsline {subsubsection}{\numberline {5.12.2.1}Memory()}{112}{subsubsection.5.12.2.1}%
+\contentsline {subsubsection}{\numberline {5.12.2.2}$\sim $Memory()}{113}{subsubsection.5.12.2.2}%
+\contentsline {subsection}{\numberline {5.12.3}Member Function Documentation}{113}{subsection.5.12.3}%
+\contentsline {subsubsection}{\numberline {5.12.3.1}check\_id()}{113}{subsubsection.5.12.3.1}%
+\contentsline {subsubsection}{\numberline {5.12.3.2}erase()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{114}{subsubsection.5.12.3.2}%
+\contentsline {subsubsection}{\numberline {5.12.3.3}erase()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{114}{subsubsection.5.12.3.3}%
+\contentsline {subsubsection}{\numberline {5.12.3.4}print\_status()}{114}{subsubsection.5.12.3.4}%
+\contentsline {subsubsection}{\numberline {5.12.3.5}read()}{115}{subsubsection.5.12.3.5}%
+\contentsline {subsubsection}{\numberline {5.12.3.6}read256()}{116}{subsubsection.5.12.3.6}%
+\contentsline {subsubsection}{\numberline {5.12.3.7}read\_status\_register1()}{117}{subsubsection.5.12.3.7}%
+\contentsline {subsubsection}{\numberline {5.12.3.8}read\_status\_register2()}{117}{subsubsection.5.12.3.8}%
+\contentsline {subsubsection}{\numberline {5.12.3.9}write()}{118}{subsubsection.5.12.3.9}%
+\contentsline {subsubsection}{\numberline {5.12.3.10}write\_disable()}{119}{subsubsection.5.12.3.10}%
+\contentsline {subsubsection}{\numberline {5.12.3.11}write\_enable()}{119}{subsubsection.5.12.3.11}%
+\contentsline {subsubsection}{\numberline {5.12.3.12}write\_status\_register()}{120}{subsubsection.5.12.3.12}%
+\contentsline {subsection}{\numberline {5.12.4}Member Data Documentation}{120}{subsection.5.12.4}%
+\contentsline {subsubsection}{\numberline {5.12.4.1}CS}{120}{subsubsection.5.12.4.1}%
+\contentsline {subsubsection}{\numberline {5.12.4.2}cursor}{120}{subsubsection.5.12.4.2}%
+\contentsline {subsubsection}{\numberline {5.12.4.3}date}{120}{subsubsection.5.12.4.3}%
+\contentsline {subsubsection}{\numberline {5.12.4.4}id}{121}{subsubsection.5.12.4.4}%
+\contentsline {subsubsection}{\numberline {5.12.4.5}id\_valid}{121}{subsubsection.5.12.4.5}%
+\contentsline {subsubsection}{\numberline {5.12.4.6}max\_count}{121}{subsubsection.5.12.4.6}%
+\contentsline {subsubsection}{\numberline {5.12.4.7}name}{121}{subsubsection.5.12.4.7}%
+\contentsline {subsubsection}{\numberline {5.12.4.8}pulses}{121}{subsubsection.5.12.4.8}%
+\contentsline {subsubsection}{\numberline {5.12.4.9}serial\_number}{121}{subsubsection.5.12.4.9}%
+\contentsline {subsubsection}{\numberline {5.12.4.10}status16\_t}{122}{subsubsection.5.12.4.10}%
+\contentsline {section}{\numberline {5.13}Monitor Class Reference}{122}{section.5.13}%
+\contentsline {subsection}{\numberline {5.13.1}Detailed Description}{124}{subsection.5.13.1}%
+\contentsline {subsection}{\numberline {5.13.2}Constructor \& Destructor Documentation}{124}{subsection.5.13.2}%
+\contentsline {subsubsection}{\numberline {5.13.2.1}Monitor()}{124}{subsubsection.5.13.2.1}%
+\contentsline {subsubsection}{\numberline {5.13.2.2}$\sim $Monitor()}{125}{subsubsection.5.13.2.2}%
+\contentsline {subsection}{\numberline {5.13.3}Member Function Documentation}{125}{subsection.5.13.3}%
+\contentsline {subsubsection}{\numberline {5.13.3.1}rx\_debug()}{125}{subsubsection.5.13.3.1}%
+\contentsline {subsubsection}{\numberline {5.13.3.2}rx\_erase()}{125}{subsubsection.5.13.3.2}%
+\contentsline {subsubsection}{\numberline {5.13.3.3}rx\_exit()}{126}{subsubsection.5.13.3.3}%
+\contentsline {subsubsection}{\numberline {5.13.3.4}rx\_find\_pulses()}{126}{subsubsection.5.13.3.4}%
+\contentsline {subsubsection}{\numberline {5.13.3.5}rx\_get\_man\_id()}{127}{subsubsection.5.13.3.5}%
+\contentsline {subsubsection}{\numberline {5.13.3.6}rx\_go\_active()}{127}{subsubsection.5.13.3.6}%
+\contentsline {subsubsection}{\numberline {5.13.3.7}rx\_help()}{128}{subsubsection.5.13.3.7}%
+\contentsline {subsubsection}{\numberline {5.13.3.8}rx\_nuke()}{129}{subsubsection.5.13.3.8}%
+\contentsline {subsubsection}{\numberline {5.13.3.9}rx\_pass()}{129}{subsubsection.5.13.3.9}%
+\contentsline {subsubsection}{\numberline {5.13.3.10}rx\_read()}{130}{subsubsection.5.13.3.10}%
+\contentsline {subsubsection}{\numberline {5.13.3.11}rx\_scan()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{131}{subsubsection.5.13.3.11}%
+\contentsline {subsubsection}{\numberline {5.13.3.12}rx\_scan()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{131}{subsubsection.5.13.3.12}%
+\contentsline {subsubsection}{\numberline {5.13.3.13}rx\_set\_date()}{132}{subsubsection.5.13.3.13}%
+\contentsline {subsubsection}{\numberline {5.13.3.14}rx\_set\_maxi()}{132}{subsubsection.5.13.3.14}%
+\contentsline {subsubsection}{\numberline {5.13.3.15}rx\_set\_serial()}{133}{subsubsection.5.13.3.15}%
+\contentsline {subsubsection}{\numberline {5.13.3.16}rx\_start\_motor()}{134}{subsubsection.5.13.3.16}%
+\contentsline {subsubsection}{\numberline {5.13.3.17}rx\_status\_read()}{134}{subsubsection.5.13.3.17}%
+\contentsline {subsubsection}{\numberline {5.13.3.18}rx\_status\_write()}{135}{subsubsection.5.13.3.18}%
+\contentsline {subsubsection}{\numberline {5.13.3.19}rx\_stop\_motor()}{136}{subsubsection.5.13.3.19}%
+\contentsline {subsubsection}{\numberline {5.13.3.20}rx\_test\_read()}{136}{subsubsection.5.13.3.20}%
+\contentsline {subsubsection}{\numberline {5.13.3.21}rx\_upload()}{137}{subsubsection.5.13.3.21}%
+\contentsline {subsubsection}{\numberline {5.13.3.22}rx\_write()}{138}{subsubsection.5.13.3.22}%
+\contentsline {subsubsection}{\numberline {5.13.3.23}serial\_consume()}{139}{subsubsection.5.13.3.23}%
+\contentsline {subsection}{\numberline {5.13.4}Member Data Documentation}{141}{subsection.5.13.4}%
+\contentsline {subsubsection}{\numberline {5.13.4.1}address}{141}{subsubsection.5.13.4.1}%
+\contentsline {subsubsection}{\numberline {5.13.4.2}apt}{142}{subsubsection.5.13.4.2}%
+\contentsline {subsubsection}{\numberline {5.13.4.3}buffer}{142}{subsubsection.5.13.4.3}%
+\contentsline {subsubsection}{\numberline {5.13.4.4}chip\_select}{142}{subsubsection.5.13.4.4}%
+\contentsline {subsubsection}{\numberline {5.13.4.5}value}{142}{subsubsection.5.13.4.5}%
+\contentsline {section}{\numberline {5.14}Peripherial\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Devices Class Reference}{143}{section.5.14}%
+\contentsline {subsection}{\numberline {5.14.1}Detailed Description}{144}{subsection.5.14.1}%
+\contentsline {subsection}{\numberline {5.14.2}Constructor \& Destructor Documentation}{144}{subsection.5.14.2}%
+\contentsline {subsubsection}{\numberline {5.14.2.1}PeripherialDevices()}{144}{subsubsection.5.14.2.1}%
+\contentsline {subsubsection}{\numberline {5.14.2.2}$\sim $PeripherialDevices()}{144}{subsubsection.5.14.2.2}%
+\contentsline {subsection}{\numberline {5.14.3}Member Function Documentation}{144}{subsection.5.14.3}%
+\contentsline {subsubsection}{\numberline {5.14.3.1}clear\_counter()}{145}{subsubsection.5.14.3.1}%
+\contentsline {subsubsection}{\numberline {5.14.3.2}read()}{145}{subsubsection.5.14.3.2}%
+\contentsline {subsubsection}{\numberline {5.14.3.3}read\_counter()}{146}{subsubsection.5.14.3.3}%
+\contentsline {subsubsection}{\numberline {5.14.3.4}read\_fire\_button\_press()}{147}{subsubsection.5.14.3.4}%
+\contentsline {subsubsection}{\numberline {5.14.3.5}start\_motor()}{148}{subsubsection.5.14.3.5}%
+\contentsline {subsubsection}{\numberline {5.14.3.6}stop\_motor()}{148}{subsubsection.5.14.3.6}%
+\contentsline {subsubsection}{\numberline {5.14.3.7}toggle\_motor()}{149}{subsubsection.5.14.3.7}%
+\contentsline {subsection}{\numberline {5.14.4}Member Data Documentation}{150}{subsection.5.14.4}%
+\contentsline {subsubsection}{\numberline {5.14.4.1}CsRegister}{150}{subsubsection.5.14.4.1}%
+\contentsline {subsubsection}{\numberline {5.14.4.2}motor\_running}{150}{subsubsection.5.14.4.2}%
+\contentsline {subsubsection}{\numberline {5.14.4.3}StatusReg}{150}{subsubsection.5.14.4.3}%
+\contentsline {section}{\numberline {5.15}Screen\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ctrl Class Reference}{151}{section.5.15}%
+\contentsline {subsection}{\numberline {5.15.1}Detailed Description}{152}{subsection.5.15.1}%
+\contentsline {subsection}{\numberline {5.15.2}Constructor \& Destructor Documentation}{152}{subsection.5.15.2}%
+\contentsline {subsubsection}{\numberline {5.15.2.1}Screen\_ctrl()}{152}{subsubsection.5.15.2.1}%
+\contentsline {subsubsection}{\numberline {5.15.2.2}$\sim $Screen\_ctrl()}{152}{subsubsection.5.15.2.2}%
+\contentsline {subsection}{\numberline {5.15.3}Member Function Documentation}{152}{subsection.5.15.3}%
+\contentsline {subsubsection}{\numberline {5.15.3.1}clean\_screen()}{153}{subsubsection.5.15.3.1}%
+\contentsline {subsubsection}{\numberline {5.15.3.2}get\_time()}{153}{subsubsection.5.15.3.2}%
+\contentsline {subsubsection}{\numberline {5.15.3.3}pass\_to\_ard()}{153}{subsubsection.5.15.3.3}%
+\contentsline {subsubsection}{\numberline {5.15.3.4}print\_logo()}{154}{subsubsection.5.15.3.4}%
+\contentsline {subsubsection}{\numberline {5.15.3.5}print\_version()}{154}{subsubsection.5.15.3.5}%
+\contentsline {subsubsection}{\numberline {5.15.3.6}qa\_mon()}{155}{subsubsection.5.15.3.6}%
+\contentsline {subsubsection}{\numberline {5.15.3.7}tx\_send\_general\_error()}{155}{subsubsection.5.15.3.7}%
+\contentsline {subsubsection}{\numberline {5.15.3.8}update\_battery()}{156}{subsubsection.5.15.3.8}%
+\contentsline {subsubsection}{\numberline {5.15.3.9}update\_error\_remaining()}{157}{subsubsection.5.15.3.9}%
+\contentsline {subsubsection}{\numberline {5.15.3.10}update\_piazo()}{158}{subsubsection.5.15.3.10}%
+\contentsline {subsubsection}{\numberline {5.15.3.11}update\_pressure()}{159}{subsubsection.5.15.3.11}%
+\contentsline {subsubsection}{\numberline {5.15.3.12}update\_pulse\_counter()}{160}{subsubsection.5.15.3.12}%
+\contentsline {subsubsection}{\numberline {5.15.3.13}update\_remaining\_in\_percent()}{161}{subsubsection.5.15.3.13}%
+\contentsline {section}{\numberline {5.16}State Class Reference}{162}{section.5.16}%
+\contentsline {subsection}{\numberline {5.16.1}Detailed Description}{163}{subsection.5.16.1}%
+\contentsline {subsection}{\numberline {5.16.2}Constructor \& Destructor Documentation}{163}{subsection.5.16.2}%
+\contentsline {subsubsection}{\numberline {5.16.2.1}State()}{163}{subsubsection.5.16.2.1}%
+\contentsline {subsubsection}{\numberline {5.16.2.2}$\sim $State()}{163}{subsubsection.5.16.2.2}%
+\contentsline {subsection}{\numberline {5.16.3}Member Function Documentation}{163}{subsection.5.16.3}%
+\contentsline {subsubsection}{\numberline {5.16.3.1}init\_first\_step()}{163}{subsubsection.5.16.3.1}%
+\contentsline {subsection}{\numberline {5.16.4}Member Data Documentation}{164}{subsection.5.16.4}%
+\contentsline {subsubsection}{\numberline {5.16.4.1}battery}{164}{subsubsection.5.16.4.1}%
+\contentsline {subsubsection}{\numberline {5.16.4.2}bypass}{164}{subsubsection.5.16.4.2}%
+\contentsline {subsubsection}{\numberline {5.16.4.3}current}{164}{subsubsection.5.16.4.3}%
+\contentsline {subsubsection}{\numberline {5.16.4.4}next}{165}{subsubsection.5.16.4.4}%
+\contentsline {subsubsection}{\numberline {5.16.4.5}pressure}{165}{subsubsection.5.16.4.5}%
+\contentsline {subsubsection}{\numberline {5.16.4.6}pulses\_to\_screen}{165}{subsubsection.5.16.4.6}%
+\contentsline {section}{\numberline {5.17}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}reg Class Reference}{165}{section.5.17}%
+\contentsline {subsection}{\numberline {5.17.1}Detailed Description}{166}{subsection.5.17.1}%
+\contentsline {subsection}{\numberline {5.17.2}Constructor \& Destructor Documentation}{167}{subsection.5.17.2}%
+\contentsline {subsubsection}{\numberline {5.17.2.1}STATUS\_reg()}{167}{subsubsection.5.17.2.1}%
+\contentsline {subsubsection}{\numberline {5.17.2.2}$\sim $STATUS\_reg()}{167}{subsubsection.5.17.2.2}%
+\contentsline {subsection}{\numberline {5.17.3}Member Function Documentation}{167}{subsection.5.17.3}%
+\contentsline {subsubsection}{\numberline {5.17.3.1}get\_value()}{167}{subsubsection.5.17.3.1}%
+\contentsline {subsubsection}{\numberline {5.17.3.2}print\_current()}{168}{subsubsection.5.17.3.2}%
+\contentsline {subsection}{\numberline {5.17.4}Member Data Documentation}{168}{subsection.5.17.4}%
+\contentsline {subsubsection}{\numberline {5.17.4.1}current}{168}{subsubsection.5.17.4.1}%
+\contentsline {chapter}{\numberline {6}File Documentation}{169}{chapter.6}%
+\contentsline {section}{\numberline {6.1}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/adc.h File Reference}{169}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Function Documentation}{170}{subsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1.1}MX\_ADC\_Init()}{170}{subsubsection.6.1.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Variable Documentation}{172}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}hadc}{172}{subsubsection.6.1.2.1}%
+\contentsline {section}{\numberline {6.2}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/adc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.h File Reference}{173}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Enumeration Type Documentation}{174}{subsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.1}select\_channel}{174}{subsubsection.6.2.1.1}%
+\contentsline {section}{\numberline {6.3}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/common.h File Reference}{174}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{176}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Macro Definition Documentation}{177}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}CONVERTDEC}{177}{subsubsection.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {6.3.2.2}CONVERTHEX}{177}{subsubsection.6.3.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.3}CONVERTHEX\_ALPHA}{177}{subsubsection.6.3.2.3}%
+\contentsline {subsubsection}{\numberline {6.3.2.4}IS\_09}{177}{subsubsection.6.3.2.4}%
+\contentsline {subsubsection}{\numberline {6.3.2.5}IS\_CAP\_LETTER}{177}{subsubsection.6.3.2.5}%
+\contentsline {subsubsection}{\numberline {6.3.2.6}IS\_LC\_LETTER}{178}{subsubsection.6.3.2.6}%
+\contentsline {subsubsection}{\numberline {6.3.2.7}ISVALIDDEC}{178}{subsubsection.6.3.2.7}%
+\contentsline {subsubsection}{\numberline {6.3.2.8}ISVALIDHEX}{178}{subsubsection.6.3.2.8}%
+\contentsline {subsubsection}{\numberline {6.3.2.9}RX\_TIMEOUT}{178}{subsubsection.6.3.2.9}%
+\contentsline {subsubsection}{\numberline {6.3.2.10}TX\_TIMEOUT}{178}{subsubsection.6.3.2.10}%
+\contentsline {section}{\numberline {6.4}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/crc.h File Reference}{179}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Function Documentation}{180}{subsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.1.1}MX\_CRC\_Init()}{180}{subsubsection.6.4.1.1}%
+\contentsline {subsection}{\numberline {6.4.2}Variable Documentation}{180}{subsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.2.1}hcrc}{181}{subsubsection.6.4.2.1}%
+\contentsline {section}{\numberline {6.5}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/cs\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}register.h File Reference}{181}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Enumeration Type Documentation}{182}{subsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.1.1}cs\_decoder}{182}{subsubsection.6.5.1.1}%
+\contentsline {section}{\numberline {6.6}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/dma.h File Reference}{183}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Function Documentation}{183}{subsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.1}MX\_DMA\_Init()}{184}{subsubsection.6.6.1.1}%
+\contentsline {section}{\numberline {6.7}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/flash\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}if.h File Reference}{185}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{186}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}Macro Definition Documentation}{187}{subsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.1}ABS\_RETURN}{187}{subsubsection.6.7.2.1}%
+\contentsline {subsubsection}{\numberline {6.7.2.2}APPLICATION\_ADDRESS}{187}{subsubsection.6.7.2.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.3}FLASH\_PAGE\_STEP}{187}{subsubsection.6.7.2.3}%
+\contentsline {subsubsection}{\numberline {6.7.2.4}USER\_FLASH\_SIZE}{187}{subsubsection.6.7.2.4}%
+\contentsline {subsection}{\numberline {6.7.3}Enumeration Type Documentation}{187}{subsection.6.7.3}%
+\contentsline {subsubsection}{\numberline {6.7.3.1}anonymous enum}{187}{subsubsection.6.7.3.1}%
+\contentsline {subsubsection}{\numberline {6.7.3.2}anonymous enum}{188}{subsubsection.6.7.3.2}%
+\contentsline {subsubsection}{\numberline {6.7.3.3}anonymous enum}{188}{subsubsection.6.7.3.3}%
+\contentsline {section}{\numberline {6.8}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/gpio.h File Reference}{189}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Function Documentation}{189}{subsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.1.1}MX\_GPIO\_Init()}{190}{subsubsection.6.8.1.1}%
+\contentsline {section}{\numberline {6.9}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/hardware.h File Reference}{192}{section.6.9}%
+\contentsline {section}{\numberline {6.10}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/main.h File Reference}{194}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}Detailed Description}{196}{subsection.6.10.1}%
+\contentsline {subsection}{\numberline {6.10.2}Macro Definition Documentation}{196}{subsection.6.10.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.1}ADC\_CURRENT\_SENSE\_GPIO\_Port}{196}{subsubsection.6.10.2.1}%
+\contentsline {subsubsection}{\numberline {6.10.2.2}ADC\_CURRENT\_SENSE\_Pin}{196}{subsubsection.6.10.2.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.3}BLINKING\_LED\_GPIO\_Port}{197}{subsubsection.6.10.2.3}%
+\contentsline {subsubsection}{\numberline {6.10.2.4}BLINKING\_LED\_Pin}{197}{subsubsection.6.10.2.4}%
+\contentsline {subsubsection}{\numberline {6.10.2.5}BUZZER\_GPIO\_Port}{197}{subsubsection.6.10.2.5}%
+\contentsline {subsubsection}{\numberline {6.10.2.6}BUZZER\_Pin}{197}{subsubsection.6.10.2.6}%
+\contentsline {subsubsection}{\numberline {6.10.2.7}CHIP\_SELECT\_MCU\_MEM\_GPIO\_Port}{197}{subsubsection.6.10.2.7}%
+\contentsline {subsubsection}{\numberline {6.10.2.8}CHIP\_SELECT\_MCU\_MEM\_Pin}{197}{subsubsection.6.10.2.8}%
+\contentsline {subsubsection}{\numberline {6.10.2.9}CHIP\_SELECT\_RESERVED\_GPIO\_Port}{198}{subsubsection.6.10.2.9}%
+\contentsline {subsubsection}{\numberline {6.10.2.10}CHIP\_SELECT\_RESERVED\_Pin}{198}{subsubsection.6.10.2.10}%
+\contentsline {subsubsection}{\numberline {6.10.2.11}CHIP\_SELECT\_SERIAL\_GPIO\_Port}{198}{subsubsection.6.10.2.11}%
+\contentsline {subsubsection}{\numberline {6.10.2.12}CHIP\_SELECT\_SERIAL\_Pin}{198}{subsubsection.6.10.2.12}%
+\contentsline {subsubsection}{\numberline {6.10.2.13}DEBUG\_AM\_OK\_GPIO\_Port}{198}{subsubsection.6.10.2.13}%
+\contentsline {subsubsection}{\numberline {6.10.2.14}DEBUG\_AM\_OK\_Pin}{198}{subsubsection.6.10.2.14}%
+\contentsline {subsubsection}{\numberline {6.10.2.15}DEBUG\_APT\_OK\_GPIO\_Port}{199}{subsubsection.6.10.2.15}%
+\contentsline {subsubsection}{\numberline {6.10.2.16}DEBUG\_APT\_OK\_Pin}{199}{subsubsection.6.10.2.16}%
+\contentsline {subsubsection}{\numberline {6.10.2.17}DEBUG\_BRK1\_GPIO\_Port}{199}{subsubsection.6.10.2.17}%
+\contentsline {subsubsection}{\numberline {6.10.2.18}DEBUG\_BRK1\_Pin}{199}{subsubsection.6.10.2.18}%
+\contentsline {subsubsection}{\numberline {6.10.2.19}DEBUG\_BRK2\_GPIO\_Port}{199}{subsubsection.6.10.2.19}%
+\contentsline {subsubsection}{\numberline {6.10.2.20}DEBUG\_BRK2\_Pin}{199}{subsubsection.6.10.2.20}%
+\contentsline {subsubsection}{\numberline {6.10.2.21}DEBUG\_CLK\_AUX\_GPIO\_Port}{200}{subsubsection.6.10.2.21}%
+\contentsline {subsubsection}{\numberline {6.10.2.22}DEBUG\_CLK\_AUX\_Pin}{200}{subsubsection.6.10.2.22}%
+\contentsline {subsubsection}{\numberline {6.10.2.23}DEBUG\_DATA\_AUX\_GPIO\_Port}{200}{subsubsection.6.10.2.23}%
+\contentsline {subsubsection}{\numberline {6.10.2.24}DEBUG\_DATA\_AUX\_Pin}{200}{subsubsection.6.10.2.24}%
+\contentsline {subsubsection}{\numberline {6.10.2.25}DEBUG\_LATCH\_AUX\_GPIO\_Port}{200}{subsubsection.6.10.2.25}%
+\contentsline {subsubsection}{\numberline {6.10.2.26}DEBUG\_LATCH\_AUX\_Pin}{200}{subsubsection.6.10.2.26}%
+\contentsline {subsubsection}{\numberline {6.10.2.27}DEBUG\_MCU\_OK\_GPIO\_Port}{201}{subsubsection.6.10.2.27}%
+\contentsline {subsubsection}{\numberline {6.10.2.28}DEBUG\_MCU\_OK\_Pin}{201}{subsubsection.6.10.2.28}%
+\contentsline {subsubsection}{\numberline {6.10.2.29}DEBUG\_MOTOR\_RUNNING\_GPIO\_Port}{201}{subsubsection.6.10.2.29}%
+\contentsline {subsubsection}{\numberline {6.10.2.30}DEBUG\_MOTOR\_RUNNING\_Pin}{201}{subsubsection.6.10.2.30}%
+\contentsline {subsubsection}{\numberline {6.10.2.31}DEBUG\_PRESSURE\_OK\_GPIO\_Port}{201}{subsubsection.6.10.2.31}%
+\contentsline {subsubsection}{\numberline {6.10.2.32}DEBUG\_PRESSURE\_OK\_Pin}{201}{subsubsection.6.10.2.32}%
+\contentsline {subsubsection}{\numberline {6.10.2.33}DEBUG\_STATE\_1\_GPIO\_Port}{202}{subsubsection.6.10.2.33}%
+\contentsline {subsubsection}{\numberline {6.10.2.34}DEBUG\_STATE\_1\_Pin}{202}{subsubsection.6.10.2.34}%
+\contentsline {subsubsection}{\numberline {6.10.2.35}DEBUG\_STATE\_2\_GPIO\_Port}{202}{subsubsection.6.10.2.35}%
+\contentsline {subsubsection}{\numberline {6.10.2.36}DEBUG\_STATE\_2\_Pin}{202}{subsubsection.6.10.2.36}%
+\contentsline {subsubsection}{\numberline {6.10.2.37}DEBUG\_STATE\_3\_GPIO\_Port}{202}{subsubsection.6.10.2.37}%
+\contentsline {subsubsection}{\numberline {6.10.2.38}DEBUG\_STATE\_3\_Pin}{202}{subsubsection.6.10.2.38}%
+\contentsline {subsubsection}{\numberline {6.10.2.39}DMA\_LENGTH}{203}{subsubsection.6.10.2.39}%
+\contentsline {subsubsection}{\numberline {6.10.2.40}ENABLE\_POWER\_12V\_GPIO\_Port}{203}{subsubsection.6.10.2.40}%
+\contentsline {subsubsection}{\numberline {6.10.2.41}ENABLE\_POWER\_12V\_Pin}{203}{subsubsection.6.10.2.41}%
+\contentsline {subsubsection}{\numberline {6.10.2.42}LOGIC\_BYPASS\_1\_GPIO\_Port}{203}{subsubsection.6.10.2.42}%
+\contentsline {subsubsection}{\numberline {6.10.2.43}LOGIC\_BYPASS\_1\_Pin}{203}{subsubsection.6.10.2.43}%
+\contentsline {subsubsection}{\numberline {6.10.2.44}LOGIC\_BYPASS\_2\_GPIO\_Port}{203}{subsubsection.6.10.2.44}%
+\contentsline {subsubsection}{\numberline {6.10.2.45}LOGIC\_BYPASS\_2\_Pin}{204}{subsubsection.6.10.2.45}%
+\contentsline {subsubsection}{\numberline {6.10.2.46}LOGIC\_BYPASS\_3\_GPIO\_Port}{204}{subsubsection.6.10.2.46}%
+\contentsline {subsubsection}{\numberline {6.10.2.47}LOGIC\_BYPASS\_3\_Pin}{204}{subsubsection.6.10.2.47}%
+\contentsline {subsubsection}{\numberline {6.10.2.48}LOGIC\_BYPASS\_4\_GPIO\_Port}{204}{subsubsection.6.10.2.48}%
+\contentsline {subsubsection}{\numberline {6.10.2.49}LOGIC\_BYPASS\_4\_Pin}{204}{subsubsection.6.10.2.49}%
+\contentsline {subsubsection}{\numberline {6.10.2.50}LVDS\_RESERVED\_GPIO\_Port}{204}{subsubsection.6.10.2.50}%
+\contentsline {subsubsection}{\numberline {6.10.2.51}LVDS\_RESERVED\_Pin}{205}{subsubsection.6.10.2.51}%
+\contentsline {subsubsection}{\numberline {6.10.2.52}PA1\_RESERVED\_ASK\_SHAUL\_GPIO\_Port}{205}{subsubsection.6.10.2.52}%
+\contentsline {subsubsection}{\numberline {6.10.2.53}PA1\_RESERVED\_ASK\_SHAUL\_Pin}{205}{subsubsection.6.10.2.53}%
+\contentsline {subsubsection}{\numberline {6.10.2.54}POWER\_FAIL\_MCU\_GPIO\_Port}{205}{subsubsection.6.10.2.54}%
+\contentsline {subsubsection}{\numberline {6.10.2.55}POWER\_FAIL\_MCU\_Pin}{205}{subsubsection.6.10.2.55}%
+\contentsline {subsubsection}{\numberline {6.10.2.56}RESERVED\_UART6\_RX\_GPIO\_Port}{205}{subsubsection.6.10.2.56}%
+\contentsline {subsubsection}{\numberline {6.10.2.57}RESERVED\_UART6\_RX\_Pin}{206}{subsubsection.6.10.2.57}%
+\contentsline {subsubsection}{\numberline {6.10.2.58}RESERVED\_UART6\_TX\_GPIO\_Port}{206}{subsubsection.6.10.2.58}%
+\contentsline {subsubsection}{\numberline {6.10.2.59}RESERVED\_UART6\_TX\_Pin}{206}{subsubsection.6.10.2.59}%
+\contentsline {subsubsection}{\numberline {6.10.2.60}RTC\_TIMESTAMP\_GPIO\_Port}{206}{subsubsection.6.10.2.60}%
+\contentsline {subsubsection}{\numberline {6.10.2.61}RTC\_TIMESTAMP\_Pin}{206}{subsubsection.6.10.2.61}%
+\contentsline {subsubsection}{\numberline {6.10.2.62}SIMPLE\_INTERLOCK\_GPIO\_Port}{206}{subsubsection.6.10.2.62}%
+\contentsline {subsubsection}{\numberline {6.10.2.63}SIMPLE\_INTERLOCK\_Pin}{207}{subsubsection.6.10.2.63}%
+\contentsline {subsubsection}{\numberline {6.10.2.64}SYS\_SWO\_RESERVERED\_GPIO\_Port}{207}{subsubsection.6.10.2.64}%
+\contentsline {subsubsection}{\numberline {6.10.2.65}SYS\_SWO\_RESERVERED\_Pin}{207}{subsubsection.6.10.2.65}%
+\contentsline {subsubsection}{\numberline {6.10.2.66}TOGGLE400\_RESET\_BTN\_GPIO\_Port}{207}{subsubsection.6.10.2.66}%
+\contentsline {subsubsection}{\numberline {6.10.2.67}TOGGLE400\_RESET\_BTN\_Pin}{207}{subsubsection.6.10.2.67}%
+\contentsline {subsubsection}{\numberline {6.10.2.68}UART1\_PC\_RX\_GPIO\_Port}{207}{subsubsection.6.10.2.68}%
+\contentsline {subsubsection}{\numberline {6.10.2.69}UART1\_PC\_RX\_Pin}{208}{subsubsection.6.10.2.69}%
+\contentsline {subsubsection}{\numberline {6.10.2.70}UART1\_PC\_TX\_GPIO\_Port}{208}{subsubsection.6.10.2.70}%
+\contentsline {subsubsection}{\numberline {6.10.2.71}UART1\_PC\_TX\_Pin}{208}{subsubsection.6.10.2.71}%
+\contentsline {subsubsection}{\numberline {6.10.2.72}UART2\_SCREEN\_RX\_GPIO\_Port}{208}{subsubsection.6.10.2.72}%
+\contentsline {subsubsection}{\numberline {6.10.2.73}UART2\_SCREEN\_RX\_Pin}{208}{subsubsection.6.10.2.73}%
+\contentsline {subsubsection}{\numberline {6.10.2.74}UART2\_SCREEN\_TX\_GPIO\_Port}{208}{subsubsection.6.10.2.74}%
+\contentsline {subsubsection}{\numberline {6.10.2.75}UART2\_SCREEN\_TX\_Pin}{209}{subsubsection.6.10.2.75}%
+\contentsline {subsubsection}{\numberline {6.10.2.76}USB\_DM\_RESERVED\_GPIO\_Port}{209}{subsubsection.6.10.2.76}%
+\contentsline {subsubsection}{\numberline {6.10.2.77}USB\_DM\_RESERVED\_Pin}{209}{subsubsection.6.10.2.77}%
+\contentsline {subsubsection}{\numberline {6.10.2.78}USB\_DP\_RESERVED\_GPIO\_Port}{209}{subsubsection.6.10.2.78}%
+\contentsline {subsubsection}{\numberline {6.10.2.79}USB\_DP\_RESERVED\_Pin}{209}{subsubsection.6.10.2.79}%
+\contentsline {subsubsection}{\numberline {6.10.2.80}WATCHDOG\_OUT\_GPIO\_Port}{209}{subsubsection.6.10.2.80}%
+\contentsline {subsubsection}{\numberline {6.10.2.81}WATCHDOG\_OUT\_Pin}{210}{subsubsection.6.10.2.81}%
+\contentsline {subsection}{\numberline {6.10.3}Function Documentation}{210}{subsection.6.10.3}%
+\contentsline {subsubsection}{\numberline {6.10.3.1}Error\_Handler()}{210}{subsubsection.6.10.3.1}%
+\contentsline {section}{\numberline {6.11}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.h File Reference}{211}{section.6.11}%
+\contentsline {section}{\numberline {6.12}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/mem.h File Reference}{212}{section.6.12}%
+\contentsline {section}{\numberline {6.13}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/mem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.h File Reference}{213}{section.6.13}%
+\contentsline {section}{\numberline {6.14}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/menu.h File Reference}{214}{section.6.14}%
+\contentsline {subsection}{\numberline {6.14.1}Detailed Description}{216}{subsection.6.14.1}%
+\contentsline {subsection}{\numberline {6.14.2}Typedef Documentation}{217}{subsection.6.14.2}%
+\contentsline {subsubsection}{\numberline {6.14.2.1}pFunction}{217}{subsubsection.6.14.2.1}%
+\contentsline {subsection}{\numberline {6.14.3}Function Documentation}{217}{subsection.6.14.3}%
+\contentsline {subsubsection}{\numberline {6.14.3.1}SerialDownload()}{217}{subsubsection.6.14.3.1}%
+\contentsline {subsection}{\numberline {6.14.4}Variable Documentation}{217}{subsection.6.14.4}%
+\contentsline {subsubsection}{\numberline {6.14.4.1}aFileName}{217}{subsubsection.6.14.4.1}%
+\contentsline {section}{\numberline {6.15}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/monitor.cpp File Reference}{217}{section.6.15}%
+\contentsline {section}{\numberline {6.16}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/monitor.h File Reference}{218}{section.6.16}%
+\contentsline {section}{\numberline {6.17}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/peripherial\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.h File Reference}{218}{section.6.17}%
+\contentsline {section}{\numberline {6.18}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/rtc.h File Reference}{219}{section.6.18}%
+\contentsline {subsection}{\numberline {6.18.1}Function Documentation}{220}{subsection.6.18.1}%
+\contentsline {subsubsection}{\numberline {6.18.1.1}MX\_RTC\_Init()}{221}{subsubsection.6.18.1.1}%
+\contentsline {subsection}{\numberline {6.18.2}Variable Documentation}{222}{subsection.6.18.2}%
+\contentsline {subsubsection}{\numberline {6.18.2.1}hrtc}{222}{subsubsection.6.18.2.1}%
+\contentsline {section}{\numberline {6.19}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/screen\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.h File Reference}{223}{section.6.19}%
+\contentsline {section}{\numberline {6.20}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/spi.h File Reference}{224}{section.6.20}%
+\contentsline {subsection}{\numberline {6.20.1}Function Documentation}{224}{subsection.6.20.1}%
+\contentsline {subsubsection}{\numberline {6.20.1.1}MX\_SPI1\_Init()}{225}{subsubsection.6.20.1.1}%
+\contentsline {subsection}{\numberline {6.20.2}Variable Documentation}{225}{subsection.6.20.2}%
+\contentsline {subsubsection}{\numberline {6.20.2.1}hspi1}{225}{subsubsection.6.20.2.1}%
+\contentsline {section}{\numberline {6.21}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/state.h File Reference}{226}{section.6.21}%
+\contentsline {subsection}{\numberline {6.21.1}Enumeration Type Documentation}{227}{subsection.6.21.1}%
+\contentsline {subsubsection}{\numberline {6.21.1.1}statesMachine}{227}{subsubsection.6.21.1.1}%
+\contentsline {section}{\numberline {6.22}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/status\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}reg.h File Reference}{228}{section.6.22}%
+\contentsline {section}{\numberline {6.23}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/stm32f0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}conf.h File Reference}{229}{section.6.23}%
+\contentsline {subsection}{\numberline {6.23.1}Detailed Description}{231}{subsection.6.23.1}%
+\contentsline {subsection}{\numberline {6.23.2}Macro Definition Documentation}{231}{subsection.6.23.2}%
+\contentsline {subsubsection}{\numberline {6.23.2.1}assert\_param}{231}{subsubsection.6.23.2.1}%
+\contentsline {subsubsection}{\numberline {6.23.2.2}DATA\_CACHE\_ENABLE}{232}{subsubsection.6.23.2.2}%
+\contentsline {subsubsection}{\numberline {6.23.2.3}HAL\_ADC\_MODULE\_ENABLED}{232}{subsubsection.6.23.2.3}%
+\contentsline {subsubsection}{\numberline {6.23.2.4}HAL\_CORTEX\_MODULE\_ENABLED}{232}{subsubsection.6.23.2.4}%
+\contentsline {subsubsection}{\numberline {6.23.2.5}HAL\_CRC\_MODULE\_ENABLED}{232}{subsubsection.6.23.2.5}%
+\contentsline {subsubsection}{\numberline {6.23.2.6}HAL\_DMA\_MODULE\_ENABLED}{232}{subsubsection.6.23.2.6}%
+\contentsline {subsubsection}{\numberline {6.23.2.7}HAL\_FLASH\_MODULE\_ENABLED}{232}{subsubsection.6.23.2.7}%
+\contentsline {subsubsection}{\numberline {6.23.2.8}HAL\_GPIO\_MODULE\_ENABLED}{233}{subsubsection.6.23.2.8}%
+\contentsline {subsubsection}{\numberline {6.23.2.9}HAL\_I2C\_MODULE\_ENABLED}{233}{subsubsection.6.23.2.9}%
+\contentsline {subsubsection}{\numberline {6.23.2.10}HAL\_MODULE\_ENABLED}{233}{subsubsection.6.23.2.10}%
+\contentsline {subsubsection}{\numberline {6.23.2.11}HAL\_PWR\_MODULE\_ENABLED}{233}{subsubsection.6.23.2.11}%
+\contentsline {subsubsection}{\numberline {6.23.2.12}HAL\_RCC\_MODULE\_ENABLED}{233}{subsubsection.6.23.2.12}%
+\contentsline {subsubsection}{\numberline {6.23.2.13}HAL\_RTC\_MODULE\_ENABLED}{233}{subsubsection.6.23.2.13}%
+\contentsline {subsubsection}{\numberline {6.23.2.14}HAL\_SPI\_MODULE\_ENABLED}{234}{subsubsection.6.23.2.14}%
+\contentsline {subsubsection}{\numberline {6.23.2.15}HAL\_TIM\_MODULE\_ENABLED}{234}{subsubsection.6.23.2.15}%
+\contentsline {subsubsection}{\numberline {6.23.2.16}HAL\_UART\_MODULE\_ENABLED}{234}{subsubsection.6.23.2.16}%
+\contentsline {subsubsection}{\numberline {6.23.2.17}HSE\_STARTUP\_TIMEOUT}{234}{subsubsection.6.23.2.17}%
+\contentsline {subsubsection}{\numberline {6.23.2.18}HSE\_VALUE}{234}{subsubsection.6.23.2.18}%
+\contentsline {subsubsection}{\numberline {6.23.2.19}HSI14\_VALUE}{235}{subsubsection.6.23.2.19}%
+\contentsline {subsubsection}{\numberline {6.23.2.20}HSI48\_VALUE}{235}{subsubsection.6.23.2.20}%
+\contentsline {subsubsection}{\numberline {6.23.2.21}HSI\_STARTUP\_TIMEOUT}{235}{subsubsection.6.23.2.21}%
+\contentsline {subsubsection}{\numberline {6.23.2.22}HSI\_VALUE}{235}{subsubsection.6.23.2.22}%
+\contentsline {subsubsection}{\numberline {6.23.2.23}INSTRUCTION\_CACHE\_ENABLE}{236}{subsubsection.6.23.2.23}%
+\contentsline {subsubsection}{\numberline {6.23.2.24}LSE\_STARTUP\_TIMEOUT}{236}{subsubsection.6.23.2.24}%
+\contentsline {subsubsection}{\numberline {6.23.2.25}LSE\_VALUE}{236}{subsubsection.6.23.2.25}%
+\contentsline {subsubsection}{\numberline {6.23.2.26}LSI\_VALUE}{236}{subsubsection.6.23.2.26}%
+\contentsline {subsubsection}{\numberline {6.23.2.27}PREFETCH\_ENABLE}{236}{subsubsection.6.23.2.27}%
+\contentsline {subsubsection}{\numberline {6.23.2.28}TICK\_INT\_PRIORITY}{237}{subsubsection.6.23.2.28}%
+\contentsline {subsubsection}{\numberline {6.23.2.29}USE\_RTOS}{237}{subsubsection.6.23.2.29}%
+\contentsline {subsubsection}{\numberline {6.23.2.30}USE\_SPI\_CRC}{237}{subsubsection.6.23.2.30}%
+\contentsline {subsubsection}{\numberline {6.23.2.31}VDD\_VALUE}{237}{subsubsection.6.23.2.31}%
+\contentsline {section}{\numberline {6.24}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/stm32f0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}it.h File Reference}{238}{section.6.24}%
+\contentsline {subsection}{\numberline {6.24.1}Detailed Description}{238}{subsection.6.24.1}%
+\contentsline {subsection}{\numberline {6.24.2}Function Documentation}{239}{subsection.6.24.2}%
+\contentsline {subsubsection}{\numberline {6.24.2.1}DMA1\_Channel1\_IRQHandler()}{239}{subsubsection.6.24.2.1}%
+\contentsline {subsubsection}{\numberline {6.24.2.2}HardFault\_Handler()}{239}{subsubsection.6.24.2.2}%
+\contentsline {subsubsection}{\numberline {6.24.2.3}NMI\_Handler()}{240}{subsubsection.6.24.2.3}%
+\contentsline {subsubsection}{\numberline {6.24.2.4}PendSV\_Handler()}{240}{subsubsection.6.24.2.4}%
+\contentsline {subsubsection}{\numberline {6.24.2.5}SVC\_Handler()}{240}{subsubsection.6.24.2.5}%
+\contentsline {subsubsection}{\numberline {6.24.2.6}SysTick\_Handler()}{241}{subsubsection.6.24.2.6}%
+\contentsline {subsubsection}{\numberline {6.24.2.7}TIM16\_IRQHandler()}{241}{subsubsection.6.24.2.7}%
+\contentsline {subsubsection}{\numberline {6.24.2.8}TIM1\_BRK\_UP\_TRG\_COM\_IRQHandler()}{242}{subsubsection.6.24.2.8}%
+\contentsline {subsubsection}{\numberline {6.24.2.9}USART1\_IRQHandler()}{242}{subsubsection.6.24.2.9}%
+\contentsline {section}{\numberline {6.25}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/tim.h File Reference}{242}{section.6.25}%
+\contentsline {subsection}{\numberline {6.25.1}Function Documentation}{243}{subsection.6.25.1}%
+\contentsline {subsubsection}{\numberline {6.25.1.1}MX\_TIM16\_Init()}{243}{subsubsection.6.25.1.1}%
+\contentsline {subsection}{\numberline {6.25.2}Variable Documentation}{244}{subsection.6.25.2}%
+\contentsline {subsubsection}{\numberline {6.25.2.1}htim16}{244}{subsubsection.6.25.2.1}%
+\contentsline {section}{\numberline {6.26}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/usart.h File Reference}{245}{section.6.26}%
+\contentsline {subsection}{\numberline {6.26.1}Function Documentation}{246}{subsection.6.26.1}%
+\contentsline {subsubsection}{\numberline {6.26.1.1}MX\_USART1\_UART\_Init()}{246}{subsubsection.6.26.1.1}%
+\contentsline {subsubsection}{\numberline {6.26.1.2}MX\_USART2\_UART\_Init()}{247}{subsubsection.6.26.1.2}%
+\contentsline {subsection}{\numberline {6.26.2}Variable Documentation}{247}{subsection.6.26.2}%
+\contentsline {subsubsection}{\numberline {6.26.2.1}huart1}{247}{subsubsection.6.26.2.1}%
+\contentsline {subsubsection}{\numberline {6.26.2.2}huart2}{248}{subsubsection.6.26.2.2}%
+\contentsline {section}{\numberline {6.27}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inc/xmodem.h File Reference}{248}{section.6.27}%
+\contentsline {subsection}{\numberline {6.27.1}Detailed Description}{250}{subsection.6.27.1}%
+\contentsline {subsection}{\numberline {6.27.2}Macro Definition Documentation}{251}{subsection.6.27.2}%
+\contentsline {subsubsection}{\numberline {6.27.2.1}ABORT1}{251}{subsubsection.6.27.2.1}%
+\contentsline {subsubsection}{\numberline {6.27.2.2}ABORT2}{251}{subsubsection.6.27.2.2}%
+\contentsline {subsubsection}{\numberline {6.27.2.3}ACK}{251}{subsubsection.6.27.2.3}%
+\contentsline {subsubsection}{\numberline {6.27.2.4}CA}{251}{subsubsection.6.27.2.4}%
+\contentsline {subsubsection}{\numberline {6.27.2.5}CRC16}{251}{subsubsection.6.27.2.5}%
+\contentsline {subsubsection}{\numberline {6.27.2.6}DOWNLOAD\_TIMEOUT}{252}{subsubsection.6.27.2.6}%
+\contentsline {subsubsection}{\numberline {6.27.2.7}EOT}{252}{subsubsection.6.27.2.7}%
+\contentsline {subsubsection}{\numberline {6.27.2.8}FILE\_NAME\_LENGTH}{252}{subsubsection.6.27.2.8}%
+\contentsline {subsubsection}{\numberline {6.27.2.9}FILE\_SIZE\_LENGTH}{252}{subsubsection.6.27.2.9}%
+\contentsline {subsubsection}{\numberline {6.27.2.10}MAX\_ERRORS}{252}{subsubsection.6.27.2.10}%
+\contentsline {subsubsection}{\numberline {6.27.2.11}NAK}{252}{subsubsection.6.27.2.11}%
+\contentsline {subsubsection}{\numberline {6.27.2.12}NAK\_TIMEOUT}{253}{subsubsection.6.27.2.12}%
+\contentsline {subsubsection}{\numberline {6.27.2.13}NEGATIVE\_BYTE}{253}{subsubsection.6.27.2.13}%
+\contentsline {subsubsection}{\numberline {6.27.2.14}PACKET\_1K\_SIZE}{253}{subsubsection.6.27.2.14}%
+\contentsline {subsubsection}{\numberline {6.27.2.15}PACKET\_CNUMBER\_INDEX}{253}{subsubsection.6.27.2.15}%
+\contentsline {subsubsection}{\numberline {6.27.2.16}PACKET\_DATA\_INDEX}{253}{subsubsection.6.27.2.16}%
+\contentsline {subsubsection}{\numberline {6.27.2.17}PACKET\_HEADER\_SIZE}{253}{subsubsection.6.27.2.17}%
+\contentsline {subsubsection}{\numberline {6.27.2.18}PACKET\_NUMBER\_INDEX}{254}{subsubsection.6.27.2.18}%
+\contentsline {subsubsection}{\numberline {6.27.2.19}PACKET\_OVERHEAD\_SIZE}{254}{subsubsection.6.27.2.19}%
+\contentsline {subsubsection}{\numberline {6.27.2.20}PACKET\_SIZE}{254}{subsubsection.6.27.2.20}%
+\contentsline {subsubsection}{\numberline {6.27.2.21}PACKET\_START\_INDEX}{254}{subsubsection.6.27.2.21}%
+\contentsline {subsubsection}{\numberline {6.27.2.22}PACKET\_TRAILER\_SIZE}{254}{subsubsection.6.27.2.22}%
+\contentsline {subsubsection}{\numberline {6.27.2.23}SOH}{254}{subsubsection.6.27.2.23}%
+\contentsline {subsubsection}{\numberline {6.27.2.24}STX}{255}{subsubsection.6.27.2.24}%
+\contentsline {subsubsection}{\numberline {6.27.2.25}X\_ACK}{255}{subsubsection.6.27.2.25}%
+\contentsline {subsubsection}{\numberline {6.27.2.26}X\_C}{255}{subsubsection.6.27.2.26}%
+\contentsline {subsubsection}{\numberline {6.27.2.27}X\_CAN}{255}{subsubsection.6.27.2.27}%
+\contentsline {subsubsection}{\numberline {6.27.2.28}X\_EOT}{255}{subsubsection.6.27.2.28}%
+\contentsline {subsubsection}{\numberline {6.27.2.29}X\_MAX\_ERRORS}{256}{subsubsection.6.27.2.29}%
+\contentsline {subsubsection}{\numberline {6.27.2.30}X\_NAK}{256}{subsubsection.6.27.2.30}%
+\contentsline {subsubsection}{\numberline {6.27.2.31}X\_PACKET\_1024\_SIZE}{256}{subsubsection.6.27.2.31}%
+\contentsline {subsubsection}{\numberline {6.27.2.32}X\_PACKET\_128\_SIZE}{256}{subsubsection.6.27.2.32}%
+\contentsline {subsubsection}{\numberline {6.27.2.33}X\_PACKET\_CRC\_SIZE}{256}{subsubsection.6.27.2.33}%
+\contentsline {subsubsection}{\numberline {6.27.2.34}X\_PACKET\_DATA\_INDEX}{256}{subsubsection.6.27.2.34}%
+\contentsline {subsubsection}{\numberline {6.27.2.35}X\_PACKET\_NUMBER\_COMPLEMENT\_INDEX}{257}{subsubsection.6.27.2.35}%
+\contentsline {subsubsection}{\numberline {6.27.2.36}X\_PACKET\_NUMBER\_INDEX}{257}{subsubsection.6.27.2.36}%
+\contentsline {subsubsection}{\numberline {6.27.2.37}X\_SOH}{257}{subsubsection.6.27.2.37}%
+\contentsline {subsubsection}{\numberline {6.27.2.38}X\_STX}{257}{subsubsection.6.27.2.38}%
+\contentsline {subsection}{\numberline {6.27.3}Enumeration Type Documentation}{257}{subsection.6.27.3}%
+\contentsline {subsubsection}{\numberline {6.27.3.1}xmodem\_status}{257}{subsubsection.6.27.3.1}%
+\contentsline {subsection}{\numberline {6.27.4}Function Documentation}{258}{subsection.6.27.4}%
+\contentsline {subsubsection}{\numberline {6.27.4.1}xmodem\_calc\_crc()}{258}{subsubsection.6.27.4.1}%
+\contentsline {subsubsection}{\numberline {6.27.4.2}xmodem\_receive()}{258}{subsubsection.6.27.4.2}%
+\contentsline {section}{\numberline {6.28}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/adc.c File Reference}{260}{section.6.28}%
+\contentsline {subsection}{\numberline {6.28.1}Function Documentation}{261}{subsection.6.28.1}%
+\contentsline {subsubsection}{\numberline {6.28.1.1}HAL\_ADC\_MspDeInit()}{261}{subsubsection.6.28.1.1}%
+\contentsline {subsubsection}{\numberline {6.28.1.2}HAL\_ADC\_MspInit()}{262}{subsubsection.6.28.1.2}%
+\contentsline {subsubsection}{\numberline {6.28.1.3}MX\_ADC\_Init()}{263}{subsubsection.6.28.1.3}%
+\contentsline {subsection}{\numberline {6.28.2}Variable Documentation}{264}{subsection.6.28.2}%
+\contentsline {subsubsection}{\numberline {6.28.2.1}hadc}{264}{subsubsection.6.28.2.1}%
+\contentsline {subsubsection}{\numberline {6.28.2.2}hdma\_adc}{265}{subsubsection.6.28.2.2}%
+\contentsline {section}{\numberline {6.29}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/adc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.cpp File Reference}{265}{section.6.29}%
+\contentsline {section}{\numberline {6.30}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/common.cpp File Reference}{266}{section.6.30}%
+\contentsline {subsection}{\numberline {6.30.1}Detailed Description}{266}{subsection.6.30.1}%
+\contentsline {section}{\numberline {6.31}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/crc.c File Reference}{268}{section.6.31}%
+\contentsline {subsection}{\numberline {6.31.1}Function Documentation}{268}{subsection.6.31.1}%
+\contentsline {subsubsection}{\numberline {6.31.1.1}HAL\_CRC\_MspDeInit()}{269}{subsubsection.6.31.1.1}%
+\contentsline {subsubsection}{\numberline {6.31.1.2}HAL\_CRC\_MspInit()}{269}{subsubsection.6.31.1.2}%
+\contentsline {subsubsection}{\numberline {6.31.1.3}MX\_CRC\_Init()}{269}{subsubsection.6.31.1.3}%
+\contentsline {subsection}{\numberline {6.31.2}Variable Documentation}{270}{subsection.6.31.2}%
+\contentsline {subsubsection}{\numberline {6.31.2.1}hcrc}{270}{subsubsection.6.31.2.1}%
+\contentsline {section}{\numberline {6.32}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/cs\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}register.cpp File Reference}{271}{section.6.32}%
+\contentsline {section}{\numberline {6.33}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/debug\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}facilities.cpp File Reference}{271}{section.6.33}%
+\contentsline {section}{\numberline {6.34}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/dma.c File Reference}{272}{section.6.34}%
+\contentsline {subsection}{\numberline {6.34.1}Function Documentation}{273}{subsection.6.34.1}%
+\contentsline {subsubsection}{\numberline {6.34.1.1}MX\_DMA\_Init()}{273}{subsubsection.6.34.1.1}%
+\contentsline {section}{\numberline {6.35}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/flash\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}if.cpp File Reference}{274}{section.6.35}%
+\contentsline {subsection}{\numberline {6.35.1}Detailed Description}{274}{subsection.6.35.1}%
+\contentsline {section}{\numberline {6.36}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/gpio.c File Reference}{276}{section.6.36}%
+\contentsline {subsection}{\numberline {6.36.1}Function Documentation}{276}{subsection.6.36.1}%
+\contentsline {subsubsection}{\numberline {6.36.1.1}MX\_GPIO\_Init()}{276}{subsubsection.6.36.1.1}%
+\contentsline {section}{\numberline {6.37}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/main.cpp File Reference}{278}{section.6.37}%
+\contentsline {subsection}{\numberline {6.37.1}Detailed Description}{280}{subsection.6.37.1}%
+\contentsline {subsection}{\numberline {6.37.2}Macro Definition Documentation}{280}{subsection.6.37.2}%
+\contentsline {subsubsection}{\numberline {6.37.2.1}\_\_HAL\_SYSCFG\_REMAPMEMORY\_SRAM}{280}{subsubsection.6.37.2.1}%
+\contentsline {subsection}{\numberline {6.37.3}Function Documentation}{280}{subsection.6.37.3}%
+\contentsline {subsubsection}{\numberline {6.37.3.1}\_\_attribute\_\_()}{280}{subsubsection.6.37.3.1}%
+\contentsline {subsubsection}{\numberline {6.37.3.2}Error\_Handler()}{280}{subsubsection.6.37.3.2}%
+\contentsline {subsubsection}{\numberline {6.37.3.3}HAL\_ADC\_ConvCpltCallback()}{281}{subsubsection.6.37.3.3}%
+\contentsline {subsubsection}{\numberline {6.37.3.4}HAL\_TIM\_PeriodElapsedCallback()}{282}{subsubsection.6.37.3.4}%
+\contentsline {subsubsection}{\numberline {6.37.3.5}main()}{282}{subsubsection.6.37.3.5}%
+\contentsline {subsubsection}{\numberline {6.37.3.6}remapMemToSRAM()}{285}{subsubsection.6.37.3.6}%
+\contentsline {subsubsection}{\numberline {6.37.3.7}SystemClock\_Config()}{286}{subsubsection.6.37.3.7}%
+\contentsline {subsection}{\numberline {6.37.4}Variable Documentation}{287}{subsection.6.37.4}%
+\contentsline {subsubsection}{\numberline {6.37.4.1}adc\_controller}{287}{subsubsection.6.37.4.1}%
+\contentsline {subsubsection}{\numberline {6.37.4.2}aPacketData}{287}{subsubsection.6.37.4.2}%
+\contentsline {subsubsection}{\numberline {6.37.4.3}atp\_extern}{288}{subsubsection.6.37.4.3}%
+\contentsline {subsubsection}{\numberline {6.37.4.4}cs\_register}{288}{subsubsection.6.37.4.4}%
+\contentsline {subsubsection}{\numberline {6.37.4.5}cycle}{288}{subsubsection.6.37.4.5}%
+\contentsline {subsubsection}{\numberline {6.37.4.6}debug}{288}{subsubsection.6.37.4.6}%
+\contentsline {subsubsection}{\numberline {6.37.4.7}grand\_ctrl}{288}{subsubsection.6.37.4.7}%
+\contentsline {subsubsection}{\numberline {6.37.4.8}memory\_am}{288}{subsubsection.6.37.4.8}%
+\contentsline {subsubsection}{\numberline {6.37.4.9}memory\_apt}{289}{subsubsection.6.37.4.9}%
+\contentsline {subsubsection}{\numberline {6.37.4.10}memory\_controller}{289}{subsubsection.6.37.4.10}%
+\contentsline {subsubsection}{\numberline {6.37.4.11}memory\_mcu}{289}{subsubsection.6.37.4.11}%
+\contentsline {subsubsection}{\numberline {6.37.4.12}ph\_device}{289}{subsubsection.6.37.4.12}%
+\contentsline {subsubsection}{\numberline {6.37.4.13}reset\_pressed}{289}{subsubsection.6.37.4.13}%
+\contentsline {subsubsection}{\numberline {6.37.4.14}screen}{289}{subsubsection.6.37.4.14}%
+\contentsline {subsubsection}{\numberline {6.37.4.15}state}{290}{subsubsection.6.37.4.15}%
+\contentsline {subsubsection}{\numberline {6.37.4.16}status\_register}{290}{subsubsection.6.37.4.16}%
+\contentsline {subsubsection}{\numberline {6.37.4.17}timer\_last\_update}{290}{subsubsection.6.37.4.17}%
+\contentsline {section}{\numberline {6.38}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.cpp File Reference}{290}{section.6.38}%
+\contentsline {subsection}{\numberline {6.38.1}Variable Documentation}{291}{subsection.6.38.1}%
+\contentsline {subsubsection}{\numberline {6.38.1.1}reset\_pressed}{291}{subsubsection.6.38.1.1}%
+\contentsline {section}{\numberline {6.39}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/mem.cpp File Reference}{291}{section.6.39}%
+\contentsline {section}{\numberline {6.40}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/mem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.cpp File Reference}{291}{section.6.40}%
+\contentsline {section}{\numberline {6.41}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/menu.cpp File Reference}{292}{section.6.41}%
+\contentsline {subsection}{\numberline {6.41.1}Detailed Description}{293}{subsection.6.41.1}%
+\contentsline {section}{\numberline {6.42}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/peripherial\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.cpp File Reference}{294}{section.6.42}%
+\contentsline {section}{\numberline {6.43}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/rtc.c File Reference}{295}{section.6.43}%
+\contentsline {subsection}{\numberline {6.43.1}Function Documentation}{295}{subsection.6.43.1}%
+\contentsline {subsubsection}{\numberline {6.43.1.1}HAL\_RTC\_MspDeInit()}{296}{subsubsection.6.43.1.1}%
+\contentsline {subsubsection}{\numberline {6.43.1.2}HAL\_RTC\_MspInit()}{296}{subsubsection.6.43.1.2}%
+\contentsline {subsubsection}{\numberline {6.43.1.3}MX\_RTC\_Init()}{296}{subsubsection.6.43.1.3}%
+\contentsline {subsection}{\numberline {6.43.2}Variable Documentation}{297}{subsection.6.43.2}%
+\contentsline {subsubsection}{\numberline {6.43.2.1}hrtc}{298}{subsubsection.6.43.2.1}%
+\contentsline {section}{\numberline {6.44}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/screen\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}controller.cpp File Reference}{298}{section.6.44}%
+\contentsline {section}{\numberline {6.45}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/spi.c File Reference}{299}{section.6.45}%
+\contentsline {subsection}{\numberline {6.45.1}Function Documentation}{299}{subsection.6.45.1}%
+\contentsline {subsubsection}{\numberline {6.45.1.1}HAL\_SPI\_MspDeInit()}{300}{subsubsection.6.45.1.1}%
+\contentsline {subsubsection}{\numberline {6.45.1.2}HAL\_SPI\_MspInit()}{300}{subsubsection.6.45.1.2}%
+\contentsline {subsubsection}{\numberline {6.45.1.3}MX\_SPI1\_Init()}{301}{subsubsection.6.45.1.3}%
+\contentsline {subsection}{\numberline {6.45.2}Variable Documentation}{301}{subsection.6.45.2}%
+\contentsline {subsubsection}{\numberline {6.45.2.1}hspi1}{301}{subsubsection.6.45.2.1}%
+\contentsline {section}{\numberline {6.46}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/state.cpp File Reference}{302}{section.6.46}%
+\contentsline {section}{\numberline {6.47}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/status\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}reg.cpp File Reference}{302}{section.6.47}%
+\contentsline {section}{\numberline {6.48}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/stm32f0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}msp.c File Reference}{303}{section.6.48}%
+\contentsline {subsection}{\numberline {6.48.1}Function Documentation}{304}{subsection.6.48.1}%
+\contentsline {subsubsection}{\numberline {6.48.1.1}HAL\_MspInit()}{304}{subsubsection.6.48.1.1}%
+\contentsline {section}{\numberline {6.49}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/stm32f0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}timebase\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}tim.c File Reference}{304}{section.6.49}%
+\contentsline {subsection}{\numberline {6.49.1}Detailed Description}{305}{subsection.6.49.1}%
+\contentsline {subsection}{\numberline {6.49.2}Function Documentation}{306}{subsection.6.49.2}%
+\contentsline {subsubsection}{\numberline {6.49.2.1}HAL\_InitTick()}{306}{subsubsection.6.49.2.1}%
+\contentsline {subsubsection}{\numberline {6.49.2.2}HAL\_ResumeTick()}{307}{subsubsection.6.49.2.2}%
+\contentsline {subsubsection}{\numberline {6.49.2.3}HAL\_SuspendTick()}{307}{subsubsection.6.49.2.3}%
+\contentsline {subsection}{\numberline {6.49.3}Variable Documentation}{308}{subsection.6.49.3}%
+\contentsline {subsubsection}{\numberline {6.49.3.1}htim1}{308}{subsubsection.6.49.3.1}%
+\contentsline {section}{\numberline {6.50}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/stm32f0xx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}it.c File Reference}{308}{section.6.50}%
+\contentsline {subsection}{\numberline {6.50.1}Detailed Description}{309}{subsection.6.50.1}%
+\contentsline {subsection}{\numberline {6.50.2}Function Documentation}{310}{subsection.6.50.2}%
+\contentsline {subsubsection}{\numberline {6.50.2.1}DMA1\_Channel1\_IRQHandler()}{310}{subsubsection.6.50.2.1}%
+\contentsline {subsubsection}{\numberline {6.50.2.2}HardFault\_Handler()}{310}{subsubsection.6.50.2.2}%
+\contentsline {subsubsection}{\numberline {6.50.2.3}NMI\_Handler()}{310}{subsubsection.6.50.2.3}%
+\contentsline {subsubsection}{\numberline {6.50.2.4}PendSV\_Handler()}{311}{subsubsection.6.50.2.4}%
+\contentsline {subsubsection}{\numberline {6.50.2.5}read\_reset\_button()}{311}{subsubsection.6.50.2.5}%
+\contentsline {subsubsection}{\numberline {6.50.2.6}SVC\_Handler()}{311}{subsubsection.6.50.2.6}%
+\contentsline {subsubsection}{\numberline {6.50.2.7}SysTick\_Handler()}{312}{subsubsection.6.50.2.7}%
+\contentsline {subsubsection}{\numberline {6.50.2.8}test\_for\_reset\_press()}{312}{subsubsection.6.50.2.8}%
+\contentsline {subsubsection}{\numberline {6.50.2.9}TIM16\_IRQHandler()}{313}{subsubsection.6.50.2.9}%
+\contentsline {subsubsection}{\numberline {6.50.2.10}TIM1\_BRK\_UP\_TRG\_COM\_IRQHandler()}{313}{subsubsection.6.50.2.10}%
+\contentsline {subsubsection}{\numberline {6.50.2.11}USART1\_IRQHandler()}{313}{subsubsection.6.50.2.11}%
+\contentsline {subsection}{\numberline {6.50.3}Variable Documentation}{314}{subsection.6.50.3}%
+\contentsline {subsubsection}{\numberline {6.50.3.1}hdma\_adc}{314}{subsubsection.6.50.3.1}%
+\contentsline {subsubsection}{\numberline {6.50.3.2}htim1}{314}{subsubsection.6.50.3.2}%
+\contentsline {subsubsection}{\numberline {6.50.3.3}htim16}{314}{subsubsection.6.50.3.3}%
+\contentsline {subsubsection}{\numberline {6.50.3.4}huart1}{314}{subsubsection.6.50.3.4}%
+\contentsline {subsubsection}{\numberline {6.50.3.5}reset\_pressed}{315}{subsubsection.6.50.3.5}%
+\contentsline {section}{\numberline {6.51}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/system\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}stm32f0xx.c File Reference}{315}{section.6.51}%
+\contentsline {subsection}{\numberline {6.51.1}Detailed Description}{316}{subsection.6.51.1}%
+\contentsline {subsection}{\numberline {6.51.2}3. This file configures the system clock as follows\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:}{316}{subsection.6.51.2}%
+\contentsline {subsubsection}{\numberline {6.51.2.1}Supported S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M32\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F0xx device}{316}{subsubsection.6.51.2.1}%
+\contentsline {subsubsection}{\numberline {6.51.2.2}System Clock source $\vert $ H\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}SI}{316}{subsubsection.6.51.2.2}%
+\contentsline {subsubsection}{\numberline {6.51.2.3}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Y\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}K(\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hz) $\vert $ 8000000}{316}{subsubsection.6.51.2.3}%
+\contentsline {subsubsection}{\numberline {6.51.2.4}H\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}K(\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hz) $\vert $ 8000000}{316}{subsubsection.6.51.2.4}%
+\contentsline {subsubsection}{\numberline {6.51.2.5}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}H\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B Prescaler $\vert $ 1}{316}{subsubsection.6.51.2.5}%
+\contentsline {subsubsection}{\numberline {6.51.2.6}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B1 Prescaler $\vert $ 1}{316}{subsubsection.6.51.2.6}%
+\contentsline {section}{\numberline {6.52}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/tim.c File Reference}{317}{section.6.52}%
+\contentsline {subsection}{\numberline {6.52.1}Function Documentation}{318}{subsection.6.52.1}%
+\contentsline {subsubsection}{\numberline {6.52.1.1}HAL\_TIM\_Base\_MspDeInit()}{318}{subsubsection.6.52.1.1}%
+\contentsline {subsubsection}{\numberline {6.52.1.2}HAL\_TIM\_Base\_MspInit()}{318}{subsubsection.6.52.1.2}%
+\contentsline {subsubsection}{\numberline {6.52.1.3}MX\_TIM16\_Init()}{319}{subsubsection.6.52.1.3}%
+\contentsline {subsection}{\numberline {6.52.2}Variable Documentation}{319}{subsection.6.52.2}%
+\contentsline {subsubsection}{\numberline {6.52.2.1}htim16}{320}{subsubsection.6.52.2.1}%
+\contentsline {section}{\numberline {6.53}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/usart.c File Reference}{320}{section.6.53}%
+\contentsline {subsection}{\numberline {6.53.1}Function Documentation}{321}{subsection.6.53.1}%
+\contentsline {subsubsection}{\numberline {6.53.1.1}HAL\_UART\_MspDeInit()}{321}{subsubsection.6.53.1.1}%
+\contentsline {subsubsection}{\numberline {6.53.1.2}HAL\_UART\_MspInit()}{322}{subsubsection.6.53.1.2}%
+\contentsline {subsubsection}{\numberline {6.53.1.3}MX\_USART1\_UART\_Init()}{322}{subsubsection.6.53.1.3}%
+\contentsline {subsubsection}{\numberline {6.53.1.4}MX\_USART2\_UART\_Init()}{323}{subsubsection.6.53.1.4}%
+\contentsline {subsection}{\numberline {6.53.2}Variable Documentation}{324}{subsection.6.53.2}%
+\contentsline {subsubsection}{\numberline {6.53.2.1}huart1}{324}{subsubsection.6.53.2.1}%
+\contentsline {subsubsection}{\numberline {6.53.2.2}huart2}{325}{subsubsection.6.53.2.2}%
+\contentsline {section}{\numberline {6.54}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/nicko/source/repos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}X1\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}1/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Src/xmodem.cpp File Reference}{325}{section.6.54}%
+\contentsline {subsection}{\numberline {6.54.1}Detailed Description}{326}{subsection.6.54.1}%
+\contentsline {subsection}{\numberline {6.54.2}Function Documentation}{326}{subsection.6.54.2}%
+\contentsline {subsubsection}{\numberline {6.54.2.1}xmodem\_calc\_crc()}{326}{subsubsection.6.54.2.1}%
+\contentsline {subsubsection}{\numberline {6.54.2.2}xmodem\_receive()}{327}{subsubsection.6.54.2.2}%
+\contentsline {subsection}{\numberline {6.54.3}Variable Documentation}{328}{subsection.6.54.3}%
+\contentsline {subsubsection}{\numberline {6.54.3.1}aPacketData}{328}{subsubsection.6.54.3.1}%
+\contentsline {chapter}{Index}{329}{section*.438}%

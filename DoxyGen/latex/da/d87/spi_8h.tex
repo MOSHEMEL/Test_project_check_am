@@ -1,0 +1,109 @@
+\hypertarget{spi_8h}{}\doxysection{C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/spi.h File Reference}
+\label{spi_8h}\index{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/spi.h@{C:/Users/nicko/source/repos/APTX1\_1/Core/Inc/spi.h}}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+Include dependency graph for spi.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{d9/d6b/spi_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/da0/spi_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{spi_8h_af81398f9775695df0b172367651ca3e6}{M\+X\+\_\+\+S\+P\+I1\+\_\+\+Init}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+S\+P\+I\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{spi_8h_af81398f9775695df0b172367651ca3e6}\label{spi_8h_af81398f9775695df0b172367651ca3e6}} 
+\index{spi.h@{spi.h}!MX\_SPI1\_Init@{MX\_SPI1\_Init}}
+\index{MX\_SPI1\_Init@{MX\_SPI1\_Init}!spi.h@{spi.h}}
+\doxysubsubsection{\texorpdfstring{MX\_SPI1\_Init()}{MX\_SPI1\_Init()}}
+{\footnotesize\ttfamily void M\+X\+\_\+\+S\+P\+I1\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file spi.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Instance = SPI1;}
+\DoxyCodeLine{34   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.Mode = SPI\_MODE\_MASTER;}
+\DoxyCodeLine{35   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.Direction = SPI\_DIRECTION\_2LINES;}
+\DoxyCodeLine{36   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.DataSize = SPI\_DATASIZE\_8BIT;}
+\DoxyCodeLine{37   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.CLKPolarity = SPI\_POLARITY\_LOW;}
+\DoxyCodeLine{38   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.CLKPhase = SPI\_PHASE\_1EDGE;}
+\DoxyCodeLine{39   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.NSS = SPI\_NSS\_SOFT;}
+\DoxyCodeLine{40   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.BaudRatePrescaler = SPI\_BAUDRATEPRESCALER\_32;}
+\DoxyCodeLine{41   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.FirstBit = SPI\_FIRSTBIT\_MSB;}
+\DoxyCodeLine{42   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.TIMode = SPI\_TIMODE\_DISABLE;}
+\DoxyCodeLine{43   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.CRCCalculation = SPI\_CRCCALCULATION\_DISABLE;}
+\DoxyCodeLine{44   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.CRCPolynomial = 7;}
+\DoxyCodeLine{45   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.CRCLength = SPI\_CRC\_LENGTH\_DATASIZE;}
+\DoxyCodeLine{46   \mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}.Init.NSSPMode = SPI\_NSS\_PULSE\_DISABLE;}
+\DoxyCodeLine{47   \textcolor{keywordflow}{if} (HAL\_SPI\_Init(\&\mbox{\hyperlink{spi_8c_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}) != HAL\_OK)}
+\DoxyCodeLine{48   \{}
+\DoxyCodeLine{49     \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{50   \}}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{da/d87/spi_8h_af81398f9775695df0b172367651ca3e6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{da/d87/spi_8h_af81398f9775695df0b172367651ca3e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{spi_8h_a9c6222bae4d0328dd843ae099623b40b}\label{spi_8h_a9c6222bae4d0328dd843ae099623b40b}} 
+\index{spi.h@{spi.h}!hspi1@{hspi1}}
+\index{hspi1@{hspi1}!spi.h@{spi.h}}
+\doxysubsubsection{\texorpdfstring{hspi1}{hspi1}}
+{\footnotesize\ttfamily S\+P\+I\+\_\+\+Handle\+Type\+Def hspi1}
+
+File Name \+: \mbox{\hyperlink{spi_8h}{S\+P\+I.\+h}} Description \+: This file provides code for the configuration of the S\+PI instances.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause
+
+File Name \+: S\+P\+I.\+c Description \+: This file provides code for the configuration of the S\+PI instances.
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause 
+
+Definition at line 27 of file spi.\+c.
+

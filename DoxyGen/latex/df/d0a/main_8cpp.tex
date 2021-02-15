@@ -1,0 +1,732 @@
+\hypertarget{main_8cpp}{}\doxysection{C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/main.cpp File Reference}
+\label{main_8cpp}\index{C:/Users/nicko/source/repos/APTX1\_1/Core/Src/main.cpp@{C:/Users/nicko/source/repos/APTX1\_1/Core/Src/main.cpp}}
+
+
+\+: Main program body  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}adc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}crc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dma.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}usart.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gpio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cs\+\_\+register.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}status\+\_\+reg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mem\+\_\+controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}screen\+\_\+controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}monitor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}state.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}debug\+\_\+facilities.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}peripherial\+\_\+controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}adc\+\_\+controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}main\+\_\+controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tim.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}xmodem.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dce/main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a86d36fdb1571fd56ffeecfaed80c6805}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+Y\+S\+C\+F\+G\+\_\+\+R\+E\+M\+A\+P\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+R\+AM}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a70af21c671abfcc773614a9a4f63d920}{System\+Clock\+\_\+\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em System Clock Configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_af20a88180db1113be1e89266917d148b}{H\+A\+L\+\_\+\+A\+D\+C\+\_\+\+Conv\+Cplt\+Callback}} (A\+D\+C\+\_\+\+Handle\+Type\+Def $\ast$\mbox{\hyperlink{adc_8c_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}})
+\item 
+void \mbox{\hyperlink{main_8cpp_a7a05bf79f06e509d0309b09f3475e272}{remap\+Mem\+To\+S\+R\+AM}} (void)
+\item 
+volatile uint32\+\_\+t Vector\+Table\mbox{[}48\mbox{]} \mbox{\hyperlink{main_8cpp_ad02d3aafee6a1e0aedc883851ab79d1e}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((section(\char`\"{}.R\+A\+M\+Vector\+Table\char`\"{})))
+\item 
+int \mbox{\hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em The application entry point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a8a3b0ad512a6e6c6157440b68d395eac}{H\+A\+L\+\_\+\+T\+I\+M\+\_\+\+Period\+Elapsed\+Callback}} (T\+I\+M\+\_\+\+Handle\+Type\+Def $\ast$htim)
+\begin{DoxyCompactList}\small\item\em Period elapsed callback in non blocking mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_debug_helper}{Debug\+Helper}} \mbox{\hyperlink{main_8cpp_aa83c44e91e197dc14e95782aafc19511}{debug}} = \mbox{\hyperlink{class_debug_helper}{Debug\+Helper}}()
+\item 
+\mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}} \mbox{\hyperlink{main_8cpp_ab68f74c1cbb1fd5482bd15c9cc43b215}{cs\+\_\+register}} = \mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}}()
+\item 
+\mbox{\hyperlink{class_s_t_a_t_u_s__reg}{S\+T\+A\+T\+U\+S\+\_\+reg}} \mbox{\hyperlink{main_8cpp_a9c10e645c8b2a80891a0b8150e774bf8}{status\+\_\+register}} = \mbox{\hyperlink{class_s_t_a_t_u_s__reg}{S\+T\+A\+T\+U\+S\+\_\+reg}}()
+\item 
+\mbox{\hyperlink{class_memory}{Memory}} \mbox{\hyperlink{main_8cpp_ae69f34a703c3b009036c063cf3c54305}{memory\+\_\+am}} = \mbox{\hyperlink{class_memory}{Memory}}(3)
+\item 
+\mbox{\hyperlink{class_memory}{Memory}} \mbox{\hyperlink{main_8cpp_a7e5a3d7895284d45c8d59d1010d13962}{memory\+\_\+apt}} = \mbox{\hyperlink{class_memory}{Memory}}(2)
+\item 
+\mbox{\hyperlink{class_memory}{Memory}} \mbox{\hyperlink{main_8cpp_a46717684ad1df24d4393c2b6d38d45ea}{memory\+\_\+mcu}} = \mbox{\hyperlink{class_memory}{Memory}}(1)
+\item 
+\mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}} \mbox{\hyperlink{main_8cpp_aa34662f2587cd76d3c729ab98e25c09e}{memory\+\_\+controller}} = \mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}}(\&\mbox{\hyperlink{main_8cpp_ae69f34a703c3b009036c063cf3c54305}{memory\+\_\+am}}, \&\mbox{\hyperlink{main_8cpp_a7e5a3d7895284d45c8d59d1010d13962}{memory\+\_\+apt}}, \&\mbox{\hyperlink{main_8cpp_a46717684ad1df24d4393c2b6d38d45ea}{memory\+\_\+mcu}}, \&\mbox{\hyperlink{main_8cpp_ab68f74c1cbb1fd5482bd15c9cc43b215}{cs\+\_\+register}})
+\item 
+\mbox{\hyperlink{class_peripherial_devices}{Peripherial\+Devices}} \mbox{\hyperlink{main_8cpp_ace97e2f99aed86c1c962757900e988e0}{ph\+\_\+device}} = \mbox{\hyperlink{class_peripherial_devices}{Peripherial\+Devices}}(\&\mbox{\hyperlink{main_8cpp_ab68f74c1cbb1fd5482bd15c9cc43b215}{cs\+\_\+register}}, \&\mbox{\hyperlink{main_8cpp_a9c10e645c8b2a80891a0b8150e774bf8}{status\+\_\+register}})
+\item 
+\mbox{\hyperlink{class_state}{State}} \mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}} = \mbox{\hyperlink{class_state}{State}}()
+\item 
+\mbox{\hyperlink{class_screen__ctrl}{Screen\+\_\+ctrl}} \mbox{\hyperlink{main_8cpp_a89b3e3c86b71e20619eac40346310f06}{screen}} = \mbox{\hyperlink{class_screen__ctrl}{Screen\+\_\+ctrl}}()
+\item 
+\mbox{\hyperlink{classadc__controller}{adc\+\_\+controller}} \mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\+\_\+adc\+\_\+controller}} = \mbox{\hyperlink{classadc__controller}{adc\+\_\+controller}}(\&\mbox{\hyperlink{main_8cpp_ab68f74c1cbb1fd5482bd15c9cc43b215}{cs\+\_\+register}})
+\item 
+uint32\+\_\+t \mbox{\hyperlink{main_8cpp_a48a8246580413cc169289057a1f955fa}{cycle}} = 0
+\item 
+\mbox{\hyperlink{classmain__controller}{main\+\_\+controller}} \mbox{\hyperlink{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}{grand\+\_\+ctrl}} = \mbox{\hyperlink{classmain__controller}{main\+\_\+controller}}(\&\mbox{\hyperlink{main_8cpp_aa83c44e91e197dc14e95782aafc19511}{debug}}, \&\mbox{\hyperlink{main_8cpp_aa34662f2587cd76d3c729ab98e25c09e}{memory\+\_\+controller}}, \&\mbox{\hyperlink{main_8cpp_ace97e2f99aed86c1c962757900e988e0}{ph\+\_\+device}}, \&\mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}}, \&\mbox{\hyperlink{main_8cpp_a89b3e3c86b71e20619eac40346310f06}{screen}}, \&\mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\+\_\+adc\+\_\+controller}})
+\item 
+\mbox{\hyperlink{classmonitor}{monitor}} \mbox{\hyperlink{main_8cpp_aff0ddfa6bb7689f0ce871ad5d84e72f1}{rx\+\_\+stuff}} = \mbox{\hyperlink{classmonitor}{monitor}}(\&\mbox{\hyperlink{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}{grand\+\_\+ctrl}})
+\item 
+\mbox{\hyperlink{classmain__controller}{main\+\_\+controller}} $\ast$ \mbox{\hyperlink{main_8cpp_a38697284e95eaa8362ce09fbda7adf3c}{atp\+\_\+extern}} = \&\mbox{\hyperlink{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}{grand\+\_\+ctrl}}
+\item 
+\mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}} $\ast$ \mbox{\hyperlink{group___s_t_m32_l0xx___i_a_p_ga242f4d5bc21c6567a07be4d9a52c758d}{memory\+\_\+extern}} = \&\mbox{\hyperlink{main_8cpp_aa34662f2587cd76d3c729ab98e25c09e}{memory\+\_\+controller}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8cpp_a5c7d5088d135fe89f930ecb50320c810}{a\+Packet\+Data}} \mbox{[}\mbox{\hyperlink{xmodem_8h_a59d3a0acbce52b1864699cc3359df574}{P\+A\+C\+K\+E\+T\+\_\+1\+K\+\_\+\+S\+I\+ZE}}+\mbox{\hyperlink{xmodem_8h_af871a1543a0c48abde73a9cb9c826e69}{P\+A\+C\+K\+E\+T\+\_\+\+D\+A\+T\+A\+\_\+\+I\+N\+D\+EX}}+\mbox{\hyperlink{xmodem_8h_ac8fd88355429b352139100bbdfd73098}{P\+A\+C\+K\+E\+T\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8cpp_a7c5a507eb106108fe79c9b0154b0aff5}{B\+U\+F\+F\+E\+R\+\_\+\+RX}} \mbox{[}\mbox{\hyperlink{group___auxilary_ga29d12c67e4b6e0ff96d7aa793757b094}{R\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}}\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8cpp_ae64ad8e57ce49e9a138f45eeb916b6d1}{B\+U\+F\+F\+E\+R\+\_\+\+S\+C\+R\+E\+EN}} \mbox{[}\mbox{\hyperlink{group___auxilary_ga29d12c67e4b6e0ff96d7aa793757b094}{R\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}}\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8cpp_a9c5b08b5636db0a3dbca399970f44b8b}{B\+U\+F\+F\+E\+R\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+T\+H\+\_\+\+C\+RC}} \mbox{[}\mbox{\hyperlink{group___auxilary_ga29d12c67e4b6e0ff96d7aa793757b094}{R\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}}\mbox{]}
+\item 
+volatile bool \mbox{\hyperlink{main_8cpp_a549deb0e19719099b413522f1b15b440}{reset\+\_\+pressed}} = false
+\item 
+uint32\+\_\+t \mbox{\hyperlink{main_8cpp_a9fb3db78fa2c86b6b4574ef7be1c8ae1}{timer\+\_\+last\+\_\+update}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Main program body 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} Copyright (c) 2020 S\+T\+Microelectronics. All rights reserved.\end{center} }
+
+This software component is licensed by ST under B\+SD 3-\/Clause license, the \char`\"{}\+License\char`\"{}; You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8cpp_a86d36fdb1571fd56ffeecfaed80c6805}\label{main_8cpp_a86d36fdb1571fd56ffeecfaed80c6805}} 
+\index{main.cpp@{main.cpp}!\_\_HAL\_SYSCFG\_REMAPMEMORY\_SRAM@{\_\_HAL\_SYSCFG\_REMAPMEMORY\_SRAM}}
+\index{\_\_HAL\_SYSCFG\_REMAPMEMORY\_SRAM@{\_\_HAL\_SYSCFG\_REMAPMEMORY\_SRAM}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_HAL\_SYSCFG\_REMAPMEMORY\_SRAM}{\_\_HAL\_SYSCFG\_REMAPMEMORY\_SRAM}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+Y\+S\+C\+F\+G\+\_\+\+R\+E\+M\+A\+P\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+R\+AM(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{SYSCFG-\/>CFGR1 \&= ~(SYSCFG\_CFGR1\_MEM\_MODE); \(\backslash\)}
+\DoxyCodeLine{     SYSCFG-\/>CFGR1 |= (SYSCFG\_CFGR1\_MEM\_MODE\_0 | SYSCFG\_CFGR1\_MEM\_MODE\_1); \(\backslash\)}
+\DoxyCodeLine{ \}\textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+
+
+Definition at line 60 of file main.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ad02d3aafee6a1e0aedc883851ab79d1e}\label{main_8cpp_ad02d3aafee6a1e0aedc883851ab79d1e}} 
+\index{main.cpp@{main.cpp}!\_\_attribute\_\_@{\_\_attribute\_\_}}
+\index{\_\_attribute\_\_@{\_\_attribute\_\_}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_attribute\_\_()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily volatile uint32\+\_\+t Vector\+Table \mbox{[}48\mbox{]} \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(section(\char`\"{}.R\+A\+M\+Vector\+Table\char`\"{}))}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a1730ffe1e560465665eb47d9264826f9}\label{main_8cpp_a1730ffe1e560465665eb47d9264826f9}} 
+\index{main.cpp@{main.cpp}!Error\_Handler@{Error\_Handler}}
+\index{Error\_Handler@{Error\_Handler}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{Error\_Handler()}{Error\_Handler()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function is executed in case of error occurrence. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 345 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{347 \{}
+\DoxyCodeLine{348   \textcolor{comment}{/* USER CODE BEGIN Error\_Handler\_Debug */}}
+\DoxyCodeLine{349   \textcolor{comment}{/* User can add his own implementation to report the HAL error return state */}}
+\DoxyCodeLine{350 }
+\DoxyCodeLine{351   \textcolor{comment}{/* USER CODE END Error\_Handler\_Debug */}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_a1730ffe1e560465665eb47d9264826f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_af20a88180db1113be1e89266917d148b}\label{main_8cpp_af20a88180db1113be1e89266917d148b}} 
+\index{main.cpp@{main.cpp}!HAL\_ADC\_ConvCpltCallback@{HAL\_ADC\_ConvCpltCallback}}
+\index{HAL\_ADC\_ConvCpltCallback@{HAL\_ADC\_ConvCpltCallback}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{HAL\_ADC\_ConvCpltCallback()}{HAL\_ADC\_ConvCpltCallback()}}
+{\footnotesize\ttfamily void H\+A\+L\+\_\+\+A\+D\+C\+\_\+\+Conv\+Cplt\+Callback (\begin{DoxyParamCaption}\item[{A\+D\+C\+\_\+\+Handle\+Type\+Def $\ast$}]{hadc }\end{DoxyParamCaption})}
+
+
+
+Definition at line 103 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{104 \{}
+\DoxyCodeLine{105     \mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\_adc\_controller}}.\mbox{\hyperlink{classadc__controller_a8252981d4386d2eec146944c8c82f8c5}{current\_sense}}  = \mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\_adc\_controller}}.\mbox{\hyperlink{classadc__controller_af853b8e8d9a1231e5f90e9a88656f3f3}{dma\_ring\_buffer}}[0];}
+\DoxyCodeLine{106     \mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\_adc\_controller}}.\mbox{\hyperlink{classadc__controller_a9aa0d574311b4d711446bead4fc3700a}{temperature\_mcu}}  = \mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\_adc\_controller}}.\mbox{\hyperlink{classadc__controller_af853b8e8d9a1231e5f90e9a88656f3f3}{dma\_ring\_buffer}}[0];}
+\DoxyCodeLine{107     \mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\_adc\_controller}}.\mbox{\hyperlink{classadc__controller_a06057b6790f45e0537445ec91bf1c553}{vref}}  = \mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\_adc\_controller}}.\mbox{\hyperlink{classadc__controller_af853b8e8d9a1231e5f90e9a88656f3f3}{dma\_ring\_buffer}}[0];}
+\DoxyCodeLine{108     \mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\_adc\_controller}}.\mbox{\hyperlink{classadc__controller_acc42da75c14091935769d448059dd298}{vbat}}  = \mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\_adc\_controller}}.\mbox{\hyperlink{classadc__controller_af853b8e8d9a1231e5f90e9a88656f3f3}{dma\_ring\_buffer}}[0];}
+\DoxyCodeLine{109 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8cpp_a8a3b0ad512a6e6c6157440b68d395eac}\label{main_8cpp_a8a3b0ad512a6e6c6157440b68d395eac}} 
+\index{main.cpp@{main.cpp}!HAL\_TIM\_PeriodElapsedCallback@{HAL\_TIM\_PeriodElapsedCallback}}
+\index{HAL\_TIM\_PeriodElapsedCallback@{HAL\_TIM\_PeriodElapsedCallback}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{HAL\_TIM\_PeriodElapsedCallback()}{HAL\_TIM\_PeriodElapsedCallback()}}
+{\footnotesize\ttfamily void H\+A\+L\+\_\+\+T\+I\+M\+\_\+\+Period\+Elapsed\+Callback (\begin{DoxyParamCaption}\item[{T\+I\+M\+\_\+\+Handle\+Type\+Def $\ast$}]{htim }\end{DoxyParamCaption})}
+
+
+
+Period elapsed callback in non blocking mode. 
+
+\begin{DoxyNote}{Note}
+This function is called when T\+I\+M1 interrupt took place, inside H\+A\+L\+\_\+\+T\+I\+M\+\_\+\+I\+R\+Q\+Handler(). It makes a direct call to H\+A\+L\+\_\+\+Inc\+Tick() to increment a global variable \char`\"{}uw\+Tick\char`\"{} used as application time base. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em htim} & \+: T\+IM handle \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 328 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{330 \{}
+\DoxyCodeLine{331   \textcolor{comment}{/* USER CODE BEGIN Callback 0 */}}
+\DoxyCodeLine{332 }
+\DoxyCodeLine{333   \textcolor{comment}{/* USER CODE END Callback 0 */}}
+\DoxyCodeLine{334   \textcolor{keywordflow}{if} (htim-\/>Instance == TIM1) \{}
+\DoxyCodeLine{335     HAL\_IncTick();}
+\DoxyCodeLine{336   \}}
+\DoxyCodeLine{337   \textcolor{comment}{/* USER CODE BEGIN Callback 1 */}}
+\DoxyCodeLine{338 }
+\DoxyCodeLine{339   \textcolor{comment}{/* USER CODE END Callback 1 */}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The application entry point. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em int} & \\
+\hline
+\end{DoxyRetVals}
+26.\+03.\+20\+: alpha release 1\+: changelog\+: So far we have all peripherials working together to create the basic flow we can read all memories, query adc, and get status. 29.\+03.\+20 alpha\+R2\+: add a main class to abstract the different classes add qa reduced functionality add timer on error messages for tx\+\_\+send\+\_\+general error 30.\+03.\+20\+: add xmodem update/upload add rx\+\_\+routines class to instrument functions from uart 01/04/20\+: add T\+O\+G\+G\+L\+E\+\_\+\+R\+E\+S\+E\+T\+\_\+\+B\+U\+T\+T\+ON read add stalling procedures F\+IX\+: adc design read back cs register function\+:
+\begin{DoxyEnumerate}
+\item change C\+S\+\_\+\+R\+EG status
+\item change S\+T\+A\+T\+U\+S\+\_\+\+R\+EG When cs\+\_\+low at cs\+\_\+register, devices online will be listening to the cs\+\_\+register setup commands.
+\end{DoxyEnumerate}
+
+Definition at line 137 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{138 \{}
+\DoxyCodeLine{139   \textcolor{comment}{/* USER CODE BEGIN 1 */}}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141   \textcolor{comment}{/* USER CODE END 1 */}}
+\DoxyCodeLine{142   }
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144   \textcolor{comment}{/* MCU Configuration-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146   \textcolor{comment}{/* Reset of all peripherals, Initializes the Flash interface and the Systick. */}}
+\DoxyCodeLine{147   HAL\_Init();}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149   \textcolor{comment}{/* USER CODE BEGIN Init */}}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151   \textcolor{comment}{/* USER CODE END Init */}}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153   \textcolor{comment}{/* Configure the system clock */}}
+\DoxyCodeLine{154   \mbox{\hyperlink{main_8cpp_a70af21c671abfcc773614a9a4f63d920}{SystemClock\_Config}}();}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156   \textcolor{comment}{/* USER CODE BEGIN SysInit */}}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158   \textcolor{comment}{/* USER CODE END SysInit */}}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160   \textcolor{comment}{/* Initialize all configured peripherals */}}
+\DoxyCodeLine{161   \mbox{\hyperlink{gpio_8h_ac724e431d2af879252de35615be2bdea}{MX\_GPIO\_Init}}();}
+\DoxyCodeLine{162   \mbox{\hyperlink{dma_8h_a323249dac769f9855c10b4ec9446b707}{MX\_DMA\_Init}}();}
+\DoxyCodeLine{163   \mbox{\hyperlink{adc_8h_aca7f21e220653e353491bceced7c5df3}{MX\_ADC\_Init}}();}
+\DoxyCodeLine{164   \mbox{\hyperlink{rtc_8h_abf4accd1ce479030808e546f3d4642c9}{MX\_RTC\_Init}}();}
+\DoxyCodeLine{165   \mbox{\hyperlink{spi_8h_af81398f9775695df0b172367651ca3e6}{MX\_SPI1\_Init}}();}
+\DoxyCodeLine{166   \mbox{\hyperlink{usart_8h_a57d1167735baafab8e3288526c424929}{MX\_USART1\_UART\_Init}}();}
+\DoxyCodeLine{167   \mbox{\hyperlink{crc_8h_a9f720fe95d685258cfe2ba29dc395c48}{MX\_CRC\_Init}}();}
+\DoxyCodeLine{168   \mbox{\hyperlink{usart_8h_a052088fe5bb3f807a4b2502e664fd4fd}{MX\_USART2\_UART\_Init}}();}
+\DoxyCodeLine{169   \textcolor{comment}{/* USER CODE BEGIN 2 */}}
+\DoxyCodeLine{170     HAL\_ADC\_Start\_DMA(\&\mbox{\hyperlink{adc_8h_a62fcafba91cf315db7e0e0c8f22c656f}{hadc}}, \mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\_adc\_controller}}.\mbox{\hyperlink{classadc__controller_af853b8e8d9a1231e5f90e9a88656f3f3}{dma\_ring\_buffer}}, \mbox{\hyperlink{main_8h_abe550a5ae27006d276a45c6c9c6f89af}{DMA\_LENGTH}});}
+\DoxyCodeLine{171     \mbox{\hyperlink{tim_8h_ac648e7f125deef46d41cd8b3f632efe0}{MX\_TIM16\_Init}}();}
+\DoxyCodeLine{172     \mbox{\hyperlink{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}{grand\_ctrl}}.\mbox{\hyperlink{classmain__controller_ae2fa1a2d7653cc6b61f92f8e8e755b46}{init\_before\_while}}();}
+\DoxyCodeLine{173     \mbox{\hyperlink{main_8cpp_a9fb3db78fa2c86b6b4574ef7be1c8ae1}{timer\_last\_update}} = HAL\_GetTick();}
+\DoxyCodeLine{174     HAL\_TIM\_Base\_Start\_IT(\&\mbox{\hyperlink{tim_8h_af0bea8d8759a0d7e0e296edc9f5d6936}{htim16}});}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176   \textcolor{comment}{/* USER CODE END 2 */}}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179   \textcolor{comment}{/* Infinite loop */}}
+\DoxyCodeLine{180   \textcolor{comment}{/* USER CODE BEGIN WHILE */}}
+\DoxyCodeLine{181   \textcolor{keywordflow}{while} (\textcolor{keyword}{true})}
+\DoxyCodeLine{182   \{}
+\DoxyCodeLine{183 \textcolor{comment}{    /***********************************************************************************}}
+\DoxyCodeLine{184 \textcolor{comment}{     *26.03.20: alpha release 1:}}
+\DoxyCodeLine{185 \textcolor{comment}{     *changelog:}}
+\DoxyCodeLine{186 \textcolor{comment}{     *So far we have all peripherials working together to create the basic flow}}
+\DoxyCodeLine{187 \textcolor{comment}{     *we can read all memories, query adc, and get status.}}
+\DoxyCodeLine{188 \textcolor{comment}{     *29.03.20 alphaR2:}}
+\DoxyCodeLine{189 \textcolor{comment}{     *add a main class to abstract the different classes}}
+\DoxyCodeLine{190 \textcolor{comment}{     *add qa reduced functionality}}
+\DoxyCodeLine{191 \textcolor{comment}{     *add timer on error messages for tx\_send\_general error}}
+\DoxyCodeLine{192 \textcolor{comment}{     *30.03.20:}}
+\DoxyCodeLine{193 \textcolor{comment}{     *add xmodem update/upload}}
+\DoxyCodeLine{194 \textcolor{comment}{     *add rx\_routines class to instrument functions from uart}}
+\DoxyCodeLine{195 \textcolor{comment}{     *01/04/20:}}
+\DoxyCodeLine{196 \textcolor{comment}{     *add TOGGLE\_RESET\_BUTTON read}}
+\DoxyCodeLine{197 \textcolor{comment}{     *add stalling procedures}}
+\DoxyCodeLine{198 \textcolor{comment}{     *FIX:}}
+\DoxyCodeLine{199 \textcolor{comment}{     *adc design}}
+\DoxyCodeLine{200 \textcolor{comment}{     *read back cs register function:}}
+\DoxyCodeLine{201 \textcolor{comment}{     *  1. change CS\_REG status}}
+\DoxyCodeLine{202 \textcolor{comment}{     *  2. change STATUS\_REG}}
+\DoxyCodeLine{203 \textcolor{comment}{     *When cs\_low at cs\_register, devices online will be listening to the cs\_register setup commands.}}
+\DoxyCodeLine{204 \textcolor{comment}{    ************************************************************************************/}}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{206       \textcolor{keywordflow}{switch} (\mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}}.\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}})}
+\DoxyCodeLine{207       \{}
+\DoxyCodeLine{208       \textcolor{keywordflow}{case} \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa1ff76aa808bb8209a13fcdbaf330587e}{Init}}:}
+\DoxyCodeLine{209           \mbox{\hyperlink{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}{grand\_ctrl}}.\mbox{\hyperlink{classmain__controller_a07b830385721c90e3649755e0351b942}{init\_state}}();}
+\DoxyCodeLine{210           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{211       \textcolor{keywordflow}{case} \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fad3fa9ae9431d6cb1772f9d9df48cab19}{Idle}}:}
+\DoxyCodeLine{212           \mbox{\hyperlink{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}{grand\_ctrl}}.\mbox{\hyperlink{classmain__controller_acfa5a32d8b5a43ca51af8a8ef391e8dd}{idle\_state}}();}
+\DoxyCodeLine{213           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{214       \textcolor{keywordflow}{case} \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90faa51e8c2f3a24a3ba6df30d80b6bf713f}{UpdateData}}:}
+\DoxyCodeLine{215           \mbox{\hyperlink{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}{grand\_ctrl}}.\mbox{\hyperlink{classmain__controller_a20367a8db65caec766d540b57e8222a5}{update\_state}}();}
+\DoxyCodeLine{216           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{217       \textcolor{keywordflow}{case} \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa26bd8444261cc58df7a86753c79d2520}{Active}}:}
+\DoxyCodeLine{218           \mbox{\hyperlink{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}{grand\_ctrl}}.\mbox{\hyperlink{classmain__controller_a165f3e950025bd4a5f5690d43d607c44}{active\_state}}();}
+\DoxyCodeLine{219           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{220       \textcolor{keywordflow}{case} \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa6d9f8689ea39a3158da65b5a604c294d}{UartDebug}}:}
+\DoxyCodeLine{221           \textcolor{keywordflow}{while} (\mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}}.\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}} == \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa6d9f8689ea39a3158da65b5a604c294d}{UartDebug}})}
+\DoxyCodeLine{222           \{}
+\DoxyCodeLine{223               \mbox{\hyperlink{main_8cpp_aff0ddfa6bb7689f0ce871ad5d84e72f1}{rx\_stuff}}.\mbox{\hyperlink{classmonitor_a516685f198b69b69a2bc8529c2e8a4b0}{serial\_consume}}();}
+\DoxyCodeLine{224               HAL\_GPIO\_TogglePin(\mbox{\hyperlink{main_8h_a3d6c14495f0d79a17a240b9dae48ef95}{WATCHDOG\_OUT\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_af01d7a3e1c3b22f5655438068780b095}{WATCHDOG\_OUT\_Pin}});}
+\DoxyCodeLine{225               \mbox{\hyperlink{main_8cpp_a48a8246580413cc169289057a1f955fa}{cycle}}++;}
+\DoxyCodeLine{226               \textcolor{keywordflow}{if} (\mbox{\hyperlink{main_8cpp_a48a8246580413cc169289057a1f955fa}{cycle}} \% 100 == 0)}
+\DoxyCodeLine{227               \{}
+\DoxyCodeLine{228                   HAL\_GPIO\_TogglePin(\mbox{\hyperlink{main_8h_aa1f58bd35c306fa042f86eea16952385}{BLINKING\_LED\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_a94b47cde17629be40ec471cd6eafd631}{BLINKING\_LED\_Pin}});}
+\DoxyCodeLine{229               \}}
+\DoxyCodeLine{230           \}}
+\DoxyCodeLine{231           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{232       \textcolor{keywordflow}{case} \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa1bd72899508ed7f9e142d8f84e092d72}{QA}}:}
+\DoxyCodeLine{233           \mbox{\hyperlink{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}{grand\_ctrl}}.\mbox{\hyperlink{classmain__controller_a651696f7f39814d6b209caea9074d59e}{qa\_state}}();}
+\DoxyCodeLine{234           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{235       default :}
+\DoxyCodeLine{236           \textcolor{keywordflow}{break}; }
+\DoxyCodeLine{237       \}}
+\DoxyCodeLine{238       }
+\DoxyCodeLine{239       \textcolor{keywordflow}{if} (HAL\_GetTick() -\/ \mbox{\hyperlink{main_8cpp_a9fb3db78fa2c86b6b4574ef7be1c8ae1}{timer\_last\_update}} > \mbox{\hyperlink{group___auxilary_ga362b3e46e313d70343f7962a4c6e0d9d}{TICKS\_FOR\_UPDATE}})}
+\DoxyCodeLine{240       \{}
+\DoxyCodeLine{241           \textcolor{keywordflow}{if} (\mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}}.\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}} != \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa1ff76aa808bb8209a13fcdbaf330587e}{Init}} \&\& \mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}}.\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}} !=\mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90fa1bd72899508ed7f9e142d8f84e092d72}{QA}})}
+\DoxyCodeLine{242           \{}
+\DoxyCodeLine{243               \mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}}.\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}} = \mbox{\hyperlink{state_8h_a225db88edc79a3c72f14a796d613f90faa51e8c2f3a24a3ba6df30d80b6bf713f}{UpdateData}};}
+\DoxyCodeLine{244           \}}
+\DoxyCodeLine{245           \mbox{\hyperlink{main_8cpp_a9fb3db78fa2c86b6b4574ef7be1c8ae1}{timer\_last\_update}} = HAL\_GetTick();}
+\DoxyCodeLine{246       \}}
+\DoxyCodeLine{247       \textcolor{keywordflow}{else}}
+\DoxyCodeLine{248       \{}
+\DoxyCodeLine{249           \mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}}.\mbox{\hyperlink{class_state_aa3f9637db0632d540d7e23a70bf6a150}{current}} = \mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}}.\mbox{\hyperlink{class_state_a267d012d079d65471739ced3964d95fd}{next}};}
+\DoxyCodeLine{250           \mbox{\hyperlink{main_8cpp_aa83c44e91e197dc14e95782aafc19511}{debug}}.\mbox{\hyperlink{class_debug_helper_ab825d1cd6f99c3f4449671d853cb5276}{update}}(~(uint32\_t)\mbox{\hyperlink{main_8cpp_aa83c44e91e197dc14e95782aafc19511}{debug}}.\mbox{\hyperlink{class_debug_helper_a5aa9a6d653ed2edf062d64291ceba389}{Debug\_fields}}.\mbox{\hyperlink{unionbyte8__t__debug_aed29346d163073724f06ea053b21ef15}{value}});}
+\DoxyCodeLine{251       \}}
+\DoxyCodeLine{252 }
+\DoxyCodeLine{253       HAL\_GPIO\_TogglePin(\mbox{\hyperlink{main_8h_a3d6c14495f0d79a17a240b9dae48ef95}{WATCHDOG\_OUT\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_af01d7a3e1c3b22f5655438068780b095}{WATCHDOG\_OUT\_Pin}});}
+\DoxyCodeLine{254       \mbox{\hyperlink{main_8cpp_a48a8246580413cc169289057a1f955fa}{cycle}}++;}
+\DoxyCodeLine{255       \textcolor{keywordflow}{if} (\mbox{\hyperlink{main_8cpp_a48a8246580413cc169289057a1f955fa}{cycle}} \% 100 == 0)}
+\DoxyCodeLine{256       \{}
+\DoxyCodeLine{257           HAL\_GPIO\_TogglePin(\mbox{\hyperlink{main_8h_aa1f58bd35c306fa042f86eea16952385}{BLINKING\_LED\_GPIO\_Port}}, \mbox{\hyperlink{main_8h_a94b47cde17629be40ec471cd6eafd631}{BLINKING\_LED\_Pin}});}
+\DoxyCodeLine{258       \}}
+\DoxyCodeLine{259     \textcolor{comment}{/* USER CODE END WHILE */}}
+\DoxyCodeLine{260 }
+\DoxyCodeLine{261     \textcolor{comment}{/* USER CODE BEGIN 3 */}}
+\DoxyCodeLine{262   \}}
+\DoxyCodeLine{263   \textcolor{comment}{/* USER CODE END 3 */}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{df/d0a/main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a7a05bf79f06e509d0309b09f3475e272}\label{main_8cpp_a7a05bf79f06e509d0309b09f3475e272}} 
+\index{main.cpp@{main.cpp}!remapMemToSRAM@{remapMemToSRAM}}
+\index{remapMemToSRAM@{remapMemToSRAM}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{remapMemToSRAM()}{remapMemToSRAM()}}
+{\footnotesize\ttfamily void remap\+Mem\+To\+S\+R\+AM (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 111 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112 \{}
+\DoxyCodeLine{113     uint32\_t vecIndex = 0;}
+\DoxyCodeLine{114     uint32\_t prim;}
+\DoxyCodeLine{115     prim = \_\_get\_PRIMASK();}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117     \_\_disable\_irq();}
+\DoxyCodeLine{118  }
+\DoxyCodeLine{119     \textcolor{keywordflow}{for} (vecIndex = 0; vecIndex < 48; vecIndex++) \{}
+\DoxyCodeLine{120         VectorTable[vecIndex] = *(\textcolor{keyword}{volatile} uint32\_t*)(\mbox{\hyperlink{group___globals_gaeeec01180221fc32a831f91982f6311e}{APP\_ADDRESS}} + (vecIndex << 2));}
+\DoxyCodeLine{121     \}}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123     \textcolor{comment}{//\_\_HAL\_RCC\_APB2\_FORCE\_RESET();}}
+\DoxyCodeLine{124     \mbox{\hyperlink{main_8cpp_a86d36fdb1571fd56ffeecfaed80c6805}{\_\_HAL\_SYSCFG\_REMAPMEMORY\_SRAM}}();}
+\DoxyCodeLine{125     }
+\DoxyCodeLine{126     \textcolor{keywordflow}{if} (!prim) \{}
+\DoxyCodeLine{127         \_\_enable\_irq();}
+\DoxyCodeLine{128     \}}
+\DoxyCodeLine{129 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8cpp_a70af21c671abfcc773614a9a4f63d920}\label{main_8cpp_a70af21c671abfcc773614a9a4f63d920}} 
+\index{main.cpp@{main.cpp}!SystemClock\_Config@{SystemClock\_Config}}
+\index{SystemClock\_Config@{SystemClock\_Config}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{SystemClock\_Config()}{SystemClock\_Config()}}
+{\footnotesize\ttfamily void System\+Clock\+\_\+\+Config (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+System Clock Configuration. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+Configure L\+SE Drive Capability
+
+Initializes the C\+PU, A\+HB and A\+PB busses clocks
+
+Initializes the C\+PU, A\+HB and A\+PB busses clocks
+
+Definition at line 269 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{271 \{}
+\DoxyCodeLine{272   RCC\_OscInitTypeDef RCC\_OscInitStruct = \{0\};}
+\DoxyCodeLine{273   RCC\_ClkInitTypeDef RCC\_ClkInitStruct = \{0\};}
+\DoxyCodeLine{274   RCC\_PeriphCLKInitTypeDef PeriphClkInit = \{0\};}
+\DoxyCodeLine{275 \textcolor{comment}{}}
+\DoxyCodeLine{276 \textcolor{comment}{  /** Configure LSE Drive Capability }}
+\DoxyCodeLine{277 \textcolor{comment}{  */}}
+\DoxyCodeLine{278   HAL\_PWR\_EnableBkUpAccess();}
+\DoxyCodeLine{279   \_\_HAL\_RCC\_LSEDRIVE\_CONFIG(RCC\_LSEDRIVE\_HIGH);\textcolor{comment}{}}
+\DoxyCodeLine{280 \textcolor{comment}{  /** Initializes the CPU, AHB and APB busses clocks }}
+\DoxyCodeLine{281 \textcolor{comment}{  */}}
+\DoxyCodeLine{282   RCC\_OscInitStruct.OscillatorType = RCC\_OSCILLATORTYPE\_HSI14|RCC\_OSCILLATORTYPE\_HSI48}
+\DoxyCodeLine{283                               |RCC\_OSCILLATORTYPE\_LSE;}
+\DoxyCodeLine{284   RCC\_OscInitStruct.LSEState = RCC\_LSE\_ON;}
+\DoxyCodeLine{285   RCC\_OscInitStruct.HSI48State = RCC\_HSI48\_ON;}
+\DoxyCodeLine{286   RCC\_OscInitStruct.HSI14State = RCC\_HSI14\_ON;}
+\DoxyCodeLine{287   RCC\_OscInitStruct.HSI14CalibrationValue = 16;}
+\DoxyCodeLine{288   RCC\_OscInitStruct.PLL.PLLState = RCC\_PLL\_NONE;}
+\DoxyCodeLine{289   \textcolor{keywordflow}{if} (HAL\_RCC\_OscConfig(\&RCC\_OscInitStruct) != HAL\_OK)}
+\DoxyCodeLine{290   \{}
+\DoxyCodeLine{291     \mbox{\hyperlink{main_8cpp_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{292   \}\textcolor{comment}{}}
+\DoxyCodeLine{293 \textcolor{comment}{  /** Initializes the CPU, AHB and APB busses clocks }}
+\DoxyCodeLine{294 \textcolor{comment}{  */}}
+\DoxyCodeLine{295   RCC\_ClkInitStruct.ClockType = RCC\_CLOCKTYPE\_HCLK|RCC\_CLOCKTYPE\_SYSCLK}
+\DoxyCodeLine{296                               |RCC\_CLOCKTYPE\_PCLK1;}
+\DoxyCodeLine{297   RCC\_ClkInitStruct.SYSCLKSource = RCC\_SYSCLKSOURCE\_HSI48;}
+\DoxyCodeLine{298   RCC\_ClkInitStruct.AHBCLKDivider = RCC\_SYSCLK\_DIV1;}
+\DoxyCodeLine{299   RCC\_ClkInitStruct.APB1CLKDivider = RCC\_HCLK\_DIV1;}
+\DoxyCodeLine{300 }
+\DoxyCodeLine{301   \textcolor{keywordflow}{if} (HAL\_RCC\_ClockConfig(\&RCC\_ClkInitStruct, FLASH\_LATENCY\_1) != HAL\_OK)}
+\DoxyCodeLine{302   \{}
+\DoxyCodeLine{303     \mbox{\hyperlink{main_8cpp_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{304   \}}
+\DoxyCodeLine{305   PeriphClkInit.PeriphClockSelection = RCC\_PERIPHCLK\_USART1|RCC\_PERIPHCLK\_USART2}
+\DoxyCodeLine{306                               |RCC\_PERIPHCLK\_RTC;}
+\DoxyCodeLine{307   PeriphClkInit.Usart1ClockSelection = RCC\_USART1CLKSOURCE\_SYSCLK;}
+\DoxyCodeLine{308   PeriphClkInit.Usart2ClockSelection = RCC\_USART2CLKSOURCE\_PCLK1;}
+\DoxyCodeLine{309   PeriphClkInit.RTCClockSelection = RCC\_RTCCLKSOURCE\_LSE;}
+\DoxyCodeLine{310   \textcolor{keywordflow}{if} (HAL\_RCCEx\_PeriphCLKConfig(\&PeriphClkInit) != HAL\_OK)}
+\DoxyCodeLine{311   \{}
+\DoxyCodeLine{312     \mbox{\hyperlink{main_8cpp_a1730ffe1e560465665eb47d9264826f9}{Error\_Handler}}();}
+\DoxyCodeLine{313   \}}
+\DoxyCodeLine{314   HAL\_RCC\_MCOConfig(RCC\_MCO, RCC\_MCO1SOURCE\_SYSCLK, RCC\_MCODIV\_1);}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{df/d0a/main_8cpp_a70af21c671abfcc773614a9a4f63d920_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{df/d0a/main_8cpp_a70af21c671abfcc773614a9a4f63d920_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_a5c7d5088d135fe89f930ecb50320c810}\label{main_8cpp_a5c7d5088d135fe89f930ecb50320c810}} 
+\index{main.cpp@{main.cpp}!aPacketData@{aPacketData}}
+\index{aPacketData@{aPacketData}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{aPacketData}{aPacketData}}
+{\footnotesize\ttfamily uint8\+\_\+t a\+Packet\+Data\mbox{[}\mbox{\hyperlink{xmodem_8h_a59d3a0acbce52b1864699cc3359df574}{P\+A\+C\+K\+E\+T\+\_\+1\+K\+\_\+\+S\+I\+ZE}}+\mbox{\hyperlink{xmodem_8h_af871a1543a0c48abde73a9cb9c826e69}{P\+A\+C\+K\+E\+T\+\_\+\+D\+A\+T\+A\+\_\+\+I\+N\+D\+EX}}+\mbox{\hyperlink{xmodem_8h_ac8fd88355429b352139100bbdfd73098}{P\+A\+C\+K\+E\+T\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Definition at line 85 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a38697284e95eaa8362ce09fbda7adf3c}\label{main_8cpp_a38697284e95eaa8362ce09fbda7adf3c}} 
+\index{main.cpp@{main.cpp}!atp\_extern@{atp\_extern}}
+\index{atp\_extern@{atp\_extern}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{atp\_extern}{atp\_extern}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__controller}{main\+\_\+controller}}$\ast$ atp\+\_\+extern = \&\mbox{\hyperlink{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}{grand\+\_\+ctrl}}}
+
+
+
+Definition at line 83 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a7c5a507eb106108fe79c9b0154b0aff5}\label{main_8cpp_a7c5a507eb106108fe79c9b0154b0aff5}} 
+\index{main.cpp@{main.cpp}!BUFFER\_RX@{BUFFER\_RX}}
+\index{BUFFER\_RX@{BUFFER\_RX}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{BUFFER\_RX}{BUFFER\_RX}}
+{\footnotesize\ttfamily uint8\+\_\+t B\+U\+F\+F\+E\+R\+\_\+\+RX\mbox{[}\mbox{\hyperlink{group___auxilary_ga29d12c67e4b6e0ff96d7aa793757b094}{R\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Definition at line 86 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ae64ad8e57ce49e9a138f45eeb916b6d1}\label{main_8cpp_ae64ad8e57ce49e9a138f45eeb916b6d1}} 
+\index{main.cpp@{main.cpp}!BUFFER\_SCREEN@{BUFFER\_SCREEN}}
+\index{BUFFER\_SCREEN@{BUFFER\_SCREEN}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{BUFFER\_SCREEN}{BUFFER\_SCREEN}}
+{\footnotesize\ttfamily uint8\+\_\+t B\+U\+F\+F\+E\+R\+\_\+\+S\+C\+R\+E\+EN\mbox{[}\mbox{\hyperlink{group___auxilary_ga29d12c67e4b6e0ff96d7aa793757b094}{R\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Definition at line 87 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a9c5b08b5636db0a3dbca399970f44b8b}\label{main_8cpp_a9c5b08b5636db0a3dbca399970f44b8b}} 
+\index{main.cpp@{main.cpp}!BUFFER\_SCREEN\_WITH\_CRC@{BUFFER\_SCREEN\_WITH\_CRC}}
+\index{BUFFER\_SCREEN\_WITH\_CRC@{BUFFER\_SCREEN\_WITH\_CRC}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{BUFFER\_SCREEN\_WITH\_CRC}{BUFFER\_SCREEN\_WITH\_CRC}}
+{\footnotesize\ttfamily uint8\+\_\+t B\+U\+F\+F\+E\+R\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+T\+H\+\_\+\+C\+RC\mbox{[}\mbox{\hyperlink{group___auxilary_ga29d12c67e4b6e0ff96d7aa793757b094}{R\+X\+B\+U\+F\+F\+E\+R\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Definition at line 88 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}\label{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}} 
+\index{main.cpp@{main.cpp}!c\_adc\_controller@{c\_adc\_controller}}
+\index{c\_adc\_controller@{c\_adc\_controller}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{c\_adc\_controller}{c\_adc\_controller}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classadc__controller}{adc\+\_\+controller}} c\+\_\+adc\+\_\+controller = \mbox{\hyperlink{classadc__controller}{adc\+\_\+controller}}(\&\mbox{\hyperlink{main_8cpp_ab68f74c1cbb1fd5482bd15c9cc43b215}{cs\+\_\+register}})}
+
+
+
+Definition at line 79 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ab68f74c1cbb1fd5482bd15c9cc43b215}\label{main_8cpp_ab68f74c1cbb1fd5482bd15c9cc43b215}} 
+\index{main.cpp@{main.cpp}!cs\_register@{cs\_register}}
+\index{cs\_register@{cs\_register}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{cs\_register}{cs\_register}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}} cs\+\_\+register = \mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}}()}
+
+
+
+Definition at line 70 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a48a8246580413cc169289057a1f955fa}\label{main_8cpp_a48a8246580413cc169289057a1f955fa}} 
+\index{main.cpp@{main.cpp}!cycle@{cycle}}
+\index{cycle@{cycle}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{cycle}{cycle}}
+{\footnotesize\ttfamily uint32\+\_\+t cycle = 0}
+
+
+
+Definition at line 80 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aa83c44e91e197dc14e95782aafc19511}\label{main_8cpp_aa83c44e91e197dc14e95782aafc19511}} 
+\index{main.cpp@{main.cpp}!debug@{debug}}
+\index{debug@{debug}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_debug_helper}{Debug\+Helper}} debug = \mbox{\hyperlink{class_debug_helper}{Debug\+Helper}}()}
+
+
+
+Definition at line 69 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}\label{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}} 
+\index{main.cpp@{main.cpp}!grand\_ctrl@{grand\_ctrl}}
+\index{grand\_ctrl@{grand\_ctrl}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{grand\_ctrl}{grand\_ctrl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmain__controller}{main\+\_\+controller}} grand\+\_\+ctrl = \mbox{\hyperlink{classmain__controller}{main\+\_\+controller}}(\&\mbox{\hyperlink{main_8cpp_aa83c44e91e197dc14e95782aafc19511}{debug}}, \&\mbox{\hyperlink{main_8cpp_aa34662f2587cd76d3c729ab98e25c09e}{memory\+\_\+controller}}, \&\mbox{\hyperlink{main_8cpp_ace97e2f99aed86c1c962757900e988e0}{ph\+\_\+device}}, \&\mbox{\hyperlink{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}{state}}, \&\mbox{\hyperlink{main_8cpp_a89b3e3c86b71e20619eac40346310f06}{screen}}, \&\mbox{\hyperlink{main_8cpp_aebe427fbd0d408e17e373f83cbbca624}{c\+\_\+adc\+\_\+controller}})}
+
+
+
+Definition at line 81 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ae69f34a703c3b009036c063cf3c54305}\label{main_8cpp_ae69f34a703c3b009036c063cf3c54305}} 
+\index{main.cpp@{main.cpp}!memory\_am@{memory\_am}}
+\index{memory\_am@{memory\_am}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{memory\_am}{memory\_am}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_memory}{Memory}} memory\+\_\+am = \mbox{\hyperlink{class_memory}{Memory}}(3)}
+
+
+
+Definition at line 72 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a7e5a3d7895284d45c8d59d1010d13962}\label{main_8cpp_a7e5a3d7895284d45c8d59d1010d13962}} 
+\index{main.cpp@{main.cpp}!memory\_apt@{memory\_apt}}
+\index{memory\_apt@{memory\_apt}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{memory\_apt}{memory\_apt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_memory}{Memory}} memory\+\_\+apt = \mbox{\hyperlink{class_memory}{Memory}}(2)}
+
+
+
+Definition at line 73 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aa34662f2587cd76d3c729ab98e25c09e}\label{main_8cpp_aa34662f2587cd76d3c729ab98e25c09e}} 
+\index{main.cpp@{main.cpp}!memory\_controller@{memory\_controller}}
+\index{memory\_controller@{memory\_controller}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{memory\_controller}{memory\_controller}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}} memory\+\_\+controller = \mbox{\hyperlink{class_mem__ctrl}{Mem\+\_\+ctrl}}(\&\mbox{\hyperlink{main_8cpp_ae69f34a703c3b009036c063cf3c54305}{memory\+\_\+am}}, \&\mbox{\hyperlink{main_8cpp_a7e5a3d7895284d45c8d59d1010d13962}{memory\+\_\+apt}}, \&\mbox{\hyperlink{main_8cpp_a46717684ad1df24d4393c2b6d38d45ea}{memory\+\_\+mcu}}, \&\mbox{\hyperlink{main_8cpp_ab68f74c1cbb1fd5482bd15c9cc43b215}{cs\+\_\+register}})}
+
+
+
+Definition at line 75 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a46717684ad1df24d4393c2b6d38d45ea}\label{main_8cpp_a46717684ad1df24d4393c2b6d38d45ea}} 
+\index{main.cpp@{main.cpp}!memory\_mcu@{memory\_mcu}}
+\index{memory\_mcu@{memory\_mcu}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{memory\_mcu}{memory\_mcu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_memory}{Memory}} memory\+\_\+mcu = \mbox{\hyperlink{class_memory}{Memory}}(1)}
+
+
+
+Definition at line 74 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ace97e2f99aed86c1c962757900e988e0}\label{main_8cpp_ace97e2f99aed86c1c962757900e988e0}} 
+\index{main.cpp@{main.cpp}!ph\_device@{ph\_device}}
+\index{ph\_device@{ph\_device}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ph\_device}{ph\_device}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_peripherial_devices}{Peripherial\+Devices}} ph\+\_\+device = \mbox{\hyperlink{class_peripherial_devices}{Peripherial\+Devices}}(\&\mbox{\hyperlink{main_8cpp_ab68f74c1cbb1fd5482bd15c9cc43b215}{cs\+\_\+register}}, \&\mbox{\hyperlink{main_8cpp_a9c10e645c8b2a80891a0b8150e774bf8}{status\+\_\+register}})}
+
+
+
+Definition at line 76 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a549deb0e19719099b413522f1b15b440}\label{main_8cpp_a549deb0e19719099b413522f1b15b440}} 
+\index{main.cpp@{main.cpp}!reset\_pressed@{reset\_pressed}}
+\index{reset\_pressed@{reset\_pressed}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{reset\_pressed}{reset\_pressed}}
+{\footnotesize\ttfamily volatile bool reset\+\_\+pressed = false}
+
+
+
+Definition at line 89 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aff0ddfa6bb7689f0ce871ad5d84e72f1}\label{main_8cpp_aff0ddfa6bb7689f0ce871ad5d84e72f1}} 
+\index{main.cpp@{main.cpp}!rx\_stuff@{rx\_stuff}}
+\index{rx\_stuff@{rx\_stuff}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{rx\_stuff}{rx\_stuff}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmonitor}{monitor}} rx\+\_\+stuff = \mbox{\hyperlink{classmonitor}{monitor}}(\&\mbox{\hyperlink{main_8cpp_a291b1950513bacb2b900f9108e8d4c3d}{grand\+\_\+ctrl}})}
+
+
+
+Definition at line 82 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a89b3e3c86b71e20619eac40346310f06}\label{main_8cpp_a89b3e3c86b71e20619eac40346310f06}} 
+\index{main.cpp@{main.cpp}!screen@{screen}}
+\index{screen@{screen}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_screen__ctrl}{Screen\+\_\+ctrl}} screen = \mbox{\hyperlink{class_screen__ctrl}{Screen\+\_\+ctrl}}()}
+
+
+
+Definition at line 78 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}\label{main_8cpp_a876b486d3a5241a126bd5751c5f70f79}} 
+\index{main.cpp@{main.cpp}!state@{state}}
+\index{state@{state}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_state}{State}} state = \mbox{\hyperlink{class_state}{State}}()}
+
+
+
+Definition at line 77 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a9c10e645c8b2a80891a0b8150e774bf8}\label{main_8cpp_a9c10e645c8b2a80891a0b8150e774bf8}} 
+\index{main.cpp@{main.cpp}!status\_register@{status\_register}}
+\index{status\_register@{status\_register}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{status\_register}{status\_register}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_s_t_a_t_u_s__reg}{S\+T\+A\+T\+U\+S\+\_\+reg}} status\+\_\+register = \mbox{\hyperlink{class_s_t_a_t_u_s__reg}{S\+T\+A\+T\+U\+S\+\_\+reg}}()}
+
+
+
+Definition at line 71 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a9fb3db78fa2c86b6b4574ef7be1c8ae1}\label{main_8cpp_a9fb3db78fa2c86b6b4574ef7be1c8ae1}} 
+\index{main.cpp@{main.cpp}!timer\_last\_update@{timer\_last\_update}}
+\index{timer\_last\_update@{timer\_last\_update}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{timer\_last\_update}{timer\_last\_update}}
+{\footnotesize\ttfamily uint32\+\_\+t timer\+\_\+last\+\_\+update}
+
+
+
+Definition at line 90 of file main.\+cpp.
+

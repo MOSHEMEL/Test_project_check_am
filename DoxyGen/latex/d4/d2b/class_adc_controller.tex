@@ -1,0 +1,355 @@
+\hypertarget{class_adc_controller}{}\doxysection{Adc\+Controller Class Reference}
+\label{class_adc_controller}\index{AdcController@{AdcController}}
+
+
+{\ttfamily \#include $<$adc\+\_\+controller.\+h$>$}
+
+
+
+Collaboration diagram for Adc\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{df/db2/class_adc_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_adc_controller_a3d0dbd3c0dc97e47ad029751abcf5f4d}{Adc\+Controller}} (\mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}} $\ast$)
+\item 
+\mbox{\hyperlink{class_adc_controller_ac2faec4ddb1aa8436655e5231ef9c376}{$\sim$\+Adc\+Controller}} ()
+\item 
+void \mbox{\hyperlink{class_adc_controller_ab90340b9e1e08cd530b4a68701ddafe8}{read}} (enum \mbox{\hyperlink{adc__controller_8h_af5ee554b1b8c826fd6b6c7ccca93f2c5}{select\+\_\+channel}})
+\item 
+void \mbox{\hyperlink{class_adc_controller_a6bbaada643d70285f65f37ea2bb6dc85}{read}} (void)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_adc_controller_a0b68f65fa2ff32d520453116211d618c}{convert\+\_\+to\+\_\+volt}} (void)
+\item 
+void \mbox{\hyperlink{class_adc_controller_aeb08be70c1cea717d989d3c42d1a7e27}{pressure\+\_\+check}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_adc_controller_a7962ffbf472dc31d51d22369bce7bc0f}{dma\+\_\+ring\+\_\+buffer}} \mbox{[}\mbox{\hyperlink{main_8h_abe550a5ae27006d276a45c6c9c6f89af}{D\+M\+A\+\_\+\+L\+E\+N\+G\+TH}}\mbox{]}
+\item 
+\mbox{\hyperlink{unionchannel}{channel}} \mbox{\hyperlink{class_adc_controller_abe50326bfd3e5dacf46372f5de7159b8}{channels\+\_\+buffer}} \mbox{[}8\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_adc_controller_ac112d69f14562f7c678b7ea76ea4cb74}{current\+\_\+sense}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_adc_controller_a02b4d007474c10063eaf55f82a54e6c0}{temperature\+\_\+mcu}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_adc_controller_a4e84bf5dd75fbecfb23ad973c4d0aa09}{vref}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_adc_controller_a68b277abf7ff03367e477b36efaf3dbf}{vbat}}
+\item 
+\mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}} $\ast$ \mbox{\hyperlink{class_adc_controller_a5736b3aee244504bbe63206d23a83e3f}{cs\+\_\+register}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_adc_controller_ab85c451b925994833633bf7d90f46c8c}{battery\+\_\+volt}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{class_adc_controller_ae8afd600d1ad63d0f8894608ce6149bc}{bat\+\_\+percentage}}
+\item 
+bool \mbox{\hyperlink{class_adc_controller_ab3070fb789b7ddd3a44108ff90ac36de}{stall\+\_\+pressure}}
+\item 
+bool \mbox{\hyperlink{class_adc_controller_a9cbee6141d909740c466031cbd0509d4}{pressure\+\_\+ok}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 86 of file adc\+\_\+controller.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_adc_controller_a3d0dbd3c0dc97e47ad029751abcf5f4d}\label{class_adc_controller_a3d0dbd3c0dc97e47ad029751abcf5f4d}} 
+\index{AdcController@{AdcController}!AdcController@{AdcController}}
+\index{AdcController@{AdcController}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{AdcController()}{AdcController()}}
+{\footnotesize\ttfamily Adc\+Controller\+::\+Adc\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}} $\ast$}]{cs\+\_\+reg }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file adc\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     this-\/>\mbox{\hyperlink{class_adc_controller_a5736b3aee244504bbe63206d23a83e3f}{cs\_register}} = cs\_reg;}
+\DoxyCodeLine{8     this-\/>cfr.\mbox{\hyperlink{unionadc__command_a5c7bbd98317809a971faa0fa6e2add7e}{bits}}.\mbox{\hyperlink{unionadc__command_a4f09cbee25191d85973b62d4bff8a197}{D11}} = 1;}
+\DoxyCodeLine{9     this-\/>cfr.\mbox{\hyperlink{unionadc__command_a5c7bbd98317809a971faa0fa6e2add7e}{bits}}.\mbox{\hyperlink{unionadc__command_af9d0e17abb0ccbb2f33913611da2f166}{CMR}} = 0b1000;}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_adc_controller_ac2faec4ddb1aa8436655e5231ef9c376}\label{class_adc_controller_ac2faec4ddb1aa8436655e5231ef9c376}} 
+\index{AdcController@{AdcController}!````~AdcController@{$\sim$AdcController}}
+\index{````~AdcController@{$\sim$AdcController}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{$\sim$AdcController()}{~AdcController()}}
+{\footnotesize\ttfamily Adc\+Controller\+::$\sim$\+Adc\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file adc\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_adc_controller_a0b68f65fa2ff32d520453116211d618c}\label{class_adc_controller_a0b68f65fa2ff32d520453116211d618c}} 
+\index{AdcController@{AdcController}!convert\_to\_volt@{convert\_to\_volt}}
+\index{convert\_to\_volt@{convert\_to\_volt}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{convert\_to\_volt()}{convert\_to\_volt()}}
+{\footnotesize\ttfamily uint32\+\_\+t Adc\+Controller\+::convert\+\_\+to\+\_\+volt (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 68 of file adc\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69 \{}
+\DoxyCodeLine{70     \textcolor{comment}{// This function gives volt in milivolts}}
+\DoxyCodeLine{71     this-\/>\mbox{\hyperlink{class_adc_controller_ab85c451b925994833633bf7d90f46c8c}{battery\_volt}} =  (this-\/>\mbox{\hyperlink{class_adc_controller_abe50326bfd3e5dacf46372f5de7159b8}{channels\_buffer}}[\mbox{\hyperlink{adc__controller_8h_af5ee554b1b8c826fd6b6c7ccca93f2c5ac08cb96af135b5f4b2d246802dec7f26}{V12}}].\mbox{\hyperlink{unionchannel_a6e9d466e1bb72969dcb82d22fc520f68}{value}} * 7 + (\mbox{\hyperlink{class_adc_controller_abe50326bfd3e5dacf46372f5de7159b8}{channels\_buffer}}[\mbox{\hyperlink{adc__controller_8h_af5ee554b1b8c826fd6b6c7ccca93f2c5ac08cb96af135b5f4b2d246802dec7f26}{V12}}].\mbox{\hyperlink{unionchannel_a6e9d466e1bb72969dcb82d22fc520f68}{value}} * 5) / 10 + 8552);}
+\DoxyCodeLine{72     this-\/>\mbox{\hyperlink{class_adc_controller_ae8afd600d1ad63d0f8894608ce6149bc}{bat\_percentage}} = (this-\/>\mbox{\hyperlink{class_adc_controller_ab85c451b925994833633bf7d90f46c8c}{battery\_volt}} -\/ 9500) / 30;}
+\DoxyCodeLine{73     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_adc_controller_ab85c451b925994833633bf7d90f46c8c}{battery\_volt}} < 9500)}
+\DoxyCodeLine{74     \{}
+\DoxyCodeLine{75         this-\/>\mbox{\hyperlink{class_adc_controller_ae8afd600d1ad63d0f8894608ce6149bc}{bat\_percentage}} = 0;}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_adc_controller_ab85c451b925994833633bf7d90f46c8c}{battery\_volt}} > 12500)}
+\DoxyCodeLine{78     \{}
+\DoxyCodeLine{79         this-\/>\mbox{\hyperlink{class_adc_controller_ae8afd600d1ad63d0f8894608ce6149bc}{bat\_percentage}} =  100;}
+\DoxyCodeLine{80     \}}
+\DoxyCodeLine{81     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_adc_controller_ae8afd600d1ad63d0f8894608ce6149bc}{bat\_percentage}};}
+\DoxyCodeLine{82 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d2b/class_adc_controller_a0b68f65fa2ff32d520453116211d618c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adc_controller_aeb08be70c1cea717d989d3c42d1a7e27}\label{class_adc_controller_aeb08be70c1cea717d989d3c42d1a7e27}} 
+\index{AdcController@{AdcController}!pressure\_check@{pressure\_check}}
+\index{pressure\_check@{pressure\_check}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{pressure\_check()}{pressure\_check()}}
+{\footnotesize\ttfamily void Adc\+Controller\+::pressure\+\_\+check (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 84 of file adc\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85 \{}
+\DoxyCodeLine{86     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_adc_controller_abe50326bfd3e5dacf46372f5de7159b8}{channels\_buffer}}[\mbox{\hyperlink{adc__controller_8h_af5ee554b1b8c826fd6b6c7ccca93f2c5a0fe3df87ac76a02e1d8865055c23b193}{Pressure}}].value > \mbox{\hyperlink{group___globals_gaf3a10bd9d60744c8110d959e34b7b74c}{ADC\_Presure\_27\_bar}})}
+\DoxyCodeLine{87     \{}
+\DoxyCodeLine{88         this-\/>\mbox{\hyperlink{class_adc_controller_a9cbee6141d909740c466031cbd0509d4}{pressure\_ok}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{89         this-\/>\mbox{\hyperlink{class_adc_controller_ab3070fb789b7ddd3a44108ff90ac36de}{stall\_pressure}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{90     \}}
+\DoxyCodeLine{91     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_adc_controller_abe50326bfd3e5dacf46372f5de7159b8}{channels\_buffer}}[\mbox{\hyperlink{adc__controller_8h_af5ee554b1b8c826fd6b6c7ccca93f2c5a0fe3df87ac76a02e1d8865055c23b193}{Pressure}}].value < \mbox{\hyperlink{group___globals_ga033fc8648905b5fc20877ddb8edfbb3c}{ADC\_Presure\_20\_bar}})}
+\DoxyCodeLine{92     \{}
+\DoxyCodeLine{93         this-\/>\mbox{\hyperlink{class_adc_controller_a9cbee6141d909740c466031cbd0509d4}{pressure\_ok}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{94         this-\/>\mbox{\hyperlink{class_adc_controller_ab3070fb789b7ddd3a44108ff90ac36de}{stall\_pressure}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{95     \}}
+\DoxyCodeLine{96     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{97     \{}
+\DoxyCodeLine{98         this-\/>\mbox{\hyperlink{class_adc_controller_a9cbee6141d909740c466031cbd0509d4}{pressure\_ok}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{99         this-\/>\mbox{\hyperlink{class_adc_controller_ab3070fb789b7ddd3a44108ff90ac36de}{stall\_pressure}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{100     \}}
+\DoxyCodeLine{101 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_adc_controller_ab90340b9e1e08cd530b4a68701ddafe8}\label{class_adc_controller_ab90340b9e1e08cd530b4a68701ddafe8}} 
+\index{AdcController@{AdcController}!read@{read}}
+\index{read@{read}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Adc\+Controller\+::read (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{adc__controller_8h_af5ee554b1b8c826fd6b6c7ccca93f2c5}{select\+\_\+channel}}}]{channel\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 45 of file adc\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{}
+\DoxyCodeLine{47     this-\/>\mbox{\hyperlink{class_adc_controller_a5736b3aee244504bbe63206d23a83e3f}{cs\_register}}-\/>\mbox{\hyperlink{class_c_s__reg_aa945fb7731bea42a747b802f715b8d4c}{cs\_a2d}}(\mbox{\hyperlink{group___s_p_i_gab811d8c6ff3a505312d3276590444289}{LOW}});}
+\DoxyCodeLine{48     uint8\_t txBuffer[3];}
+\DoxyCodeLine{49     uint8\_t rxBuffer[3];}
+\DoxyCodeLine{50     txBuffer[0] = 0x01; \textcolor{comment}{// Start Bit}}
+\DoxyCodeLine{51     txBuffer[1] = ((static\_cast<uint8\_t>(channel\_) << 3) \& 0xf0) | 0x80;}
+\DoxyCodeLine{52     txBuffer[2] = 0x0;}
+\DoxyCodeLine{53     HAL\_SPI\_TransmitReceive(\&\mbox{\hyperlink{spi_8h_a9c6222bae4d0328dd843ae099623b40b}{hspi1}}, txBuffer, rxBuffer, 3,10);}
+\DoxyCodeLine{54     uint16\_t adc\_value= (((uint16\_t)rxBuffer[1]  \& 0x07)<<8) + ((uint16\_t)rxBuffer[2]  \& 0xff);}
+\DoxyCodeLine{55     this-\/>\mbox{\hyperlink{class_adc_controller_abe50326bfd3e5dacf46372f5de7159b8}{channels\_buffer}}[channel\_].\mbox{\hyperlink{unionchannel_a6e9d466e1bb72969dcb82d22fc520f68}{value}} = adc\_value;}
+\DoxyCodeLine{56     this-\/>\mbox{\hyperlink{class_adc_controller_a5736b3aee244504bbe63206d23a83e3f}{cs\_register}}-\/>\mbox{\hyperlink{class_c_s__reg_aa945fb7731bea42a747b802f715b8d4c}{cs\_a2d}}(\mbox{\hyperlink{group___s_p_i_ga5bb885982ff66a2e0a0a45a8ee9c35e2}{HIGH}});}
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{d4/d2b/class_adc_controller_ab90340b9e1e08cd530b4a68701ddafe8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d2b/class_adc_controller_ab90340b9e1e08cd530b4a68701ddafe8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adc_controller_a6bbaada643d70285f65f37ea2bb6dc85}\label{class_adc_controller_a6bbaada643d70285f65f37ea2bb6dc85}} 
+\index{AdcController@{AdcController}!read@{read}}
+\index{read@{read}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Adc\+Controller\+::read (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file adc\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36 \{}
+\DoxyCodeLine{37     \textcolor{keywordflow}{for} (uint8\_t i = 0; i < 8; i++)}
+\DoxyCodeLine{38     \{}
+\DoxyCodeLine{39         \textcolor{keyword}{enum} \mbox{\hyperlink{adc__controller_8h_af5ee554b1b8c826fd6b6c7ccca93f2c5}{select\_channel}} channel\_ = static\_cast<select\_channel>(i);}
+\DoxyCodeLine{40         this-\/>\mbox{\hyperlink{class_adc_controller_a6bbaada643d70285f65f37ea2bb6dc85}{read}}(channel\_);}
+\DoxyCodeLine{41         HAL\_Delay(1);}
+\DoxyCodeLine{42     \}}
+\DoxyCodeLine{43 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_adc_controller_ae8afd600d1ad63d0f8894608ce6149bc}\label{class_adc_controller_ae8afd600d1ad63d0f8894608ce6149bc}} 
+\index{AdcController@{AdcController}!bat\_percentage@{bat\_percentage}}
+\index{bat\_percentage@{bat\_percentage}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{bat\_percentage}{bat\_percentage}}
+{\footnotesize\ttfamily uint32\+\_\+t Adc\+Controller\+::bat\+\_\+percentage}
+
+
+
+Definition at line 97 of file adc\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_adc_controller_ab85c451b925994833633bf7d90f46c8c}\label{class_adc_controller_ab85c451b925994833633bf7d90f46c8c}} 
+\index{AdcController@{AdcController}!battery\_volt@{battery\_volt}}
+\index{battery\_volt@{battery\_volt}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{battery\_volt}{battery\_volt}}
+{\footnotesize\ttfamily uint32\+\_\+t Adc\+Controller\+::battery\+\_\+volt}
+
+
+
+Definition at line 96 of file adc\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_adc_controller_abe50326bfd3e5dacf46372f5de7159b8}\label{class_adc_controller_abe50326bfd3e5dacf46372f5de7159b8}} 
+\index{AdcController@{AdcController}!channels\_buffer@{channels\_buffer}}
+\index{channels\_buffer@{channels\_buffer}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{channels\_buffer}{channels\_buffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionchannel}{channel}} Adc\+Controller\+::channels\+\_\+buffer\mbox{[}8\mbox{]}}
+
+
+
+Definition at line 90 of file adc\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_adc_controller_a5736b3aee244504bbe63206d23a83e3f}\label{class_adc_controller_a5736b3aee244504bbe63206d23a83e3f}} 
+\index{AdcController@{AdcController}!cs\_register@{cs\_register}}
+\index{cs\_register@{cs\_register}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{cs\_register}{cs\_register}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_s__reg}{C\+S\+\_\+reg}}$\ast$ Adc\+Controller\+::cs\+\_\+register}
+
+
+
+Definition at line 95 of file adc\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_adc_controller_ac112d69f14562f7c678b7ea76ea4cb74}\label{class_adc_controller_ac112d69f14562f7c678b7ea76ea4cb74}} 
+\index{AdcController@{AdcController}!current\_sense@{current\_sense}}
+\index{current\_sense@{current\_sense}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{current\_sense}{current\_sense}}
+{\footnotesize\ttfamily uint32\+\_\+t Adc\+Controller\+::current\+\_\+sense}
+
+
+
+Definition at line 91 of file adc\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_adc_controller_a7962ffbf472dc31d51d22369bce7bc0f}\label{class_adc_controller_a7962ffbf472dc31d51d22369bce7bc0f}} 
+\index{AdcController@{AdcController}!dma\_ring\_buffer@{dma\_ring\_buffer}}
+\index{dma\_ring\_buffer@{dma\_ring\_buffer}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{dma\_ring\_buffer}{dma\_ring\_buffer}}
+{\footnotesize\ttfamily uint32\+\_\+t Adc\+Controller\+::dma\+\_\+ring\+\_\+buffer\mbox{[}\mbox{\hyperlink{main_8h_abe550a5ae27006d276a45c6c9c6f89af}{D\+M\+A\+\_\+\+L\+E\+N\+G\+TH}}\mbox{]}}
+
+
+
+Definition at line 89 of file adc\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_adc_controller_a9cbee6141d909740c466031cbd0509d4}\label{class_adc_controller_a9cbee6141d909740c466031cbd0509d4}} 
+\index{AdcController@{AdcController}!pressure\_ok@{pressure\_ok}}
+\index{pressure\_ok@{pressure\_ok}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{pressure\_ok}{pressure\_ok}}
+{\footnotesize\ttfamily bool Adc\+Controller\+::pressure\+\_\+ok}
+
+
+
+Definition at line 99 of file adc\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_adc_controller_ab3070fb789b7ddd3a44108ff90ac36de}\label{class_adc_controller_ab3070fb789b7ddd3a44108ff90ac36de}} 
+\index{AdcController@{AdcController}!stall\_pressure@{stall\_pressure}}
+\index{stall\_pressure@{stall\_pressure}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{stall\_pressure}{stall\_pressure}}
+{\footnotesize\ttfamily bool Adc\+Controller\+::stall\+\_\+pressure}
+
+
+
+Definition at line 98 of file adc\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_adc_controller_a02b4d007474c10063eaf55f82a54e6c0}\label{class_adc_controller_a02b4d007474c10063eaf55f82a54e6c0}} 
+\index{AdcController@{AdcController}!temperature\_mcu@{temperature\_mcu}}
+\index{temperature\_mcu@{temperature\_mcu}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{temperature\_mcu}{temperature\_mcu}}
+{\footnotesize\ttfamily uint32\+\_\+t Adc\+Controller\+::temperature\+\_\+mcu}
+
+
+
+Definition at line 92 of file adc\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_adc_controller_a68b277abf7ff03367e477b36efaf3dbf}\label{class_adc_controller_a68b277abf7ff03367e477b36efaf3dbf}} 
+\index{AdcController@{AdcController}!vbat@{vbat}}
+\index{vbat@{vbat}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{vbat}{vbat}}
+{\footnotesize\ttfamily uint32\+\_\+t Adc\+Controller\+::vbat}
+
+
+
+Definition at line 94 of file adc\+\_\+controller.\+h.
+
+\mbox{\Hypertarget{class_adc_controller_a4e84bf5dd75fbecfb23ad973c4d0aa09}\label{class_adc_controller_a4e84bf5dd75fbecfb23ad973c4d0aa09}} 
+\index{AdcController@{AdcController}!vref@{vref}}
+\index{vref@{vref}!AdcController@{AdcController}}
+\doxysubsubsection{\texorpdfstring{vref}{vref}}
+{\footnotesize\ttfamily uint32\+\_\+t Adc\+Controller\+::vref}
+
+
+
+Definition at line 93 of file adc\+\_\+controller.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{adc__controller_8h}{adc\+\_\+controller.\+h}}\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/\mbox{\hyperlink{adc__controller_8cpp}{adc\+\_\+controller.\+cpp}}\end{DoxyCompactItemize}

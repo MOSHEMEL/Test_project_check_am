@@ -1,0 +1,12 @@
+<map id="main_controller::update_state" name="main_controller::update_state">
+<area shape="rect" id="node1" title=" " alt="" coords="5,195,163,237"/>
+<area shape="rect" id="node2" href="$df/d62/class_mem__ctrl.html#a68a25e091d4f139ea8e4f767e8dd93e6" title=" " alt="" coords="211,5,407,32"/>
+<area shape="rect" id="node3" href="$d6/d70/classadc__controller.html#a4602f27e7aad71c33c3cea114e45df14" title=" " alt="" coords="233,57,385,98"/>
+<area shape="rect" id="node4" href="$d6/d70/classadc__controller.html#ab53e3aa3eb5298b78dd665a939414fb6" title=" " alt="" coords="241,123,377,149"/>
+<area shape="rect" id="node6" href="$d2/dcf/class_debug_helper.html#ab825d1cd6f99c3f4449671d853cb5276" title=" " alt="" coords="237,173,380,200"/>
+<area shape="rect" id="node7" href="$d6/d0f/class_screen__ctrl.html#a5d4780f9929fd65439d081b1990dca36" title="update the battery" alt="" coords="241,225,376,266"/>
+<area shape="rect" id="node8" href="$d6/d0f/class_screen__ctrl.html#aaa2e0da635da3eea356563a13a001208" title="update pulse symbol on screen" alt="" coords="241,290,376,331"/>
+<area shape="rect" id="node9" href="$d6/d0f/class_screen__ctrl.html#a25d3f4f7131af154987713f1fd3e3d49" title="update the pressure" alt="" coords="241,355,376,397"/>
+<area shape="rect" id="node10" href="$d6/d0f/class_screen__ctrl.html#a632112f7efc861929e8d4b0e29d0e45d" title="show percentage of AM usage on screen" alt="" coords="233,421,385,462"/>
+<area shape="rect" id="node5" href="$d6/d2e/class_c_s__reg.html#aa945fb7731bea42a747b802f715b8d4c" title=" " alt="" coords="455,123,569,149"/>
+</map>

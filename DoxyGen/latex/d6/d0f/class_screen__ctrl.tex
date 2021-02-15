@@ -1,0 +1,671 @@
+\hypertarget{class_screen__ctrl}{}\doxysection{Screen\+\_\+ctrl Class Reference}
+\label{class_screen__ctrl}\index{Screen\_ctrl@{Screen\_ctrl}}
+
+
+{\ttfamily \#include $<$screen\+\_\+controller.\+h$>$}
+
+
+
+Collaboration diagram for Screen\+\_\+ctrl\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{d8/d7f/class_screen__ctrl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_screen__ctrl_a1f716f90cc5036bf38be712d3f1d2f9f}{Screen\+\_\+ctrl}} ()
+\item 
+\mbox{\hyperlink{class_screen__ctrl_ae1a1f1416244248b27d97d6b07b1ecd8}{$\sim$\+Screen\+\_\+ctrl}} ()
+\item 
+void \mbox{\hyperlink{class_screen__ctrl_a9ceff1d184e3874f9ca2214dd6202122}{get\+\_\+time}} (void)
+\begin{DoxyCompactList}\small\item\em time output \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_a37722bf0516a17314dcb60e520bc77b6}{print\+\_\+logo}} (void)
+\begin{DoxyCompactList}\small\item\em print logo of armenta \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_a5d4780f9929fd65439d081b1990dca36}{update\+\_\+battery}} (int16\+\_\+t bat\+\_\+adc, uint32\+\_\+t battery)
+\begin{DoxyCompactList}\small\item\em update the battery \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_a25d3f4f7131af154987713f1fd3e3d49}{update\+\_\+pressure}} (uint32\+\_\+t pressure)
+\begin{DoxyCompactList}\small\item\em update the pressure \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_accc1bbcc4bf1ec3fa03e0299e3276d5d}{update\+\_\+pulse\+\_\+counter}} (uint32\+\_\+t pulses)
+\begin{DoxyCompactList}\small\item\em update the pulses \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_a44a54035276c9e6cff8faa5a727d394b}{tx\+\_\+send\+\_\+general\+\_\+error}} (uint32\+\_\+t reason)
+\begin{DoxyCompactList}\small\item\em send error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_acb9bc74fc7c3d8c07566a9da130019d4}{clean\+\_\+screen}} (uint32\+\_\+t new\+\_\+pulses\+\_\+to\+\_\+screen)
+\begin{DoxyCompactList}\small\item\em reset screen state \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_af8d1a239740da7dfd15c48ace1067cfe}{print\+\_\+version}} (void)
+\begin{DoxyCompactList}\small\item\em show version on screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_a632112f7efc861929e8d4b0e29d0e45d}{update\+\_\+remaining\+\_\+in\+\_\+percent}} (uint32\+\_\+t max\+\_\+pulses, uint32\+\_\+t pulses)
+\begin{DoxyCompactList}\small\item\em show percentage of AM usage on screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_adf2c77e3f1cef8be94932d36ea540de5}{update\+\_\+error\+\_\+remaining}} (uint32\+\_\+t remaining)
+\begin{DoxyCompactList}\small\item\em show warning of remaining less than 1000 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_aaa2e0da635da3eea356563a13a001208}{update\+\_\+piazo}} (bool piazo)
+\begin{DoxyCompactList}\small\item\em update pulse symbol on screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_a8e75991054f00f9e3f385ca65bd68eb0}{qa\+\_\+mon}} (bool valid\+\_\+mcu, bool valid\+\_\+apt, bool valid\+\_\+am)
+\begin{DoxyCompactList}\small\item\em update qa status to screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen__ctrl_ac101f90b243ffbb985ed7f530778fd5e}{pass\+\_\+to\+\_\+ard}} (uint8\+\_\+t $\ast$message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 4 of file screen\+\_\+controller.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_screen__ctrl_a1f716f90cc5036bf38be712d3f1d2f9f}\label{class_screen__ctrl_a1f716f90cc5036bf38be712d3f1d2f9f}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!Screen\_ctrl@{Screen\_ctrl}}
+\index{Screen\_ctrl@{Screen\_ctrl}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{Screen\_ctrl()}{Screen\_ctrl()}}
+{\footnotesize\ttfamily Screen\+\_\+ctrl\+::\+Screen\+\_\+ctrl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     this-\/>last\_remaining\_message\_sent = 0;}
+\DoxyCodeLine{11     this-\/>last\_blocking\_message = 0;}
+\DoxyCodeLine{12     this-\/>times\_sent = 0;}
+\DoxyCodeLine{13     this-\/>buffer = \mbox{\hyperlink{screen__controller_8cpp_ae64ad8e57ce49e9a138f45eeb916b6d1}{BUFFER\_SCREEN}};}
+\DoxyCodeLine{14     this-\/>buffer\_with\_crc = \mbox{\hyperlink{screen__controller_8cpp_a9c5b08b5636db0a3dbca399970f44b8b}{BUFFER\_SCREEN\_WITH\_CRC}};}
+\DoxyCodeLine{15     memset(this-\/>buffer, 0, \textcolor{keyword}{sizeof}(uint8\_t)*\mbox{\hyperlink{group___auxilary_ga29d12c67e4b6e0ff96d7aa793757b094}{RXBUFFERSIZE}});}
+\DoxyCodeLine{16     memset(this-\/>buffer\_with\_crc, 0, \textcolor{keyword}{sizeof}(uint8\_t)*\mbox{\hyperlink{group___auxilary_ga29d12c67e4b6e0ff96d7aa793757b094}{RXBUFFERSIZE}});}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_screen__ctrl_ae1a1f1416244248b27d97d6b07b1ecd8}\label{class_screen__ctrl_ae1a1f1416244248b27d97d6b07b1ecd8}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!````~Screen\_ctrl@{$\sim$Screen\_ctrl}}
+\index{````~Screen\_ctrl@{$\sim$Screen\_ctrl}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{$\sim$Screen\_ctrl()}{~Screen\_ctrl()}}
+{\footnotesize\ttfamily Screen\+\_\+ctrl\+::$\sim$\+Screen\+\_\+ctrl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_screen__ctrl_acb9bc74fc7c3d8c07566a9da130019d4}\label{class_screen__ctrl_acb9bc74fc7c3d8c07566a9da130019d4}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!clean\_screen@{clean\_screen}}
+\index{clean\_screen@{clean\_screen}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{clean\_screen()}{clean\_screen()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::clean\+\_\+screen (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{new\+\_\+pulses\+\_\+to\+\_\+screen }\end{DoxyParamCaption})}
+
+
+
+reset screen state 
+
+sometimes we need to be certain the screen is cleared 
+
+Definition at line 212 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{213 \{}
+\DoxyCodeLine{214     sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$Q\%lu\#"}, new\_pulses\_to\_screen);}
+\DoxyCodeLine{215     uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{216     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{217 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_screen__ctrl_a9ceff1d184e3874f9ca2214dd6202122}\label{class_screen__ctrl_a9ceff1d184e3874f9ca2214dd6202122}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!get\_time@{get\_time}}
+\index{get\_time@{get\_time}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{get\_time()}{get\_time()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::get\+\_\+time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+time output 
+
+Print time from cpu start to serial 
+
+Definition at line 64 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65 \{}
+\DoxyCodeLine{66     RTC\_DateTypeDef sdatestructureget;}
+\DoxyCodeLine{67     RTC\_TimeTypeDef stimestructureget;}
+\DoxyCodeLine{68     HAL\_RTC\_GetTime(\&\mbox{\hyperlink{rtc_8h_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}, \&stimestructureget, RTC\_FORMAT\_BIN);}
+\DoxyCodeLine{69     \textcolor{comment}{/* Get the RTC current Date */}}
+\DoxyCodeLine{70     HAL\_RTC\_GetDate(\&\mbox{\hyperlink{rtc_8h_aa0c7fca836406ade332e1e3f1039d8ab}{hrtc}}, \&sdatestructureget, RTC\_FORMAT\_BIN);}
+\DoxyCodeLine{71     \textcolor{comment}{/* Display time Format : hh:mm:ss */}}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     }
+\DoxyCodeLine{74     sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer,}
+\DoxyCodeLine{75             \textcolor{stringliteral}{"Time \%02d:\%02d:\%02d \(\backslash\)r\(\backslash\)n"},}
+\DoxyCodeLine{76             stimestructureget.Hours,}
+\DoxyCodeLine{77             stimestructureget.Minutes,}
+\DoxyCodeLine{78             stimestructureget.Seconds);}
+\DoxyCodeLine{79     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 100);}
+\DoxyCodeLine{80 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_screen__ctrl_ac101f90b243ffbb985ed7f530778fd5e}\label{class_screen__ctrl_ac101f90b243ffbb985ed7f530778fd5e}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!pass\_to\_ard@{pass\_to\_ard}}
+\index{pass\_to\_ard@{pass\_to\_ard}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{pass\_to\_ard()}{pass\_to\_ard()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::pass\+\_\+to\+\_\+ard (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{message }\end{DoxyParamCaption})}
+
+
+
+Definition at line 332 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{333 \{}
+\DoxyCodeLine{334     sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer,\textcolor{stringliteral}{"\%s\#"},(\textcolor{keywordtype}{char}*)message);}
+\DoxyCodeLine{335     uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{336     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{337     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, size, 10);}
+\DoxyCodeLine{338 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_screen__ctrl_ac101f90b243ffbb985ed7f530778fd5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen__ctrl_a37722bf0516a17314dcb60e520bc77b6}\label{class_screen__ctrl_a37722bf0516a17314dcb60e520bc77b6}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!print\_logo@{print\_logo}}
+\index{print\_logo@{print\_logo}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{print\_logo()}{print\_logo()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::print\+\_\+logo (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+print logo of armenta 
+
+Its a cow 
+
+Definition at line 82 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83 \{}
+\DoxyCodeLine{84     \textcolor{keyword}{const} uint8\_t logo[] = \textcolor{stringliteral}{""}}
+\DoxyCodeLine{85     \textcolor{stringliteral}{" NNNN                    NNNN  \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{86     \textcolor{stringliteral}{" NNNNiiiiiiiiiiiiiiiiiiiiNNNN  \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{87     \textcolor{stringliteral}{"  NNNNNNNNNNNNNNNNNNNNNNNNNN   \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{88     \textcolor{stringliteral}{"             iNNi              \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{89     \textcolor{stringliteral}{"    oooo     iNNi     oooo     \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{90     \textcolor{stringliteral}{"    pppp     iNNi     pppp     \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{91     \textcolor{stringliteral}{"             iNNi              \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{92     \textcolor{stringliteral}{"             iNNi              \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{93     \textcolor{stringliteral}{"             iNNi              \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{94     \textcolor{stringliteral}{"             iNNi              \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{95     \textcolor{stringliteral}{"             iNNi              \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{96     \textcolor{stringliteral}{"             iNNi              \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{97     \textcolor{stringliteral}{"             iNNi              \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{98     \textcolor{stringliteral}{"             iNNi              \(\backslash\)r\(\backslash\)n"}}
+\DoxyCodeLine{99     \textcolor{stringliteral}{"             iNNi              \(\backslash\)r\(\backslash\)n"};}
+\DoxyCodeLine{100     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)logo, strlen((\textcolor{keywordtype}{char}*)logo), 100);    \textcolor{comment}{// terminal}}
+\DoxyCodeLine{101     sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"ARMenta version: \%s\(\backslash\)r\(\backslash\)n"}, \mbox{\hyperlink{group___globals_ga1c6d5de492ac61ad29aec7aa9a436bbf}{VERSION}});}
+\DoxyCodeLine{102     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 100);     \textcolor{comment}{// terminal}}
+\DoxyCodeLine{103 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_screen__ctrl_a37722bf0516a17314dcb60e520bc77b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen__ctrl_af8d1a239740da7dfd15c48ace1067cfe}\label{class_screen__ctrl_af8d1a239740da7dfd15c48ace1067cfe}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!print\_version@{print\_version}}
+\index{print\_version@{print\_version}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{print\_version()}{print\_version()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::print\+\_\+version (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+show version on screen 
+
+sometimes we need to be certain the screen is cleared 
+
+Definition at line 219 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{220 \{}
+\DoxyCodeLine{221     \textcolor{keywordtype}{char} version[] = \mbox{\hyperlink{group___globals_ga1c6d5de492ac61ad29aec7aa9a436bbf}{VERSION}};}
+\DoxyCodeLine{222     sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$v\%s\#"}, version);}
+\DoxyCodeLine{223     uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{224     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{225 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_screen__ctrl_af8d1a239740da7dfd15c48ace1067cfe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen__ctrl_a8e75991054f00f9e3f385ca65bd68eb0}\label{class_screen__ctrl_a8e75991054f00f9e3f385ca65bd68eb0}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!qa\_mon@{qa\_mon}}
+\index{qa\_mon@{qa\_mon}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{qa\_mon()}{qa\_mon()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::qa\+\_\+mon (\begin{DoxyParamCaption}\item[{bool}]{valid\+\_\+mcu,  }\item[{bool}]{valid\+\_\+apt,  }\item[{bool}]{valid\+\_\+am }\end{DoxyParamCaption})}
+
+
+
+update qa status to screen 
+
+
+
+Definition at line 304 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{305 \{}
+\DoxyCodeLine{306 }
+\DoxyCodeLine{307     \textcolor{keywordflow}{if} (this-\/>check\_timer\_expired())}
+\DoxyCodeLine{308     \{}
+\DoxyCodeLine{309         sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer,}
+\DoxyCodeLine{310             \textcolor{stringliteral}{"\$Gcs1 \%s \(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{311             \textcolor{stringliteral}{"cs2 \%s\(\backslash\)r\(\backslash\)n"}\(\backslash\)}
+\DoxyCodeLine{312             \textcolor{stringliteral}{"cs3 \%s\(\backslash\)r\(\backslash\)n"},}
+\DoxyCodeLine{313             valid\_mcu ? \textcolor{stringliteral}{"true"} : \textcolor{stringliteral}{"false"},}
+\DoxyCodeLine{314             valid\_apt ? \textcolor{stringliteral}{"true"} : \textcolor{stringliteral}{"false"},}
+\DoxyCodeLine{315             valid\_am ? \textcolor{stringliteral}{"true"} : \textcolor{stringliteral}{"false"});}
+\DoxyCodeLine{316         uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{317         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{318     \}}
+\DoxyCodeLine{319 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_screen__ctrl_a8e75991054f00f9e3f385ca65bd68eb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen__ctrl_a44a54035276c9e6cff8faa5a727d394b}\label{class_screen__ctrl_a44a54035276c9e6cff8faa5a727d394b}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!tx\_send\_general\_error@{tx\_send\_general\_error}}
+\index{tx\_send\_general\_error@{tx\_send\_general\_error}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{tx\_send\_general\_error()}{tx\_send\_general\_error()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::tx\+\_\+send\+\_\+general\+\_\+error (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{reason }\end{DoxyParamCaption})}
+
+
+
+send error 
+
+when there is an error to show to the screen, we show a red screen and some text. 
+
+Definition at line 140 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141 \{}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143     \textcolor{keywordflow}{if} (this-\/>check\_timer\_expired())}
+\DoxyCodeLine{144     \{}
+\DoxyCodeLine{145         \textcolor{keywordflow}{if} (reason == 404) \textcolor{comment}{// MCU not reachable}}
+\DoxyCodeLine{146             \{}
+\DoxyCodeLine{147                 sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"The Mcu is Unavailable, spi mem read failed\(\backslash\)r\(\backslash\)n"});}
+\DoxyCodeLine{148                 HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 1000);}
+\DoxyCodeLine{149                 sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$zMCU Unavailable\#"});}
+\DoxyCodeLine{150                 uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{151                 HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{152             \}}
+\DoxyCodeLine{153         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (reason == 405) \textcolor{comment}{// AP or body unreachable}}
+\DoxyCodeLine{154             \{}
+\DoxyCodeLine{155                 sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"The APTx is Unavailable, spi mem read failed\(\backslash\)r\(\backslash\)n"});}
+\DoxyCodeLine{156                 HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 1000);}
+\DoxyCodeLine{157                 sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$zAPTx Disconnected\#"});}
+\DoxyCodeLine{158                 uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{159                 HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{160             \}}
+\DoxyCodeLine{161         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (reason == 406) \textcolor{comment}{// AM}}
+\DoxyCodeLine{162             \{}
+\DoxyCodeLine{163                 sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"The AM is Unavailable, spi mem read failed\(\backslash\)r\(\backslash\)n"});}
+\DoxyCodeLine{164                 HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 1000);}
+\DoxyCodeLine{165                 sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$zAM Disconnected\#"});}
+\DoxyCodeLine{166                 uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{167                 HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{168             \}}
+\DoxyCodeLine{169         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (reason == 501)}
+\DoxyCodeLine{170         \{}
+\DoxyCodeLine{171             sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"The AP is not initialized, please supply a valid s/n\(\backslash\)r\(\backslash\)n"});}
+\DoxyCodeLine{172             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 1000);}
+\DoxyCodeLine{173             sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$zAP sn not valid\#"});}
+\DoxyCodeLine{174             uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{175             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{176         \}}
+\DoxyCodeLine{177         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (reason == 502)}
+\DoxyCodeLine{178         \{}
+\DoxyCodeLine{179             sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"The AM cannot be written to\(\backslash\)r\(\backslash\)n"});}
+\DoxyCodeLine{180             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 1000);}
+\DoxyCodeLine{181             sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$zAM write error\#"});}
+\DoxyCodeLine{182             uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{183             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{184         \}}
+\DoxyCodeLine{185         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (reason == 503)}
+\DoxyCodeLine{186         \{}
+\DoxyCodeLine{187             sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"Device exceeded lifetime for Maintenance, will not run anymore\(\backslash\)r\(\backslash\)n"});}
+\DoxyCodeLine{188             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 1000);}
+\DoxyCodeLine{189             sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$zError: Contact Maintenance E503\#"});}
+\DoxyCodeLine{190             uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{191             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{192         \}}
+\DoxyCodeLine{193         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (reason == 504)}
+\DoxyCodeLine{194         \{}
+\DoxyCodeLine{195             sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"Device near end of lifetime for Maintenance"});}
+\DoxyCodeLine{196             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 1000);}
+\DoxyCodeLine{197             sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$zWarning: Contact Maintenance E504\#"});}
+\DoxyCodeLine{198             uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{199             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{200         \}}
+\DoxyCodeLine{201         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (reason == 200)}
+\DoxyCodeLine{202         \{}
+\DoxyCodeLine{203             sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"Initial Run Complete\(\backslash\)r\(\backslash\)n"});}
+\DoxyCodeLine{204             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 1000);}
+\DoxyCodeLine{205             sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$zInitial Run Complete\#"});}
+\DoxyCodeLine{206             uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{207             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{208         \}}
+\DoxyCodeLine{209     \}}
+\DoxyCodeLine{210 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_screen__ctrl_a44a54035276c9e6cff8faa5a727d394b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen__ctrl_a5d4780f9929fd65439d081b1990dca36}\label{class_screen__ctrl_a5d4780f9929fd65439d081b1990dca36}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!update\_battery@{update\_battery}}
+\index{update\_battery@{update\_battery}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{update\_battery()}{update\_battery()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::update\+\_\+battery (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{bat\+\_\+adc,  }\item[{uint32\+\_\+t}]{battery }\end{DoxyParamCaption})}
+
+
+
+update the battery 
+
+update the battery on screen 
+
+Definition at line 105 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{106 \{}
+\DoxyCodeLine{107     sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"BatteryADC:\%d\(\backslash\)r\(\backslash\)nBatteryConversion:\%lu\(\backslash\)r\(\backslash\)n"}, bat\_adc, battery);}
+\DoxyCodeLine{108     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 1000);}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110     sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$b\%lu\#"}, battery);}
+\DoxyCodeLine{111     uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{112     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{113 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_screen__ctrl_a5d4780f9929fd65439d081b1990dca36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen__ctrl_adf2c77e3f1cef8be94932d36ea540de5}\label{class_screen__ctrl_adf2c77e3f1cef8be94932d36ea540de5}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!update\_error\_remaining@{update\_error\_remaining}}
+\index{update\_error\_remaining@{update\_error\_remaining}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{update\_error\_remaining()}{update\_error\_remaining()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::update\+\_\+error\+\_\+remaining (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{remaining }\end{DoxyParamCaption})}
+
+
+
+show warning of remaining less than 1000 
+
+we show warnings at\+:
+\begin{DoxyItemize}
+\item 1000
+\item 800
+\item 600
+\item 400
+\item 200
+\item 0 -\/ we stop if running and show if try to start 
+\end{DoxyItemize}
+
+Definition at line 253 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{254 \{}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{256 }
+\DoxyCodeLine{257     \textcolor{keywordflow}{if} (this-\/>last\_remaining\_message\_sent != remaining)}
+\DoxyCodeLine{258     \{}
+\DoxyCodeLine{259         this-\/>times\_sent = 0;}
+\DoxyCodeLine{260         this-\/>last\_remaining\_message\_sent = remaining;}
+\DoxyCodeLine{261     \}}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{263 }
+\DoxyCodeLine{264 }
+\DoxyCodeLine{265     \textcolor{keywordflow}{if} (this-\/>check\_timer\_expired())}
+\DoxyCodeLine{266     \{}
+\DoxyCodeLine{267         \textcolor{comment}{// It is not another if condition, do not merge}}
+\DoxyCodeLine{268         \textcolor{keywordflow}{if}((remaining > 0) \&\& (last\_remaining\_message\_sent == remaining))}
+\DoxyCodeLine{269         \{}
+\DoxyCodeLine{270             \textcolor{comment}{// By saving a static variable as memory of last sent \$f[count]\#}}
+\DoxyCodeLine{271             \textcolor{comment}{// We just send it [times\_sent] times}}
+\DoxyCodeLine{272             \textcolor{keywordflow}{if}(this-\/>times\_sent < \mbox{\hyperlink{group___auxilary_ga49b4ddd0b090b70e6afda5a76b876280}{AM\_WARNING\_TIMES}})}
+\DoxyCodeLine{273             \{}
+\DoxyCodeLine{274                 sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$f\%lu\#"}, remaining);}
+\DoxyCodeLine{275                 uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{276                 HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{277                 this-\/>times\_sent++;}
+\DoxyCodeLine{278             \}}
+\DoxyCodeLine{279         \}}
+\DoxyCodeLine{280         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(remaining == 0)}
+\DoxyCodeLine{281         \{}
+\DoxyCodeLine{282             sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$f0\#"});}
+\DoxyCodeLine{283             uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{284             HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{285         \}}
+\DoxyCodeLine{286         this-\/>last\_remaining\_message\_sent = remaining;}
+\DoxyCodeLine{287     \}}
+\DoxyCodeLine{288 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_screen__ctrl_adf2c77e3f1cef8be94932d36ea540de5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen__ctrl_aaa2e0da635da3eea356563a13a001208}\label{class_screen__ctrl_aaa2e0da635da3eea356563a13a001208}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!update\_piazo@{update\_piazo}}
+\index{update\_piazo@{update\_piazo}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{update\_piazo()}{update\_piazo()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::update\+\_\+piazo (\begin{DoxyParamCaption}\item[{bool}]{piazo }\end{DoxyParamCaption})}
+
+
+
+update pulse symbol on screen 
+
+Currently we just show the green icon on motor running and red one when not. Should be determined by the piazo signal. 
+
+Definition at line 290 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{291 \{}
+\DoxyCodeLine{292     \textcolor{keywordflow}{if} (piazo)}
+\DoxyCodeLine{293     \{}
+\DoxyCodeLine{294         sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$aY\#"});}
+\DoxyCodeLine{295     \}}
+\DoxyCodeLine{296     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{297     \{}
+\DoxyCodeLine{298         sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$aN\#"});}
+\DoxyCodeLine{299     \}}
+\DoxyCodeLine{300     uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{301     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{302 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_screen__ctrl_aaa2e0da635da3eea356563a13a001208_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen__ctrl_a25d3f4f7131af154987713f1fd3e3d49}\label{class_screen__ctrl_a25d3f4f7131af154987713f1fd3e3d49}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!update\_pressure@{update\_pressure}}
+\index{update\_pressure@{update\_pressure}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{update\_pressure()}{update\_pressure()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::update\+\_\+pressure (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{pressure }\end{DoxyParamCaption})}
+
+
+
+update the pressure 
+
+update the pressure, if the pressure is red we cannot start the motor. 
+
+Definition at line 115 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{116 \{}
+\DoxyCodeLine{117     \textcolor{keywordflow}{if}(pressure >= \mbox{\hyperlink{group___globals_gaf3a10bd9d60744c8110d959e34b7b74c}{ADC\_Presure\_27\_bar}}) \textcolor{comment}{// pressure too low}}
+\DoxyCodeLine{118     \{}
+\DoxyCodeLine{119         sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"Pr \%lu [0.k]\(\backslash\)r\(\backslash\)n"}, pressure);}
+\DoxyCodeLine{120         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 100);}
+\DoxyCodeLine{121         sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$pO.K\#"});}
+\DoxyCodeLine{122     \}}
+\DoxyCodeLine{123     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{124     \{}
+\DoxyCodeLine{125         sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"Pr \%lu [low]\(\backslash\)r\(\backslash\)n"}, pressure);}
+\DoxyCodeLine{126         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 100);}
+\DoxyCodeLine{127         sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$pLOW\#"});}
+\DoxyCodeLine{128     \}}
+\DoxyCodeLine{129     uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{130     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{131 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_screen__ctrl_a25d3f4f7131af154987713f1fd3e3d49_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen__ctrl_accc1bbcc4bf1ec3fa03e0299e3276d5d}\label{class_screen__ctrl_accc1bbcc4bf1ec3fa03e0299e3276d5d}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!update\_pulse\_counter@{update\_pulse\_counter}}
+\index{update\_pulse\_counter@{update\_pulse\_counter}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{update\_pulse\_counter()}{update\_pulse\_counter()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::update\+\_\+pulse\+\_\+counter (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{pulses }\end{DoxyParamCaption})}
+
+
+
+update the pulses 
+
+send the pulses on screen to the screen. This function has to be the quickest to respond. 
+
+Definition at line 133 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{134 \{}
+\DoxyCodeLine{135     sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$c\%lu\#"}, pulses);}
+\DoxyCodeLine{136     uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{137     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{138 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_screen__ctrl_accc1bbcc4bf1ec3fa03e0299e3276d5d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_screen__ctrl_a632112f7efc861929e8d4b0e29d0e45d}\label{class_screen__ctrl_a632112f7efc861929e8d4b0e29d0e45d}} 
+\index{Screen\_ctrl@{Screen\_ctrl}!update\_remaining\_in\_percent@{update\_remaining\_in\_percent}}
+\index{update\_remaining\_in\_percent@{update\_remaining\_in\_percent}!Screen\_ctrl@{Screen\_ctrl}}
+\doxysubsubsection{\texorpdfstring{update\_remaining\_in\_percent()}{update\_remaining\_in\_percent()}}
+{\footnotesize\ttfamily void Screen\+\_\+ctrl\+::update\+\_\+remaining\+\_\+in\+\_\+percent (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{max\+\_\+pulses,  }\item[{uint32\+\_\+t}]{pulses }\end{DoxyParamCaption})}
+
+
+
+show percentage of AM usage on screen 
+
+we take the maximum -\/ used / maximum $\ast$100 
+
+Definition at line 227 of file screen\+\_\+controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{228 \{}
+\DoxyCodeLine{229     uint32\_t maxi = max\_pulses;}
+\DoxyCodeLine{230     uint32\_t percent\_remaining = (((maxi -\/ pulses) * 100) / maxi);}
+\DoxyCodeLine{231     uint32\_t remainder\_scaled = (percent\_remaining * 11) / 10;}
+\DoxyCodeLine{232     \textcolor{comment}{/*}}
+\DoxyCodeLine{233 \textcolor{comment}{     *  Management wanted some buffer to have Graphics show 100\% until they use up some amount of pulses}}
+\DoxyCodeLine{234 \textcolor{comment}{     *  Otherwise after 1 pulse it did ceil(99.9\%) and showed 99\%, which was not to their liking.}}
+\DoxyCodeLine{235 \textcolor{comment}{     *  So the function stretches 100\% to 110\% and then clips it at 100\% thus giving ~9\% until you}}
+\DoxyCodeLine{236 \textcolor{comment}{     *  see 99\%}}
+\DoxyCodeLine{237 \textcolor{comment}{     */}}
+\DoxyCodeLine{238     \textcolor{keywordflow}{if} (remainder\_scaled > 100)}
+\DoxyCodeLine{239     \{}
+\DoxyCodeLine{240         remainder\_scaled = 100;}
+\DoxyCodeLine{241     \}}
+\DoxyCodeLine{242     \textcolor{keywordflow}{if} (max\_pulses > 0)}
+\DoxyCodeLine{243     \{}
+\DoxyCodeLine{244         sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"\$t\%lu\#"}, remainder\_scaled);}
+\DoxyCodeLine{245         uint32\_t size = this-\/>prepare\_packet(this-\/>buffer, this-\/>buffer\_with\_crc);}
+\DoxyCodeLine{246         HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gab6d04a048aff921da85f2f65aa21e6f4}{SERIAL\_SCREEN}}, (uint8\_t*)this-\/>buffer\_with\_crc, size + 4, 10);}
+\DoxyCodeLine{247     \}}
+\DoxyCodeLine{248 }
+\DoxyCodeLine{249     sprintf((\textcolor{keywordtype}{char}*)this-\/>buffer, \textcolor{stringliteral}{"pulses=\%lu, max=\%lu, util=\%lu\(\backslash\)r\(\backslash\)n"}, pulses, max\_pulses, remainder\_scaled);}
+\DoxyCodeLine{250     HAL\_UART\_Transmit(\mbox{\hyperlink{group___auxilary_gae6c7bf7b559e623e13b67575d5ff43e3}{SERIAL\_PC}}, (uint8\_t*)this-\/>buffer, strlen((\textcolor{keywordtype}{char}*)this-\/>buffer), 50);}
+\DoxyCodeLine{251 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_screen__ctrl_a632112f7efc861929e8d4b0e29d0e45d_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Inc/\mbox{\hyperlink{screen__controller_8h}{screen\+\_\+controller.\+h}}\item 
+C\+:/\+Users/nicko/source/repos/\+A\+P\+T\+X1\+\_\+1/\+Core/\+Src/\mbox{\hyperlink{screen__controller_8cpp}{screen\+\_\+controller.\+cpp}}\end{DoxyCompactItemize}

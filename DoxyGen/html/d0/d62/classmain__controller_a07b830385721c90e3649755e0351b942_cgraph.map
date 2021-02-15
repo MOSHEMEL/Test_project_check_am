@@ -1,0 +1,17 @@
+<map id="main_controller::init_state" name="main_controller::init_state">
+<area shape="rect" id="node1" title=" " alt="" coords="5,373,140,415"/>
+<area shape="rect" id="node2" href="$df/d62/class_mem__ctrl.html#ae85dff1f0412d3995db4dc27f12d9e83" title=" " alt="" coords="213,5,359,47"/>
+<area shape="rect" id="node3" href="$df/d62/class_mem__ctrl.html#aed37efb821eb5801e5e88a6d577fb697" title=" " alt="" coords="432,42,567,69"/>
+<area shape="rect" id="node4" href="$df/d62/class_mem__ctrl.html#a68a25e091d4f139ea8e4f767e8dd93e6" title=" " alt="" coords="188,122,384,149"/>
+<area shape="rect" id="node5" href="$df/d62/class_mem__ctrl.html#ad8b715c9dff173ff208a36a210afe664" title=" " alt="" coords="219,173,353,199"/>
+<area shape="rect" id="node6" href="$df/d62/class_mem__ctrl.html#aea2d5b6c381972783928763bf78c3263" title=" " alt="" coords="216,223,356,250"/>
+<area shape="rect" id="node7" href="$d0/d62/classmain__controller.html#ab7032fc38f870b76bbc29a5346718500" title=" " alt="" coords="218,275,354,316"/>
+<area shape="rect" id="node8" href="$d0/d62/classmain__controller.html#ad3d821994df89eabb08925106e4fe265" title=" " alt="" coords="218,340,354,381"/>
+<area shape="rect" id="node9" href="$d0/d62/classmain__controller.html#a9d78abf1a6f3d2b201eed3ebcfe272d8" title=" " alt="" coords="218,405,354,447"/>
+<area shape="rect" id="node10" href="$d0/d62/classmain__controller.html#aa33323eb559313abcab3cc9f8c3612ca" title=" " alt="" coords="222,471,350,512"/>
+<area shape="rect" id="node11" href="$d0/d62/classmain__controller.html#a76a0d8a611471e8afbd3f5922988a529" title=" " alt="" coords="222,536,350,577"/>
+<area shape="rect" id="node12" href="$d0/d62/classmain__controller.html#ad941bc89d3a80b0fde54cbb6ae38ac46" title=" " alt="" coords="222,601,350,643"/>
+<area shape="rect" id="node13" href="$d6/d0f/class_screen__ctrl.html#a44a54035276c9e6cff8faa5a727d394b" title="send error" alt="" coords="215,667,357,708"/>
+<area shape="rect" id="node14" href="$d2/dcf/class_debug_helper.html#ab825d1cd6f99c3f4449671d853cb5276" title=" " alt="" coords="215,733,357,759"/>
+<area shape="rect" id="node15" href="$d6/d0f/class_screen__ctrl.html#adf2c77e3f1cef8be94932d36ea540de5" title="show warning of remaining less than 1000" alt="" coords="219,784,353,825"/>
+</map>

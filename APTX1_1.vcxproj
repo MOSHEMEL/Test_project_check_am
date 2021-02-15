@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{8568F495-D5D8-48A9-BF53-EC04AD30D06C}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.stm32</BSP_ID>
+    <BSP_VERSION>2020.06</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+    <GenerateHexFile>true</GenerateHexFile>
+    <GenerateBinFile>false</GenerateBinFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+    <GenerateHexFile>true</GenerateHexFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+    <GenerateBuildScript>false</GenerateBuildScript>
+    <UserVariablePropertyListFile>$(ProjectDir)$(ProjectName)-user.props</UserVariablePropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.2.1/8.3.0/r1</ToolchainVersion>
+    <GenerateBinFile>false</GenerateBinFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Core\Inc;Drivers\STM32F0xx_HAL_Driver\Inc;Drivers\STM32F0xx_HAL_Driver\Inc\Legacy;Drivers\CMSIS\Device\ST\STM32F0xx\Include;Drivers\CMSIS\Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;DEBUG1_;DEBUG2_;TIME_STAMP=__DATE__;flash_layout;USE_HAL_DRIVER;STM32F072xB;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+      <GenerateAssemblyOutput>false</GenerateAssemblyOutput>
+      <WarningLevel>Pedantic</WarningLevel>
+      <Optimization>Os</Optimization>
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>--specs=rdimon.specs;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+      <LinkerScript>STM32F072RB_flash.lds</LinkerScript>
+      <GenerateMapFile>true</GenerateMapFile>
+      <PrintMemoryUsage>true</PrintMemoryUsage>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Core\Inc;Drivers\STM32F0xx_HAL_Driver\Inc;Drivers\STM32F0xx_HAL_Driver\Inc\Legacy;Drivers\CMSIS\Device\ST\STM32F0xx\Include;Drivers\CMSIS\Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG=1;RELEASE=1;flash_layout;USE_HAL_DRIVER;STM32F072xB;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+      <Optimization>O0</Optimization>
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>--specs=rdimon.specs;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+      <LinkerScript>STM32F072RB_flash.lds</LinkerScript>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Inc\adc_controller.h" />
+    <ClInclude Include="Core\Inc\adc.h" />
+    <ClInclude Include="Core\Inc\common.h" />
+    <ClInclude Include="Core\Inc\crc.h" />
+    <ClInclude Include="Core\Inc\cs_register.h" />
+    <ClInclude Include="Core\Inc\debug_facilities.h" />
+    <ClInclude Include="Core\Inc\dma.h" />
+    <ClInclude Include="Core\Inc\error_controller.h" />
+    <ClInclude Include="Core\Inc\flash_if.h" />
+    <ClInclude Include="Core\Inc\gpio.h" />
+    <ClInclude Include="Core\Inc\hardware.h" />
+    <ClInclude Include="Core\Inc\main.h" />
+    <ClInclude Include="Core\Inc\main_controller.h" />
+    <ClInclude Include="Core\Inc\mem.h" />
+    <ClInclude Include="Core\Inc\mem_controller.h" />
+    <ClInclude Include="Core\Inc\menu.h" />
+    <ClInclude Include="Core\Inc\monitor.h" />
+    <ClInclude Include="Core\Inc\peripherial_controller.h" />
+    <ClInclude Include="Core\Inc\rtc.h" />
+    <ClInclude Include="Core\Inc\screen_controller.h" />
+    <ClInclude Include="Core\Inc\spi.h" />
+    <ClInclude Include="Core\Inc\state.h" />
+    <ClInclude Include="Core\Inc\status_reg.h" />
+    <ClInclude Include="Core\Inc\stm32f0xx_hal_conf.h" />
+    <ClInclude Include="Core\Inc\stm32f0xx_it.h" />
+    <ClInclude Include="Core\Inc\tim.h" />
+    <ClInclude Include="Core\Inc\usart.h" />
+    <ClInclude Include="Core\Inc\xmodem.h" />
+    <ClCompile Include="Core\Src\adc_controller.cpp" />
+    <ClCompile Include="Core\Src\common.cpp" />
+    <ClCompile Include="Core\Src\cs_register.cpp" />
+    <ClCompile Include="Core\Src\debug_facilities.cpp" />
+    <ClCompile Include="Core\Src\error_controller.cpp" />
+    <ClCompile Include="Core\Src\flash_if.cpp" />
+    <ClCompile Include="Core\Src\main.cpp" />
+    <ClCompile Include="Core\Src\main_controller.cpp" />
+    <ClCompile Include="Core\Src\mem.cpp" />
+    <ClCompile Include="Core\Src\mem_controller.cpp" />
+    <ClCompile Include="Core\Src\menu.cpp" />
+    <ClCompile Include="Core\Src\monitor.cpp" />
+    <ClCompile Include="Core\Src\peripherial_controller.cpp" />
+    <ClCompile Include="Core\Src\screen_controller.cpp" />
+    <ClCompile Include="Core\Src\state.cpp" />
+    <ClCompile Include="Core\Src\status_reg.cpp" />
+    <ClCompile Include="Core\Src\xmodem.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Src\gpio.c" />
+    <ClCompile Include="Core\Src\adc.c" />
+    <ClCompile Include="Core\Src\crc.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Core\Src\dma.c" />
+    <ClCompile Include="Core\Src\rtc.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Core\Src\spi.c" />
+    <ClCompile Include="Core\Src\tim.c" />
+    <ClCompile Include="Core\Src\usart.c" />
+    <ClCompile Include="Core\Src\stm32f0xx_it.c" />
+    <ClCompile Include="Core\Src\stm32f0xx_hal_msp.c" />
+    <ClCompile Include="Core\Src\stm32f0xx_hal_timebase_tim.c" />
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_crc.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_crc_ex.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_rtc.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_rtc_ex.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_spi.c" />
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_spi_ex.c" />
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_tim.c" />
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_tim_ex.c" />
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_uart.c" />
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_uart_ex.c" />
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_rcc.c" />
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_rcc_ex.c" />
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_i2c.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_i2c_ex.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_gpio.c" />
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_dma.c" />
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_cortex.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_pwr.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_pwr_ex.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_flash.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_flash_ex.c" />
+    <ClCompile Include="Core\Src\system_stm32f0xx.c" />
+    <None Include="stm32.props" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F0xxxx\StartupFiles\startup_stm32f072xb.c" />
+    <None Include="APTX1_1-Debug.vgdbsettings">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</ExcludedFromBuild>
+    </None>
+    <None Include="APTX1_1-Release.vgdbsettings" />
+    <None Include="stm32.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">false</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <LinkerScript Include="STM32F072RB_flash.lds" />
+  </ItemGroup>
+</Project>
