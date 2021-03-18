@@ -837,7 +837,8 @@ void main_controller::Test_Short_Cut()
 			HAL_GPIO_WritePin(DEBUG_BRK1_GPIO_Port, DEBUG_BRK1_Pin, PIN_LOW);          //B	
 			HAL_GPIO_WritePin(DEBUG_BRK2_GPIO_Port, DEBUG_BRK2_Pin, PIN_LOW);       //C
 			
-		}      
+		}
+		
 		else
 			BRING_STATUS = NO_ENABLE_PRESS; //not activate
 			
@@ -886,7 +887,9 @@ void main_controller::Test_Short_Cut()
 			sprintf(buffer, "$w%s#", "Testing");
 			this->screen->test_screen_update(buffer);
 			delay_with_watchdog(5000);
-		
+			sprintf(buffer, "$w%s#", "Testing");
+			this->screen->test_screen_update(buffer);
+			delay_with_watchdog(5000);
 			if ((HAL_GPIO_ReadPin(DEBUG_STATE_3_GPIO_Port, DEBUG_STATE_3_Pin) == 1))
 			{
 				//failure
