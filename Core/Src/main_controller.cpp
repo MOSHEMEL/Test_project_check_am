@@ -928,6 +928,10 @@ void main_controller::Test_Short_Cut()
 		sprintf(buffer, "$j%s#", "Pass");
 		this->screen->test_screen_update(buffer);
 		delay_with_watchdog(1000);
+		HAL_GPIO_WritePin(DEBUG_STATE_1_GPIO_Port, DEBUG_STATE_1_Pin, PIN_LOW);       //A
+		HAL_GPIO_WritePin(DEBUG_BRK1_GPIO_Port, DEBUG_BRK1_Pin, PIN_LOW);          //B	
+		HAL_GPIO_WritePin(DEBUG_BRK2_GPIO_Port, DEBUG_BRK2_Pin, PIN_HIGH);       //C
+		
 		//BRING_STATUS = VOLT_2;
 		break;
 	case TEST_FAIL:
