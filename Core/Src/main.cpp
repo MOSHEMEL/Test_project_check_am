@@ -322,11 +322,7 @@ int main(void)
 			  
 				break;  
 			}
-		case AM_TEST_COMMAND:
-		    {
-			monitor_controller.parse_input_uart();
-			break;
-		     }
+
 		default :
 			{
 		  
