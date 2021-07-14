@@ -11,7 +11,7 @@
 #define  space     ' '
 #define  Backspace 0x08
 #define  Brk     "\r\n"
- 
+#define AM_MEMO 3
 
 class monitor
 {
@@ -52,6 +52,7 @@ public:
 	void rx_pass();
 	void Config_Apt_Mem_Var();
 	void Reading_Log_File();
+	void test_memo();
 	
 	void pwr_on()
 	{

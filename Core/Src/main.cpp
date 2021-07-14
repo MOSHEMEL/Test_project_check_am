@@ -241,7 +241,7 @@ int main(void)
 	//grand_ctrl.get_mem()->write(3, 0, 12);
 	//grand_ctrl.get_mem()->read(3, 0);
   /* USER CODE END 2 */
-
+     
    
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -275,7 +275,7 @@ int main(void)
   	 *If the INA is not powered fully every cycle.
   	 *So a function to ~Reinforce~ the cs register must be added
 	************************************************************************************/
-	  state.current = TEST;
+	 // state.current = AM_TEST_COMMAND;
 	  switch (state.current)
 		{
 		case Init:
@@ -322,6 +322,11 @@ int main(void)
 			  
 				break;  
 			}
+		case AM_TEST_COMMAND:
+		    {
+			monitor_controller.parse_input_uart();
+			break;
+		     }
 		default :
 			{
 		  
@@ -357,7 +362,7 @@ int main(void)
 		  grand_ctrl.update_debug();
 	  }
 	  //HAL_GPIO_TogglePin(DEBUG_BRK2_GPIO_Port, DEBUG_BRK2_Pin);
-//	  monitor_controller.parse_input_uart();
+      monitor_controller.parse_input_uart();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

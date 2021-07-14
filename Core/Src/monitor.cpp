@@ -97,6 +97,10 @@ void monitor::parse_input_uart()
 				{
 					this->rx_erase();
 				}
+				else if(strncmp(this->tokens[0], "testmem", 6) == 0)
+				{
+					this->test_memo();
+				}
 				else if(strncmp(this->tokens[0], "nuke", 4) == 0)
 				{
 					this->rx_nuke();
@@ -800,3 +804,54 @@ void monitor::Reading_Log_File()
 		}
 	}
 }
+
+void monitor::test_memo()
+{
+	uint8_t status = 0;
+	uint16_t Am_Valid = 0, valid_read=0;
+	for (int i = 0; i < 100; i++)
+	{
+		status = HAL_GPIO_ReadPin(SIMPLE_INTERLOCK_GPIO_Port, SIMPLE_INTERLOCK_Pin);
+		if (status == 0)
+		{
+			HAL_GPIO_WritePin(ENABLE_POWER_12V_GPIO_Port, ENABLE_POWER_12V_Pin, GPIO_PIN_RESET);
+			delay(100);
+			HAL_GPIO_WritePin(ENABLE_POWER_12V_GPIO_Port, ENABLE_POWER_12V_Pin, GPIO_PIN_SET);
+			delay_with_watchdog(30);
+		}
+				 
+		this->apt->get_mem()->check_connections(AM_MEMO);
+		{
+			if (this->apt->is_b_am_valid())
+			{
+				Am_Valid++;
+			}
+		}
+		
+		}
+	
+	
+	this->apt->get_mem()->erase(AM_MEMO);
+	delay_with_watchdog(10000);
+	//this->apt->get_mem()->write_register(AM_MEMO, value);
+
+		
+	uint32_t value = 0x055AA55F;
+	for (uint32_t address = 0; address < 0x1000; address += 4)
+	{
+		this->apt->get_mem()->write(AM_MEMO, address, value);
+		delay(10000);
+		uint32_t read_back = this->apt->get_mem()->read(AM_MEMO, address);
+		if (read_back == value)
+		{
+			valid_read++;
+		}
+	}
+	sprintf((char*)BUFFER_RX, "CS [%d] valid [%d] out of 100\r\n", AM_MEMO, Am_Valid);
+	Serial_PutString((char*)BUFFER_RX);
+	sprintf((char*)BUFFER_RX, "read [%d] valid [%d] out of 1024\r\n", AM_MEMO, valid_read);
+	Serial_PutString((char*)BUFFER_RX);
+	
+}
+	
+	

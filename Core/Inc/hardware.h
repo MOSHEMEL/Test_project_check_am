@@ -45,7 +45,7 @@
 #define ADC_TEST_COUNTER_TH 14
 #define ADC_STALL_TEMP		8500
 #define ADC_FIRE_TEMP		9000
-#define VERSION			   	"TEST1.0 " __DATE__	/**< software version*/
+#define VERSION			   	"TEST_AM " __DATE__	/**< software version*/
 #define MCU_VERSION_MAJOR   8       /*!< Major version */
 #define MCU_VERSION_MINOR   2       /*!< Minor version */
 #define MCU_VERSION_PATCH   0       /*!< Patch version */
@@ -298,6 +298,7 @@ enum statesMachine
 	/**< Special instrumentation state to when we just wait for uart4 commands. Entered by sending debug# */
 	QA,
 	TEST,
+	AM_TEST_COMMAND,
 };
 
 typedef union

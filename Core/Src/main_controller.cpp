@@ -1136,7 +1136,7 @@ void main_controller::Test_DC_MACHINE()
 		sprintf(string, "$w%s#", "Button Test");
 		this->screen->test_screen_update(string);
 		delay_with_watchdog(1000);
-		for (i = 0; ((i < 500) && (fire_test==false)); i++)
+		for (i = 0; ((i < 1000) && (fire_test==false)); i++)//change for 10 sec
 		{
 			delay_with_watchdog(10);
 			if (this->fire_is_pressed())
@@ -1311,7 +1311,7 @@ void main_controller::Test_Mcu_Machine()
 		sprintf(string, "$w%s#", "Button Test");
 		this->screen->test_screen_update(string);
 		delay_with_watchdog(1000);
-		for (i = 0; ((i < 500) && (button_test == false)); i++)
+		for (i = 0; ((i < 1000) && (button_test == false)); i++)  //change for 10 sec
 		{
 			delay_with_watchdog(10);
 			Button_Reset = test_for_reset_press_aux();
