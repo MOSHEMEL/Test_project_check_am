@@ -811,6 +811,7 @@ void monitor::test_memo()
 	//delay_with_watchdog(1000);
 	uint8_t status = 0;
 	uint16_t Am_Valid = 0, valid_read=0;
+	Serial_PutString("Start Test\r\n");
 	HAL_GPIO_WritePin(DEBUG_BRK1_GPIO_Port, DEBUG_BRK1_Pin, PIN_LOW);//init led for start test
 	HAL_GPIO_WritePin(DEBUG_BRK2_GPIO_Port, DEBUG_BRK2_Pin, PIN_LOW);
 	HAL_GPIO_WritePin(CHIP_SELECT_MCU_MEM_GPIO_Port, CHIP_SELECT_MCU_MEM_Pin, GPIO_PIN_SET);//Config for mem3 miso -get to mcu
@@ -832,6 +833,10 @@ void monitor::test_memo()
 			if (this->apt->is_b_am_valid())
 			{
 				Am_Valid++;
+			}
+			else
+			{
+				break;
 			}
 		}
 		
@@ -855,6 +860,10 @@ void monitor::test_memo()
 		if (read_back == value)
 		{
 			valid_read++;
+		}
+		else
+		{
+			break;
 		}
 	}
 	sprintf((char*)BUFFER_RX, "CS [%d] valid [%d] out of 100\r\n", AM_MEMO, Am_Valid);
