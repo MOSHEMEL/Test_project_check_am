@@ -46,6 +46,7 @@ void monitor::test_engine()
 void monitor::parse_input_uart()
 {
 	// ReSharper disable once CppLocalVariableMayBeConst
+	//this->test_memo();
 	volatile HAL_StatusTypeDef status = HAL_UART_Receive(SERIAL_PC, (uint8_t*)&this->rx_char, 1, 1);
 	if (status == HAL_OK)
 	{
@@ -807,13 +808,19 @@ void monitor::Reading_Log_File()
 
 void monitor::test_memo()
 {
+	//delay_with_watchdog(1000);
 	uint8_t status = 0;
 	uint16_t Am_Valid = 0, valid_read=0;
+	HAL_GPIO_WritePin(DEBUG_BRK1_GPIO_Port, DEBUG_BRK1_Pin, PIN_LOW);//init led for start test
+	HAL_GPIO_WritePin(DEBUG_BRK2_GPIO_Port, DEBUG_BRK2_Pin, PIN_LOW);
+	HAL_GPIO_WritePin(CHIP_SELECT_MCU_MEM_GPIO_Port, CHIP_SELECT_MCU_MEM_Pin, GPIO_PIN_SET);//Config for mem3 miso -get to mcu
 	for (int i = 0; i < 100; i++)
 	{
+		HAL_GPIO_TogglePin(DEBUG_STATE_1_GPIO_Port, DEBUG_STATE_1_Pin);
 		status = HAL_GPIO_ReadPin(SIMPLE_INTERLOCK_GPIO_Port, SIMPLE_INTERLOCK_Pin);
 		if (status == 0)
 		{
+			//HAL_GPIO_TogglePin();
 			HAL_GPIO_WritePin(ENABLE_POWER_12V_GPIO_Port, ENABLE_POWER_12V_Pin, GPIO_PIN_RESET);
 			delay(100);
 			HAL_GPIO_WritePin(ENABLE_POWER_12V_GPIO_Port, ENABLE_POWER_12V_Pin, GPIO_PIN_SET);
@@ -829,7 +836,9 @@ void monitor::test_memo()
 		}
 		
 		}
-	
+	//sprintf((char*)BUFFER_RX, "CS [%d] valid [%d] out of 100\r\n", AM_MEMO, Am_Valid);
+	//Serial_PutString((char*)BUFFER_RX);
+	//while (1) ;
 	
 	this->apt->get_mem()->erase(AM_MEMO);
 	delay_with_watchdog(10000);
@@ -839,6 +848,7 @@ void monitor::test_memo()
 	uint32_t value = 0x055AA55F;
 	for (uint32_t address = 0; address < 0x1000; address += 4)
 	{
+		HAL_GPIO_TogglePin(DEBUG_STATE_1_GPIO_Port, DEBUG_STATE_1_Pin);
 		this->apt->get_mem()->write(AM_MEMO, address, value);
 		delay(10000);
 		uint32_t read_back = this->apt->get_mem()->read(AM_MEMO, address);
@@ -851,7 +861,15 @@ void monitor::test_memo()
 	Serial_PutString((char*)BUFFER_RX);
 	sprintf((char*)BUFFER_RX, "read [%d] valid [%d] out of 1024\r\n", AM_MEMO, valid_read);
 	Serial_PutString((char*)BUFFER_RX);
-	
+	HAL_GPIO_WritePin(CHIP_SELECT_MCU_MEM_GPIO_Port, CHIP_SELECT_MCU_MEM_Pin, GPIO_PIN_RESET);//End of test-no need to config
+	if ((Am_Valid == 100)&&(valid_read == 1024))
+	{
+		HAL_GPIO_WritePin(DEBUG_BRK1_GPIO_Port, DEBUG_BRK1_Pin, PIN_HIGH);	//Success test
+	}
+	else
+	{
+		HAL_GPIO_WritePin(DEBUG_BRK2_GPIO_Port, DEBUG_BRK2_Pin, PIN_HIGH);//fail test
+	}
 }
 	
 	

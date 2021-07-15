@@ -81,6 +81,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+static uint8_t Start_Test_Am = 0;
 __IO ITStatus UartReady;
 extern char   aTxBuffer[];
 char aRxBuffer[4];
@@ -294,7 +295,13 @@ int main(void)
 			while (state.current == UartDebug)
 			{
 				grand_ctrl.read_interlock();
+			//	
 				monitor_controller.serial_consume();
+				if (Start_Test_Am == 0)
+				{
+					monitor_controller.test_memo();
+					Start_Test_Am = 1;
+				}
 				if (WATCHDOG_IS_ENABLED)
 				{
 					HAL_GPIO_TogglePin(WATCHDOG_OUT_GPIO_Port, WATCHDOG_OUT_Pin);
@@ -302,6 +309,7 @@ int main(void)
 				cycle++;
 				if (cycle % 100 == 0)
 				{
+				//	
 					HAL_GPIO_TogglePin(BLINKING_LED_GPIO_Port, BLINKING_LED_Pin);
 					monitor_controller.rx_adc();
 					grand_ctrl.update_debug();
@@ -310,6 +318,12 @@ int main(void)
 				}
 				timer_last_update_diff = HAL_GetTick() - timer_last_update;
 				timer_last_update = HAL_GetTick();
+//				if ((cycle % 100 == 0) && (Start_Test_Am==0))
+//				{
+//					Start_Test_Am = 0;
+//					monitor_controller.test_memo();
+//				}
+				
 			}
 			break;
 		case QA:

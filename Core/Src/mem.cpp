@@ -125,24 +125,36 @@ HAL_StatusTypeDef Memory::erase(void)
 }
 
 void Memory::check_id(void)
-{
+{   
+//	char idarray[40];
 	this->get_id();
+	//sprintf(idarray, "ID %x,%x,%x,", id[0], id[1], id[2]);
+//	Serial_PutString(idarray);
 	if ((this->id[0] == 0x1f)&&(this->id[1] == 0x85)&&(this->id[2] == 0x01))
 	{
 		this->id_valid = true;
 	}
 	else
-	{
 		this->id_valid = false;
 	}
-}
+
 
 void Memory::get_id(void)
-{
+{   
+	//uint8_t status = 0;
+	//uint8_t idAM[3];
+	//char idarray[40];
 	uint8_t spi_data_command[1];
 	spi_data_command[0] = READ_MANUFACTURE_ID;      //get device ID 
 	HAL_SPI_Transmit(&hspi1, spi_data_command, 1, 5);
-	HAL_SPI_Receive(&hspi1, this->id, 3, 5);
+	//delay(100);
+	HAL_SPI_Receive(&hspi1,this->id, 3, 1);
+//	if (status == HAL_OK)
+//	{
+//		Serial_PutString("hal ok");
+//	}
+//    sprintf(idarray, "ID %x,%x,%x,", idAM[0], idAM[1], idAM[2]);
+//	Serial_PutString(idarray);
 }
 
 HAL_StatusTypeDef Memory::write_disable(void)
