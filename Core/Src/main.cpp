@@ -301,6 +301,7 @@ int main(void)
 				{
 					monitor_controller.test_memo();
 					Start_Test_Am = 1;
+				 	while (1) ;
 				}
 				if (WATCHDOG_IS_ENABLED)
 				{

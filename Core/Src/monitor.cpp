@@ -873,12 +873,14 @@ void monitor::test_memo()
 	HAL_GPIO_WritePin(CHIP_SELECT_MCU_MEM_GPIO_Port, CHIP_SELECT_MCU_MEM_Pin, GPIO_PIN_RESET);//End of test-no need to config
 	if ((Am_Valid == 100)&&(valid_read == 1024))
 	{
-		HAL_GPIO_WritePin(DEBUG_BRK1_GPIO_Port, DEBUG_BRK1_Pin, PIN_HIGH);	//Success test
+		HAL_GPIO_WritePin(DEBUG_BRK2_GPIO_Port, DEBUG_BRK2_Pin, PIN_HIGH);	//Success test
 	}
 	else
 	{
-		HAL_GPIO_WritePin(DEBUG_BRK2_GPIO_Port, DEBUG_BRK2_Pin, PIN_HIGH);//fail test
+		HAL_GPIO_WritePin(DEBUG_BRK1_GPIO_Port, DEBUG_BRK1_Pin, PIN_HIGH);//fail test
 	}
+	HAL_GPIO_WritePin(DEBUG_STATE_1_GPIO_Port, DEBUG_STATE_1_Pin, PIN_LOW);
+	
 }
 	
 	
