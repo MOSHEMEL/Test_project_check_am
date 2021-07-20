@@ -823,9 +823,9 @@ void monitor::test_memo()
 		{
 			//HAL_GPIO_TogglePin();
 			HAL_GPIO_WritePin(ENABLE_POWER_12V_GPIO_Port, ENABLE_POWER_12V_Pin, GPIO_PIN_RESET);
-			delay(100);
+			delay(20);
 			HAL_GPIO_WritePin(ENABLE_POWER_12V_GPIO_Port, ENABLE_POWER_12V_Pin, GPIO_PIN_SET);
-			delay_with_watchdog(30);
+			delay_with_watchdog(5);
 		}
 				 
 		this->apt->get_mem()->check_connections(AM_MEMO);
