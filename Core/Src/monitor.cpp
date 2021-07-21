@@ -843,10 +843,16 @@ void monitor::test_memo()
 		}
 	//sprintf((char*)BUFFER_RX, "CS [%d] valid [%d] out of 100\r\n", AM_MEMO, Am_Valid);
 	//Serial_PutString((char*)BUFFER_RX);
-	//while (1) ;
+	// while (1) ;
 	
 	this->apt->get_mem()->erase(AM_MEMO);
-	delay_with_watchdog(10000);
+	delay_with_watchdog(2000);
+	HAL_GPIO_TogglePin(DEBUG_STATE_1_GPIO_Port, DEBUG_STATE_1_Pin);
+	delay_with_watchdog(2000);
+	HAL_GPIO_TogglePin(DEBUG_STATE_1_GPIO_Port, DEBUG_STATE_1_Pin);
+	delay_with_watchdog(2000);
+	HAL_GPIO_TogglePin(DEBUG_STATE_1_GPIO_Port, DEBUG_STATE_1_Pin);
+	delay_with_watchdog(4000);
 	//this->apt->get_mem()->write_register(AM_MEMO, value);
 
 		

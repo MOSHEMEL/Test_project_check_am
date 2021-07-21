@@ -81,6 +81,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+bool Start_Test = 0; 
 static uint8_t Start_Test_Am = 0;
 __IO ITStatus UartReady;
 extern char   aTxBuffer[];
@@ -209,7 +210,7 @@ int main(void)
 	MX_TIM16_Init();
 	MX_TIM2_Init();
 	MX_TIM3_Init();
-	MX_TIM14_Init();
+  //MX_TIM14_Init();
 	//delay_with_watchdog(2000);
 	grand_ctrl.init_before_while();
 	timer_last_update = HAL_GetTick();
@@ -220,22 +221,23 @@ int main(void)
 	
 	//debug.fast_beeps_3();
 	
-	grand_ctrl.get_device()->stop_motor_init();
-	grand_ctrl.get_device()->read();
-	grand_ctrl.get_device()->read();
-	grand_ctrl.get_screen()->update_pulse_counter(0);
+	//grand_ctrl.get_device()->stop_motor_init();
+	//grand_ctrl.get_device()->read();
+	//grand_ctrl.get_device()->read();
+	//grand_ctrl.get_screen()->update_pulse_counter(0);
 	
 	char state_enter[20];
 	//Serial_PutString(state_enter);
 	sprintf(state_enter, "S: %d\r\n", (int)state.current);
-	//Serial_PutString(state_enter);
+	Serial_PutString(state_enter);
 	HAL_GPIO_TogglePin(WATCHDOG_OUT_GPIO_Port, WATCHDOG_OUT_Pin);
 
 	// INIT IN CASE OF POWER FAIL
-	grand_ctrl.init_PF_struct(&pf_memory);
+//	grand_ctrl.init_PF_struct(&pf_memory);
 	//
-	delay_with_watchdog(3000);
-	grand_ctrl.show_version();
+	delay_with_watchdog(1000);
+	HAL_GPIO_WritePin(CHIP_SELECT_SERIAL_GPIO_Port, CHIP_SELECT_SERIAL_Pin, GPIO_PIN_SET);
+	//grand_ctrl.show_version();
 	//grand_ctrl.get_mem()->erase(3);
 	//HAL_Delay(20);
 	
@@ -294,14 +296,19 @@ int main(void)
 		case UartDebug:
 			while (state.current == UartDebug)
 			{
-				grand_ctrl.read_interlock();
+			//	grand_ctrl.read_interlock();
 			//	
-				monitor_controller.serial_consume();
-				if (Start_Test_Am == 0)
+			//	monitor_controller.serial_consume();
+				while (1)
 				{
-					monitor_controller.test_memo();
-					Start_Test_Am = 1;
-				 	while (1) ;
+					Start_Test = test_for_reset_press_aux();
+					if (Start_Test == 1)
+					{
+						monitor_controller.test_memo();
+						Start_Test = 0;
+						//while (1) ;
+					}
+					//delay_with_watchdog(20);
 				}
 				if (WATCHDOG_IS_ENABLED)
 				{
