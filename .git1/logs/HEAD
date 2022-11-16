@@ -1,0 +1,17 @@
+0000000000000000000000000000000000000000 c6bf1727eea3fe797a5dbada9042bec44f6e446d Moshe Meller <moshem@armentavet.com> 1613396904 +0200	commit (initial): TEST_BRING_UP VER1.0
+c6bf1727eea3fe797a5dbada9042bec44f6e446d 7dddcf59ae9fe13e4ae426d69ac09567ff06aa03 Moshe Meller <moshem@armentavet.com> 1616081432 +0200	commit: Saving test changes
+7dddcf59ae9fe13e4ae426d69ac09567ff06aa03 295fd50d6ec1db329151b85e0ad250ab5fc95620 Moshe Meller <moshem@armentavet.com> 1617888560 +0300	commit: adding having voltage even the bring up ends
+295fd50d6ec1db329151b85e0ad250ab5fc95620 295fd50d6ec1db329151b85e0ad250ab5fc95620 Moshe Meller <moshem@armentavet.com> 1626265711 +0300	checkout: moving from master to Test_AM
+295fd50d6ec1db329151b85e0ad250ab5fc95620 08bee2616c4bbb983d279bc3ac95b84fd1e6d254 Moshe Meller <moshem@armentavet.com> 1626266123 +0300	commit: Testing Am memory
+08bee2616c4bbb983d279bc3ac95b84fd1e6d254 c530bd2a1ae2070a730701aae847f98ab1168fbe Moshe Meller <moshem@armentavet.com> 1626266653 +0300	commit: Erasing unused line
+c530bd2a1ae2070a730701aae847f98ab1168fbe a1840b4663eb93e85c04b076d0df13f3a64bf3ce Moshe Meller <moshem@armentavet.com> 1626350261 +0300	commit: Adding Indication leds and doing the check automatically
+a1840b4663eb93e85c04b076d0df13f3a64bf3ce 7439b89a8050afe770cdb96421e76b0ac4d44251 Moshe Meller <moshem@armentavet.com> 1626352380 +0300	commit: Adding Start Test and fail procedure
+7439b89a8050afe770cdb96421e76b0ac4d44251 40d465bbd1f2ca897f0c3c8ffa7e2e860cf286a1 Moshe Meller <moshem@armentavet.com> 1626682867 +0300	commit: Adjusting Green led and led and yellow led to blink
+40d465bbd1f2ca897f0c3c8ffa7e2e860cf286a1 e4aba3def26d61bcfe6d7729339f9e078d2efd13 Moshe Meller <moshem@armentavet.com> 1626766314 +0300	commit: Changing delay time for test
+e4aba3def26d61bcfe6d7729339f9e078d2efd13 eade63dbc33bfd7e37832a29b050736fa58bde77 Moshe Meller <moshem@armentavet.com> 1626877052 +0300	commit: Adding button press and config cs to high
+eade63dbc33bfd7e37832a29b050736fa58bde77 eade63dbc33bfd7e37832a29b050736fa58bde77 Moshe Meller <moshem@armentavet.com> 1645704289 +0200	reset: moving to HEAD
+eade63dbc33bfd7e37832a29b050736fa58bde77 295fd50d6ec1db329151b85e0ad250ab5fc95620 Moshe Meller <moshem@armentavet.com> 1645704290 +0200	checkout: moving from Test_AM to master
+295fd50d6ec1db329151b85e0ad250ab5fc95620 eade63dbc33bfd7e37832a29b050736fa58bde77 Moshe Meller <moshem@armentavet.com> 1645704383 +0200	checkout: moving from master to Test_AM
+eade63dbc33bfd7e37832a29b050736fa58bde77 816681cba5b0a8f4ca887afd089acedfea94b206 Moshe Meller <moshem@armentavet.com> 1668500427 +0200	commit: Adding vgdsettings
+816681cba5b0a8f4ca887afd089acedfea94b206 dc2d87de0f6e0493b3770e42537b9cf490c2042f Moshe Meller <moshem@armentavet.com> 1668516015 +0200	commit: adding_file
+dc2d87de0f6e0493b3770e42537b9cf490c2042f 2a264787232225c04c3eefd432a3056efd7cf29b Moshe Meller <moshem@armentavet.com> 1668586124 +0200	commit: Removing_file
