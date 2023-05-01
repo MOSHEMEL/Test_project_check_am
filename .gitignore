@@ -21,7 +21,7 @@ backup - Copy
 .visualgdb/CodeDB/APTX1_1-Debug-VisualGDB/GlobalCache/000
 .visualgdb/CodeDB/APTX1_1-Debug-VisualGDB/GlobalCache/000
 .visualgdb/CodeDB/APTX1_1-Debug-VisualGDB
-*.vgdbsettings
+//*.vgdbsettings
 *.user
 *.lck
 .visualgdb/CodeDB/APTX1_1-Release-VisualGDB/GlobalFileTable.000
